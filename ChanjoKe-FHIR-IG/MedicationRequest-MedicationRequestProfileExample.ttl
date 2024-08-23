@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/MedicationRequest/MedicationRequestProfileExample> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicationRequestProfileExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile"^^xsd:anyURI ;
+       fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequestProfileExample</b></p><a name=\"MedicationRequestProfileExample\"> </a><a name=\"hcMedicationRequestProfileExample\"> </a><a name=\"MedicationRequestProfileExample-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/fhir/medicationrequest</code>/123456 (use: official, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>medication</b>: <span title=\"Codes:{http://snomed.info/sct 261000}\">Codeine phosphate</span></p><p><b>subject</b>: <a href=\"Patient-SHAPatientExample.html\">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456 (use: official, ))</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 109006}\">Anxiety disorder of childhood OR adolescence</span></p><p><b>reasonReference</b>: <a href=\"Condition-ConditionExample.html\">Condition</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://example.org/fhir/medicationrequest"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:priority [ fhir:v "routine"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:261000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "261000" ] ;
+       fhir:display [ fhir:v "Codeine phosphate" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://shr.tiberbuapps.com/fhir/Patient/SHAPatientExample> ;
+     fhir:reference [ fhir:v "Patient/SHAPatientExample" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:109006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "109006" ] ;
+       fhir:display [ fhir:v "Anxiety disorder of childhood OR adolescence" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <https://shr.tiberbuapps.com/fhir/Condition/ConditionExample> ;
+     fhir:reference [ fhir:v "Condition/ConditionExample" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="ClaimExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Claim ClaimExample</b></p><a name="ClaimExample"> </a><a name="hcClaimExample"> </a><a name="ClaimExample-en-US"> </a><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href="Patient-SHAPatientExample.html">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456 (use: official, ))</a></p><p><b>created</b>: 2020-06-15</p><p><b>provider</b>: <a href="Practitioner-PractitionerExample.html">Practitioner John Doe </a></p><p><b>priority</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span></p><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td>1</td><td>true</td><td><code>http://example.org/identifiers</code>/123456</td><td><a href="Coverage-CoverageExample.html">Coverage: status = active</a></td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="professional"/>
+      <display value="Professional"/>
+    </coding>
+    <text value="Professional"/>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/SHAPatientExample"/>
+  </patient>
+  <created value="2020-06-15"/>
+  <provider>
+    <reference value="Practitioner/PractitionerExample"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+      <display value="Normal"/>
+    </coding>
+    <text value="Normal"/>
+  </priority>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <identifier>
+      <system value="http://example.org/identifiers"/>
+      <value value="123456"/>
+    </identifier>
+    <coverage>
+      <reference value="Coverage/CoverageExample"/>
+    </coverage>
+  </insurance>
+</Claim>

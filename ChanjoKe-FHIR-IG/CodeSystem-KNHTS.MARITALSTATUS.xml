@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.MARITALSTATUS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.MARITALSTATUS</b></p><a name="KNHTS.MARITALSTATUS"> </a><a name="hcKNHTS.MARITALSTATUS"> </a><a name="KNHTS.MARITALSTATUS-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">divorced<a name="KNHTS.MARITALSTATUS-divorced"> </a></td><td>divorced</td></tr><tr><td style="white-space:nowrap">married<a name="KNHTS.MARITALSTATUS-married"> </a></td><td>married</td></tr><tr><td style="white-space:nowrap">polygamous<a name="KNHTS.MARITALSTATUS-polygamous"> </a></td><td>polygamous</td></tr><tr><td style="white-space:nowrap">customary<a name="KNHTS.MARITALSTATUS-customary"> </a></td><td>customary</td></tr><tr><td style="white-space:nowrap">unmarried<a name="KNHTS.MARITALSTATUS-unmarried"> </a></td><td>unmarried</td></tr><tr><td style="white-space:nowrap">widow<a name="KNHTS.MARITALSTATUS-widow"> </a></td><td>widow</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS"/>
+  <version value="0.1.0"/>
+  <name value="MARITAL_STATUS"/>
+  <title value="CodeSystem for Patient's Marital (Civil) Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Patient's Marital (Civil) Status"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="divorced"/>
+    <display value="divorced"/>
+    <definition value="divorced"/>
+  </concept>
+  <concept>
+    <code value="married"/>
+    <display value="married"/>
+    <definition value="married"/>
+  </concept>
+  <concept>
+    <code value="polygamous"/>
+    <display value="polygamous"/>
+    <definition value="polygamous"/>
+  </concept>
+  <concept>
+    <code value="customary"/>
+    <display value="customary"/>
+    <definition value="customary"/>
+  </concept>
+  <concept>
+    <code value="unmarried"/>
+    <display value="unmarried"/>
+    <definition value="unmarried"/>
+  </concept>
+  <concept>
+    <code value="widow"/>
+    <display value="widow"/>
+    <definition value="widow"/>
+  </concept>
+</CodeSystem>

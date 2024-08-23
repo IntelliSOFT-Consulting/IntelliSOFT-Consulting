@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/Organization/SHAOrganizationExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SHAOrganizationExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization SHAOrganizationExample</b></p><a name=\"SHAOrganizationExample\"> </a><a name=\"hcSHAOrganizationExample\"> </a><a name=\"SHAOrganizationExample-en-US\"> </a><p><b>identifier</b>: Facility Identifier/KMFL12345 (use: official, )</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://example.org/fhir/organization-type hospital}\">Hospital</span></p><p><b>name</b>: Kenyatta National Hospital</p><p><b>address</b>: </p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"tel:+123456789\">+123456789</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/owner-id-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "OWNER123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/owner-board-registration-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "BOARD123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/owner-current-license-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LICENSE123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/facility-registration-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "KMFL123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/current-license-type"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "once" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/current-license-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "LICNUM123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/current-license-renewal-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2025-01-01"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/approved"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/regulatory-body"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Regulatory Authority" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/pcn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "PCN123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/parent-facility-code"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "PARENT123" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/facility-level"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "l1" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/facility-type-category"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "General" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/facility-category"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "moh" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/facility-owner"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "MoH - Kenya" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/number-of-beds"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/maximum-bed-allocation"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "120"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/number-of-cots"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "50"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/admission-types"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "emmergency" ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/open-whole-day"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/open-public-holiday"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/open-weekends"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/open-late-night"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/fund"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Public" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/identifier-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "passport" ] ;
+         fhir:display [ fhir:v "Facility Identifier" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "KMFL12345" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/fhir/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "hospital" ] ;
+       fhir:display [ fhir:v "Hospital" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Kenyatta National Hospital"] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/latitude"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "-1.30054" ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/longitude"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "36.80695" ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/ward"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "mombasa" ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/constituency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Starehe" ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/sub-county"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "mombasa" ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/county"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "mombasa" ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/StructureDefinition/physical-address"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Nairobi upperhill" ]
+     ] )
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+123456789" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

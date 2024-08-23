@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/Claim/ClaimExample> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ClaimExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim ClaimExample</b></p><a name=\"ClaimExample\"> </a><a name=\"hcClaimExample\"> </a><a name=\"ClaimExample-en-US\"> </a><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}\">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-SHAPatientExample.html\">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456 (use: official, ))</a></p><p><b>created</b>: 2020-06-15</p><p><b>provider</b>: <a href=\"Practitioner-PractitionerExample.html\">Practitioner John Doe </a></p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>true</td><td><code>http://example.org/identifiers</code>/123456</td><td><a href=\"Coverage-CoverageExample.html\">Coverage: status = active</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "professional" ] ;
+       fhir:display [ fhir:v "Professional" ]
+     ] ) ;
+     fhir:text [ fhir:v "Professional" ]
+  ] ; # 
+  fhir:use [ fhir:v "claim"] ; # 
+  fhir:patient [
+     fhir:link <https://shr.tiberbuapps.com/fhir/Patient/SHAPatientExample> ;
+     fhir:reference [ fhir:v "Patient/SHAPatientExample" ]
+  ] ; # 
+  fhir:created [ fhir:v "2020-06-15"^^xsd:date] ; # 
+  fhir:provider [
+     fhir:link <https://shr.tiberbuapps.com/fhir/Practitioner/PractitionerExample> ;
+     fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/processpriority"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "normal" ] ;
+       fhir:display [ fhir:v "Normal" ]
+     ] ) ;
+     fhir:text [ fhir:v "Normal" ]
+  ] ; # 
+  fhir:insurance ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:focal [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:identifier [
+       fhir:system [ fhir:v "http://example.org/identifiers"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "123456" ]
+     ] ;
+     fhir:coverage [
+       fhir:link <https://shr.tiberbuapps.com/fhir/Coverage/CoverageExample> ;
+       fhir:reference [ fhir:v "Coverage/CoverageExample" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

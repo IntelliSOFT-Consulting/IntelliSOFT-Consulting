@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="ClaimProfileExample"/>
+  <meta>
+    <profile value="https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Claim ClaimProfileExample</b></p><a name="ClaimProfileExample"> </a><a name="hcClaimProfileExample"> </a><a name="ClaimProfileExample-en-US"> </a><p><b>identifier</b>: <code>http://example.org/fhir/claims</code>/123456</p><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}">Institutional</span></p><p><b>subType</b>: <span title="Codes:{http://example.org/fhir/claim-subtypes emergency}">emergency</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href="Patient-SHAPatientExample.html">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456 (use: official, ))</a></p><p><b>billablePeriod</b>: 2023-01-01 --&gt; 2023-01-31</p><p><b>created</b>: 2023-02-01</p><p><b>insurer</b>: <a href="Organization-SHAOrganizationExample.html">Organization Kenyatta National Hospital</a></p><p><b>provider</b>: <a href="Practitioner-PractitionerExample.html">Practitioner John Doe </a></p><p><b>priority</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span></p><h3>Relateds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Claim</b></td><td><b>Relationship</b></td></tr><tr><td style="display: none">*</td><td><a href="Claim-ClaimExample.html">Claim: status = active; type = Professional; use = claim; created = 2020-06-15; priority = Normal</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/ex-claimrelationship associated}">associated</span></td></tr></table><p><b>prescription</b>: <a href="MedicationRequest-MedicationRequestExample.html">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication Codeine phosphate</a></p><p><b>originalPrescription</b>: <a href="MedicationRequest-MedicationRequestExample.html">MedicationRequest: status = active; intent = order; medication[x] = -&gt;Medication Codeine phosphate</a></p><h3>Payees</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/payeetype provider}">Provider</span></td></tr></table><p><b>referral</b>: <a href="ServiceRequest-ServiceRequestExample.html">ServiceRequest: status = active; intent = order</a></p><p><b>facility</b>: <a href="Location-LocationExample.html">Location Kenya Medical Research Institute</a></p><h3>CareTeams</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Role</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><a href="Practitioner-PractitionerExample.html">Practitioner John Doe </a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/claimcareteamrole primary}">Primary provider</span></td></tr></table><h3>SupportingInfos</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Code</b></td><td><b>Timing[x]</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory info}">Information</span></td><td><span title="Codes:{http://example.org/fhir/supporting-info additional-info}">additional-info</span></td><td>2023-01-15</td><td>Supporting information value</td></tr></table><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:{http://hl7.org/fhir/sid/icd-10 I}">DIAG-1a</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-type principal}">principal</span></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td><td><b>ClaimResponse</b></td></tr><tr><td style="display: none">*</td><td>1</td><td>true</td><td><a href="Coverage-CoverageExample.html">Coverage: status = active</a></td><td><a href="ClaimResponse-ClaimResponseExample.html">ClaimResponse: status = active; type = Professional; use = claim; created = 2020-06-15; outcome = complete</a></td></tr></table><h3>Accidents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Date</b></td><td><b>Type</b></td><td><b>Location[x]</b></td></tr><tr><td style="display: none">*</td><td>2023-01-20</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActIncidentCode MVA}">MVA</span></td><td>1234 Elm Street, Somewhere, ST 12345</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title="Codes:{http://example.org/fhir/item-codes exam}">exam</span></p><p><b>serviced</b>: 2023-01-21</p><p><b>quantity</b>: 1</p><h3>UnitPrices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>100</td></tr></table><h3>Nets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>100</td></tr></table><p><b>udi</b>: <a href="Device-DeviceExample.html">Device: status = active</a></p><p><b>bodySite</b>: <span title="Codes:{http://example.org/fhir/bodysites forehead}">forehead</span></p><p><b>subSite</b>: <span title="Codes:{http://example.org/fhir/subsites left}">left</span></p><blockquote><p><b>detail</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title="Codes:{http://example.org/fhir/item-detail-codes service}">service</span></p><p><b>quantity</b>: 1</p><h3>UnitPrices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>50</td></tr></table><h3>Nets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>50</td></tr></table><p><b>udi</b>: <a href="Device-DeviceExample.html">Device: status = active</a></p><blockquote><p><b>subDetail</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title="Codes:{http://example.org/fhir/billings Billing}">Billing</span></p><p><b>quantity</b>: 1</p><h3>UnitPrices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>25</td></tr></table><h3>Nets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>25</td></tr></table><p><b>udi</b>: <a href="Device-DeviceExample.html">Device: status = active</a></p></blockquote></blockquote></blockquote><h3>Totals</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>175</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://example.org/fhir/claims"/>
+    <value value="123456"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <subType>
+    <coding>
+      <system value="http://example.org/fhir/claim-subtypes"/>
+      <code value="emergency"/>
+    </coding>
+  </subType>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/SHAPatientExample"/>
+  </patient>
+  <billablePeriod>
+    <start value="2023-01-01"/>
+    <end value="2023-01-31"/>
+  </billablePeriod>
+  <created value="2023-02-01"/>
+  <insurer>
+    <reference value="Organization/SHAOrganizationExample"/>
+  </insurer>
+  <provider>
+    <reference value="Practitioner/PractitionerExample"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <related>
+    <claim>
+      <reference value="Claim/ClaimExample"/>
+    </claim>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-claimrelationship"/>
+        <code value="associated"/>
+      </coding>
+    </relationship>
+  </related>
+  <prescription>
+    <reference value="MedicationRequest/MedicationRequestExample"/>
+  </prescription>
+  <originalPrescription>
+    <reference value="MedicationRequest/MedicationRequestExample"/>
+  </originalPrescription>
+  <payee>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/payeetype"/>
+        <code value="provider"/>
+      </coding>
+    </type>
+  </payee>
+  <referral>
+    <reference value="ServiceRequest/ServiceRequestExample"/>
+  </referral>
+  <facility>
+    <reference value="Location/LocationExample"/>
+  </facility>
+  <careTeam>
+    <sequence value="1"/>
+    <provider>
+      <reference value="Practitioner/PractitionerExample"/>
+    </provider>
+    <role>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
+        <code value="primary"/>
+      </coding>
+    </role>
+  </careTeam>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+    </category>
+    <code>
+      <coding>
+        <system value="http://example.org/fhir/supporting-info"/>
+        <code value="additional-info"/>
+      </coding>
+    </code>
+    <timingDate value="2023-01-15"/>
+    <valueString value="Supporting information value"/>
+  </supportingInfo>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10"/>
+        <code value="I"/>
+        <display value="Certain infectious and parasitic diseases"/>
+      </coding>
+      <text value="DIAG-1a"/>
+    </diagnosisCodeableConcept>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/diagnosis-type"/>
+        <code value="principal"/>
+      </coding>
+    </type>
+  </diagnosis>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <reference value="Coverage/CoverageExample"/>
+    </coverage>
+    <claimResponse>
+      <reference value="ClaimResponse/ClaimResponseExample"/>
+    </claimResponse>
+  </insurance>
+  <accident>
+    <date value="2023-01-20"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActIncidentCode"/>
+        <code value="MVA"/>
+      </coding>
+    </type>
+    <locationAddress>
+      <text value="1234 Elm Street, Somewhere, ST 12345"/>
+    </locationAddress>
+  </accident>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://example.org/fhir/item-codes"/>
+        <code value="exam"/>
+      </coding>
+    </productOrService>
+    <servicedDate value="2023-01-21"/>
+    <quantity>
+      <value value="1"/>
+    </quantity>
+    <unitPrice>
+      <value value="100"/>
+    </unitPrice>
+    <net>
+      <value value="100"/>
+    </net>
+    <udi>
+      <reference value="Device/DeviceExample"/>
+    </udi>
+    <bodySite>
+      <coding>
+        <system value="http://example.org/fhir/bodysites"/>
+        <code value="forehead"/>
+      </coding>
+    </bodySite>
+    <subSite>
+      <coding>
+        <system value="http://example.org/fhir/subsites"/>
+        <code value="left"/>
+      </coding>
+    </subSite>
+    <detail>
+      <sequence value="1"/>
+      <productOrService>
+        <coding>
+          <system value="http://example.org/fhir/item-detail-codes"/>
+          <code value="service"/>
+        </coding>
+      </productOrService>
+      <quantity>
+        <value value="1"/>
+      </quantity>
+      <unitPrice>
+        <value value="50"/>
+      </unitPrice>
+      <net>
+        <value value="50"/>
+      </net>
+      <udi>
+        <reference value="Device/DeviceExample"/>
+      </udi>
+      <subDetail>
+        <sequence value="1"/>
+        <productOrService>
+          <coding>
+            <system value="http://example.org/fhir/billings"/>
+            <code value="Billing"/>
+          </coding>
+        </productOrService>
+        <quantity>
+          <value value="1"/>
+        </quantity>
+        <unitPrice>
+          <value value="25"/>
+        </unitPrice>
+        <net>
+          <value value="25"/>
+        </net>
+        <udi>
+          <reference value="Device/DeviceExample"/>
+        </udi>
+      </subDetail>
+    </detail>
+  </item>
+  <total>
+    <value value="175"/>
+  </total>
+</Claim>

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.PCNS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.PCNS</b></p><a name=\"KNHTS.PCNS\"> </a><a name=\"hcKNHTS.PCNS\"> </a><a name=\"KNHTS.PCNS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dagorettiNorth<a name=\"KNHTS.PCNS-dagorettiNorth\"> </a></td><td>Dagoretti North</td><td>Dagoretti North</td></tr><tr><td style=\"white-space:nowrap\">dagorettiSouth<a name=\"KNHTS.PCNS-dagorettiSouth\"> </a></td><td>Dagoretti South</td><td>Dagoretti South</td></tr><tr><td style=\"white-space:nowrap\">embakasiCentral<a name=\"KNHTS.PCNS-embakasiCentral\"> </a></td><td>Embakasi Central</td><td>Embakasi Central</td></tr><tr><td style=\"white-space:nowrap\">embakasiEast<a name=\"KNHTS.PCNS-embakasiEast\"> </a></td><td>Embakasi East</td><td>Embakasi East</td></tr><tr><td style=\"white-space:nowrap\">embakasiNorth<a name=\"KNHTS.PCNS-embakasiNorth\"> </a></td><td>Embakasi North</td><td>Embakasi North</td></tr><tr><td style=\"white-space:nowrap\">embakasiSouth<a name=\"KNHTS.PCNS-embakasiSouth\"> </a></td><td>Embakasi North</td><td>Embakasi North</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PRIMARYCARENETWORKS"] ; # 
+  fhir:title [ fhir:v "CodeSystem for Primary Care Networks"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Primary Care Networks"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dagorettiNorth" ] ;
+     fhir:display [ fhir:v "Dagoretti North" ] ;
+     fhir:definition [ fhir:v "Dagoretti North" ]
+  ] [
+     fhir:code [ fhir:v "dagorettiSouth" ] ;
+     fhir:display [ fhir:v "Dagoretti South" ] ;
+     fhir:definition [ fhir:v "Dagoretti South" ]
+  ] [
+     fhir:code [ fhir:v "embakasiCentral" ] ;
+     fhir:display [ fhir:v "Embakasi Central" ] ;
+     fhir:definition [ fhir:v "Embakasi Central" ]
+  ] [
+     fhir:code [ fhir:v "embakasiEast" ] ;
+     fhir:display [ fhir:v "Embakasi East" ] ;
+     fhir:definition [ fhir:v "Embakasi East" ]
+  ] [
+     fhir:code [ fhir:v "embakasiNorth" ] ;
+     fhir:display [ fhir:v "Embakasi North" ] ;
+     fhir:definition [ fhir:v "Embakasi North" ]
+  ] [
+     fhir:code [ fhir:v "embakasiSouth" ] ;
+     fhir:display [ fhir:v "Embakasi North" ] ;
+     fhir:definition [ fhir:v "Embakasi North" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.PCNS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.PCNS</b></p><a name="KNHTS.PCNS"> </a><a name="hcKNHTS.PCNS"> </a><a name="KNHTS.PCNS-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">dagorettiNorth<a name="KNHTS.PCNS-dagorettiNorth"> </a></td><td>Dagoretti North</td><td>Dagoretti North</td></tr><tr><td style="white-space:nowrap">dagorettiSouth<a name="KNHTS.PCNS-dagorettiSouth"> </a></td><td>Dagoretti South</td><td>Dagoretti South</td></tr><tr><td style="white-space:nowrap">embakasiCentral<a name="KNHTS.PCNS-embakasiCentral"> </a></td><td>Embakasi Central</td><td>Embakasi Central</td></tr><tr><td style="white-space:nowrap">embakasiEast<a name="KNHTS.PCNS-embakasiEast"> </a></td><td>Embakasi East</td><td>Embakasi East</td></tr><tr><td style="white-space:nowrap">embakasiNorth<a name="KNHTS.PCNS-embakasiNorth"> </a></td><td>Embakasi North</td><td>Embakasi North</td></tr><tr><td style="white-space:nowrap">embakasiSouth<a name="KNHTS.PCNS-embakasiSouth"> </a></td><td>Embakasi North</td><td>Embakasi North</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS"/>
+  <version value="0.1.0"/>
+  <name value="PRIMARYCARENETWORKS"/>
+  <title value="CodeSystem for Primary Care Networks"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Primary Care Networks"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="dagorettiNorth"/>
+    <display value="Dagoretti North"/>
+    <definition value="Dagoretti North"/>
+  </concept>
+  <concept>
+    <code value="dagorettiSouth"/>
+    <display value="Dagoretti South"/>
+    <definition value="Dagoretti South"/>
+  </concept>
+  <concept>
+    <code value="embakasiCentral"/>
+    <display value="Embakasi Central"/>
+    <definition value="Embakasi Central"/>
+  </concept>
+  <concept>
+    <code value="embakasiEast"/>
+    <display value="Embakasi East"/>
+    <definition value="Embakasi East"/>
+  </concept>
+  <concept>
+    <code value="embakasiNorth"/>
+    <display value="Embakasi North"/>
+    <definition value="Embakasi North"/>
+  </concept>
+  <concept>
+    <code value="embakasiSouth"/>
+    <display value="Embakasi North"/>
+    <definition value="Embakasi North"/>
+  </concept>
+</CodeSystem>

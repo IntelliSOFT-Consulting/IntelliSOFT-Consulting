@@ -1,0 +1,514 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example Claim - JSON Representation -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.151"}
+    h3,h4,h5,h6{--heading-prefix:"2.151"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Claim</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">kenyaClaimsIG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://shr.tiberbuapps.com/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Claim-ClaimProfileExample.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Claim-ClaimProfileExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Claim-ClaimProfileExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example Claim - JSON Representation</h2>
+
+
+<p><a href="Claim-ClaimProfileExample.json" no-download="true">Raw json</a> | <a href="Claim-ClaimProfileExample.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim">resourceType</a>" : "Claim",
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.id">id</a>" : "ClaimProfileExample",
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-ClaimProfile.html" style="color: Maroon">&#x1F517;</a> "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Claim ClaimProfileExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ClaimProfileExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcClaimProfileExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ClaimProfileExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://example.org/fhir/claims&lt;/code&gt;/123456&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\&quot;&gt;Institutional&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subType&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.org/fhir/claim-subtypes emergency}\&quot;&gt;emergency&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: Claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-SHAPatientExample.html\&quot;&gt;Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456\u00a0(use:\u00a0official,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;billablePeriod&lt;/b&gt;: 2023-01-01 --&amp;gt; 2023-01-31&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: 2023-02-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;insurer&lt;/b&gt;: &lt;a href=\&quot;Organization-SHAOrganizationExample.html\&quot;&gt;Organization Kenyatta National Hospital&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\&quot;Practitioner-PractitionerExample.html\&quot;&gt;Practitioner John Doe &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\&quot;&gt;Normal&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Relateds&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Claim&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Claim-ClaimExample.html\&quot;&gt;Claim: status = active; type = Professional; use = claim; created = 2020-06-15; priority = Normal&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/ex-claimrelationship associated}\&quot;&gt;associated&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;prescription&lt;/b&gt;: &lt;a href=\&quot;MedicationRequest-MedicationRequestExample.html\&quot;&gt;MedicationRequest: status = active; intent = order; medication[x] = -&amp;gt;Medication Codeine phosphate&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;originalPrescription&lt;/b&gt;: &lt;a href=\&quot;MedicationRequest-MedicationRequestExample.html\&quot;&gt;MedicationRequest: status = active; intent = order; medication[x] = -&amp;gt;Medication Codeine phosphate&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Payees&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/payeetype provider}\&quot;&gt;Provider&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;referral&lt;/b&gt;: &lt;a href=\&quot;ServiceRequest-ServiceRequestExample.html\&quot;&gt;ServiceRequest: status = active; intent = order&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;facility&lt;/b&gt;: &lt;a href=\&quot;Location-LocationExample.html\&quot;&gt;Location Kenya Medical Research Institute&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;CareTeams&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Provider&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Role&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-PractitionerExample.html\&quot;&gt;Practitioner John Doe &lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/claimcareteamrole primary}\&quot;&gt;Primary provider&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;SupportingInfos&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Timing[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\&quot;&gt;Information&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://example.org/fhir/supporting-info additional-info}\&quot;&gt;additional-info&lt;/span&gt;&lt;/td&gt;&lt;td&gt;2023-01-15&lt;/td&gt;&lt;td&gt;Supporting information value&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Diagnosis[x]&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://hl7.org/fhir/sid/icd-10 I}\&quot;&gt;DIAG-1a&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-type principal}\&quot;&gt;principal&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ClaimResponse&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Coverage-CoverageExample.html\&quot;&gt;Coverage: status = active&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;ClaimResponse-ClaimResponseExample.html\&quot;&gt;ClaimResponse: status = active; type = Professional; use = claim; created = 2020-06-15; outcome = complete&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Accidents&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;2023-01-20&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ActIncidentCode MVA}\&quot;&gt;MVA&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1234 Elm Street, Somewhere, ST 12345&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.org/fhir/item-codes exam}\&quot;&gt;exam&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviced&lt;/b&gt;: 2023-01-21&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Nets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;udi&lt;/b&gt;: &lt;a href=\&quot;Device-DeviceExample.html\&quot;&gt;Device: status = active&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;bodySite&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.org/fhir/bodysites forehead}\&quot;&gt;forehead&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subSite&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.org/fhir/subsites left}\&quot;&gt;left&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.org/fhir/item-detail-codes service}\&quot;&gt;service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Nets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;udi&lt;/b&gt;: &lt;a href=\&quot;Device-DeviceExample.html\&quot;&gt;Device: status = active&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;subDetail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://example.org/fhir/billings Billing}\&quot;&gt;Billing&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 1&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Nets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;udi&lt;/b&gt;: &lt;a href=\&quot;Device-DeviceExample.html\&quot;&gt;Device: status = active&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;Totals&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;175&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://example.org/fhir/claims",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "123456"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/claim-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "institutional"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.subType">subType</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/claim-subtypes",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "emergency"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.use">use</a>" : "claim",
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.patient">patient</a>" : {
+    <a href="Patient-SHAPatientExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/SHAPatientExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.billablePeriod">billablePeriod</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2023-01-01",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2023-01-31"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.created">created</a>" : "2023-02-01",
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurer">insurer</a>" : {
+    <a href="Organization-SHAOrganizationExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/SHAOrganizationExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.provider">provider</a>" : {
+    <a href="Practitioner-PractitionerExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/PractitionerExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.priority">priority</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/processpriority",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "normal"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.related">related</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.related.claim">claim</a>" : {
+        <a href="Claim-ClaimExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Claim/ClaimExample"
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.related.relationship">relationship</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/ex-claimrelationship",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "associated"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.prescription">prescription</a>" : {
+    <a href="MedicationRequest-MedicationRequestExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "MedicationRequest/MedicationRequestExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.originalPrescription">originalPrescription</a>" : {
+    <a href="MedicationRequest-MedicationRequestExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "MedicationRequest/MedicationRequestExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.payee">payee</a>" : {
+    "<a href="http://hl7.org/fhir/R4/claim.html#Claim.payee.type">type</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/payeetype",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "provider"
+        }
+      ]
+    }
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.referral">referral</a>" : {
+    <a href="ServiceRequest-ServiceRequestExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/ServiceRequestExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.facility">facility</a>" : {
+    <a href="Location-LocationExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/LocationExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.careTeam">careTeam</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.careTeam.sequence">sequence</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.careTeam.provider">provider</a>" : {
+        <a href="Practitioner-PractitionerExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/PractitionerExample"
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.careTeam.role">role</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "primary"
+          }
+        ]
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo">supportingInfo</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.sequence">sequence</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.category">category</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "info"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.code">code</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/supporting-info",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "additional-info"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.timing[x]">timingDate</a>" : "2023-01-15",
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.supportingInfo.value[x]">valueString</a>" : "Supporting information value"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis">diagnosis</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis.sequence">sequence</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis.diagnosis[x]">diagnosisCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/sid/icd-10",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "I",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Certain infectious and parasitic diseases"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "DIAG-1a"
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.diagnosis.type">type</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/diagnosis-type",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "principal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance">insurance</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.sequence">sequence</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.focal">focal</a>" : true,
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.coverage">coverage</a>" : {
+        <a href="Coverage-CoverageExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Coverage/CoverageExample"
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.claimResponse">claimResponse</a>" : {
+        <a href="ClaimResponse-ClaimResponseExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ClaimResponse/ClaimResponseExample"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.accident">accident</a>" : {
+    "<a href="http://hl7.org/fhir/R4/claim.html#Claim.accident.date">date</a>" : "2023-01-20",
+    "<a href="http://hl7.org/fhir/R4/claim.html#Claim.accident.type">type</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-ActIncidentCode",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MVA"
+        }
+      ]
+    },
+    "<a href="http://hl7.org/fhir/R4/claim.html#Claim.accident.location[x]">locationAddress</a>" : {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a>" : "1234 Elm Street, Somewhere, ST 12345"
+    }
+  },
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item">item</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.sequence">sequence</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.productOrService">productOrService</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/item-codes",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "exam"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.serviced[x]">servicedDate</a>" : "2023-01-21",
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.quantity">quantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 1
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.unitPrice">unitPrice</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 100
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.net">net</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 100
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.udi">udi</a>" : [
+        {
+          <a href="Device-DeviceExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Device/DeviceExample"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.bodySite">bodySite</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/bodysites",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "forehead"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.subSite">subSite</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/subsites",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "left"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail">detail</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.sequence">sequence</a>" : 1,
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.productOrService">productOrService</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/item-detail-codes",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "service"
+              }
+            ]
+          },
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.quantity">quantity</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 1
+          },
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.unitPrice">unitPrice</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 50
+          },
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.net">net</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 50
+          },
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.udi">udi</a>" : [
+            {
+              <a href="Device-DeviceExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Device/DeviceExample"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail">subDetail</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail.sequence">sequence</a>" : 1,
+              "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail.productOrService">productOrService</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://example.org/fhir/billings",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Billing"
+                  }
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail.quantity">quantity</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity#Quantity.value">value</a>" : 1
+              },
+              "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail.unitPrice">unitPrice</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 25
+              },
+              "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail.net">net</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 25
+              },
+              "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.detail.subDetail.udi">udi</a>" : [
+                {
+                  <a href="Device-DeviceExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Device/DeviceExample"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/claim.html#Claim.total">total</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 175
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">intellisoftkenya</a>.  Package fhir.kenyaClaimsIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 23, 2024 12:29+0300">2024-08-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

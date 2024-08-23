@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.IDENTIFIERTYPES",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.IDENTIFIERTYPES</b></p><a name=\"KNHTS.IDENTIFIERTYPES\"> </a><a name=\"hcKNHTS.IDENTIFIERTYPES\"> </a><a name=\"KNHTS.IDENTIFIERTYPES-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">upi<a name=\"KNHTS.IDENTIFIERTYPES-upi\"> </a></td><td>UPI</td><td>UPI</td></tr><tr><td style=\"white-space:nowrap\">nationalId<a name=\"KNHTS.IDENTIFIERTYPES-nationalId\"> </a></td><td>National ID</td><td>National ID</td></tr><tr><td style=\"white-space:nowrap\">passport<a name=\"KNHTS.IDENTIFIERTYPES-passport\"> </a></td><td>Passport No.</td><td>Passport No.</td></tr><tr><td style=\"white-space:nowrap\">birthCertficate<a name=\"KNHTS.IDENTIFIERTYPES-birthCertficate\"> </a></td><td>Birth Certificate No.</td><td>Birth Certificate No.</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+  "version" : "0.1.0",
+  "name" : "PAT_IDENTIFIERTYPES",
+  "title" : "CodeSystem for patient's identifier Types",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for patient's identifier Types",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "upi",
+    "display" : "UPI",
+    "definition" : "UPI"
+  },
+  {
+    "code" : "nationalId",
+    "display" : "National ID",
+    "definition" : "National ID"
+  },
+  {
+    "code" : "passport",
+    "display" : "Passport No.",
+    "definition" : "Passport No."
+  },
+  {
+    "code" : "birthCertficate",
+    "display" : "Birth Certificate No.",
+    "definition" : "Birth Certificate No."
+  }]
+}

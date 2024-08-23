@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ClaimResponse",
+  "id" : "ClaimResponseExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ClaimResponse ClaimResponseExample</b></p><a name=\"ClaimResponseExample\"> </a><a name=\"hcClaimResponseExample\"> </a><a name=\"ClaimResponseExample-en-US\"> </a><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}\">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Patient-SHAPatientExample.html\">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>created</b>: 2020-06-15</p><p><b>insurer</b>: <a href=\"Organization-SHAOrganizationExample.html\">Organization Kenyatta National Hospital</a></p><p><b>outcome</b>: Processing Complete</p></div>"
+  },
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/claim-type",
+      "code" : "professional",
+      "display" : "Professional"
+    }],
+    "text" : "Professional"
+  },
+  "use" : "claim",
+  "patient" : {
+    "reference" : "Patient/SHAPatientExample"
+  },
+  "created" : "2020-06-15",
+  "insurer" : {
+    "reference" : "Organization/SHAOrganizationExample"
+  },
+  "outcome" : "complete"
+}

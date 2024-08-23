@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KHTS.A"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KHTS.A</b></p><a name="KHTS.A"> </a><a name="hcKHTS.A"> </a><a name="KHTS.A-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">mombasa<a name="KHTS.A-mombasa"> </a></td><td>Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td style="white-space:nowrap">kilifi<a name="KHTS.A-kilifi"> </a></td><td>Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td style="white-space:nowrap">tanaRiver<a name="KHTS.A-tanaRiver"> </a></td><td>Tana River	Hola</td><td>County of Residence, Tana River	Hola</td></tr><tr><td style="white-space:nowrap">lamu<a name="KHTS.A-lamu"> </a></td><td>Lamu</td><td>County of Residence, Lamu</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A"/>
+  <version value="0.1.0"/>
+  <name value="KHTS_A"/>
+  <title value="KHTS.A CodeSystem for Counties in Kenya"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for KHTS.A Counties in Kenya"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="mombasa"/>
+    <display value="Mombasa"/>
+    <definition value="County of Residence, Mombasa"/>
+  </concept>
+  <concept>
+    <code value="kilifi"/>
+    <display value="Kilifi"/>
+    <definition value="County of Residence, Kilifi"/>
+  </concept>
+  <concept>
+    <code value="tanaRiver"/>
+    <display value="Tana River&#x9;Hola"/>
+    <definition value="County of Residence, Tana River&#x9;Hola"/>
+  </concept>
+  <concept>
+    <code value="lamu"/>
+    <display value="Lamu"/>
+    <definition value="County of Residence, Lamu"/>
+  </concept>
+</CodeSystem>

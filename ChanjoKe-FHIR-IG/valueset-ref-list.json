@@ -1,0 +1,829 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adjudication",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdjudicationValueCodes",
+      "title" : "Adjudication Value Codes",
+      "description" : "This value set includes a smattering of Adjudication Value codes which includes codes to indicate the amounts eligible under the plan, the amount of benefit, copays etc.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/adjudication"],
+      "oids" : ["2.16.840.1.113883.4.642.3.596"],
+      "sources" : ["2.16.840.1.113883.4.642.3.596"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/adjudication-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdjudicationReasonCodes",
+      "title" : "Adjudication Reason Codes",
+      "description" : "This value set includes smattering of Adjudication Reason codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/adjudication-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.598"],
+      "sources" : ["2.16.840.1.113883.4.642.3.598"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-Problem-List-ke-Profile.html" : "Condition_Problem_List_ke_Profile",
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile",
+      "StructureDefinition-Condition-Diagnosis-ke-Profile.html" : "ConditionDiagnosis",
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-subtype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleClaimSubTypeCodes",
+      "title" : "Example Claim SubType Codes",
+      "description" : "This value set includes sample Claim SubType codes which are used to distinguish the claim types for example within type institutional there may be subtypes for emergency services, bed stay and transportation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-claimsubtype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.566"],
+      "sources" : ["2.16.840.1.113883.4.642.3.566"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ClaimTypeCodes",
+      "title" : "Claim Type Codes",
+      "description" : "This value set includes Claim Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/claim-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.558"],
+      "sources" : ["2.16.840.1.113883.4.642.3.558"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-ke-Profile.html" : "Composition_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-Problem-List-ke-Profile.html" : "Condition_Problem_List_ke_Profile",
+      "StructureDefinition-Condition-Diagnosis-ke-Profile.html" : "ConditionDiagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-Problem-List-ke-Profile.html" : "Condition_Problem_List_ke_Profile",
+      "StructureDefinition-Condition-Diagnosis-ke-Profile.html" : "ConditionDiagnosis",
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-Condition-Problem-List-ke-Profile.html" : "Condition_Problem_List_ke_Profile",
+      "StructureDefinition-Condition-Diagnosis-ke-Profile.html" : "ConditionDiagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-typecodes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDocumentTypeCodes",
+      "title" : "FHIR Document Type Codes",
+      "description" : "FHIR Document Codes - all LOINC codes where scale type = 'DOC'.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.240"],
+      "sources" : ["2.16.840.1.113883.4.642.3.240"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-ke-Profile.html" : "Composition_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-ke-Profile.html" : "Composition_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-ke-Profile.html" : "Encounter_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-ke-Profile.html" : "Encounter_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-ke-Profile.html" : "Encounter_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/fm-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FinancialResourceStatusCodes",
+      "title" : "Financial Resource Status Codes",
+      "description" : "This value set includes Status codes.",
+      "systems" : ["http://hl7.org/fhir/fm-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.592"],
+      "sources" : ["2.16.840.1.113883.4.642.3.592"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-Medication-ke-Profile.html" : "Medication_ke_Profile",
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/note-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "NoteType",
+      "title" : "NoteType",
+      "description" : "The presentation types of notes.",
+      "systems" : ["http://hl7.org/fhir/note-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.15"],
+      "sources" : ["2.16.840.1.113883.4.642.3.15"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/payeetype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Claim Payee Type Codes",
+      "title" : "PayeeType",
+      "description" : "This value set includes sample Payee Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/payeetype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.31"],
+      "sources" : ["2.16.840.1.113883.4.642.3.31"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-Observation-ke-Profile.html" : "Observation_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/remittance-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ClaimProcessingCodes",
+      "title" : "Claim Processing Codes",
+      "description" : "This value set includes Claim Processing Outcome codes.",
+      "systems" : ["http://hl7.org/fhir/remittance-outcome"],
+      "oids" : ["2.16.840.1.113883.4.642.3.13"],
+      "sources" : ["2.16.840.1.113883.4.642.3.13"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimResponse-ke.html" : "ClaimResponse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile",
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequest-ke-Profile.html" : "ServiceRequest_ke_Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-Composition-ke-Profile.html" : "Composition_ke_Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-ke-Profile.html" : "Encounter_ke_Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter-ke-Profile.html" : "Encounter_ke_Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationRequest-ke-Profile.html" : "MedicationRequestProfile"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CITIZENSHIPVS",
+      "title" : "Patient's Citizenship ValueSet",
+      "description" : "Patient's Citizenship ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-citizenship.html" : "Citizenship"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTSCLMRSPVS",
+      "title" : "Claims Response status",
+      "description" : "Claims Response status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTSCLMVS",
+      "title" : "Claims status",
+      "description" : "Claims status",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS"]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_CODESYSTEMS",
+      "title" : "Code Systems ValueSet",
+      "description" : "Code Systems ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CURRENCYVS",
+      "title" : "Currency ValueSet",
+      "description" : "Currency ValueSet",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY"],
+      "uses" : {
+      },
+      "StructureDefinition-gross-income-currency.html" : "Gross Income Currency"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "EMPLOYMENTTYPE",
+      "title" : "Patient Employment Type",
+      "description" : "Patient Employment Type",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-employment-type.html" : "Patient Employment Type"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYAPPROVALSTATUS",
+      "title" : "Code Systems Facility Approval Status",
+      "description" : "Code Systems Facility Approval Status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-approved.html" : "Approved"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYCATEGORY",
+      "title" : "Code Systems Facility Category",
+      "description" : "Code Systems Facility Category",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-facility-type-category.html" : "Facility Type Category"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYCATEGORY",
+      "title" : "Code Systems Facility Level",
+      "description" : "Code Systems Facility Level",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-facility-level.html" : "Facility Level"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IDENTIFIERUSE",
+      "title" : "Patient identifier usage valueSet",
+      "description" : "Patient identifier usage valueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KHTS1VS",
+      "title" : "Counties in Kenya",
+      "description" : "Counties in Kenya",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A"],
+      "uses" : {
+      },
+      "StructureDefinition-ward.html" : "Extension for Patient's Ward",
+      "StructureDefinition-kenya-counties-extension.html" : "Extension for Kenya counties",
+      "StructureDefinition-county.html" : "Extension for Patient's County",
+      "StructureDefinition-sub-county.html" : "Extension for Patient's Sub-County"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LICENSECURRENTRENEWALDURATION",
+      "title" : "Practitioner's License Current Renewal Duration",
+      "description" : "Practitioner's License Current Renewal Duration",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-license-renewal-duration.html" : "License Renewal Duration"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MARITALSTATUSVS",
+      "title" : "Patient's Marital (Civil) Status",
+      "description" : "Patient's Marital (Civil) Status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-practitioner-marital-status.html" : "Practitioner Marital Status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_CONTACTRELATIONSHIP",
+      "title" : "Patient Contact Relationship ValueSet",
+      "description" : "Patient Contact Relationship ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SHAPatient.html" : "SHAPatient"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_IDENTIFIERTYPES",
+      "title" : "Patient Identifier Types ValueSet",
+      "description" : "Patient Identifier Types ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SHAPatient.html" : "SHAPatient"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRACTQUALIFICATIONTYPE",
+      "title" : "Practitioner's Operational Status",
+      "description" : "Practitioner's Operational Status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-operational-status.html" : "Operational Status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRACTQUALIFICATIONTYPE",
+      "title" : "Practitioner's Qualifification Type",
+      "description" : "Practitioner's Qualifification Type",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-qualification-type.html" : "Qualification type"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRIMARYCARENETWORKS",
+      "title" : "Primary Care Networks",
+      "description" : "Primary Care Networks",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS"],
+      "uses" : {
+      },
+      "StructureDefinition-preferred-primary-care-network.html" : "PatientPreferredPrimaryCareNetwork"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_TITLE",
+      "title" : "Salutation",
+      "description" : "Salutation",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerProfile.html" : "PractitionerProfile",
+      "StructureDefinition-SHAPatient.html" : "SHAPatient"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientEmployment",
+      "title" : "Patient's employment Options",
+      "description" : "ValueSet for Patient's employment",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment"
+      ]
+    }
+  ]
+}

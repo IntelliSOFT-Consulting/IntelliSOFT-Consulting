@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.PAT.TITLE",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.PAT.TITLE</b></p><a name=\"KNHTS.PAT.TITLE\"> </a><a name=\"hcKNHTS.PAT.TITLE\"> </a><a name=\"KNHTS.PAT.TITLE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mr<a name=\"KNHTS.PAT.TITLE-mr\"> </a></td><td>Mr</td><td>Mr</td></tr><tr><td style=\"white-space:nowrap\">mrs<a name=\"KNHTS.PAT.TITLE-mrs\"> </a></td><td>Mrs</td><td>Mrs</td></tr><tr><td style=\"white-space:nowrap\">miss<a name=\"KNHTS.PAT.TITLE-miss\"> </a></td><td>Miss</td><td>Miss</td></tr><tr><td style=\"white-space:nowrap\">ms<a name=\"KNHTS.PAT.TITLE-ms\"> </a></td><td>Ms</td><td>Ms</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+  "version" : "0.1.0",
+  "name" : "PT_TITLE",
+  "title" : "CodeSystem for patient's title",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for patient's title",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "mr",
+    "display" : "Mr",
+    "definition" : "Mr"
+  },
+  {
+    "code" : "mrs",
+    "display" : "Mrs",
+    "definition" : "Mrs"
+  },
+  {
+    "code" : "miss",
+    "display" : "Miss",
+    "definition" : "Miss"
+  },
+  {
+    "code" : "ms",
+    "display" : "Ms",
+    "definition" : "Ms"
+  }]
+}

@@ -1,0 +1,204 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KHTS_A",
+      "title" : "KHTS.A CodeSystem for Counties in Kenya",
+      "description" : "CodeSystem for KHTS.A Counties in Kenya"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PATIENT_CITIZENSHIP",
+      "title" : "CodeSystem for Patient's Citizenship",
+      "description" : "CodeSystem for Patient's Citizenship"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS_ACCOMODATIONTYPES",
+      "title" : "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type",
+      "description" : "CodeSystem for KNHTS Claim Accomodation Types"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSDISP",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS_DISPOSITION",
+      "title" : "KNHTS.CLMSDISP CodeSystem for claim disposition",
+      "description" : "CodeSystem for KNHTS Claim Disposition"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS_RSP",
+      "title" : "KNHTS.CLMSRSP CodeSystem for claim response status",
+      "description" : "CodeSystem for KNHTS Claim status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSSBTYPS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS_SBTYPS",
+      "title" : "KNHTS.CLMSTPS CodeSystem for claim Sub-types",
+      "description" : "CodeSystem for KNHTS Claim Sub-types"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS",
+      "title" : "KNHTS.CLMS CodeSystem for claim status",
+      "description" : "CodeSystem for KNHTS Claim status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS_TYPS",
+      "title" : "KNHTS.CLMSTPS CodeSystem for claim types",
+      "description" : "CodeSystem for KNHTS Claim types"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTS_CLMS_ZONES",
+      "title" : "KNHTS.CLMSZONE CodeSystem for claim Zones",
+      "description" : "CodeSystem for KNHTS Claim Zones"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PAT_CODESYSTEMS",
+      "title" : "CodeSystem for Code systems",
+      "description" : "CodeSystem for Code systems"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_CONTACTRELATIONSHIP",
+      "title" : "CodeSystem for Contact Relationship",
+      "description" : "CodeSystem for Contact Relationship"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CURRENCY",
+      "title" : "CodeSystem for currency",
+      "description" : "CodeSystem for currency"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CURRENTRENEWALTYPE",
+      "title" : "CodeSystem for Practitioner's License Current Renewal type",
+      "description" : "CodeSystem for Practitioner's License Current Renewal type"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "EMPLOYMENTTYPE",
+      "title" : "CodeSystem for Employment Type",
+      "description" : "CodeSystem for Employment Type"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYAPPROVALSTATUS",
+      "title" : "CodeSystem for Facility Approval Status",
+      "description" : "CodeSystem for Facility Approval Status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYCATEGORY",
+      "title" : "CodeSystem for Facility Category",
+      "description" : "CodeSystem for Facility Category/Facility Owner Type"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYLEVEL",
+      "title" : "CodeSystem for Facility level",
+      "description" : "CodeSystem for Facility level"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PAT_IDENTIFIERTYPES",
+      "title" : "CodeSystem for patient's identifier Types",
+      "description" : "CodeSystem for patient's identifier Types"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IDENTIFIERUSE",
+      "title" : "CodeSystem for identifier use",
+      "description" : "CodeSystem for  identifier use"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MARITAL_STATUS",
+      "title" : "CodeSystem for Patient's Marital (Civil) Status",
+      "description" : "CodeSystem for Patient's Marital (Civil) Status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OPERATIONALSTATUS",
+      "title" : "CodeSystem for Practitioner's Operational Status",
+      "description" : "CodeSystem for Practitioner's Operational Status"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_TITLE",
+      "title" : "CodeSystem for patient's title",
+      "description" : "CodeSystem for patient's title"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRIMARYCARENETWORKS",
+      "title" : "CodeSystem for Primary Care Networks",
+      "description" : "CodeSystem for Primary Care Networks"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "QUALIFICATIONTYPE",
+      "title" : "CodeSystem for Practitioner's qualification type",
+      "description" : "CodeSystem for Practitioner's qualification type"
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Patient_Employment",
+      "title" : "Patient's Employment CodeSystem",
+      "description" : "CodeSystem for Patient's Employment"
+    }
+  ]
+}

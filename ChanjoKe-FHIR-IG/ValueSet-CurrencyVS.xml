@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CurrencyVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CurrencyVS</b></p><a name="CurrencyVS"> </a><a name="hcCurrencyVS"> </a><a name="CurrencyVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KNHTS.CURRENCY.html"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-kenyanShillings">kenyanShillings</a></td><td style="color: #cccccc">Kenyan Shilling (KES)</td><td>Kenyan Shilling (KES)</td></tr><tr><td><a href="CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-tanzanianShillings">tanzanianShillings</a></td><td style="color: #cccccc">Tanzanian Shilling (TZS)</td><td>Tanzanian Shilling (TZS)</td></tr><tr><td><a href="CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-ugandanShillings">ugandanShillings</a></td><td style="color: #cccccc">Ugandan Shilling (UGX)</td><td>Ugandan Shilling (UGX)</td></tr><tr><td><a href="CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-ethiopianBirr">ethiopianBirr</a></td><td style="color: #cccccc">Ethiopian Birr (ETB)</td><td>Ethiopian Birr (ETB)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS"/>
+  <version value="0.1.0"/>
+  <name value="CURRENCYVS"/>
+  <title value="Currency ValueSet"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Currency ValueSet"/>
+  <compose>
+    <include>
+      <system value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY"/>
+      <concept>
+        <code value="kenyanShillings"/>
+      </concept>
+      <concept>
+        <code value="tanzanianShillings"/>
+      </concept>
+      <concept>
+        <code value="ugandanShillings"/>
+      </concept>
+      <concept>
+        <code value="ethiopianBirr"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

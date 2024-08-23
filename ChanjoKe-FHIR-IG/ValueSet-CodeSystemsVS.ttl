@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CodeSystemsVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet CodeSystemsVS</b></p><a name=\"CodeSystemsVS\"> </a><a name=\"hcCodeSystemsVS\"> </a><a name=\"CodeSystemsVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KNHTS.CODESYSTEMS.html\"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-knhts\">knhts</a></td><td style=\"color: #cccccc\">http://knhts.health.go.ke</td><td>http://knhts.health.go.ke</td></tr><tr><td><a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-loinc\">loinc</a></td><td style=\"color: #cccccc\">http://loinc.org</td><td>http://loinc.org</td></tr><tr><td><a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-icd11\">icd11</a></td><td style=\"color: #cccccc\">https://icd.who.int/</td><td>https://icd.who.int</td></tr><tr><td><a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-clientRegistry\">clientRegistry</a></td><td style=\"color: #cccccc\">https:example.cr/</td><td>https:example.cr/</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PT_CODESYSTEMS"] ; # 
+  fhir:title [ fhir:v "Code Systems ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code Systems ValueSet"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "knhts" ]
+       ] [
+         fhir:code [ fhir:v "loinc" ]
+       ] [
+         fhir:code [ fhir:v "icd11" ]
+       ] [
+         fhir:code [ fhir:v "clientRegistry" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

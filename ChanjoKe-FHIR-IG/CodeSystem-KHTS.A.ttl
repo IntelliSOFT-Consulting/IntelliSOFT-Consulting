@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KHTS.A"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KHTS.A</b></p><a name=\"KHTS.A\"> </a><a name=\"hcKHTS.A\"> </a><a name=\"KHTS.A-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mombasa<a name=\"KHTS.A-mombasa\"> </a></td><td>Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td style=\"white-space:nowrap\">kilifi<a name=\"KHTS.A-kilifi\"> </a></td><td>Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td style=\"white-space:nowrap\">tanaRiver<a name=\"KHTS.A-tanaRiver\"> </a></td><td>Tana River	Hola</td><td>County of Residence, Tana River	Hola</td></tr><tr><td style=\"white-space:nowrap\">lamu<a name=\"KHTS.A-lamu\"> </a></td><td>Lamu</td><td>County of Residence, Lamu</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KHTS_A"] ; # 
+  fhir:title [ fhir:v "KHTS.A CodeSystem for Counties in Kenya"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for KHTS.A Counties in Kenya"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mombasa" ] ;
+     fhir:display [ fhir:v "Mombasa" ] ;
+     fhir:definition [ fhir:v "County of Residence, Mombasa" ]
+  ] [
+     fhir:code [ fhir:v "kilifi" ] ;
+     fhir:display [ fhir:v "Kilifi" ] ;
+     fhir:definition [ fhir:v "County of Residence, Kilifi" ]
+  ] [
+     fhir:code [ fhir:v "tanaRiver" ] ;
+     fhir:display [ fhir:v "Tana River	Hola" ] ;
+     fhir:definition [ fhir:v "County of Residence, Tana River	Hola" ]
+  ] [
+     fhir:code [ fhir:v "lamu" ] ;
+     fhir:display [ fhir:v "Lamu" ] ;
+     fhir:definition [ fhir:v "County of Residence, Lamu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

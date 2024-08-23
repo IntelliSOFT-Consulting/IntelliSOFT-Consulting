@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.CONTACTRELATIONSHIP"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.CONTACTRELATIONSHIP</b></p><a name=\"KNHTS.CONTACTRELATIONSHIP\"> </a><a name=\"hcKNHTS.CONTACTRELATIONSHIP\"> </a><a name=\"KNHTS.CONTACTRELATIONSHIP-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">guardian<a name=\"KNHTS.CONTACTRELATIONSHIP-guardian\"> </a></td><td>guardian</td></tr><tr><td style=\"white-space:nowrap\">caregiver<a name=\"KNHTS.CONTACTRELATIONSHIP-caregiver\"> </a></td><td>caregiver</td></tr><tr><td style=\"white-space:nowrap\">parent<a name=\"KNHTS.CONTACTRELATIONSHIP-parent\"> </a></td><td>parent</td></tr><tr><td style=\"white-space:nowrap\">sibling<a name=\"KNHTS.CONTACTRELATIONSHIP-sibling\"> </a></td><td>sibling</td></tr><tr><td style=\"white-space:nowrap\">child<a name=\"KNHTS.CONTACTRELATIONSHIP-child\"> </a></td><td>child</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PT_CONTACTRELATIONSHIP"] ; # 
+  fhir:title [ fhir:v "CodeSystem for Contact Relationship"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Contact Relationship"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "guardian" ] ;
+     fhir:display [ fhir:v "guardian" ] ;
+     fhir:definition [ fhir:v "guardian" ]
+  ] [
+     fhir:code [ fhir:v "caregiver" ] ;
+     fhir:display [ fhir:v "caregiver" ] ;
+     fhir:definition [ fhir:v "caregiver" ]
+  ] [
+     fhir:code [ fhir:v "parent" ] ;
+     fhir:display [ fhir:v "parent" ] ;
+     fhir:definition [ fhir:v "parent" ]
+  ] [
+     fhir:code [ fhir:v "sibling" ] ;
+     fhir:display [ fhir:v "sibling" ] ;
+     fhir:definition [ fhir:v "sibling" ]
+  ] [
+     fhir:code [ fhir:v "child" ] ;
+     fhir:display [ fhir:v "child" ] ;
+     fhir:definition [ fhir:v "child" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

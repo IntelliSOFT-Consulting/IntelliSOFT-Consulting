@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PractitionerOperationalStatusVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PractitionerOperationalStatusVS</b></p><a name=\"PractitionerOperationalStatusVS\"> </a><a name=\"hcPractitionerOperationalStatusVS\"> </a><a name=\"PractitionerOperationalStatusVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html\"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html#KNHTS.OPERATIONALSTATUS-active\">active</a></td><td style=\"color: #cccccc\">Active</td><td>Active</td></tr><tr><td><a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html#KNHTS.OPERATIONALSTATUS-suspended\">suspended</a></td><td style=\"color: #cccccc\">Suspended</td><td>Suspended</td></tr><tr><td><a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html#KNHTS.OPERATIONALSTATUS-revoked\">revoked</a></td><td style=\"color: #cccccc\">Revoked</td><td>Revoked</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PRACTQUALIFICATIONTYPE"] ; # 
+  fhir:title [ fhir:v "Practitioner's Operational Status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Practitioner's Operational Status"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "suspended" ]
+       ] [
+         fhir:code [ fhir:v "revoked" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

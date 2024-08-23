@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Composition",
+  "id" : "CompositionExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionExample</b></p><a name=\"CompositionExample\"> </a><a name=\"hcCompositionExample\"> </a><a name=\"CompositionExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11485-0}\">Anesthesia records</span></p><p><b>date</b>: 2020-01-01</p><p><b>author</b>: <a href=\"Practitioner-PractitionerExample.html\">Practitioner John Doe </a></p><p><b>title</b>: Anesthesia Record</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11485-0",
+      "display" : "Anesthesia records"
+    }],
+    "text" : "Anesthesia records"
+  },
+  "date" : "2020-01-01",
+  "author" : [{
+    "reference" : "Practitioner/PractitionerExample"
+  }],
+  "title" : "Anesthesia Record"
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PatientIdentifierTypesVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PatientIdentifierTypesVS</b></p><a name="PatientIdentifierTypesVS"> </a><a name="hcPatientIdentifierTypesVS"> </a><a name="PatientIdentifierTypesVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KNHTS.IDENTIFIERTYPES.html"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-upi">upi</a></td><td style="color: #cccccc">UPI</td><td>UPI</td></tr><tr><td><a href="CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-nationalId">nationalId</a></td><td style="color: #cccccc">National ID</td><td>National ID</td></tr><tr><td><a href="CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-passport">passport</a></td><td style="color: #cccccc">Passport No.</td><td>Passport No.</td></tr><tr><td><a href="CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-birthCertficate">birthCertficate</a></td><td style="color: #cccccc">Birth Certificate No.</td><td>Birth Certificate No.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS"/>
+  <version value="0.1.0"/>
+  <name value="PT_IDENTIFIERTYPES"/>
+  <title value="Patient Identifier Types ValueSet"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Patient Identifier Types ValueSet"/>
+  <compose>
+    <include>
+      <system value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES"/>
+      <concept>
+        <code value="upi"/>
+      </concept>
+      <concept>
+        <code value="nationalId"/>
+      </concept>
+      <concept>
+        <code value="passport"/>
+      </concept>
+      <concept>
+        <code value="birthCertficate"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

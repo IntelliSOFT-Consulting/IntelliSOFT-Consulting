@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.EMPLOYMENTTYPE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.EMPLOYMENTTYPE</b></p><a name=\"KNHTS.EMPLOYMENTTYPE\"> </a><a name=\"hcKNHTS.EMPLOYMENTTYPE\"> </a><a name=\"KNHTS.EMPLOYMENTTYPE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">employed<a name=\"KNHTS.EMPLOYMENTTYPE-employed\"> </a></td><td>Employed</td><td>Employed</td></tr><tr><td style=\"white-space:nowrap\">selfEmployed<a name=\"KNHTS.EMPLOYMENTTYPE-selfEmployed\"> </a></td><td>Self Employed</td><td>self Employed</td></tr><tr><td style=\"white-space:nowrap\">sponsored<a name=\"KNHTS.EMPLOYMENTTYPE-sponsored\"> </a></td><td>Sponsored</td><td>Sponsored</td></tr><tr><td style=\"white-space:nowrap\">organizingGroups<a name=\"KNHTS.EMPLOYMENTTYPE-organizingGroups\"> </a></td><td>Organizing Groups</td><td>Organizing Groups</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EMPLOYMENTTYPE"] ; # 
+  fhir:title [ fhir:v "CodeSystem for Employment Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Employment Type"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "employed" ] ;
+     fhir:display [ fhir:v "Employed" ] ;
+     fhir:definition [ fhir:v "Employed" ]
+  ] [
+     fhir:code [ fhir:v "selfEmployed" ] ;
+     fhir:display [ fhir:v "Self Employed" ] ;
+     fhir:definition [ fhir:v "self Employed" ]
+  ] [
+     fhir:code [ fhir:v "sponsored" ] ;
+     fhir:display [ fhir:v "Sponsored" ] ;
+     fhir:definition [ fhir:v "Sponsored" ]
+  ] [
+     fhir:code [ fhir:v "organizingGroups" ] ;
+     fhir:display [ fhir:v "Organizing Groups" ] ;
+     fhir:definition [ fhir:v "Organizing Groups" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

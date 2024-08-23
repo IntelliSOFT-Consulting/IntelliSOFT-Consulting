@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="CompositionExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition CompositionExample</b></p><a name="CompositionExample"> </a><a name="hcCompositionExample"> </a><a name="CompositionExample-en-US"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11485-0}">Anesthesia records</span></p><p><b>date</b>: 2020-01-01</p><p><b>author</b>: <a href="Practitioner-PractitionerExample.html">Practitioner John Doe </a></p><p><b>title</b>: Anesthesia Record</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11485-0"/>
+      <display value="Anesthesia records"/>
+    </coding>
+    <text value="Anesthesia records"/>
+  </type>
+  <date value="2020-01-01"/>
+  <author>
+    <reference value="Practitioner/PractitionerExample"/>
+  </author>
+  <title value="Anesthesia Record"/>
+</Composition>

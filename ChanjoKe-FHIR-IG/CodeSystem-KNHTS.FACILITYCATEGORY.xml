@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.FACILITYCATEGORY"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.FACILITYCATEGORY</b></p><a name="KNHTS.FACILITYCATEGORY"> </a><a name="hcKNHTS.FACILITYCATEGORY"> </a><a name="KNHTS.FACILITYCATEGORY-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">moh<a name="KNHTS.FACILITYCATEGORY-moh"> </a></td><td>MOH</td><td>MOH</td></tr><tr><td style="white-space:nowrap">private<a name="KNHTS.FACILITYCATEGORY-private"> </a></td><td>Private</td><td>Private</td></tr><tr><td style="white-space:nowrap">faithbased<a name="KNHTS.FACILITYCATEGORY-faithbased"> </a></td><td>Faith based</td><td>Faith based</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY"/>
+  <version value="0.1.0"/>
+  <name value="FACILITYCATEGORY"/>
+  <title value="CodeSystem for Facility Category"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Facility Category/Facility Owner Type"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="moh"/>
+    <display value="MOH"/>
+    <definition value="MOH"/>
+  </concept>
+  <concept>
+    <code value="private"/>
+    <display value="Private"/>
+    <definition value="Private"/>
+  </concept>
+  <concept>
+    <code value="faithbased"/>
+    <display value="Faith based"/>
+    <definition value="Faith based"/>
+  </concept>
+</CodeSystem>

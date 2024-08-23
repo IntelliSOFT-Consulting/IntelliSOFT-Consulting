@@ -1,0 +1,2527 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/ImplementationGuide/fhir.kenyaClaimsIG> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir.kenyaClaimsIG"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.kenyaClaimsIG</b></p><a name=\"fhir.kenyaClaimsIG\"> </a><a name=\"hcfhir.kenyaClaimsIG\"> </a><a name=\"fhir.kenyaClaimsIG-en-US\"> </a><h2>kenyaClaimsIG</h2><p>The official URL for this implementation guide is: </p><pre>https://shr.tiberbuapps.com/fhir/ImplementationGuide/fhir.kenyaClaimsIG</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/ImplementationGuide/fhir.kenyaClaimsIG"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "kenyaClaimsIG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "fhir.kenyaClaimsIG"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_us_core" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
+     fhir:version [ fhir:v "4.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2024+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://shr.tiberbuapps.com/fhir/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2024+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://shr.tiberbuapps.com/fhir/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-remand-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/admission-remand-number" ]
+       ] ;
+       fhir:name [ fhir:v "Admission Remand Number" ] ;
+       fhir:description [ fhir:v "Extension for Admission Remand Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-types> ;
+         fhir:reference [ fhir:v "StructureDefinition/admission-types" ]
+       ] ;
+       fhir:name [ fhir:v "Admission Types" ] ;
+       fhir:description [ fhir:v "Admission Types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/approved> ;
+         fhir:reference [ fhir:v "StructureDefinition/approved" ]
+       ] ;
+       fhir:name [ fhir:v "Approved" ] ;
+       fhir:description [ fhir:v "Approved" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-score> ;
+         fhir:reference [ fhir:v "StructureDefinition/biometrics-score" ]
+       ] ;
+       fhir:name [ fhir:v "Biometrics Score" ] ;
+       fhir:description [ fhir:v "Extension for Biometrics Score" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-verified> ;
+         fhir:reference [ fhir:v "StructureDefinition/biometrics-verified" ]
+       ] ;
+       fhir:name [ fhir:v "Biometrics Verified" ] ;
+       fhir:description [ fhir:v "Extension for Biometrics Verification" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/board-registration-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/board-registration-number" ]
+       ] ;
+       fhir:name [ fhir:v "Board Registration Number" ] ;
+       fhir:description [ fhir:v "Board Registration Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/citizenship> ;
+         fhir:reference [ fhir:v "StructureDefinition/citizenship" ]
+       ] ;
+       fhir:name [ fhir:v "Citizenship" ] ;
+       fhir:description [ fhir:v "Extension for Patient's Citizenships" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Claim" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Claim/ClaimExample> ;
+         fhir:reference [ fhir:v "Claim/ClaimExample" ]
+       ] ;
+       fhir:name [ fhir:v "ClaimExample" ] ;
+       fhir:description [ fhir:v "An example instance of the Claim profile." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimResponse-ke> ;
+         fhir:reference [ fhir:v "StructureDefinition/ClaimResponse-ke" ]
+       ] ;
+       fhir:name [ fhir:v "ClaimResponse" ] ;
+       fhir:description [ fhir:v "This resource provides the adjudication details from the processing of a Claim resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ClaimResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ClaimResponse/ClaimResponseExample> ;
+         fhir:reference [ fhir:v "ClaimResponse/ClaimResponseExample" ]
+       ] ;
+       fhir:name [ fhir:v "ClaimResponseExample" ] ;
+       fhir:description [ fhir:v "An example instance of the ClaimResponse." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ClaimResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ClaimResponse/ClaimResponseProfileExample> ;
+         fhir:reference [ fhir:v "ClaimResponse/ClaimResponseProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "ClaimResponseProfileExample" ] ;
+       fhir:description [ fhir:v "An example instance of the ClaimResponseProfile." ] ;
+       fhir:example [
+         fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimResponse-ke"^^xsd:anyURI ;
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimResponse-ke>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/ClaimProfile" ]
+       ] ;
+       fhir:name [ fhir:v "Claims" ] ;
+       fhir:description [ fhir:v "Standardise the format of electronic claims / pre-authorizations / pre-determinations." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS> ;
+         fhir:reference [ fhir:v "ValueSet/ClaimsResponseVS" ]
+       ] ;
+       fhir:name [ fhir:v "Claims Response status" ] ;
+       fhir:description [ fhir:v "Claims Response status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/ClaimsStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Claims status" ] ;
+       fhir:description [ fhir:v "Claims status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/FacilityApprovalStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Code Systems Facility Approval Status" ] ;
+       fhir:description [ fhir:v "Code Systems Facility Approval Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS> ;
+         fhir:reference [ fhir:v "ValueSet/FacilityCategoryVS" ]
+       ] ;
+       fhir:name [ fhir:v "Code Systems Facility Category" ] ;
+       fhir:description [ fhir:v "Code Systems Facility Category" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS> ;
+         fhir:reference [ fhir:v "ValueSet/FacilityLevelVS" ]
+       ] ;
+       fhir:name [ fhir:v "Code Systems Facility Level" ] ;
+       fhir:description [ fhir:v "Code Systems Facility Level" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS> ;
+         fhir:reference [ fhir:v "ValueSet/CodeSystemsVS" ]
+       ] ;
+       fhir:name [ fhir:v "Code Systems ValueSet" ] ;
+       fhir:description [ fhir:v "Code Systems ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CODESYSTEMS" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Code systems" ] ;
+       fhir:description [ fhir:v "CodeSystem for Code systems" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CONTACTRELATIONSHIP" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Contact Relationship" ] ;
+       fhir:description [ fhir:v "CodeSystem for Contact Relationship" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CURRENCY" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for currency" ] ;
+       fhir:description [ fhir:v "CodeSystem for currency" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.EMPLOYMENTTYPE" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Employment Type" ] ;
+       fhir:description [ fhir:v "CodeSystem for Employment Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.FACILITYAPPROVALSTATUS" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Facility Approval Status" ] ;
+       fhir:description [ fhir:v "CodeSystem for Facility Approval Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.FACILITYCATEGORY" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Facility Category" ] ;
+       fhir:description [ fhir:v "CodeSystem for Facility Category/Facility Owner Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.FACILITYLEVEL" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Facility level" ] ;
+       fhir:description [ fhir:v "CodeSystem for Facility level" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.IDENTIFIERUSE" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for identifier use" ] ;
+       fhir:description [ fhir:v "CodeSystem for  identifier use" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CIIZENSHIP" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Patient's Citizenship" ] ;
+       fhir:description [ fhir:v "CodeSystem for Patient's Citizenship" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.IDENTIFIERTYPES" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for patient's identifier Types" ] ;
+       fhir:description [ fhir:v "CodeSystem for patient's identifier Types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.MARITALSTATUS" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Patient's Marital (Civil) Status" ] ;
+       fhir:description [ fhir:v "CodeSystem for Patient's Marital (Civil) Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.PAT.TITLE" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for patient's title" ] ;
+       fhir:description [ fhir:v "CodeSystem for patient's title" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CURRENTRENEWALDURATION" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Practitioner's License Current Renewal type" ] ;
+       fhir:description [ fhir:v "CodeSystem for Practitioner's License Current Renewal type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.OPERATIONALSTATUS" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Practitioner's Operational Status" ] ;
+       fhir:description [ fhir:v "CodeSystem for Practitioner's Operational Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.QUALIFICATIONTYPE" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Practitioner's qualification type" ] ;
+       fhir:description [ fhir:v "CodeSystem for Practitioner's qualification type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.PCNS" ]
+       ] ;
+       fhir:name [ fhir:v "CodeSystem for Primary Care Networks" ] ;
+       fhir:description [ fhir:v "CodeSystem for Primary Care Networks" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CommunicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CommunicationRequest/CommunicationRequestExample> ;
+         fhir:reference [ fhir:v "CommunicationRequest/CommunicationRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "CommunicationRequestExample" ] ;
+       fhir:description [ fhir:v "An example instance of the CommunicationRequest." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Composition/CompositionExample> ;
+         fhir:reference [ fhir:v "Composition/CompositionExample" ]
+       ] ;
+       fhir:name [ fhir:v "CompositionExample" ] ;
+       fhir:description [ fhir:v "An example of the Composition resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/Composition-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/Composition-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "Composition_ke_Profile" ] ;
+       fhir:description [ fhir:v "A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/Condition-Diagnosis-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/Condition-Diagnosis-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionDiagnosis" ] ;
+       fhir:description [ fhir:v "A clinical diagnosis or clinical concept." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Condition/ConditionExample> ;
+         fhir:reference [ fhir:v "Condition/ConditionExample" ]
+       ] ;
+       fhir:name [ fhir:v "ConditionExample" ] ;
+       fhir:description [ fhir:v "An example instance of the Condition profile." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/Condition-Problem-List-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/Condition-Problem-List-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "Condition_Problem_List_ke_Profile" ] ;
+       fhir:description [ fhir:v "A clinical problem or other event, situation, issue, or clinical concept that has risen to a level of concern that differs from a diagnosis." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/constituency> ;
+         fhir:reference [ fhir:v "StructureDefinition/constituency" ]
+       ] ;
+       fhir:name [ fhir:v "constituency" ] ;
+       fhir:description [ fhir:v "Constituency" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS> ;
+         fhir:reference [ fhir:v "ValueSet/KenyaCountiesVS" ]
+       ] ;
+       fhir:name [ fhir:v "Counties in Kenya" ] ;
+       fhir:description [ fhir:v "Counties in Kenya" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Coverage" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Coverage/CoverageExample> ;
+         fhir:reference [ fhir:v "Coverage/CoverageExample" ]
+       ] ;
+       fhir:name [ fhir:v "CoverageExample" ] ;
+       fhir:description [ fhir:v "Coverage example instance." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS> ;
+         fhir:reference [ fhir:v "ValueSet/CurrencyVS" ]
+       ] ;
+       fhir:name [ fhir:v "Currency ValueSet" ] ;
+       fhir:description [ fhir:v "Currency ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-license-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-license-number" ]
+       ] ;
+       fhir:name [ fhir:v "Current License Number" ] ;
+       fhir:description [ fhir:v "Current License Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/deceased-datetime> ;
+         fhir:reference [ fhir:v "StructureDefinition/deceased-datetime" ]
+       ] ;
+       fhir:name [ fhir:v "Deceased Datetime" ] ;
+       fhir:description [ fhir:v "Extension for patient's death Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Device" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Device/DeviceExample> ;
+         fhir:reference [ fhir:v "Device/DeviceExample" ]
+       ] ;
+       fhir:name [ fhir:v "DeviceExample" ] ;
+       fhir:description [ fhir:v "An example instance of the Device resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/disability-category" ]
+       ] ;
+       fhir:name [ fhir:v "Disability Category" ] ;
+       fhir:description [ fhir:v "Extension for Disability Category" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-cause> ;
+         fhir:reference [ fhir:v "StructureDefinition/disability-cause" ]
+       ] ;
+       fhir:name [ fhir:v "Disability Cause" ] ;
+       fhir:description [ fhir:v "Extension for Disability Cause" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-subcategory> ;
+         fhir:reference [ fhir:v "StructureDefinition/disability-subcategory" ]
+       ] ;
+       fhir:name [ fhir:v "Disability Sub-Category" ] ;
+       fhir:description [ fhir:v "Extension for Disability Sub-Category" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/employer-name" ]
+       ] ;
+       fhir:name [ fhir:v "Employer Name" ] ;
+       fhir:description [ fhir:v "Extension for Employer Name" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-pin> ;
+         fhir:reference [ fhir:v "StructureDefinition/employer-pin" ]
+       ] ;
+       fhir:name [ fhir:v "Employer Pin" ] ;
+       fhir:description [ fhir:v "Extension for Employer Pin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Encounter/EncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/EncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "EncounterExample" ] ;
+       fhir:description [ fhir:v "An example of the Encounter resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/Encounter-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/Encounter-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter_ke_Profile" ] ;
+       fhir:description [ fhir:v "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/estimated-contribution> ;
+         fhir:reference [ fhir:v "StructureDefinition/estimated-contribution" ]
+       ] ;
+       fhir:name [ fhir:v "Estimated Contribution" ] ;
+       fhir:description [ fhir:v "Extension for Estimated Contribution" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Claim" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Claim/ClaimProfileExample> ;
+         fhir:reference [ fhir:v "Claim/ClaimProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Claim" ] ;
+       fhir:description [ fhir:v "An example claim instance for demonstration purposes." ] ;
+       fhir:example [
+         fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile"^^xsd:anyURI ;
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Organization/SHAOrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/SHAOrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Health Facility" ] ;
+       fhir:description [ fhir:v "An example instance of the Facility profile." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Practitioner/PractitionerExample> ;
+         fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Practitioner" ] ;
+       fhir:description [ fhir:v "An example of the Practitioner resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Patient/SHAPatientExample> ;
+         fhir:reference [ fhir:v "Patient/SHAPatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example SHA Patient" ] ;
+       fhir:description [ fhir:v "An example SHA patient instance based on the KenyaCorePatient profile." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Patient/SHAPatientExample2> ;
+         fhir:reference [ fhir:v "Patient/SHAPatientExample2" ]
+       ] ;
+       fhir:name [ fhir:v "Example SHA Patient" ] ;
+       fhir:description [ fhir:v "An example SHA patient instance based on the KenyaCorePatient profile." ] ;
+       fhir:example [
+         fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAPatient"^^xsd:anyURI ;
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAPatient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/authorization-offLine-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/authorization-offLine-date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for authorization OffLineDate  " ] ;
+       fhir:description [ fhir:v "Date when the offline check was done" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-identifier> ;
+         fhir:reference [ fhir:v "StructureDefinition/batch-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Batch Identifier " ] ;
+       fhir:description [ fhir:v "Extension for Batch Identifier" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/batch-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Batch Number" ] ;
+       fhir:description [ fhir:v "The number associated with a claim within a Batch." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-period> ;
+         fhir:reference [ fhir:v "StructureDefinition/batch-period" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Batch Period  " ] ;
+       fhir:description [ fhir:v "The date associated with the Batch.Batch Date" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-expiry-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/current-license-expiry-date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Current License Expiry Date" ] ;
+       fhir:description [ fhir:v "Extension for Current License Expiry Date" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/current-license-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Current License Number" ] ;
+       fhir:description [ fhir:v "Extension for Current License Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-renewal-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/current-license-renewal-date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Current License Renewal Date" ] ;
+       fhir:description [ fhir:v "Extension for Current License Renewal Date" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/current-license-type" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Current License Type" ] ;
+       fhir:description [ fhir:v "Extension for Current License Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/diagnosis-related-group> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnosis-related-group" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Diagnosis Related Group" ] ;
+       fhir:description [ fhir:v "create extension to hold the DRG - Codesystem (AR DRG) and Valueset Required" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-OffLine-Date> ;
+         fhir:reference [ fhir:v "StructureDefinition/eligibility-OffLine-Date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Eligibility OffLineDate " ] ;
+       fhir:description [ fhir:v "Date when the offline check was done" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-offLine> ;
+         fhir:reference [ fhir:v "StructureDefinition/eligibility-offLine" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for eligibilityOffLine " ] ;
+       fhir:description [ fhir:v "String will contain a reference value from the payer" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/episode> ;
+         fhir:reference [ fhir:v "StructureDefinition/episode" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Episode" ] ;
+       fhir:description [ fhir:v "The provider specific episode identifier." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-registration-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/facility-registration-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Facility Registration Number" ] ;
+       fhir:description [ fhir:v "Extension for Facility Registration Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/item-tax> ;
+         fhir:reference [ fhir:v "StructureDefinition/item-tax" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for ItemTax" ] ;
+       fhir:description [ fhir:v "The amount of Tax (VAT) levied on the line item." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/kenya-counties-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/kenya-counties-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Kenya counties" ] ;
+       fhir:description [ fhir:v "A code representing kenya counties" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/newborn> ;
+         fhir:reference [ fhir:v "StructureDefinition/newborn" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Newborn  " ] ;
+       fhir:description [ fhir:v "Flag to identify that this claim is for a newborn" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-board-registration-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/owner-board-registration-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Owner Board Registration Number " ] ;
+       fhir:description [ fhir:v "Extension for Owner Board Registration Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-current-license-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/owner-current-license-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Owner Current License Number " ] ;
+       fhir:description [ fhir:v "Extension for Owner Current License Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-id-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/owner-id-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Owner Id Number" ] ;
+       fhir:description [ fhir:v "Extension for Owner Id Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/package> ;
+         fhir:reference [ fhir:v "StructureDefinition/package" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Package" ] ;
+       fhir:description [ fhir:v "A package billing code or bundle code used to group products and services to a particular health condition." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-invoice> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-invoice" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient Invoice" ] ;
+       fhir:description [ fhir:v "The number of the patient invoice on which the service was billed." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-share> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-share" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient Share" ] ;
+       fhir:description [ fhir:v "Refer to the patient share amount" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/building-house-no> ;
+         fhir:reference [ fhir:v "StructureDefinition/building-house-no" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's building_house_no" ] ;
+       fhir:description [ fhir:v "Patient's building_house_no" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/county> ;
+         fhir:reference [ fhir:v "StructureDefinition/county" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's County" ] ;
+       fhir:description [ fhir:v "Patient's County" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/identification-residence> ;
+         fhir:reference [ fhir:v "StructureDefinition/identification-residence" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's identification residence" ] ;
+       fhir:description [ fhir:v "Patient's Identification Residence" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/latitude> ;
+         fhir:reference [ fhir:v "StructureDefinition/latitude" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's latitude" ] ;
+       fhir:description [ fhir:v "Patient's latitude" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/longitude> ;
+         fhir:reference [ fhir:v "StructureDefinition/longitude" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's longitude" ] ;
+       fhir:description [ fhir:v "Patient's longitude" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/province-state-country> ;
+         fhir:reference [ fhir:v "StructureDefinition/province-state-country" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's Province State Country" ] ;
+       fhir:description [ fhir:v "Patient's Province State Country" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/sub-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/sub-county" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's Sub-County" ] ;
+       fhir:description [ fhir:v "Patient's Patient's Sub-County" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/village-estate> ;
+         fhir:reference [ fhir:v "StructureDefinition/village-estate" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's Village Estate" ] ;
+       fhir:description [ fhir:v "Patient's Village Estate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/ward> ;
+         fhir:reference [ fhir:v "StructureDefinition/ward" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Patient's Ward" ] ;
+       fhir:description [ fhir:v "Patient's Patient's Ward" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/payer-share> ;
+         fhir:reference [ fhir:v "StructureDefinition/payer-share" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for PayerShare" ] ;
+       fhir:description [ fhir:v "Refer to the expected payer share amount (to be paid)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/place-of-birth> ;
+         fhir:reference [ fhir:v "StructureDefinition/place-of-birth" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Place of Birth" ] ;
+       fhir:description [ fhir:v "Place of Birth" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/tax> ;
+         fhir:reference [ fhir:v "StructureDefinition/tax" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Tax" ] ;
+       fhir:description [ fhir:v "The amount of Tax (VAT) levied on the line item." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/kra-pin> ;
+         fhir:reference [ fhir:v "StructureDefinition/kra-pin" ]
+       ] ;
+       fhir:name [ fhir:v "Extension Patient's KRA PIN" ] ;
+       fhir:description [ fhir:v "A code representing Patient's KRA PIN" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/facility-category" ]
+       ] ;
+       fhir:name [ fhir:v "Facility Category" ] ;
+       fhir:description [ fhir:v "Facility Category/Facility Owner Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-level> ;
+         fhir:reference [ fhir:v "StructureDefinition/facility-level" ]
+       ] ;
+       fhir:name [ fhir:v "Facility Level" ] ;
+       fhir:description [ fhir:v "Facility Level" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-owner> ;
+         fhir:reference [ fhir:v "StructureDefinition/facility-owner" ]
+       ] ;
+       fhir:name [ fhir:v "Facility Owner" ] ;
+       fhir:description [ fhir:v "Facility Owner" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-type-category> ;
+         fhir:reference [ fhir:v "StructureDefinition/facility-type-category" ]
+       ] ;
+       fhir:name [ fhir:v "Facility Type Category" ] ;
+       fhir:description [ fhir:v "Facility Type Category" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/fund> ;
+         fhir:reference [ fhir:v "StructureDefinition/fund" ]
+       ] ;
+       fhir:name [ fhir:v "Fund" ] ;
+       fhir:description [ fhir:v "Fund" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income> ;
+         fhir:reference [ fhir:v "StructureDefinition/gross-income" ]
+       ] ;
+       fhir:name [ fhir:v "Gross income" ] ;
+       fhir:description [ fhir:v "Extension for Gross income" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income-currency> ;
+         fhir:reference [ fhir:v "StructureDefinition/gross-income-currency" ]
+       ] ;
+       fhir:name [ fhir:v "Gross Income Currency" ] ;
+       fhir:description [ fhir:v "Extension for Gross income Currency" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/in-lawful-custody> ;
+         fhir:reference [ fhir:v "StructureDefinition/in-lawful-custody" ]
+       ] ;
+       fhir:name [ fhir:v "In Lawful Custody" ] ;
+       fhir:description [ fhir:v "Extension for In Lawful Custody" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/is-lawful-citizen> ;
+         fhir:reference [ fhir:v "StructureDefinition/is-lawful-citizen" ]
+       ] ;
+       fhir:name [ fhir:v "Is lawful Citizen" ] ;
+       fhir:description [ fhir:v "Extension for citizen lawful status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A> ;
+         fhir:reference [ fhir:v "CodeSystem/KHTS.A" ]
+       ] ;
+       fhir:name [ fhir:v "KHTS.A CodeSystem for Counties in Kenya" ] ;
+       fhir:description [ fhir:v "CodeSystem for KHTS.A Counties in Kenya" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSTS" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMS CodeSystem for claim status" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSACCOMODATIONTYPE" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim Accomodation Types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSDISP> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSDISP" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMSDISP CodeSystem for claim disposition" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim Disposition" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSRSPSTS" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMSRSP CodeSystem for claim response status" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSSBTYPS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSSBTYPS" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMSTPS CodeSystem for claim Sub-types" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim Sub-types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSTYPS" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMSTPS CodeSystem for claim types" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE> ;
+         fhir:reference [ fhir:v "CodeSystem/KNHTS.CLMSZONE" ]
+       ] ;
+       fhir:name [ fhir:v "KNHTS.CLMSZONE CodeSystem for claim Zones" ] ;
+       fhir:description [ fhir:v "CodeSystem for KNHTS Claim Zones" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/license-renewal-duration> ;
+         fhir:reference [ fhir:v "StructureDefinition/license-renewal-duration" ]
+       ] ;
+       fhir:name [ fhir:v "License Renewal Duration" ] ;
+       fhir:description [ fhir:v "License Renewal Duration" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Location/LocationExample> ;
+         fhir:reference [ fhir:v "Location/LocationExample" ]
+       ] ;
+       fhir:name [ fhir:v "LocationExample" ] ;
+       fhir:description [ fhir:v "An example instance of the Location profile." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/maximum-bed-allocation> ;
+         fhir:reference [ fhir:v "StructureDefinition/maximum-bed-allocation" ]
+       ] ;
+       fhir:name [ fhir:v "Maximum Bed Allocation" ] ;
+       fhir:description [ fhir:v "Maximum Bed Allocation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Medication/MedicationExample> ;
+         fhir:reference [ fhir:v "Medication/MedicationExample" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationExample" ] ;
+       fhir:description [ fhir:v "An example of the Medication resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/MedicationRequest/MedicationRequestExample> ;
+         fhir:reference [ fhir:v "MedicationRequest/MedicationRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequestExample" ] ;
+       fhir:description [ fhir:v "An example of the MedicationRequest resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/MedicationRequest-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequestProfile" ] ;
+       fhir:description [ fhir:v "An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called \"MedicationRequest\" rather than \"MedicationPrescription\" or \"MedicationOrder\" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/MedicationRequest/MedicationRequestProfileExample> ;
+         fhir:reference [ fhir:v "MedicationRequest/MedicationRequestProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationRequestProfileExample" ] ;
+       fhir:description [ fhir:v "An example of the MedicationRequestProfile resource." ] ;
+       fhir:example [
+         fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile"^^xsd:anyURI ;
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/Medication-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/Medication-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "Medication_ke_Profile" ] ;
+       fhir:description [ fhir:v "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-beds> ;
+         fhir:reference [ fhir:v "StructureDefinition/number-of-beds" ]
+       ] ;
+       fhir:name [ fhir:v "Number of Beds" ] ;
+       fhir:description [ fhir:v "Number of Beds" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-cots> ;
+         fhir:reference [ fhir:v "StructureDefinition/number-of-cots" ]
+       ] ;
+       fhir:name [ fhir:v "Number of Cots" ] ;
+       fhir:description [ fhir:v "Number of Cots" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/Observation/ObservationExample> ;
+         fhir:reference [ fhir:v "Observation/ObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "ObservationExample" ] ;
+       fhir:description [ fhir:v "An example of the Observation resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/Observation-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/Observation-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "Observation_ke_Profile" ] ;
+       fhir:description [ fhir:v "Measurements and simple assertions made about a patient, device or other subject." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/open-late-night> ;
+         fhir:reference [ fhir:v "StructureDefinition/open-late-night" ]
+       ] ;
+       fhir:name [ fhir:v "Open Late Night" ] ;
+       fhir:description [ fhir:v "Open Late Night" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/open-public-holiday> ;
+         fhir:reference [ fhir:v "StructureDefinition/open-public-holiday" ]
+       ] ;
+       fhir:name [ fhir:v "Open Public Holiday" ] ;
+       fhir:description [ fhir:v "Open Public Holiday" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/open-weekends> ;
+         fhir:reference [ fhir:v "StructureDefinition/open-weekends" ]
+       ] ;
+       fhir:name [ fhir:v "Open Weekends" ] ;
+       fhir:description [ fhir:v "Open Weekends" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/open-whole-day> ;
+         fhir:reference [ fhir:v "StructureDefinition/open-whole-day" ]
+       ] ;
+       fhir:name [ fhir:v "Open Whole Day" ] ;
+       fhir:description [ fhir:v "Open Whole Day" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/operational-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/operational-status" ]
+       ] ;
+       fhir:name [ fhir:v "Operational Status" ] ;
+       fhir:description [ fhir:v "Operational Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/parent-facility-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/parent-facility-code" ]
+       ] ;
+       fhir:name [ fhir:v "Parent Facility Code" ] ;
+       fhir:description [ fhir:v "Parent Facility Code" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS> ;
+         fhir:reference [ fhir:v "ValueSet/PatientContactRlshipVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Contact Relationship ValueSet" ] ;
+       fhir:description [ fhir:v "Patient Contact Relationship ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/employment-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/employment-type" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Employment Type" ] ;
+       fhir:description [ fhir:v "Extension for patient's employment type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS> ;
+         fhir:reference [ fhir:v "ValueSet/EmploymentTypeVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Employment Type" ] ;
+       fhir:description [ fhir:v "Patient Employment Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS> ;
+         fhir:reference [ fhir:v "ValueSet/PatientIdentifierTypesVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Identifier Types ValueSet" ] ;
+       fhir:description [ fhir:v "Patient Identifier Types ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs> ;
+         fhir:reference [ fhir:v "ValueSet/IdentifierUseVs" ]
+       ] ;
+       fhir:name [ fhir:v "Patient identifier usage valueSet" ] ;
+       fhir:description [ fhir:v "Patient identifier usage valueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-is-alive> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-is-alive" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Is Alive" ] ;
+       fhir:description [ fhir:v "Extension for patient's alive status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS> ;
+         fhir:reference [ fhir:v "ValueSet/CitizenshipVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Citizenship ValueSet" ] ;
+       fhir:description [ fhir:v "Patient's Citizenship ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment> ;
+         fhir:reference [ fhir:v "CodeSystem/Patient.Employment" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Employment CodeSystem" ] ;
+       fhir:description [ fhir:v "CodeSystem for Patient's Employment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs> ;
+         fhir:reference [ fhir:v "ValueSet/patientEmploymentVs" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's employment Options" ] ;
+       fhir:description [ fhir:v "ValueSet for Patient's employment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/MaritalStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Marital (Civil) Status" ] ;
+       fhir:description [ fhir:v "Patient's Marital (Civil) Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/preferred-primary-care-network> ;
+         fhir:reference [ fhir:v "StructureDefinition/preferred-primary-care-network" ]
+       ] ;
+       fhir:name [ fhir:v "PatientPreferredPrimaryCareNetwork" ] ;
+       fhir:description [ fhir:v "Extension for patient's preferred primary care network." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/pcn> ;
+         fhir:reference [ fhir:v "StructureDefinition/pcn" ]
+       ] ;
+       fhir:name [ fhir:v "PCN" ] ;
+       fhir:description [ fhir:v "PCN" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/person-with-disability> ;
+         fhir:reference [ fhir:v "StructureDefinition/person-with-disability" ]
+       ] ;
+       fhir:name [ fhir:v "Person Disability Status" ] ;
+       fhir:description [ fhir:v "Extension for person's disability status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/physical-address> ;
+         fhir:reference [ fhir:v "StructureDefinition/physical-address" ]
+       ] ;
+       fhir:name [ fhir:v "Physical Address" ] ;
+       fhir:description [ fhir:v "Physical Address" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-marital-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-marital-status" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Marital Status" ] ;
+       fhir:description [ fhir:v "Practitioner Marital Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/specialty> ;
+         fhir:reference [ fhir:v "StructureDefinition/specialty" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Specialty" ] ;
+       fhir:description [ fhir:v "Practitioner Specialty" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS> ;
+         fhir:reference [ fhir:v "ValueSet/LicenseRenewalDurationVS" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner's License Current Renewal Duration" ] ;
+       fhir:description [ fhir:v "Practitioner's License Current Renewal Duration" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/PractitionerOperationalStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner's Operational Status" ] ;
+       fhir:description [ fhir:v "Practitioner's Operational Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS> ;
+         fhir:reference [ fhir:v "ValueSet/PractitionerQualificationTypeVS" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner's Qualifification Type" ] ;
+       fhir:description [ fhir:v "Practitioner's Qualifification Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/PractitionerProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/PractitionerProfile" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerProfile" ] ;
+       fhir:description [ fhir:v "Profile for practitioner resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS> ;
+         fhir:reference [ fhir:v "ValueSet/PrimaryCareNetworkVS" ]
+       ] ;
+       fhir:name [ fhir:v "Primary Care Networks" ] ;
+       fhir:description [ fhir:v "Primary Care Networks" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/professional-cadre> ;
+         fhir:reference [ fhir:v "StructureDefinition/professional-cadre" ]
+       ] ;
+       fhir:name [ fhir:v "Professional Cadre" ] ;
+       fhir:description [ fhir:v "Professional Cadre" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification> ;
+         fhir:reference [ fhir:v "StructureDefinition/qualification" ]
+       ] ;
+       fhir:name [ fhir:v "Qualification" ] ;
+       fhir:description [ fhir:v "Qualification or Licence" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/qualification-type" ]
+       ] ;
+       fhir:name [ fhir:v "Qualification type" ] ;
+       fhir:description [ fhir:v "Qualification type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-institution> ;
+         fhir:reference [ fhir:v "StructureDefinition/qualification-institution" ]
+       ] ;
+       fhir:name [ fhir:v "Qulaification Institution" ] ;
+       fhir:description [ fhir:v "Qualification Institution/Registering Institution" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/regulatory-body> ;
+         fhir:reference [ fhir:v "StructureDefinition/regulatory-body" ]
+       ] ;
+       fhir:name [ fhir:v "Regulatory Body" ] ;
+       fhir:description [ fhir:v "Regulatory Body" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS> ;
+         fhir:reference [ fhir:v "ValueSet/SalutationVS" ]
+       ] ;
+       fhir:name [ fhir:v "Salutation" ] ;
+       fhir:description [ fhir:v "Salutation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/ServiceRequest/ServiceRequestExample> ;
+         fhir:reference [ fhir:v "ServiceRequest/ServiceRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "ServiceRequestExample" ] ;
+       fhir:description [ fhir:v "An example of the ServiceRequest resource." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/ServiceRequest-ke-Profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/ServiceRequest-ke-Profile" ]
+       ] ;
+       fhir:name [ fhir:v "ServiceRequest_ke_Profile" ] ;
+       fhir:description [ fhir:v "A record of a request for service such as diagnostic investigations, treatments, or operations to be performed." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/SHAOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "SHAOrganization" ] ;
+       fhir:description [ fhir:v "Profile for enrolling a SHA Patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/SHAPatient" ]
+       ] ;
+       fhir:name [ fhir:v "SHAPatient" ] ;
+       fhir:description [ fhir:v "Profile of SHA Patient resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

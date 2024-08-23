@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ClaimsResponseVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ClaimsResponseVS</b></p><a name="ClaimsResponseVS"> </a><a name="hcClaimsResponseVS"> </a><a name="ClaimsResponseVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KNHTS.CLMSRSPSTS.html"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS01">STS01</a></td><td style="color: #cccccc">NEW</td><td>New Claims response</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS02">STS02</a></td><td style="color: #cccccc">NOTIFIED</td><td>Identification done and payor notified</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS03">STS03</a></td><td style="color: #cccccc">PREAUTHORIZED</td><td>Pre-authorization done.*</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS04">STS04</a></td><td style="color: #cccccc">COMPLETE</td><td>Provider has checked that all requirements are met and the claim is ready for submission. Done at the end of a visit / after discharge.</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS05">STS05</a></td><td style="color: #cccccc">CANCELLED</td><td>Cancelled at provider, before submission.</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS06">STS06</a></td><td style="color: #cccccc">SUBMITTED</td><td>Submitted to payer.</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS07">STS07</a></td><td style="color: #cccccc">RECEIVED</td><td>Received at payer.</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS08">STS08</a></td><td style="color: #cccccc">APPROVED</td><td>Approved</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS09">STS09</a></td><td style="color: #cccccc">REJECTED</td><td>The payer has indicated that the claim will not be paid.</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS10">STS10</a></td><td style="color: #cccccc">PAID</td><td>The claim has been paid and the payee should expect to receive or have received  a remittance.</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS11">STS11</a></td><td style="color: #cccccc">EXPIRED</td><td>Expired</td></tr><tr><td><a href="CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS12">STS12</a></td><td style="color: #cccccc">QA</td><td>The claim is undergoing review.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS"/>
+  <version value="0.1.0"/>
+  <name value="KNHTSCLMRSPVS"/>
+  <title value="Claims Response status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Claims Response status"/>
+  <compose>
+    <include>
+      <system value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS"/>
+      <concept>
+        <code value="STS01"/>
+      </concept>
+      <concept>
+        <code value="STS02"/>
+      </concept>
+      <concept>
+        <code value="STS03"/>
+      </concept>
+      <concept>
+        <code value="STS04"/>
+      </concept>
+      <concept>
+        <code value="STS05"/>
+      </concept>
+      <concept>
+        <code value="STS06"/>
+      </concept>
+      <concept>
+        <code value="STS07"/>
+      </concept>
+      <concept>
+        <code value="STS08"/>
+      </concept>
+      <concept>
+        <code value="STS09"/>
+      </concept>
+      <concept>
+        <code value="STS10"/>
+      </concept>
+      <concept>
+        <code value="STS11"/>
+      </concept>
+      <concept>
+        <code value="STS12"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
