@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.CLMSACCOMODATIONTYPE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.CLMSACCOMODATIONTYPE</b></p><a name=\"KNHTS.CLMSACCOMODATIONTYPE\"> </a><a name=\"hcKNHTS.CLMSACCOMODATIONTYPE\"> </a><a name=\"KNHTS.CLMSACCOMODATIONTYPE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES01<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES01\"> </a></td><td>FEMALE_MEDICAL</td><td>Female Medical</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES02<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES02\"> </a></td><td>MALE_MEDICAL</td><td>Male Medical</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES03<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES03\"> </a></td><td>FEMALE_SURGICAL</td><td>Female Surgical</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES04<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES04\"> </a></td><td>MALE_SURGICAL</td><td>Male Surgical</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES05<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES05\"> </a></td><td>GYNAECOLOGY</td><td>Gynaecology</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES06<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES06\"> </a></td><td>MATERNITY</td><td>Maternity</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES07<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES07\"> </a></td><td>NBU</td><td>New Born Unit</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES08<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES08\"> </a></td><td>PSYCHIATRIC</td><td>Psychiatric Unit</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES09<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES09\"> </a></td><td>BURNS</td><td>Burns</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES10<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES10\"> </a></td><td>ICU</td><td>Intensive Care Unit</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES11<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES11\"> </a></td><td>HDU</td><td>High Dependency Unit</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES12<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES12\"> </a></td><td>NICU</td><td>Neonatal Intensive Care Unit</td></tr><tr><td style=\"white-space:nowrap\">CLMSACCTYPES13<a name=\"KNHTS.CLMSACCOMODATIONTYPE-CLMSACCTYPES13\"> </a></td><td>ISOLATION</td><td>Isolation</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KNHTS_CLMS_ACCOMODATIONTYPES"] ; # 
+  fhir:title [ fhir:v "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for KNHTS Claim Accomodation Types"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CLMSACCTYPES01" ] ;
+     fhir:display [ fhir:v "FEMALE_MEDICAL" ] ;
+     fhir:definition [ fhir:v "Female Medical" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES02" ] ;
+     fhir:display [ fhir:v "MALE_MEDICAL" ] ;
+     fhir:definition [ fhir:v "Male Medical" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES03" ] ;
+     fhir:display [ fhir:v "FEMALE_SURGICAL" ] ;
+     fhir:definition [ fhir:v "Female Surgical" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES04" ] ;
+     fhir:display [ fhir:v "MALE_SURGICAL" ] ;
+     fhir:definition [ fhir:v "Male Surgical" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES05" ] ;
+     fhir:display [ fhir:v "GYNAECOLOGY" ] ;
+     fhir:definition [ fhir:v "Gynaecology" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES06" ] ;
+     fhir:display [ fhir:v "MATERNITY" ] ;
+     fhir:definition [ fhir:v "Maternity" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES07" ] ;
+     fhir:display [ fhir:v "NBU" ] ;
+     fhir:definition [ fhir:v "New Born Unit" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES08" ] ;
+     fhir:display [ fhir:v "PSYCHIATRIC" ] ;
+     fhir:definition [ fhir:v "Psychiatric Unit" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES09" ] ;
+     fhir:display [ fhir:v "BURNS" ] ;
+     fhir:definition [ fhir:v "Burns" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES10" ] ;
+     fhir:display [ fhir:v "ICU" ] ;
+     fhir:definition [ fhir:v "Intensive Care Unit" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES11" ] ;
+     fhir:display [ fhir:v "HDU" ] ;
+     fhir:definition [ fhir:v "High Dependency Unit" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES12" ] ;
+     fhir:display [ fhir:v "NICU" ] ;
+     fhir:definition [ fhir:v "Neonatal Intensive Care Unit" ]
+  ] [
+     fhir:code [ fhir:v "CLMSACCTYPES13" ] ;
+     fhir:display [ fhir:v "ISOLATION" ] ;
+     fhir:definition [ fhir:v "Isolation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.CODESYSTEMS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.CODESYSTEMS</b></p><a name=\"KNHTS.CODESYSTEMS\"> </a><a name=\"hcKNHTS.CODESYSTEMS\"> </a><a name=\"KNHTS.CODESYSTEMS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">knhts<a name=\"KNHTS.CODESYSTEMS-knhts\"> </a></td><td>http://knhts.health.go.ke</td><td>http://knhts.health.go.ke</td></tr><tr><td style=\"white-space:nowrap\">loinc<a name=\"KNHTS.CODESYSTEMS-loinc\"> </a></td><td>http://loinc.org</td><td>http://loinc.org</td></tr><tr><td style=\"white-space:nowrap\">icd11<a name=\"KNHTS.CODESYSTEMS-icd11\"> </a></td><td>https://icd.who.int/</td><td>https://icd.who.int</td></tr><tr><td style=\"white-space:nowrap\">clientRegistry<a name=\"KNHTS.CODESYSTEMS-clientRegistry\"> </a></td><td>https:example.cr/</td><td>https:example.cr/</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+  "version" : "0.1.0",
+  "name" : "PAT_CODESYSTEMS",
+  "title" : "CodeSystem for Code systems",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for Code systems",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "knhts",
+    "display" : "http://knhts.health.go.ke",
+    "definition" : "http://knhts.health.go.ke"
+  },
+  {
+    "code" : "loinc",
+    "display" : "http://loinc.org",
+    "definition" : "http://loinc.org"
+  },
+  {
+    "code" : "icd11",
+    "display" : "https://icd.who.int/",
+    "definition" : "https://icd.who.int"
+  },
+  {
+    "code" : "clientRegistry",
+    "display" : "https:example.cr/",
+    "definition" : "https:example.cr/"
+  }]
+}

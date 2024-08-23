@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.CONTACTRELATIONSHIP"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.CONTACTRELATIONSHIP</b></p><a name="KNHTS.CONTACTRELATIONSHIP"> </a><a name="hcKNHTS.CONTACTRELATIONSHIP"> </a><a name="KNHTS.CONTACTRELATIONSHIP-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">guardian<a name="KNHTS.CONTACTRELATIONSHIP-guardian"> </a></td><td>guardian</td></tr><tr><td style="white-space:nowrap">caregiver<a name="KNHTS.CONTACTRELATIONSHIP-caregiver"> </a></td><td>caregiver</td></tr><tr><td style="white-space:nowrap">parent<a name="KNHTS.CONTACTRELATIONSHIP-parent"> </a></td><td>parent</td></tr><tr><td style="white-space:nowrap">sibling<a name="KNHTS.CONTACTRELATIONSHIP-sibling"> </a></td><td>sibling</td></tr><tr><td style="white-space:nowrap">child<a name="KNHTS.CONTACTRELATIONSHIP-child"> </a></td><td>child</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP"/>
+  <version value="0.1.0"/>
+  <name value="PT_CONTACTRELATIONSHIP"/>
+  <title value="CodeSystem for Contact Relationship"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Contact Relationship"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="guardian"/>
+    <display value="guardian"/>
+    <definition value="guardian"/>
+  </concept>
+  <concept>
+    <code value="caregiver"/>
+    <display value="caregiver"/>
+    <definition value="caregiver"/>
+  </concept>
+  <concept>
+    <code value="parent"/>
+    <display value="parent"/>
+    <definition value="parent"/>
+  </concept>
+  <concept>
+    <code value="sibling"/>
+    <display value="sibling"/>
+    <definition value="sibling"/>
+  </concept>
+  <concept>
+    <code value="child"/>
+    <display value="child"/>
+    <definition value="child"/>
+  </concept>
+</CodeSystem>

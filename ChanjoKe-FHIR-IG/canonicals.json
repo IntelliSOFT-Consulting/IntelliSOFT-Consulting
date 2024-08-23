@@ -1,0 +1,996 @@
+[
+  {
+    "id" : "KHTS.A",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+    "version" : "0.1.0",
+    "name" : "KHTS_A"
+  },
+  {
+    "id" : "KNHTS.CIIZENSHIP",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+    "version" : "0.1.0",
+    "name" : "PATIENT_CITIZENSHIP"
+  },
+  {
+    "id" : "KNHTS.CLMSACCOMODATIONTYPE",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS_ACCOMODATIONTYPES"
+  },
+  {
+    "id" : "KNHTS.CLMSDISP",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSDISP",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS_DISPOSITION"
+  },
+  {
+    "id" : "KNHTS.CLMSRSPSTS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS_RSP"
+  },
+  {
+    "id" : "KNHTS.CLMSSBTYPS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSSBTYPS",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS_SBTYPS"
+  },
+  {
+    "id" : "KNHTS.CLMSTS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS"
+  },
+  {
+    "id" : "KNHTS.CLMSTYPS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS_TYPS"
+  },
+  {
+    "id" : "KNHTS.CLMSZONE",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE",
+    "version" : "0.1.0",
+    "name" : "KNHTS_CLMS_ZONES"
+  },
+  {
+    "id" : "KNHTS.CODESYSTEMS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+    "version" : "0.1.0",
+    "name" : "PAT_CODESYSTEMS"
+  },
+  {
+    "id" : "KNHTS.CONTACTRELATIONSHIP",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+    "version" : "0.1.0",
+    "name" : "PT_CONTACTRELATIONSHIP"
+  },
+  {
+    "id" : "KNHTS.CURRENCY",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+    "version" : "0.1.0",
+    "name" : "CURRENCY"
+  },
+  {
+    "id" : "KNHTS.CURRENTRENEWALDURATION",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
+    "version" : "0.1.0",
+    "name" : "CURRENTRENEWALTYPE"
+  },
+  {
+    "id" : "KNHTS.EMPLOYMENTTYPE",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
+    "version" : "0.1.0",
+    "name" : "EMPLOYMENTTYPE"
+  },
+  {
+    "id" : "KNHTS.FACILITYAPPROVALSTATUS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
+    "version" : "0.1.0",
+    "name" : "FACILITYAPPROVALSTATUS"
+  },
+  {
+    "id" : "KNHTS.FACILITYCATEGORY",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY",
+    "version" : "0.1.0",
+    "name" : "FACILITYCATEGORY"
+  },
+  {
+    "id" : "KNHTS.FACILITYLEVEL",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+    "version" : "0.1.0",
+    "name" : "FACILITYLEVEL"
+  },
+  {
+    "id" : "KNHTS.IDENTIFIERTYPES",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+    "version" : "0.1.0",
+    "name" : "PAT_IDENTIFIERTYPES"
+  },
+  {
+    "id" : "KNHTS.IDENTIFIERUSE",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE",
+    "version" : "0.1.0",
+    "name" : "IDENTIFIERUSE"
+  },
+  {
+    "id" : "KNHTS.MARITALSTATUS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+    "version" : "0.1.0",
+    "name" : "MARITAL_STATUS"
+  },
+  {
+    "id" : "KNHTS.OPERATIONALSTATUS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
+    "version" : "0.1.0",
+    "name" : "OPERATIONALSTATUS"
+  },
+  {
+    "id" : "KNHTS.PAT.TITLE",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+    "version" : "0.1.0",
+    "name" : "PT_TITLE"
+  },
+  {
+    "id" : "KNHTS.PCNS",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+    "version" : "0.1.0",
+    "name" : "PRIMARYCARENETWORKS"
+  },
+  {
+    "id" : "KNHTS.QUALIFICATIONTYPE",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE",
+    "version" : "0.1.0",
+    "name" : "QUALIFICATIONTYPE"
+  },
+  {
+    "id" : "Patient.Employment",
+    "type" : "CodeSystem",
+    "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
+    "version" : "0.1.0",
+    "name" : "Patient_Employment"
+  },
+  {
+    "id" : "fhir.kenyaClaimsIG",
+    "type" : "ImplementationGuide",
+    "url" : "https://shr.tiberbuapps.com/fhir/ImplementationGuide/fhir.kenyaClaimsIG",
+    "version" : "0.1.0",
+    "name" : "kenyaClaimsIG"
+  },
+  {
+    "id" : "ClaimProfile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile",
+    "version" : "0.1.0",
+    "name" : "ClaimProfile"
+  },
+  {
+    "id" : "ClaimResponse-ke",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimResponse-ke",
+    "version" : "0.1.0",
+    "name" : "ClaimResponseProfile"
+  },
+  {
+    "id" : "Composition-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/Composition-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "Composition_ke_Profile"
+  },
+  {
+    "id" : "Condition-Diagnosis-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/Condition-Diagnosis-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "ConditionDiagnosis"
+  },
+  {
+    "id" : "Condition-Problem-List-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/Condition-Problem-List-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "Condition_Problem_List_ke_Profile"
+  },
+  {
+    "id" : "Encounter-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/Encounter-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "Encounter_ke_profile"
+  },
+  {
+    "id" : "Medication-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/Medication-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "Medication_ke_Profile"
+  },
+  {
+    "id" : "MedicationRequest-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "MedicationRequestProfile"
+  },
+  {
+    "id" : "Observation-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/Observation-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "Observation_ke_Profile"
+  },
+  {
+    "id" : "PractitionerProfile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/PractitionerProfile",
+    "version" : "0.1.0",
+    "name" : "PractitionerProfile"
+  },
+  {
+    "id" : "SHAOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAOrganization",
+    "version" : "0.1.0",
+    "name" : "SHAOrganization"
+  },
+  {
+    "id" : "SHAPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAPatient",
+    "version" : "0.1.0",
+    "name" : "SHAPatient"
+  },
+  {
+    "id" : "ServiceRequest-ke-Profile",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/ServiceRequest-ke-Profile",
+    "version" : "0.1.0",
+    "name" : "ServiceRequest_ke_Profile"
+  },
+  {
+    "id" : "admission-remand-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-remand-number",
+    "version" : "0.1.0",
+    "name" : "AdmissionRemandNumber"
+  },
+  {
+    "id" : "admission-types",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-types",
+    "version" : "0.1.0",
+    "name" : "AdmissionTypes"
+  },
+  {
+    "id" : "approved",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/approved",
+    "version" : "0.1.0",
+    "name" : "Approved"
+  },
+  {
+    "id" : "authorization-offLine-date",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/authorization-offLine-date",
+    "version" : "0.1.0",
+    "name" : "AuthorizationOffLineDate"
+  },
+  {
+    "id" : "batch-identifier",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-identifier",
+    "version" : "0.1.0",
+    "name" : "BatchIdentifier"
+  },
+  {
+    "id" : "batch-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-number",
+    "version" : "0.1.0",
+    "name" : "BatchNumber"
+  },
+  {
+    "id" : "batch-period",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-period",
+    "version" : "0.1.0",
+    "name" : "BatchPeriod"
+  },
+  {
+    "id" : "biometrics-score",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-score",
+    "version" : "0.1.0",
+    "name" : "BiometricsScore"
+  },
+  {
+    "id" : "biometrics-verified",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-verified",
+    "version" : "0.1.0",
+    "name" : "BiometricsVerified"
+  },
+  {
+    "id" : "board-registration-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/board-registration-number",
+    "version" : "0.1.0",
+    "name" : "BoardRegistrationNumber"
+  },
+  {
+    "id" : "building-house-no",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/building-house-no",
+    "version" : "0.1.0",
+    "name" : "BuildingHouseNo"
+  },
+  {
+    "id" : "citizenship",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/citizenship",
+    "version" : "0.1.0",
+    "name" : "CitizenShip"
+  },
+  {
+    "id" : "constituency",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/constituency",
+    "version" : "0.1.0",
+    "name" : "Constituency"
+  },
+  {
+    "id" : "county",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/county",
+    "version" : "0.1.0",
+    "name" : "County"
+  },
+  {
+    "id" : "current-license-expiry-date",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-expiry-date",
+    "version" : "0.1.0",
+    "name" : "CurrentLicenseExpiryDate"
+  },
+  {
+    "id" : "current-license-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-number",
+    "version" : "0.1.0",
+    "name" : "CurrentLicenseNumber"
+  },
+  {
+    "id" : "current-license-renewal-date",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-renewal-date",
+    "version" : "0.1.0",
+    "name" : "CurrentLicenseRenewalDate"
+  },
+  {
+    "id" : "current-license-type",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-type",
+    "version" : "0.1.0",
+    "name" : "CurrentLicenseType"
+  },
+  {
+    "id" : "deceased-datetime",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/deceased-datetime",
+    "version" : "0.1.0",
+    "name" : "DeceasedDateTime"
+  },
+  {
+    "id" : "diagnosis-related-group",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/diagnosis-related-group",
+    "version" : "0.1.0",
+    "name" : "DiagnosisRelatedGroup"
+  },
+  {
+    "id" : "disability-category",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-category",
+    "version" : "0.1.0",
+    "name" : "DisabilityCategory"
+  },
+  {
+    "id" : "disability-cause",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-cause",
+    "version" : "0.1.0",
+    "name" : "DisabilityCause"
+  },
+  {
+    "id" : "disability-subcategory",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-subcategory",
+    "version" : "0.1.0",
+    "name" : "DisabilitySubcategory"
+  },
+  {
+    "id" : "eligibility-OffLine-Date",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-OffLine-Date",
+    "version" : "0.1.0",
+    "name" : "EligibilityOffLineDate"
+  },
+  {
+    "id" : "eligibility-offLine",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-offLine",
+    "version" : "0.1.0",
+    "name" : "EligibilityOffLine"
+  },
+  {
+    "id" : "employer-name",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-name",
+    "version" : "0.1.0",
+    "name" : "EmployerName"
+  },
+  {
+    "id" : "employer-pin",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-pin",
+    "version" : "0.1.0",
+    "name" : "EmployerPin"
+  },
+  {
+    "id" : "employment-type",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/employment-type",
+    "version" : "0.1.0",
+    "name" : "PatientEmploymentType"
+  },
+  {
+    "id" : "episode",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/episode",
+    "version" : "0.1.0",
+    "name" : "Episode"
+  },
+  {
+    "id" : "estimated-contribution",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/estimated-contribution",
+    "version" : "0.1.0",
+    "name" : "EstimatedContribution"
+  },
+  {
+    "id" : "facility-category",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-category",
+    "version" : "0.1.0",
+    "name" : "FacilityCategory"
+  },
+  {
+    "id" : "facility-level",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-level",
+    "version" : "0.1.0",
+    "name" : "FacilityLevel"
+  },
+  {
+    "id" : "facility-owner",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-owner",
+    "version" : "0.1.0",
+    "name" : "FacilityOwner"
+  },
+  {
+    "id" : "facility-registration-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-registration-number",
+    "version" : "0.1.0",
+    "name" : "FacilityRegistrationNumber"
+  },
+  {
+    "id" : "facility-type-category",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-type-category",
+    "version" : "0.1.0",
+    "name" : "FacilityTypeCategory"
+  },
+  {
+    "id" : "fund",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/fund",
+    "version" : "0.1.0",
+    "name" : "Fund"
+  },
+  {
+    "id" : "gross-income",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income",
+    "version" : "0.1.0",
+    "name" : "GrossIncome"
+  },
+  {
+    "id" : "gross-income-currency",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income-currency",
+    "version" : "0.1.0",
+    "name" : "GrossIncomeCurrency"
+  },
+  {
+    "id" : "identification-residence",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/identification-residence",
+    "version" : "0.1.0",
+    "name" : "IdentificationResidence"
+  },
+  {
+    "id" : "in-lawful-custody",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/in-lawful-custody",
+    "version" : "0.1.0",
+    "name" : "InLawfulCustody"
+  },
+  {
+    "id" : "is-lawful-citizen",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/is-lawful-citizen",
+    "version" : "0.1.0",
+    "name" : "IsLawfulCitizen"
+  },
+  {
+    "id" : "item-tax",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/item-tax",
+    "version" : "0.1.0",
+    "name" : "ItemTax"
+  },
+  {
+    "id" : "kenya-counties-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/kenya-counties-extension",
+    "version" : "0.1.0",
+    "name" : "KenyaCountiesExtension"
+  },
+  {
+    "id" : "kra-pin",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/kra-pin",
+    "version" : "0.1.0",
+    "name" : "PatientKRAPin"
+  },
+  {
+    "id" : "latitude",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/latitude",
+    "version" : "0.1.0",
+    "name" : "Latitude"
+  },
+  {
+    "id" : "license-renewal-duration",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/license-renewal-duration",
+    "version" : "0.1.0",
+    "name" : "LicenseRenewalDuration"
+  },
+  {
+    "id" : "longitude",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/longitude",
+    "version" : "0.1.0",
+    "name" : "Longitude"
+  },
+  {
+    "id" : "maximum-bed-allocation",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/maximum-bed-allocation",
+    "version" : "0.1.0",
+    "name" : "MaximumBedAllocation"
+  },
+  {
+    "id" : "newborn",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/newborn",
+    "version" : "0.1.0",
+    "name" : "Newborn"
+  },
+  {
+    "id" : "number-of-beds",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-beds",
+    "version" : "0.1.0",
+    "name" : "NumberOfBeds"
+  },
+  {
+    "id" : "number-of-cots",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-cots",
+    "version" : "0.1.0",
+    "name" : "NumberOfCots"
+  },
+  {
+    "id" : "open-late-night",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-late-night",
+    "version" : "0.1.0",
+    "name" : "OpenLateNight"
+  },
+  {
+    "id" : "open-public-holiday",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-public-holiday",
+    "version" : "0.1.0",
+    "name" : "OpenPublicHoliday"
+  },
+  {
+    "id" : "open-weekends",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-weekends",
+    "version" : "0.1.0",
+    "name" : "OpenWeekends"
+  },
+  {
+    "id" : "open-whole-day",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-whole-day",
+    "version" : "0.1.0",
+    "name" : "OpenWholeDay"
+  },
+  {
+    "id" : "operational-status",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/operational-status",
+    "version" : "0.1.0",
+    "name" : "OperationalStatus"
+  },
+  {
+    "id" : "owner-board-registration-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-board-registration-number",
+    "version" : "0.1.0",
+    "name" : "OwnerBoardRegistrationNumber"
+  },
+  {
+    "id" : "owner-current-license-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-current-license-number",
+    "version" : "0.1.0",
+    "name" : "OwnerCurrentLicenseNumber"
+  },
+  {
+    "id" : "owner-id-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-id-number",
+    "version" : "0.1.0",
+    "name" : "OwnerIDNumber"
+  },
+  {
+    "id" : "package",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/package",
+    "version" : "0.1.0",
+    "name" : "Package"
+  },
+  {
+    "id" : "parent-facility-code",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/parent-facility-code",
+    "version" : "0.1.0",
+    "name" : "ParentFacilityCode"
+  },
+  {
+    "id" : "patient-invoice",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-invoice",
+    "version" : "0.1.0",
+    "name" : "PatientInvoice"
+  },
+  {
+    "id" : "patient-is-alive",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-is-alive",
+    "version" : "0.1.0",
+    "name" : "PatientIsAlive"
+  },
+  {
+    "id" : "patient-share",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-share",
+    "version" : "0.1.0",
+    "name" : "PatientShare"
+  },
+  {
+    "id" : "payer-share",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/payer-share",
+    "version" : "0.1.0",
+    "name" : "PayerShare"
+  },
+  {
+    "id" : "pcn",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/pcn",
+    "version" : "0.1.0",
+    "name" : "PCN"
+  },
+  {
+    "id" : "person-with-disability",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/person-with-disability",
+    "version" : "0.1.0",
+    "name" : "PersonWithDisability"
+  },
+  {
+    "id" : "physical-address",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/physical-address",
+    "version" : "0.1.0",
+    "name" : "PhysicalAddress"
+  },
+  {
+    "id" : "place-of-birth",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/place-of-birth",
+    "version" : "0.1.0",
+    "name" : "PatientPlaceOfBirth"
+  },
+  {
+    "id" : "practitioner-license-number",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-license-number",
+    "version" : "0.1.0",
+    "name" : "PractitionerLicenseNumber"
+  },
+  {
+    "id" : "practitioner-marital-status",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-marital-status",
+    "version" : "0.1.0",
+    "name" : "PractitionerMaritalStatus"
+  },
+  {
+    "id" : "preferred-primary-care-network",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/preferred-primary-care-network",
+    "version" : "0.1.0",
+    "name" : "PatientPreferredPrimaryCareNetwork"
+  },
+  {
+    "id" : "professional-cadre",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/professional-cadre",
+    "version" : "0.1.0",
+    "name" : "ProfessionalCadre"
+  },
+  {
+    "id" : "province-state-country",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/province-state-country",
+    "version" : "0.1.0",
+    "name" : "ProvinceStateCountry"
+  },
+  {
+    "id" : "qualification",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification",
+    "version" : "0.1.0",
+    "name" : "Qualification"
+  },
+  {
+    "id" : "qualification-institution",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-institution",
+    "version" : "0.1.0",
+    "name" : "QualificationInstitution"
+  },
+  {
+    "id" : "qualification-type",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-type",
+    "version" : "0.1.0",
+    "name" : "QualificationType"
+  },
+  {
+    "id" : "regulatory-body",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/regulatory-body",
+    "version" : "0.1.0",
+    "name" : "RegulatoryBody"
+  },
+  {
+    "id" : "specialty",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/specialty",
+    "version" : "0.1.0",
+    "name" : "Specialty"
+  },
+  {
+    "id" : "sub-county",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/sub-county",
+    "version" : "0.1.0",
+    "name" : "SubCounty"
+  },
+  {
+    "id" : "tax",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/tax",
+    "version" : "0.1.0",
+    "name" : "Tax"
+  },
+  {
+    "id" : "village-estate",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/village-estate",
+    "version" : "0.1.0",
+    "name" : "VillageEstate"
+  },
+  {
+    "id" : "ward",
+    "type" : "StructureDefinition",
+    "url" : "https://shr.tiberbuapps.com/fhir/StructureDefinition/ward",
+    "version" : "0.1.0",
+    "name" : "Ward"
+  },
+  {
+    "id" : "CitizenshipVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS",
+    "version" : "0.1.0",
+    "name" : "CITIZENSHIPVS"
+  },
+  {
+    "id" : "ClaimsResponseVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS",
+    "version" : "0.1.0",
+    "name" : "KNHTSCLMRSPVS"
+  },
+  {
+    "id" : "ClaimsStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS",
+    "version" : "0.1.0",
+    "name" : "KNHTSCLMVS"
+  },
+  {
+    "id" : "CodeSystemsVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS",
+    "version" : "0.1.0",
+    "name" : "PT_CODESYSTEMS"
+  },
+  {
+    "id" : "CurrencyVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS",
+    "version" : "0.1.0",
+    "name" : "CURRENCYVS"
+  },
+  {
+    "id" : "EmploymentTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS",
+    "version" : "0.1.0",
+    "name" : "EMPLOYMENTTYPE"
+  },
+  {
+    "id" : "FacilityApprovalStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS",
+    "version" : "0.1.0",
+    "name" : "FACILITYAPPROVALSTATUS"
+  },
+  {
+    "id" : "FacilityCategoryVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS",
+    "version" : "0.1.0",
+    "name" : "FACILITYCATEGORY"
+  },
+  {
+    "id" : "FacilityLevelVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS",
+    "version" : "0.1.0",
+    "name" : "FACILITYCATEGORY"
+  },
+  {
+    "id" : "IdentifierUseVs",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs",
+    "version" : "0.1.0",
+    "name" : "IDENTIFIERUSE"
+  },
+  {
+    "id" : "KenyaCountiesVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS",
+    "version" : "0.1.0",
+    "name" : "KHTS1VS"
+  },
+  {
+    "id" : "LicenseRenewalDurationVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS",
+    "version" : "0.1.0",
+    "name" : "LICENSECURRENTRENEWALDURATION"
+  },
+  {
+    "id" : "MaritalStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS",
+    "version" : "0.1.0",
+    "name" : "MARITALSTATUSVS"
+  },
+  {
+    "id" : "PatientContactRlshipVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS",
+    "version" : "0.1.0",
+    "name" : "PT_CONTACTRELATIONSHIP"
+  },
+  {
+    "id" : "PatientIdentifierTypesVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS",
+    "version" : "0.1.0",
+    "name" : "PT_IDENTIFIERTYPES"
+  },
+  {
+    "id" : "PractitionerOperationalStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS",
+    "version" : "0.1.0",
+    "name" : "PRACTQUALIFICATIONTYPE"
+  },
+  {
+    "id" : "PractitionerQualificationTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS",
+    "version" : "0.1.0",
+    "name" : "PRACTQUALIFICATIONTYPE"
+  },
+  {
+    "id" : "PrimaryCareNetworkVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS",
+    "version" : "0.1.0",
+    "name" : "PRIMARYCARENETWORKS"
+  },
+  {
+    "id" : "SalutationVS",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS",
+    "version" : "0.1.0",
+    "name" : "PT_TITLE"
+  },
+  {
+    "id" : "patientEmploymentVs",
+    "type" : "ValueSet",
+    "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs",
+    "version" : "0.1.0",
+    "name" : "PatientEmployment"
+  }
+]

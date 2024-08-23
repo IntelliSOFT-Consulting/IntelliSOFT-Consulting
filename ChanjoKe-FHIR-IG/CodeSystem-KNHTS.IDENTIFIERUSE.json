@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.IDENTIFIERUSE",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.IDENTIFIERUSE</b></p><a name=\"KNHTS.IDENTIFIERUSE\"> </a><a name=\"hcKNHTS.IDENTIFIERUSE\"> </a><a name=\"KNHTS.IDENTIFIERUSE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">official<a name=\"KNHTS.IDENTIFIERUSE-official\"> </a></td><td>official</td></tr><tr><td style=\"white-space:nowrap\">preferred<a name=\"KNHTS.IDENTIFIERUSE-preferred\"> </a></td><td>preferred</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE",
+  "version" : "0.1.0",
+  "name" : "IDENTIFIERUSE",
+  "title" : "CodeSystem for identifier use",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for  identifier use",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "official",
+    "display" : "official",
+    "definition" : "official"
+  },
+  {
+    "code" : "preferred",
+    "display" : "preferred",
+    "definition" : "preferred"
+  }]
+}

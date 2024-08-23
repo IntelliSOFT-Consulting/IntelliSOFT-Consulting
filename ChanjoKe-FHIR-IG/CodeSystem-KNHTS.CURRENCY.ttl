@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.CURRENCY"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.CURRENCY</b></p><a name=\"KNHTS.CURRENCY\"> </a><a name=\"hcKNHTS.CURRENCY\"> </a><a name=\"KNHTS.CURRENCY-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">kenyanShillings<a name=\"KNHTS.CURRENCY-kenyanShillings\"> </a></td><td>Kenyan Shilling (KES)</td><td>Kenyan Shilling (KES)</td></tr><tr><td style=\"white-space:nowrap\">ugandanShillings<a name=\"KNHTS.CURRENCY-ugandanShillings\"> </a></td><td>Ugandan Shilling (UGX)</td><td>Ugandan Shilling (UGX)</td></tr><tr><td style=\"white-space:nowrap\">tanzanianShillings<a name=\"KNHTS.CURRENCY-tanzanianShillings\"> </a></td><td>Tanzanian Shilling (TZS)</td><td>Tanzanian Shilling (TZS)</td></tr><tr><td style=\"white-space:nowrap\">ethiopianBirr<a name=\"KNHTS.CURRENCY-ethiopianBirr\"> </a></td><td>Ethiopian Birr (ETB)</td><td>Ethiopian Birr (ETB)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CURRENCY"] ; # 
+  fhir:title [ fhir:v "CodeSystem for currency"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for currency"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "kenyanShillings" ] ;
+     fhir:display [ fhir:v "Kenyan Shilling (KES)" ] ;
+     fhir:definition [ fhir:v "Kenyan Shilling (KES)" ]
+  ] [
+     fhir:code [ fhir:v "ugandanShillings" ] ;
+     fhir:display [ fhir:v "Ugandan Shilling (UGX)" ] ;
+     fhir:definition [ fhir:v "Ugandan Shilling (UGX)" ]
+  ] [
+     fhir:code [ fhir:v "tanzanianShillings" ] ;
+     fhir:display [ fhir:v "Tanzanian Shilling (TZS)" ] ;
+     fhir:definition [ fhir:v "Tanzanian Shilling (TZS)" ]
+  ] [
+     fhir:code [ fhir:v "ethiopianBirr" ] ;
+     fhir:display [ fhir:v "Ethiopian Birr (ETB)" ] ;
+     fhir:definition [ fhir:v "Ethiopian Birr (ETB)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

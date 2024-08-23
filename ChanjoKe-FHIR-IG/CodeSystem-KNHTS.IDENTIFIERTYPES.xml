@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.IDENTIFIERTYPES"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.IDENTIFIERTYPES</b></p><a name="KNHTS.IDENTIFIERTYPES"> </a><a name="hcKNHTS.IDENTIFIERTYPES"> </a><a name="KNHTS.IDENTIFIERTYPES-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">upi<a name="KNHTS.IDENTIFIERTYPES-upi"> </a></td><td>UPI</td><td>UPI</td></tr><tr><td style="white-space:nowrap">nationalId<a name="KNHTS.IDENTIFIERTYPES-nationalId"> </a></td><td>National ID</td><td>National ID</td></tr><tr><td style="white-space:nowrap">passport<a name="KNHTS.IDENTIFIERTYPES-passport"> </a></td><td>Passport No.</td><td>Passport No.</td></tr><tr><td style="white-space:nowrap">birthCertficate<a name="KNHTS.IDENTIFIERTYPES-birthCertficate"> </a></td><td>Birth Certificate No.</td><td>Birth Certificate No.</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES"/>
+  <version value="0.1.0"/>
+  <name value="PAT_IDENTIFIERTYPES"/>
+  <title value="CodeSystem for patient's identifier Types"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for patient's identifier Types"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="upi"/>
+    <display value="UPI"/>
+    <definition value="UPI"/>
+  </concept>
+  <concept>
+    <code value="nationalId"/>
+    <display value="National ID"/>
+    <definition value="National ID"/>
+  </concept>
+  <concept>
+    <code value="passport"/>
+    <display value="Passport No."/>
+    <definition value="Passport No."/>
+  </concept>
+  <concept>
+    <code value="birthCertficate"/>
+    <display value="Birth Certificate No."/>
+    <definition value="Birth Certificate No."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KHTS.A",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KHTS.A</b></p><a name=\"KHTS.A\"> </a><a name=\"hcKHTS.A\"> </a><a name=\"KHTS.A-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mombasa<a name=\"KHTS.A-mombasa\"> </a></td><td>Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td style=\"white-space:nowrap\">kilifi<a name=\"KHTS.A-kilifi\"> </a></td><td>Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td style=\"white-space:nowrap\">tanaRiver<a name=\"KHTS.A-tanaRiver\"> </a></td><td>Tana River\tHola</td><td>County of Residence, Tana River\tHola</td></tr><tr><td style=\"white-space:nowrap\">lamu<a name=\"KHTS.A-lamu\"> </a></td><td>Lamu</td><td>County of Residence, Lamu</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+  "version" : "0.1.0",
+  "name" : "KHTS_A",
+  "title" : "KHTS.A CodeSystem for Counties in Kenya",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for KHTS.A Counties in Kenya",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "mombasa",
+    "display" : "Mombasa",
+    "definition" : "County of Residence, Mombasa"
+  },
+  {
+    "code" : "kilifi",
+    "display" : "Kilifi",
+    "definition" : "County of Residence, Kilifi"
+  },
+  {
+    "code" : "tanaRiver",
+    "display" : "Tana River\tHola",
+    "definition" : "County of Residence, Tana River\tHola"
+  },
+  {
+    "code" : "lamu",
+    "display" : "Lamu",
+    "definition" : "County of Residence, Lamu"
+  }]
+}

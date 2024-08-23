@@ -1,0 +1,18 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/Device/DeviceExample> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DeviceExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device DeviceExample</b></p><a name=\"DeviceExample\"> </a><a name=\"hcDeviceExample\"> </a><a name=\"DeviceExample-en-US\"> </a><p><b>status</b>: Active</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] . # 
+
+# -------------------------------------------------------------------------------------
+

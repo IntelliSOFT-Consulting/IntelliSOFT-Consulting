@@ -1,0 +1,216 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CITIZENSHIPVS",
+      "title" : "Patient's Citizenship ValueSet",
+      "description" : "Patient's Citizenship ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTSCLMRSPVS",
+      "title" : "Claims Response status",
+      "description" : "Claims Response status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KNHTSCLMVS",
+      "title" : "Claims status",
+      "description" : "Claims status",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS"]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_CODESYSTEMS",
+      "title" : "Code Systems ValueSet",
+      "description" : "Code Systems ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CURRENCYVS",
+      "title" : "Currency ValueSet",
+      "description" : "Currency ValueSet",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY"]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "EMPLOYMENTTYPE",
+      "title" : "Patient Employment Type",
+      "description" : "Patient Employment Type",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYAPPROVALSTATUS",
+      "title" : "Code Systems Facility Approval Status",
+      "description" : "Code Systems Facility Approval Status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYCATEGORY",
+      "title" : "Code Systems Facility Category",
+      "description" : "Code Systems Facility Category",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FACILITYCATEGORY",
+      "title" : "Code Systems Facility Level",
+      "description" : "Code Systems Facility Level",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IDENTIFIERUSE",
+      "title" : "Patient identifier usage valueSet",
+      "description" : "Patient identifier usage valueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KHTS1VS",
+      "title" : "Counties in Kenya",
+      "description" : "Counties in Kenya",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A"]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LICENSECURRENTRENEWALDURATION",
+      "title" : "Practitioner's License Current Renewal Duration",
+      "description" : "Practitioner's License Current Renewal Duration",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MARITALSTATUSVS",
+      "title" : "Patient's Marital (Civil) Status",
+      "description" : "Patient's Marital (Civil) Status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_CONTACTRELATIONSHIP",
+      "title" : "Patient Contact Relationship ValueSet",
+      "description" : "Patient Contact Relationship ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_IDENTIFIERTYPES",
+      "title" : "Patient Identifier Types ValueSet",
+      "description" : "Patient Identifier Types ValueSet",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRACTQUALIFICATIONTYPE",
+      "title" : "Practitioner's Operational Status",
+      "description" : "Practitioner's Operational Status",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRACTQUALIFICATIONTYPE",
+      "title" : "Practitioner's Qualifification Type",
+      "description" : "Practitioner's Qualifification Type",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PRIMARYCARENETWORKS",
+      "title" : "Primary Care Networks",
+      "description" : "Primary Care Networks",
+      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS"]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PT_TITLE",
+      "title" : "Salutation",
+      "description" : "Salutation",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE"
+      ]
+    },
+    {
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatientEmployment",
+      "title" : "Patient's employment Options",
+      "description" : "ValueSet for Patient's employment",
+      "systems" : [
+        "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment"
+      ]
+    }
+  ]
+}

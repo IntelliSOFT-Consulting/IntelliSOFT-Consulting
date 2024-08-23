@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.PAT.TITLE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.PAT.TITLE</b></p><a name=\"KNHTS.PAT.TITLE\"> </a><a name=\"hcKNHTS.PAT.TITLE\"> </a><a name=\"KNHTS.PAT.TITLE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mr<a name=\"KNHTS.PAT.TITLE-mr\"> </a></td><td>Mr</td><td>Mr</td></tr><tr><td style=\"white-space:nowrap\">mrs<a name=\"KNHTS.PAT.TITLE-mrs\"> </a></td><td>Mrs</td><td>Mrs</td></tr><tr><td style=\"white-space:nowrap\">miss<a name=\"KNHTS.PAT.TITLE-miss\"> </a></td><td>Miss</td><td>Miss</td></tr><tr><td style=\"white-space:nowrap\">ms<a name=\"KNHTS.PAT.TITLE-ms\"> </a></td><td>Ms</td><td>Ms</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PT_TITLE"] ; # 
+  fhir:title [ fhir:v "CodeSystem for patient's title"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for patient's title"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mr" ] ;
+     fhir:display [ fhir:v "Mr" ] ;
+     fhir:definition [ fhir:v "Mr" ]
+  ] [
+     fhir:code [ fhir:v "mrs" ] ;
+     fhir:display [ fhir:v "Mrs" ] ;
+     fhir:definition [ fhir:v "Mrs" ]
+  ] [
+     fhir:code [ fhir:v "miss" ] ;
+     fhir:display [ fhir:v "Miss" ] ;
+     fhir:definition [ fhir:v "Miss" ]
+  ] [
+     fhir:code [ fhir:v "ms" ] ;
+     fhir:display [ fhir:v "Ms" ] ;
+     fhir:definition [ fhir:v "Ms" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

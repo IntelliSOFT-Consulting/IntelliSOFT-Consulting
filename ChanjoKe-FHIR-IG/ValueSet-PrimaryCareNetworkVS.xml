@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PrimaryCareNetworkVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PrimaryCareNetworkVS</b></p><a name="PrimaryCareNetworkVS"> </a><a name="hcPrimaryCareNetworkVS"> </a><a name="PrimaryCareNetworkVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KNHTS.PCNS.html"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-dagorettiNorth">dagorettiNorth</a></td><td style="color: #cccccc">Dagoretti North</td><td>Dagoretti North</td></tr><tr><td><a href="CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-dagorettiSouth">dagorettiSouth</a></td><td style="color: #cccccc">Dagoretti South</td><td>Dagoretti South</td></tr><tr><td><a href="CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiCentral">embakasiCentral</a></td><td style="color: #cccccc">Embakasi Central</td><td>Embakasi Central</td></tr><tr><td><a href="CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiEast">embakasiEast</a></td><td style="color: #cccccc">Embakasi East</td><td>Embakasi East</td></tr><tr><td><a href="CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiNorth">embakasiNorth</a></td><td style="color: #cccccc">Embakasi North</td><td>Embakasi North</td></tr><tr><td><a href="CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiSouth">embakasiSouth</a></td><td style="color: #cccccc">Embakasi North</td><td>Embakasi North</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS"/>
+  <version value="0.1.0"/>
+  <name value="PRIMARYCARENETWORKS"/>
+  <title value="Primary Care Networks"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Primary Care Networks"/>
+  <compose>
+    <include>
+      <system value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS"/>
+      <concept>
+        <code value="dagorettiNorth"/>
+      </concept>
+      <concept>
+        <code value="dagorettiSouth"/>
+      </concept>
+      <concept>
+        <code value="embakasiCentral"/>
+      </concept>
+      <concept>
+        <code value="embakasiEast"/>
+      </concept>
+      <concept>
+        <code value="embakasiNorth"/>
+      </concept>
+      <concept>
+        <code value="embakasiSouth"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

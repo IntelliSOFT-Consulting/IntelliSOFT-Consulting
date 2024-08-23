@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">kenyaClaimsIG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://shr.tiberbuapps.com/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ClaimResponse-ke.html"
+                  title="StructureDefinition/ClaimResponse-ke">ClaimResponse</a>
+            </td>
+            <td>
+<p>This resource provides the adjudication details from the processing of a Claim resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ClaimProfile.html"
+                  title="StructureDefinition/ClaimProfile">Claims</a>
+            </td>
+            <td>
+<p>Standardise the format of electronic claims / pre-authorizations / pre-determinations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Composition-ke-Profile.html"
+                  title="StructureDefinition/Composition-ke-Profile">Composition_ke_Profile</a>
+            </td>
+            <td>
+<p>A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-Diagnosis-ke-Profile.html"
+                  title="StructureDefinition/Condition-Diagnosis-ke-Profile">ConditionDiagnosis</a>
+            </td>
+            <td>
+<p>A clinical diagnosis or clinical concept.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Condition-Problem-List-ke-Profile.html"
+                  title="StructureDefinition/Condition-Problem-List-ke-Profile">Condition_Problem_List_ke_Profile</a>
+            </td>
+            <td>
+<p>A clinical problem or other event, situation, issue, or clinical concept that has risen to a level of concern that differs from a diagnosis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Encounter-ke-Profile.html"
+                  title="StructureDefinition/Encounter-ke-Profile">Encounter_ke_Profile</a>
+            </td>
+            <td>
+<p>An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedicationRequest-ke-Profile.html"
+                  title="StructureDefinition/MedicationRequest-ke-Profile">MedicationRequestProfile</a>
+            </td>
+            <td>
+<p>An order or request for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called "MedicationRequest" rather than "MedicationPrescription" or "MedicationOrder" to generalize the use across inpatient and outpatient settings, including care plans, etc., and to harmonize with workflow patterns.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Medication-ke-Profile.html"
+                  title="StructureDefinition/Medication-ke-Profile">Medication_ke_Profile</a>
+            </td>
+            <td>
+<p>This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation-ke-Profile.html"
+                  title="StructureDefinition/Observation-ke-Profile">Observation_ke_Profile</a>
+            </td>
+            <td>
+<p>Measurements and simple assertions made about a patient, device or other subject.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PractitionerProfile.html"
+                  title="StructureDefinition/PractitionerProfile">PractitionerProfile</a>
+            </td>
+            <td>
+<p>Profile for practitioner resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SHAOrganization.html"
+                  title="StructureDefinition/SHAOrganization">SHAOrganization</a>
+            </td>
+            <td>
+<p>Profile for enrolling a SHA Patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SHAPatient.html"
+                  title="StructureDefinition/SHAPatient">SHAPatient</a>
+            </td>
+            <td>
+<p>Profile of SHA Patient resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ServiceRequest-ke-Profile.html"
+                  title="StructureDefinition/ServiceRequest-ke-Profile">ServiceRequest_ke_Profile</a>
+            </td>
+            <td>
+<p>A record of a request for service such as diagnostic investigations, treatments, or operations to be performed.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-admission-remand-number.html"
+                  title="StructureDefinition/admission-remand-number">Admission Remand Number</a>
+            </td>
+            <td>
+<p>Extension for Admission Remand Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-admission-types.html"
+                  title="StructureDefinition/admission-types">Admission Types</a>
+            </td>
+            <td>
+<p>Admission Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-approved.html"
+                  title="StructureDefinition/approved">Approved</a>
+            </td>
+            <td>
+<p>Approved</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-biometrics-score.html"
+                  title="StructureDefinition/biometrics-score">Biometrics Score</a>
+            </td>
+            <td>
+<p>Extension for Biometrics Score</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-biometrics-verified.html"
+                  title="StructureDefinition/biometrics-verified">Biometrics Verified</a>
+            </td>
+            <td>
+<p>Extension for Biometrics Verification</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-board-registration-number.html"
+                  title="StructureDefinition/board-registration-number">Board Registration Number</a>
+            </td>
+            <td>
+<p>Board Registration Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-citizenship.html"
+                  title="StructureDefinition/citizenship">Citizenship</a>
+            </td>
+            <td>
+<p>Extension for Patient's Citizenships</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-practitioner-license-number.html"
+                  title="StructureDefinition/practitioner-license-number">Current License Number</a>
+            </td>
+            <td>
+<p>Current License Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-deceased-datetime.html"
+                  title="StructureDefinition/deceased-datetime">Deceased Datetime</a>
+            </td>
+            <td>
+<p>Extension for patient's death Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-disability-category.html"
+                  title="StructureDefinition/disability-category">Disability Category</a>
+            </td>
+            <td>
+<p>Extension for Disability Category</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-disability-cause.html"
+                  title="StructureDefinition/disability-cause">Disability Cause</a>
+            </td>
+            <td>
+<p>Extension for Disability Cause</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-disability-subcategory.html"
+                  title="StructureDefinition/disability-subcategory">Disability Sub-Category</a>
+            </td>
+            <td>
+<p>Extension for Disability Sub-Category</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-employer-name.html"
+                  title="StructureDefinition/employer-name">Employer Name</a>
+            </td>
+            <td>
+<p>Extension for Employer Name</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-employer-pin.html"
+                  title="StructureDefinition/employer-pin">Employer Pin</a>
+            </td>
+            <td>
+<p>Extension for Employer Pin</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-estimated-contribution.html"
+                  title="StructureDefinition/estimated-contribution">Estimated Contribution</a>
+            </td>
+            <td>
+<p>Extension for Estimated Contribution</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kra-pin.html"
+                  title="StructureDefinition/kra-pin">Extension Patient's KRA PIN</a>
+            </td>
+            <td>
+<p>A code representing Patient's KRA PIN</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-batch-identifier.html"
+                  title="StructureDefinition/batch-identifier">Extension for Batch Identifier </a>
+            </td>
+            <td>
+<p>Extension for Batch Identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-batch-number.html"
+                  title="StructureDefinition/batch-number">Extension for Batch Number</a>
+            </td>
+            <td>
+<p>The number associated with a claim within a Batch.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-batch-period.html"
+                  title="StructureDefinition/batch-period">Extension for Batch Period  </a>
+            </td>
+            <td>
+<p>The date associated with the Batch.Batch Date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-current-license-expiry-date.html"
+                  title="StructureDefinition/current-license-expiry-date">Extension for Current License Expiry Date</a>
+            </td>
+            <td>
+<p>Extension for Current License Expiry Date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-current-license-number.html"
+                  title="StructureDefinition/current-license-number">Extension for Current License Number</a>
+            </td>
+            <td>
+<p>Extension for Current License Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-current-license-renewal-date.html"
+                  title="StructureDefinition/current-license-renewal-date">Extension for Current License Renewal Date</a>
+            </td>
+            <td>
+<p>Extension for Current License Renewal Date</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-current-license-type.html"
+                  title="StructureDefinition/current-license-type">Extension for Current License Type</a>
+            </td>
+            <td>
+<p>Extension for Current License Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-diagnosis-related-group.html"
+                  title="StructureDefinition/diagnosis-related-group">Extension for Diagnosis Related Group</a>
+            </td>
+            <td>
+<p>create extension to hold the DRG - Codesystem (AR DRG) and Valueset Required</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-eligibility-OffLine-Date.html"
+                  title="StructureDefinition/eligibility-OffLine-Date">Extension for Eligibility OffLineDate </a>
+            </td>
+            <td>
+<p>Date when the offline check was done</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-episode.html"
+                  title="StructureDefinition/episode">Extension for Episode</a>
+            </td>
+            <td>
+<p>The provider specific episode identifier.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-facility-registration-number.html"
+                  title="StructureDefinition/facility-registration-number">Extension for Facility Registration Number</a>
+            </td>
+            <td>
+<p>Extension for Facility Registration Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-item-tax.html"
+                  title="StructureDefinition/item-tax">Extension for ItemTax</a>
+            </td>
+            <td>
+<p>The amount of Tax (VAT) levied on the line item.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kenya-counties-extension.html"
+                  title="StructureDefinition/kenya-counties-extension">Extension for Kenya counties</a>
+            </td>
+            <td>
+<p>A code representing kenya counties</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-newborn.html"
+                  title="StructureDefinition/newborn">Extension for Newborn  </a>
+            </td>
+            <td>
+<p>Flag to identify that this claim is for a newborn</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-owner-board-registration-number.html"
+                  title="StructureDefinition/owner-board-registration-number">Extension for Owner Board Registration Number </a>
+            </td>
+            <td>
+<p>Extension for Owner Board Registration Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-owner-current-license-number.html"
+                  title="StructureDefinition/owner-current-license-number">Extension for Owner Current License Number </a>
+            </td>
+            <td>
+<p>Extension for Owner Current License Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-owner-id-number.html"
+                  title="StructureDefinition/owner-id-number">Extension for Owner Id Number</a>
+            </td>
+            <td>
+<p>Extension for Owner Id Number</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-package.html"
+                  title="StructureDefinition/package">Extension for Package</a>
+            </td>
+            <td>
+<p>A package billing code or bundle code used to group products and services to a particular health condition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-invoice.html"
+                  title="StructureDefinition/patient-invoice">Extension for Patient Invoice</a>
+            </td>
+            <td>
+<p>The number of the patient invoice on which the service was billed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-share.html"
+                  title="StructureDefinition/patient-share">Extension for Patient Share</a>
+            </td>
+            <td>
+<p>Refer to the patient share amount</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-county.html"
+                  title="StructureDefinition/county">Extension for Patient's County</a>
+            </td>
+            <td>
+<p>Patient's County</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-province-state-country.html"
+                  title="StructureDefinition/province-state-country">Extension for Patient's Province State Country</a>
+            </td>
+            <td>
+<p>Patient's Province State Country</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-sub-county.html"
+                  title="StructureDefinition/sub-county">Extension for Patient's Sub-County</a>
+            </td>
+            <td>
+<p>Patient's Patient's Sub-County</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-village-estate.html"
+                  title="StructureDefinition/village-estate">Extension for Patient's Village Estate</a>
+            </td>
+            <td>
+<p>Patient's Village Estate</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ward.html" title="StructureDefinition/ward">Extension for Patient's Ward</a>
+            </td>
+            <td>
+<p>Patient's Patient's Ward</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-building-house-no.html"
+                  title="StructureDefinition/building-house-no">Extension for Patient's building_house_no</a>
+            </td>
+            <td>
+<p>Patient's building_house_no</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-identification-residence.html"
+                  title="StructureDefinition/identification-residence">Extension for Patient's identification residence</a>
+            </td>
+            <td>
+<p>Patient's Identification Residence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-latitude.html"
+                  title="StructureDefinition/latitude">Extension for Patient's latitude</a>
+            </td>
+            <td>
+<p>Patient's latitude</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-longitude.html"
+                  title="StructureDefinition/longitude">Extension for Patient's longitude</a>
+            </td>
+            <td>
+<p>Patient's longitude</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-payer-share.html"
+                  title="StructureDefinition/payer-share">Extension for PayerShare</a>
+            </td>
+            <td>
+<p>Refer to the expected payer share amount (to be paid)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-place-of-birth.html"
+                  title="StructureDefinition/place-of-birth">Extension for Place of Birth</a>
+            </td>
+            <td>
+<p>Place of Birth</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tax.html" title="StructureDefinition/tax">Extension for Tax</a>
+            </td>
+            <td>
+<p>The amount of Tax (VAT) levied on the line item.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-authorization-offLine-date.html"
+                  title="StructureDefinition/authorization-offLine-date">Extension for authorization OffLineDate  </a>
+            </td>
+            <td>
+<p>Date when the offline check was done</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-eligibility-offLine.html"
+                  title="StructureDefinition/eligibility-offLine">Extension for eligibilityOffLine </a>
+            </td>
+            <td>
+<p>String will contain a reference value from the payer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-facility-category.html"
+                  title="StructureDefinition/facility-category">Facility Category</a>
+            </td>
+            <td>
+<p>Facility Category/Facility Owner Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-facility-level.html"
+                  title="StructureDefinition/facility-level">Facility Level</a>
+            </td>
+            <td>
+<p>Facility Level</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-facility-owner.html"
+                  title="StructureDefinition/facility-owner">Facility Owner</a>
+            </td>
+            <td>
+<p>Facility Owner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-facility-type-category.html"
+                  title="StructureDefinition/facility-type-category">Facility Type Category</a>
+            </td>
+            <td>
+<p>Facility Type Category</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fund.html" title="StructureDefinition/fund">Fund</a>
+            </td>
+            <td>
+<p>Fund</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-gross-income-currency.html"
+                  title="StructureDefinition/gross-income-currency">Gross Income Currency</a>
+            </td>
+            <td>
+<p>Extension for Gross income Currency</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-gross-income.html"
+                  title="StructureDefinition/gross-income">Gross income</a>
+            </td>
+            <td>
+<p>Extension for Gross income</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-in-lawful-custody.html"
+                  title="StructureDefinition/in-lawful-custody">In Lawful Custody</a>
+            </td>
+            <td>
+<p>Extension for In Lawful Custody</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-is-lawful-citizen.html"
+                  title="StructureDefinition/is-lawful-citizen">Is lawful Citizen</a>
+            </td>
+            <td>
+<p>Extension for citizen lawful status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-license-renewal-duration.html"
+                  title="StructureDefinition/license-renewal-duration">License Renewal Duration</a>
+            </td>
+            <td>
+<p>License Renewal Duration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-maximum-bed-allocation.html"
+                  title="StructureDefinition/maximum-bed-allocation">Maximum Bed Allocation</a>
+            </td>
+            <td>
+<p>Maximum Bed Allocation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-number-of-beds.html"
+                  title="StructureDefinition/number-of-beds">Number of Beds</a>
+            </td>
+            <td>
+<p>Number of Beds</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-number-of-cots.html"
+                  title="StructureDefinition/number-of-cots">Number of Cots</a>
+            </td>
+            <td>
+<p>Number of Cots</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-open-late-night.html"
+                  title="StructureDefinition/open-late-night">Open Late Night</a>
+            </td>
+            <td>
+<p>Open Late Night</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-open-public-holiday.html"
+                  title="StructureDefinition/open-public-holiday">Open Public Holiday</a>
+            </td>
+            <td>
+<p>Open Public Holiday</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-open-weekends.html"
+                  title="StructureDefinition/open-weekends">Open Weekends</a>
+            </td>
+            <td>
+<p>Open Weekends</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-open-whole-day.html"
+                  title="StructureDefinition/open-whole-day">Open Whole Day</a>
+            </td>
+            <td>
+<p>Open Whole Day</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-operational-status.html"
+                  title="StructureDefinition/operational-status">Operational Status</a>
+            </td>
+            <td>
+<p>Operational Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pcn.html" title="StructureDefinition/pcn">PCN</a>
+            </td>
+            <td>
+<p>PCN</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-parent-facility-code.html"
+                  title="StructureDefinition/parent-facility-code">Parent Facility Code</a>
+            </td>
+            <td>
+<p>Parent Facility Code</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-employment-type.html"
+                  title="StructureDefinition/employment-type">Patient Employment Type</a>
+            </td>
+            <td>
+<p>Extension for patient's employment type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-is-alive.html"
+                  title="StructureDefinition/patient-is-alive">Patient Is Alive</a>
+            </td>
+            <td>
+<p>Extension for patient's alive status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-preferred-primary-care-network.html"
+                  title="StructureDefinition/preferred-primary-care-network">PatientPreferredPrimaryCareNetwork</a>
+            </td>
+            <td>
+<p>Extension for patient's preferred primary care network.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-person-with-disability.html"
+                  title="StructureDefinition/person-with-disability">Person Disability Status</a>
+            </td>
+            <td>
+<p>Extension for person's disability status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-physical-address.html"
+                  title="StructureDefinition/physical-address">Physical Address</a>
+            </td>
+            <td>
+<p>Physical Address</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-practitioner-marital-status.html"
+                  title="StructureDefinition/practitioner-marital-status">Practitioner Marital Status</a>
+            </td>
+            <td>
+<p>Practitioner Marital Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-specialty.html"
+                  title="StructureDefinition/specialty">Practitioner Specialty</a>
+            </td>
+            <td>
+<p>Practitioner Specialty</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-professional-cadre.html"
+                  title="StructureDefinition/professional-cadre">Professional Cadre</a>
+            </td>
+            <td>
+<p>Professional Cadre</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-qualification.html"
+                  title="StructureDefinition/qualification">Qualification</a>
+            </td>
+            <td>
+<p>Qualification or Licence</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-qualification-type.html"
+                  title="StructureDefinition/qualification-type">Qualification type</a>
+            </td>
+            <td>
+<p>Qualification type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-qualification-institution.html"
+                  title="StructureDefinition/qualification-institution">Qulaification Institution</a>
+            </td>
+            <td>
+<p>Qualification Institution/Registering Institution</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-regulatory-body.html"
+                  title="StructureDefinition/regulatory-body">Regulatory Body</a>
+            </td>
+            <td>
+<p>Regulatory Body</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-constituency.html"
+                  title="StructureDefinition/constituency">constituency</a>
+            </td>
+            <td>
+<p>Constituency</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ClaimsResponseVS.html" title="ValueSet/ClaimsResponseVS">Claims Response status</a>
+            </td>
+            <td>
+<p>Claims Response status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ClaimsStatusVS.html" title="ValueSet/ClaimsStatusVS">Claims status</a>
+            </td>
+            <td>
+<p>Claims status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FacilityApprovalStatusVS.html"
+                  title="ValueSet/FacilityApprovalStatusVS">Code Systems Facility Approval Status</a>
+            </td>
+            <td>
+<p>Code Systems Facility Approval Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FacilityCategoryVS.html"
+                  title="ValueSet/FacilityCategoryVS">Code Systems Facility Category</a>
+            </td>
+            <td>
+<p>Code Systems Facility Category</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FacilityLevelVS.html" title="ValueSet/FacilityLevelVS">Code Systems Facility Level</a>
+            </td>
+            <td>
+<p>Code Systems Facility Level</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-CodeSystemsVS.html" title="ValueSet/CodeSystemsVS">Code Systems ValueSet</a>
+            </td>
+            <td>
+<p>Code Systems ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-KenyaCountiesVS.html" title="ValueSet/KenyaCountiesVS">Counties in Kenya</a>
+            </td>
+            <td>
+<p>Counties in Kenya</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-CurrencyVS.html" title="ValueSet/CurrencyVS">Currency ValueSet</a>
+            </td>
+            <td>
+<p>Currency ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PatientContactRlshipVS.html"
+                  title="ValueSet/PatientContactRlshipVS">Patient Contact Relationship ValueSet</a>
+            </td>
+            <td>
+<p>Patient Contact Relationship ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-EmploymentTypeVS.html" title="ValueSet/EmploymentTypeVS">Patient Employment Type</a>
+            </td>
+            <td>
+<p>Patient Employment Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PatientIdentifierTypesVS.html"
+                  title="ValueSet/PatientIdentifierTypesVS">Patient Identifier Types ValueSet</a>
+            </td>
+            <td>
+<p>Patient Identifier Types ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-IdentifierUseVs.html" title="ValueSet/IdentifierUseVs">Patient identifier usage valueSet</a>
+            </td>
+            <td>
+<p>Patient identifier usage valueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-CitizenshipVS.html" title="ValueSet/CitizenshipVS">Patient's Citizenship ValueSet</a>
+            </td>
+            <td>
+<p>Patient's Citizenship ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-MaritalStatusVS.html" title="ValueSet/MaritalStatusVS">Patient's Marital (Civil) Status</a>
+            </td>
+            <td>
+<p>Patient's Marital (Civil) Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-patientEmploymentVs.html"
+                  title="ValueSet/patientEmploymentVs">Patient's employment Options</a>
+            </td>
+            <td>
+<p>ValueSet for Patient's employment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-LicenseRenewalDurationVS.html"
+                  title="ValueSet/LicenseRenewalDurationVS">Practitioner's License Current Renewal Duration</a>
+            </td>
+            <td>
+<p>Practitioner's License Current Renewal Duration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PractitionerOperationalStatusVS.html"
+                  title="ValueSet/PractitionerOperationalStatusVS">Practitioner's Operational Status</a>
+            </td>
+            <td>
+<p>Practitioner's Operational Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PractitionerQualificationTypeVS.html"
+                  title="ValueSet/PractitionerQualificationTypeVS">Practitioner's Qualifification Type</a>
+            </td>
+            <td>
+<p>Practitioner's Qualifification Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PrimaryCareNetworkVS.html"
+                  title="ValueSet/PrimaryCareNetworkVS">Primary Care Networks</a>
+            </td>
+            <td>
+<p>Primary Care Networks</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SalutationVS.html" title="ValueSet/SalutationVS">Salutation</a>
+            </td>
+            <td>
+<p>Salutation</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CODESYSTEMS.html"
+                  title="CodeSystem/KNHTS.CODESYSTEMS">CodeSystem for Code systems</a>
+            </td>
+            <td>
+<p>CodeSystem for Code systems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CONTACTRELATIONSHIP.html"
+                  title="CodeSystem/KNHTS.CONTACTRELATIONSHIP">CodeSystem for Contact Relationship</a>
+            </td>
+            <td>
+<p>CodeSystem for Contact Relationship</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.EMPLOYMENTTYPE.html"
+                  title="CodeSystem/KNHTS.EMPLOYMENTTYPE">CodeSystem for Employment Type</a>
+            </td>
+            <td>
+<p>CodeSystem for Employment Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.FACILITYAPPROVALSTATUS.html"
+                  title="CodeSystem/KNHTS.FACILITYAPPROVALSTATUS">CodeSystem for Facility Approval Status</a>
+            </td>
+            <td>
+<p>CodeSystem for Facility Approval Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.FACILITYCATEGORY.html"
+                  title="CodeSystem/KNHTS.FACILITYCATEGORY">CodeSystem for Facility Category</a>
+            </td>
+            <td>
+<p>CodeSystem for Facility Category/Facility Owner Type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.FACILITYLEVEL.html"
+                  title="CodeSystem/KNHTS.FACILITYLEVEL">CodeSystem for Facility level</a>
+            </td>
+            <td>
+<p>CodeSystem for Facility level</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CIIZENSHIP.html"
+                  title="CodeSystem/KNHTS.CIIZENSHIP">CodeSystem for Patient's Citizenship</a>
+            </td>
+            <td>
+<p>CodeSystem for Patient's Citizenship</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.MARITALSTATUS.html"
+                  title="CodeSystem/KNHTS.MARITALSTATUS">CodeSystem for Patient's Marital (Civil) Status</a>
+            </td>
+            <td>
+<p>CodeSystem for Patient's Marital (Civil) Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CURRENTRENEWALDURATION.html"
+                  title="CodeSystem/KNHTS.CURRENTRENEWALDURATION">CodeSystem for Practitioner's License Current Renewal type</a>
+            </td>
+            <td>
+<p>CodeSystem for Practitioner's License Current Renewal type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.OPERATIONALSTATUS.html"
+                  title="CodeSystem/KNHTS.OPERATIONALSTATUS">CodeSystem for Practitioner's Operational Status</a>
+            </td>
+            <td>
+<p>CodeSystem for Practitioner's Operational Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.QUALIFICATIONTYPE.html"
+                  title="CodeSystem/KNHTS.QUALIFICATIONTYPE">CodeSystem for Practitioner's qualification type</a>
+            </td>
+            <td>
+<p>CodeSystem for Practitioner's qualification type</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.PCNS.html" title="CodeSystem/KNHTS.PCNS">CodeSystem for Primary Care Networks</a>
+            </td>
+            <td>
+<p>CodeSystem for Primary Care Networks</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CURRENCY.html" title="CodeSystem/KNHTS.CURRENCY">CodeSystem for currency</a>
+            </td>
+            <td>
+<p>CodeSystem for currency</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.IDENTIFIERUSE.html"
+                  title="CodeSystem/KNHTS.IDENTIFIERUSE">CodeSystem for identifier use</a>
+            </td>
+            <td>
+<p>CodeSystem for  identifier use</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.IDENTIFIERTYPES.html"
+                  title="CodeSystem/KNHTS.IDENTIFIERTYPES">CodeSystem for patient's identifier Types</a>
+            </td>
+            <td>
+<p>CodeSystem for patient's identifier Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.PAT.TITLE.html"
+                  title="CodeSystem/KNHTS.PAT.TITLE">CodeSystem for patient's title</a>
+            </td>
+            <td>
+<p>CodeSystem for patient's title</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KHTS.A.html" title="CodeSystem/KHTS.A">KHTS.A CodeSystem for Counties in Kenya</a>
+            </td>
+            <td>
+<p>CodeSystem for KHTS.A Counties in Kenya</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSTS.html" title="CodeSystem/KNHTS.CLMSTS">KNHTS.CLMS CodeSystem for claim status</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSACCOMODATIONTYPE.html"
+                  title="CodeSystem/KNHTS.CLMSACCOMODATIONTYPE">KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim Accomodation Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSDISP.html" title="CodeSystem/KNHTS.CLMSDISP">KNHTS.CLMSDISP CodeSystem for claim disposition</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim Disposition</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSRSPSTS.html"
+                  title="CodeSystem/KNHTS.CLMSRSPSTS">KNHTS.CLMSRSP CodeSystem for claim response status</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSSBTYPS.html"
+                  title="CodeSystem/KNHTS.CLMSSBTYPS">KNHTS.CLMSTPS CodeSystem for claim Sub-types</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim Sub-types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSTYPS.html" title="CodeSystem/KNHTS.CLMSTYPS">KNHTS.CLMSTPS CodeSystem for claim types</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-KNHTS.CLMSZONE.html" title="CodeSystem/KNHTS.CLMSZONE">KNHTS.CLMSZONE CodeSystem for claim Zones</a>
+            </td>
+            <td>
+<p>CodeSystem for KNHTS Claim Zones</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-Patient.Employment.html"
+                  title="CodeSystem/Patient.Employment">Patient's Employment CodeSystem</a>
+            </td>
+            <td>
+<p>CodeSystem for Patient's Employment</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Claim-ClaimExample.html" title="Claim/ClaimExample">ClaimExample</a>
+            </td>
+            <td>
+<p>An example instance of the Claim profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClaimResponse-ClaimResponseExample.html"
+                  title="ClaimResponse/ClaimResponseExample">ClaimResponseExample</a>
+            </td>
+            <td>
+<p>An example instance of the ClaimResponse.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ClaimResponse-ClaimResponseProfileExample.html"
+                  title="ClaimResponse/ClaimResponseProfileExample">ClaimResponseProfileExample</a>
+            </td>
+            <td>
+<p>An example instance of the ClaimResponseProfile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CommunicationRequest-CommunicationRequestExample.html"
+                  title="CommunicationRequest/CommunicationRequestExample">CommunicationRequestExample</a>
+            </td>
+            <td>
+<p>An example instance of the CommunicationRequest.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-CompositionExample.html"
+                  title="Composition/CompositionExample">CompositionExample</a>
+            </td>
+            <td>
+<p>An example of the Composition resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionExample.html"
+                  title="Condition/ConditionExample">ConditionExample</a>
+            </td>
+            <td>
+<p>An example instance of the Condition profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-CoverageExample.html" title="Coverage/CoverageExample">CoverageExample</a>
+            </td>
+            <td>
+<p>Coverage example instance.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceExample.html" title="Device/DeviceExample">DeviceExample</a>
+            </td>
+            <td>
+<p>An example instance of the Device resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-EncounterExample.html"
+                  title="Encounter/EncounterExample">EncounterExample</a>
+            </td>
+            <td>
+<p>An example of the Encounter resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Claim-ClaimProfileExample.html" title="Claim/ClaimProfileExample">Example Claim</a>
+            </td>
+            <td>
+<p>An example claim instance for demonstration purposes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SHAOrganizationExample.html"
+                  title="Organization/SHAOrganizationExample">Example Health Facility</a>
+            </td>
+            <td>
+<p>An example instance of the Facility profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-PractitionerExample.html"
+                  title="Practitioner/PractitionerExample">Example Practitioner</a>
+            </td>
+            <td>
+<p>An example of the Practitioner resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-SHAPatientExample.html" title="Patient/SHAPatientExample">Example SHA Patient</a>
+            </td>
+            <td>
+<p>An example SHA patient instance based on the KenyaCorePatient profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-SHAPatientExample2.html"
+                  title="Patient/SHAPatientExample2">Example SHA Patient</a>
+            </td>
+            <td>
+<p>An example SHA patient instance based on the KenyaCorePatient profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationExample.html" title="Location/LocationExample">LocationExample</a>
+            </td>
+            <td>
+<p>An example instance of the Location profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-MedicationExample.html"
+                  title="Medication/MedicationExample">MedicationExample</a>
+            </td>
+            <td>
+<p>An example of the Medication resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-MedicationRequestExample.html"
+                  title="MedicationRequest/MedicationRequestExample">MedicationRequestExample</a>
+            </td>
+            <td>
+<p>An example of the MedicationRequest resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-MedicationRequestProfileExample.html"
+                  title="MedicationRequest/MedicationRequestProfileExample">MedicationRequestProfileExample</a>
+            </td>
+            <td>
+<p>An example of the MedicationRequestProfile resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationExample.html"
+                  title="Observation/ObservationExample">ObservationExample</a>
+            </td>
+            <td>
+<p>An example of the Observation resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-ServiceRequestExample.html"
+                  title="ServiceRequest/ServiceRequestExample">ServiceRequestExample</a>
+            </td>
+            <td>
+<p>An example of the ServiceRequest resource.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">intellisoftkenya</a>.  Package fhir.kenyaClaimsIG#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 23, 2024 12:29+0300">2024-08-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

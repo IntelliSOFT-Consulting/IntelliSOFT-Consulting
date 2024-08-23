@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.FACILITYAPPROVALSTATUS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.FACILITYAPPROVALSTATUS</b></p><a name=\"KNHTS.FACILITYAPPROVALSTATUS\"> </a><a name=\"hcKNHTS.FACILITYAPPROVALSTATUS\"> </a><a name=\"KNHTS.FACILITYAPPROVALSTATUS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"KNHTS.FACILITYAPPROVALSTATUS-yes\"> </a></td><td>YES</td><td>YES</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"KNHTS.FACILITYAPPROVALSTATUS-no\"> </a></td><td>NO</td><td>NO</td></tr><tr><td style=\"white-space:nowrap\">none<a name=\"KNHTS.FACILITYAPPROVALSTATUS-none\"> </a></td><td>NONE</td><td>NONE</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
+  "version" : "0.1.0",
+  "name" : "FACILITYAPPROVALSTATUS",
+  "title" : "CodeSystem for Facility Approval Status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for Facility Approval Status",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "yes",
+    "display" : "YES",
+    "definition" : "YES"
+  },
+  {
+    "code" : "no",
+    "display" : "NO",
+    "definition" : "NO"
+  },
+  {
+    "code" : "none",
+    "display" : "NONE",
+    "definition" : "NONE"
+  }]
+}

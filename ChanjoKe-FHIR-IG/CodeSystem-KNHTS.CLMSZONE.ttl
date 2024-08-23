@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.CLMSZONE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.CLMSZONE</b></p><a name=\"KNHTS.CLMSZONE\"> </a><a name=\"hcKNHTS.CLMSZONE\"> </a><a name=\"KNHTS.CLMSZONE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE01<a name=\"KNHTS.CLMSZONE-CLMSZONE01\"> </a></td><td>Zone 1</td><td>Mandera, Samburu, Nairobi</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE02<a name=\"KNHTS.CLMSZONE-CLMSZONE02\"> </a></td><td>Zone 2</td><td>Kiambu, Nakuru, Muranga</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE03<a name=\"KNHTS.CLMSZONE-CLMSZONE03\"> </a></td><td>Zone 3</td><td>Trans Nzoia, Kakamega, Bungoma, Busia, Turkana</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE04<a name=\"KNHTS.CLMSZONE-CLMSZONE04\"> </a></td><td>Zone 4</td><td>Siaya, Meru, Embu, Isiolo, Tharaka Nithi, Garissa</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE05<a name=\"KNHTS.CLMSZONE-CLMSZONE05\"> </a></td><td>Zone 5</td><td>Nyeri, Wajir, Makueni, Kwale, Taita Taveta, Kajiado, Kisii, Nyamira, Bomet</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE06<a name=\"KNHTS.CLMSZONE-CLMSZONE06\"> </a></td><td>Zone 6</td><td>Kirinyaga, Kitui, Machakos, Nyandarua, Laikipia, Kisumu</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE07<a name=\"KNHTS.CLMSZONE-CLMSZONE07\"> </a></td><td>Zone 7</td><td>Marsabit, Narok,  Nandi,  Kericho, Baringo, Uasin Gishu, West Pokot, Elgeyo Marakwet, Vihiga</td></tr><tr><td style=\"white-space:nowrap\">CLMSZONE08<a name=\"KNHTS.CLMSZONE-CLMSZONE08\"> </a></td><td>Zone 8</td><td>Migori, Homabay, Lamu, Kilifi, Mombasa, Tana River</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KNHTS_CLMS_ZONES"] ; # 
+  fhir:title [ fhir:v "KNHTS.CLMSZONE CodeSystem for claim Zones"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for KNHTS Claim Zones"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CLMSZONE01" ] ;
+     fhir:display [ fhir:v "Zone 1" ] ;
+     fhir:definition [ fhir:v "Mandera, Samburu, Nairobi" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE02" ] ;
+     fhir:display [ fhir:v "Zone 2" ] ;
+     fhir:definition [ fhir:v "Kiambu, Nakuru, Muranga" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE03" ] ;
+     fhir:display [ fhir:v "Zone 3" ] ;
+     fhir:definition [ fhir:v "Trans Nzoia, Kakamega, Bungoma, Busia, Turkana" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE04" ] ;
+     fhir:display [ fhir:v "Zone 4" ] ;
+     fhir:definition [ fhir:v "Siaya, Meru, Embu, Isiolo, Tharaka Nithi, Garissa" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE05" ] ;
+     fhir:display [ fhir:v "Zone 5" ] ;
+     fhir:definition [ fhir:v "Nyeri, Wajir, Makueni, Kwale, Taita Taveta, Kajiado, Kisii, Nyamira, Bomet" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE06" ] ;
+     fhir:display [ fhir:v "Zone 6" ] ;
+     fhir:definition [ fhir:v "Kirinyaga, Kitui, Machakos, Nyandarua, Laikipia, Kisumu" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE07" ] ;
+     fhir:display [ fhir:v "Zone 7" ] ;
+     fhir:definition [ fhir:v "Marsabit, Narok,  Nandi,  Kericho, Baringo, Uasin Gishu, West Pokot, Elgeyo Marakwet, Vihiga" ]
+  ] [
+     fhir:code [ fhir:v "CLMSZONE08" ] ;
+     fhir:display [ fhir:v "Zone 8" ] ;
+     fhir:definition [ fhir:v "Migori, Homabay, Lamu, Kilifi, Mombasa, Tana River" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

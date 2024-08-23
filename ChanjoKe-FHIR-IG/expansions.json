@@ -1,0 +1,1268 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "0e9fc72c-1a55-4345-aa0b-67fea6c65550",
+  "meta" : {
+    "lastUpdated" : "2024-08-23T12:29:17.161+03:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CIIZENSHIP.html\">codesystem CodeSystem for Patient's Citizenship v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CIIZENSHIP-kenyan\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CIIZENSHIP.html#KNHTS.CIIZENSHIP-kenyan\">kenyan</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP</td><td>kenyan</td><td><div><p>kenyan</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CIIZENSHIP-ugandan\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CIIZENSHIP.html#KNHTS.CIIZENSHIP-ugandan\">ugandan</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP</td><td>ugandan</td><td><div><p>ugandan</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CIIZENSHIP-tanzanian\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CIIZENSHIP.html#KNHTS.CIIZENSHIP-tanzanian\">tanzanian</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP</td><td>tanzanian</td><td><div><p>tanzanian</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CIIZENSHIP-ethiopian\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CIIZENSHIP.html#KNHTS.CIIZENSHIP-ethiopian\">ethiopian</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP</td><td>ethiopian</td><td><div><p>ethiopian</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS",
+      "version" : "0.1.0",
+      "name" : "CITIZENSHIPVS",
+      "title" : "Patient's Citizenship ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:b9b9aa4f-9250-4750-ac6f-f685ac5e3e8b",
+        "timestamp" : "2024-08-23T12:30:52+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+          "code" : "kenyan",
+          "display" : "kenyan"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+          "code" : "ugandan",
+          "display" : "ugandan"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+          "code" : "tanzanian",
+          "display" : "tanzanian"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+          "code" : "ethiopian",
+          "display" : "ethiopian"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html\">codesystem KNHTS.CLMSRSP CodeSystem for claim response status v0.1.0 (CodeSystem)</a></p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS01\">STS01</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>NEW</td><td><div><p>New Claims response</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS02\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS02\">STS02</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>NOTIFIED</td><td><div><p>Identification done and payor notified</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS03\">STS03</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>PREAUTHORIZED</td><td><div><p>Pre-authorization done.*</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS04\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS04\">STS04</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>COMPLETE</td><td><div><p>Provider has checked that all requirements are met and the claim is ready for submission. Done at the end of a visit / after discharge.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS05\">STS05</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>CANCELLED</td><td><div><p>Cancelled at provider, before submission.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS06\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS06\">STS06</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>SUBMITTED</td><td><div><p>Submitted to payer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS07\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS07\">STS07</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>RECEIVED</td><td><div><p>Received at payer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS08\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS08\">STS08</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>APPROVED</td><td><div><p>Approved</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS09\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS09\">STS09</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>REJECTED</td><td><div><p>The payer has indicated that the claim will not be paid.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS10\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS10\">STS10</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>PAID</td><td><div><p>The claim has been paid and the payee should expect to receive or have received  a remittance.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS11\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS11\">STS11</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>EXPIRED</td><td><div><p>Expired</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSRSPSTS-STS12\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSRSPSTS.html#KNHTS.CLMSRSPSTS-STS12\">STS12</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS</td><td>QA</td><td><div><p>The claim is undergoing review.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS",
+      "version" : "0.1.0",
+      "name" : "KNHTSCLMRSPVS",
+      "title" : "Claims Response status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:ad6ae195-99bb-449f-9156-7e741b8db0dc",
+        "timestamp" : "2024-08-23T12:30:52+03:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS01",
+          "display" : "NEW"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS02",
+          "display" : "NOTIFIED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS03",
+          "display" : "PREAUTHORIZED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS04",
+          "display" : "COMPLETE"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS05",
+          "display" : "CANCELLED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS06",
+          "display" : "SUBMITTED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS07",
+          "display" : "RECEIVED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS08",
+          "display" : "APPROVED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS09",
+          "display" : "REJECTED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS10",
+          "display" : "PAID"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS11",
+          "display" : "EXPIRED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+          "code" : "STS12",
+          "display" : "QA"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CLMSTS.html\">codesystem KNHTS.CLMS CodeSystem for claim status v0.1.0 (CodeSystem)</a></p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS01\">STS01</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>NEW</td><td><div><p>Active</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS02\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS02\">STS02</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>NOTIFIED</td><td><div><p>Identification done and payor notified</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS03\">STS03</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>PREAUTHORIZED</td><td><div><p>Pre-authorization done.*</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS04\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS04\">STS04</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>COMPLETE</td><td><div><p>Provider has checked that all requirements are met and the claim is ready for submission. Done at the end of a visit / after discharge.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS05\">STS05</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>CANCELLED</td><td><div><p>Cancelled at provider, before submission.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS06\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS06\">STS06</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>SUBMITTED</td><td><div><p>Submitted to payer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS07\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS07\">STS07</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>RECEIVED</td><td><div><p>Received at payer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS08\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS08\">STS08</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>APPROVED</td><td><div><p>Approved</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS09\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS09\">STS09</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>REJECTED</td><td><div><p>The payer has indicated that the claim will not be paid.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS10\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS10\">STS10</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>PAID</td><td><div><p>The claim has been paid and the payee should expect to receive or have received  a remittance.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS11\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS11\">STS11</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>EXPIRED</td><td><div><p>Expired</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CLMSTS-STS12\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CLMSTS.html#KNHTS.CLMSTS-STS12\">STS12</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS</td><td>QA</td><td><div><p>The claim is undergoing review.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS",
+      "version" : "0.1.0",
+      "name" : "KNHTSCLMVS",
+      "title" : "Claims status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:67839e11-5843-4185-922a-d0762b29c425",
+        "timestamp" : "2024-08-23T12:30:52+03:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS01",
+          "display" : "NEW"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS02",
+          "display" : "NOTIFIED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS03",
+          "display" : "PREAUTHORIZED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS04",
+          "display" : "COMPLETE"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS05",
+          "display" : "CANCELLED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS06",
+          "display" : "SUBMITTED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS07",
+          "display" : "RECEIVED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS08",
+          "display" : "APPROVED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS09",
+          "display" : "REJECTED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS10",
+          "display" : "PAID"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS11",
+          "display" : "EXPIRED"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+          "code" : "STS12",
+          "display" : "QA"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CODESYSTEMS.html\">codesystem CodeSystem for Code systems v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CODESYSTEMS-knhts\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-knhts\">knhts</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</td><td>http://knhts.health.go.ke</td><td><div><p>http://knhts.health.go.ke</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CODESYSTEMS-loinc\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-loinc\">loinc</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</td><td>http://loinc.org</td><td><div><p>http://loinc.org</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CODESYSTEMS-icd11\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-icd11\">icd11</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</td><td>https://icd.who.int/</td><td><div><p>https://icd.who.int</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CODESYSTEMS-clientRegistry\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-clientRegistry\">clientRegistry</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</td><td>https:example.cr/</td><td><div><p>https:example.cr/</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS",
+      "version" : "0.1.0",
+      "name" : "PT_CODESYSTEMS",
+      "title" : "Code Systems ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:57894f13-a4c1-48c7-98c0-10b7a3997743",
+        "timestamp" : "2024-08-23T12:30:53+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+          "code" : "knhts",
+          "display" : "http://knhts.health.go.ke"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+          "code" : "loinc",
+          "display" : "http://loinc.org"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+          "code" : "icd11",
+          "display" : "https://icd.who.int/"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+          "code" : "clientRegistry",
+          "display" : "https:example.cr/"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CURRENCY.html\">codesystem CodeSystem for currency v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENCY-kenyanShillings\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-kenyanShillings\">kenyanShillings</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY</td><td>Kenyan Shilling (KES)</td><td><div><p>Kenyan Shilling (KES)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENCY-tanzanianShillings\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-tanzanianShillings\">tanzanianShillings</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY</td><td>Tanzanian Shilling (TZS)</td><td><div><p>Tanzanian Shilling (TZS)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENCY-ugandanShillings\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-ugandanShillings\">ugandanShillings</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY</td><td>Ugandan Shilling (UGX)</td><td><div><p>Ugandan Shilling (UGX)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENCY-ethiopianBirr\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENCY.html#KNHTS.CURRENCY-ethiopianBirr\">ethiopianBirr</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY</td><td>Ethiopian Birr (ETB)</td><td><div><p>Ethiopian Birr (ETB)</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS",
+      "version" : "0.1.0",
+      "name" : "CURRENCYVS",
+      "title" : "Currency ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e3ce92dc-e3f1-43b1-aac5-b82ad172f7c6",
+        "timestamp" : "2024-08-23T12:30:53+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+          "code" : "kenyanShillings",
+          "display" : "Kenyan Shilling (KES)"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+          "code" : "tanzanianShillings",
+          "display" : "Tanzanian Shilling (TZS)"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+          "code" : "ugandanShillings",
+          "display" : "Ugandan Shilling (UGX)"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+          "code" : "ethiopianBirr",
+          "display" : "Ethiopian Birr (ETB)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.EMPLOYMENTTYPE.html\">codesystem CodeSystem for Employment Type v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.EMPLOYMENTTYPE-employed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.EMPLOYMENTTYPE.html#KNHTS.EMPLOYMENTTYPE-employed\">employed</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE</td><td>Employed</td><td><div><p>Employed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.EMPLOYMENTTYPE-selfEmployed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.EMPLOYMENTTYPE.html#KNHTS.EMPLOYMENTTYPE-selfEmployed\">selfEmployed</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE</td><td>Self Employed</td><td><div><p>self Employed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.EMPLOYMENTTYPE-organizingGroups\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.EMPLOYMENTTYPE.html#KNHTS.EMPLOYMENTTYPE-organizingGroups\">organizingGroups</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE</td><td>Organizing Groups</td><td><div><p>Organizing Groups</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.EMPLOYMENTTYPE-sponsored\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.EMPLOYMENTTYPE.html#KNHTS.EMPLOYMENTTYPE-sponsored\">sponsored</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE</td><td>Sponsored</td><td><div><p>Sponsored</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS",
+      "version" : "0.1.0",
+      "name" : "EMPLOYMENTTYPE",
+      "title" : "Patient Employment Type",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e5e358f2-1452-4d93-9cfd-3dcab0c7af97",
+        "timestamp" : "2024-08-23T12:30:53+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
+          "code" : "employed",
+          "display" : "Employed"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
+          "code" : "selfEmployed",
+          "display" : "Self Employed"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
+          "code" : "organizingGroups",
+          "display" : "Organizing Groups"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
+          "code" : "sponsored",
+          "display" : "Sponsored"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.FACILITYAPPROVALSTATUS.html\">codesystem CodeSystem for Facility Approval Status v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYAPPROVALSTATUS-yes\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYAPPROVALSTATUS.html#KNHTS.FACILITYAPPROVALSTATUS-yes\">yes</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS</td><td>YES</td><td><div><p>YES</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYAPPROVALSTATUS-no\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYAPPROVALSTATUS.html#KNHTS.FACILITYAPPROVALSTATUS-no\">no</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS</td><td>NO</td><td><div><p>NO</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYAPPROVALSTATUS-none\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYAPPROVALSTATUS.html#KNHTS.FACILITYAPPROVALSTATUS-none\">none</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS</td><td>NONE</td><td><div><p>NONE</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS",
+      "version" : "0.1.0",
+      "name" : "FACILITYAPPROVALSTATUS",
+      "title" : "Code Systems Facility Approval Status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:6572da96-e844-4d0a-893c-6c48fbbc5798",
+        "timestamp" : "2024-08-23T12:30:53+03:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
+          "code" : "yes",
+          "display" : "YES"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
+          "code" : "no",
+          "display" : "NO"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
+          "code" : "none",
+          "display" : "NONE"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.FACILITYCATEGORY.html\">codesystem CodeSystem for Facility Category v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYCATEGORY-moh\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYCATEGORY.html#KNHTS.FACILITYCATEGORY-moh\">moh</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY</td><td>MOH</td><td><div><p>MOH</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYCATEGORY-private\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYCATEGORY.html#KNHTS.FACILITYCATEGORY-private\">private</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY</td><td>Private</td><td><div><p>Private</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYCATEGORY-faithbased\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYCATEGORY.html#KNHTS.FACILITYCATEGORY-faithbased\">faithbased</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY</td><td>Faith based</td><td><div><p>Faith based</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS",
+      "version" : "0.1.0",
+      "name" : "FACILITYCATEGORY",
+      "title" : "Code Systems Facility Category",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:2935f246-9659-41e9-a1ce-5922f469ff70",
+        "timestamp" : "2024-08-23T12:30:53+03:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY",
+          "code" : "moh",
+          "display" : "MOH"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY",
+          "code" : "private",
+          "display" : "Private"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY",
+          "code" : "faithbased",
+          "display" : "Faith based"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html\">codesystem CodeSystem for Facility level v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYLEVEL-l1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html#KNHTS.FACILITYLEVEL-l1\">l1</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL</td><td>L1</td><td><div><p>L1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYLEVEL-l2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html#KNHTS.FACILITYLEVEL-l2\">l2</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL</td><td>L2</td><td><div><p>L2</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYLEVEL-l3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html#KNHTS.FACILITYLEVEL-l3\">l3</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL</td><td>L3</td><td><div><p>L3</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYLEVEL-l4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html#KNHTS.FACILITYLEVEL-l4\">l4</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL</td><td>L4</td><td><div><p>L4</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYLEVEL-l5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html#KNHTS.FACILITYLEVEL-l5\">l5</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL</td><td>L5</td><td><div><p>L5</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.FACILITYLEVEL-l6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.FACILITYLEVEL.html#KNHTS.FACILITYLEVEL-l6\">l6</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL</td><td>L6</td><td><div><p>L6</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS",
+      "version" : "0.1.0",
+      "name" : "FACILITYCATEGORY",
+      "title" : "Code Systems Facility Level",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:48b719f5-54f6-4827-ab7f-d73eee002883",
+        "timestamp" : "2024-08-23T12:30:54+03:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+          "code" : "l1",
+          "display" : "L1"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+          "code" : "l2",
+          "display" : "L2"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+          "code" : "l3",
+          "display" : "L3"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+          "code" : "l4",
+          "display" : "L4"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+          "code" : "l5",
+          "display" : "L5"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
+          "code" : "l6",
+          "display" : "L6"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.IDENTIFIERUSE.html\">codesystem CodeSystem for identifier use v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.IDENTIFIERUSE-official\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.IDENTIFIERUSE.html#KNHTS.IDENTIFIERUSE-official\">official</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE</td><td>official</td><td><div><p>official</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.IDENTIFIERUSE-preferred\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.IDENTIFIERUSE.html#KNHTS.IDENTIFIERUSE-preferred\">preferred</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE</td><td>preferred</td><td><div><p>preferred</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs",
+      "version" : "0.1.0",
+      "name" : "IDENTIFIERUSE",
+      "title" : "Patient identifier usage valueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:3ea6fa7a-7c6c-4f24-9b93-92af7da61aa7",
+        "timestamp" : "2024-08-23T12:30:54+03:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE",
+          "code" : "official",
+          "display" : "official"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE",
+          "code" : "preferred",
+          "display" : "preferred"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KHTS.A.html\">codesystem KHTS.A CodeSystem for Counties in Kenya v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KHTS.A-mombasa\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KHTS.A.html#KHTS.A-mombasa\">mombasa</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</td><td>Mombasa</td><td><div><p>County of Residence, Mombasa</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KHTS.A-kilifi\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KHTS.A.html#KHTS.A-kilifi\">kilifi</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</td><td>Kilifi</td><td><div><p>County of Residence, Kilifi</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KHTS.A-tanaRiver\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KHTS.A.html#KHTS.A-tanaRiver\">tanaRiver</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</td><td>Tana River\tHola</td><td><div><p>County of Residence, Tana River\tHola</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KHTS.A-lamu\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KHTS.A.html#KHTS.A-lamu\">lamu</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</td><td>Lamu</td><td><div><p>County of Residence, Lamu</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS",
+      "version" : "0.1.0",
+      "name" : "KHTS1VS",
+      "title" : "Counties in Kenya",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:30245135-38cd-4300-8a6d-9cb893563c26",
+        "timestamp" : "2024-08-23T12:30:54+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+          "code" : "mombasa",
+          "display" : "Mombasa"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+          "code" : "kilifi",
+          "display" : "Kilifi"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+          "code" : "tanaRiver",
+          "display" : "Tana River\tHola"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+          "code" : "lamu",
+          "display" : "Lamu"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CURRENTRENEWALDURATION.html\">codesystem CodeSystem for Practitioner's License Current Renewal type v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENTRENEWALDURATION-once\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENTRENEWALDURATION.html#KNHTS.CURRENTRENEWALDURATION-once\">once</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION</td><td>Once</td><td><div><p>Once</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENTRENEWALDURATION-semiAnnual\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENTRENEWALDURATION.html#KNHTS.CURRENTRENEWALDURATION-semiAnnual\">semiAnnual</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION</td><td>Semi-Annual</td><td><div><p>Semi-Annual</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENTRENEWALDURATION-annual\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENTRENEWALDURATION.html#KNHTS.CURRENTRENEWALDURATION-annual\">annual</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION</td><td>Annual</td><td><div><p>Annual</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CURRENTRENEWALDURATION-other\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CURRENTRENEWALDURATION.html#KNHTS.CURRENTRENEWALDURATION-other\">other</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION</td><td>Other</td><td><div><p>Other</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS",
+      "version" : "0.1.0",
+      "name" : "LICENSECURRENTRENEWALDURATION",
+      "title" : "Practitioner's License Current Renewal Duration",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:349be897-270d-417e-993e-73a9a280afda",
+        "timestamp" : "2024-08-23T12:30:54+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
+          "code" : "once",
+          "display" : "Once"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
+          "code" : "semiAnnual",
+          "display" : "Semi-Annual"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
+          "code" : "annual",
+          "display" : "Annual"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.MARITALSTATUS.html\">codesystem CodeSystem for Patient's Marital (Civil) Status v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.MARITALSTATUS-divorced\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.MARITALSTATUS.html#KNHTS.MARITALSTATUS-divorced\">divorced</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</td><td>divorced</td><td><div><p>divorced</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.MARITALSTATUS-married\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.MARITALSTATUS.html#KNHTS.MARITALSTATUS-married\">married</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</td><td>married</td><td><div><p>married</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.MARITALSTATUS-polygamous\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.MARITALSTATUS.html#KNHTS.MARITALSTATUS-polygamous\">polygamous</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</td><td>polygamous</td><td><div><p>polygamous</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.MARITALSTATUS-customary\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.MARITALSTATUS.html#KNHTS.MARITALSTATUS-customary\">customary</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</td><td>customary</td><td><div><p>customary</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.MARITALSTATUS-unmarried\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.MARITALSTATUS.html#KNHTS.MARITALSTATUS-unmarried\">unmarried</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</td><td>unmarried</td><td><div><p>unmarried</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.MARITALSTATUS-widow\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.MARITALSTATUS.html#KNHTS.MARITALSTATUS-widow\">widow</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</td><td>widow</td><td><div><p>widow</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS",
+      "version" : "0.1.0",
+      "name" : "MARITALSTATUSVS",
+      "title" : "Patient's Marital (Civil) Status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:685017a3-c28c-4184-9a08-f581ba62785b",
+        "timestamp" : "2024-08-23T12:30:55+03:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+          "code" : "divorced",
+          "display" : "divorced"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+          "code" : "married",
+          "display" : "married"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+          "code" : "polygamous",
+          "display" : "polygamous"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+          "code" : "customary",
+          "display" : "customary"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+          "code" : "unmarried",
+          "display" : "unmarried"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+          "code" : "widow",
+          "display" : "widow"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.CONTACTRELATIONSHIP.html\">codesystem CodeSystem for Contact Relationship v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CONTACTRELATIONSHIP-guardian\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CONTACTRELATIONSHIP.html#KNHTS.CONTACTRELATIONSHIP-guardian\">guardian</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</td><td>guardian</td><td><div><p>guardian</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CONTACTRELATIONSHIP-caregiver\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CONTACTRELATIONSHIP.html#KNHTS.CONTACTRELATIONSHIP-caregiver\">caregiver</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</td><td>caregiver</td><td><div><p>caregiver</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CONTACTRELATIONSHIP-parent\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CONTACTRELATIONSHIP.html#KNHTS.CONTACTRELATIONSHIP-parent\">parent</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</td><td>parent</td><td><div><p>parent</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CONTACTRELATIONSHIP-sibling\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CONTACTRELATIONSHIP.html#KNHTS.CONTACTRELATIONSHIP-sibling\">sibling</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</td><td>sibling</td><td><div><p>sibling</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.CONTACTRELATIONSHIP-child\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.CONTACTRELATIONSHIP.html#KNHTS.CONTACTRELATIONSHIP-child\">child</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP</td><td>child</td><td><div><p>child</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS",
+      "version" : "0.1.0",
+      "name" : "PT_CONTACTRELATIONSHIP",
+      "title" : "Patient Contact Relationship ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5d5bbd74-66df-4a75-88f1-df74e7a2555d",
+        "timestamp" : "2024-08-23T12:30:55+03:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+          "code" : "guardian",
+          "display" : "guardian"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+          "code" : "caregiver",
+          "display" : "caregiver"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+          "code" : "parent",
+          "display" : "parent"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+          "code" : "sibling",
+          "display" : "sibling"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+          "code" : "child",
+          "display" : "child"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.IDENTIFIERTYPES.html\">codesystem CodeSystem for patient's identifier Types v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.IDENTIFIERTYPES-upi\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-upi\">upi</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</td><td>UPI</td><td><div><p>UPI</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.IDENTIFIERTYPES-nationalId\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-nationalId\">nationalId</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</td><td>National ID</td><td><div><p>National ID</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.IDENTIFIERTYPES-passport\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-passport\">passport</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</td><td>Passport No.</td><td><div><p>Passport No.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.IDENTIFIERTYPES-birthCertficate\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.IDENTIFIERTYPES.html#KNHTS.IDENTIFIERTYPES-birthCertficate\">birthCertficate</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES</td><td>Birth Certificate No.</td><td><div><p>Birth Certificate No.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS",
+      "version" : "0.1.0",
+      "name" : "PT_IDENTIFIERTYPES",
+      "title" : "Patient Identifier Types ValueSet",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:920ca69a-a77c-4e9f-8df9-81095993fed6",
+        "timestamp" : "2024-08-23T12:30:55+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+          "code" : "upi",
+          "display" : "UPI"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+          "code" : "nationalId",
+          "display" : "National ID"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+          "code" : "passport",
+          "display" : "Passport No."
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
+          "code" : "birthCertficate",
+          "display" : "Birth Certificate No."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html\">codesystem CodeSystem for Practitioner's Operational Status v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.OPERATIONALSTATUS-active\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html#KNHTS.OPERATIONALSTATUS-active\">active</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS</td><td>Active</td><td><div><p>Active</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.OPERATIONALSTATUS-suspended\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html#KNHTS.OPERATIONALSTATUS-suspended\">suspended</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS</td><td>Suspended</td><td><div><p>Suspended</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.OPERATIONALSTATUS-revoked\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.OPERATIONALSTATUS.html#KNHTS.OPERATIONALSTATUS-revoked\">revoked</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS</td><td>Revoked</td><td><div><p>Revoked</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS",
+      "version" : "0.1.0",
+      "name" : "PRACTQUALIFICATIONTYPE",
+      "title" : "Practitioner's Operational Status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:afe2eecb-8b3c-4437-b3c3-66abf6e0d9d6",
+        "timestamp" : "2024-08-23T12:30:55+03:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
+          "code" : "active",
+          "display" : "Active"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
+          "code" : "suspended",
+          "display" : "Suspended"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
+          "code" : "revoked",
+          "display" : "Revoked"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.QUALIFICATIONTYPE.html\">codesystem CodeSystem for Practitioner's qualification type v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.QUALIFICATIONTYPE-training\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.QUALIFICATIONTYPE.html#KNHTS.QUALIFICATIONTYPE-training\">training</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE</td><td>Training</td><td><div><p>Training</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.QUALIFICATIONTYPE-licence\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.QUALIFICATIONTYPE.html#KNHTS.QUALIFICATIONTYPE-licence\">licence</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE</td><td>Licence</td><td><div><p>Licence</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS",
+      "version" : "0.1.0",
+      "name" : "PRACTQUALIFICATIONTYPE",
+      "title" : "Practitioner's Qualifification Type",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:09c78e90-3855-47ec-8b0c-f5044bec8773",
+        "timestamp" : "2024-08-23T12:30:55+03:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE",
+          "code" : "training",
+          "display" : "Training"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE",
+          "code" : "licence",
+          "display" : "Licence"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.PCNS.html\">codesystem CodeSystem for Primary Care Networks v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PCNS-dagorettiNorth\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-dagorettiNorth\">dagorettiNorth</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</td><td>Dagoretti North</td><td><div><p>Dagoretti North</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PCNS-dagorettiSouth\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-dagorettiSouth\">dagorettiSouth</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</td><td>Dagoretti South</td><td><div><p>Dagoretti South</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PCNS-embakasiCentral\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiCentral\">embakasiCentral</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</td><td>Embakasi Central</td><td><div><p>Embakasi Central</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PCNS-embakasiEast\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiEast\">embakasiEast</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</td><td>Embakasi East</td><td><div><p>Embakasi East</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PCNS-embakasiNorth\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiNorth\">embakasiNorth</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</td><td>Embakasi North</td><td><div><p>Embakasi North</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PCNS-embakasiSouth\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PCNS.html#KNHTS.PCNS-embakasiSouth\">embakasiSouth</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS</td><td>Embakasi North</td><td><div><p>Embakasi North</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS",
+      "version" : "0.1.0",
+      "name" : "PRIMARYCARENETWORKS",
+      "title" : "Primary Care Networks",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:726dc746-b381-4116-a0db-609905bbe5cc",
+        "timestamp" : "2024-08-23T12:30:56+03:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+          "code" : "dagorettiNorth",
+          "display" : "Dagoretti North"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+          "code" : "dagorettiSouth",
+          "display" : "Dagoretti South"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+          "code" : "embakasiCentral",
+          "display" : "Embakasi Central"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+          "code" : "embakasiEast",
+          "display" : "Embakasi East"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+          "code" : "embakasiNorth",
+          "display" : "Embakasi North"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
+          "code" : "embakasiSouth",
+          "display" : "Embakasi North"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-KNHTS.PAT.TITLE.html\">codesystem CodeSystem for patient's title v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PAT.TITLE-mr\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-mr\">mr</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</td><td>Mr</td><td><div><p>Mr</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PAT.TITLE-mrs\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-mrs\">mrs</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</td><td>Mrs</td><td><div><p>Mrs</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PAT.TITLE-miss\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-miss\">miss</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</td><td>Miss</td><td><div><p>Miss</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-KNHTS.PAT.TITLE-ms\"> </a>\u00a0\u00a0<a href=\"CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-ms\">ms</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</td><td>Ms</td><td><div><p>Ms</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS",
+      "version" : "0.1.0",
+      "name" : "PT_TITLE",
+      "title" : "Salutation",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:0272950f-f6c5-4e11-9214-9a00068168b2",
+        "timestamp" : "2024-08-23T12:30:56+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+          "code" : "mr",
+          "display" : "Mr"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+          "code" : "mrs",
+          "display" : "Mrs"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+          "code" : "miss",
+          "display" : "Miss"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
+          "code" : "ms",
+          "display" : "Ms"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-Patient.Employment.html\">codesystem Patient's Employment CodeSystem v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-Patient.Employment-employed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Patient.Employment.html#Patient.Employment-employed\">employed</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment</td><td>employed</td><td><div><p>employed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-Patient.Employment-selfEmployed\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Patient.Employment.html#Patient.Employment-selfEmployed\">selfEmployed</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment</td><td>selft-employed</td><td><div><p>selft-employed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-Patient.Employment-sponsored\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Patient.Employment.html#Patient.Employment-sponsored\">sponsored</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment</td><td>sponsored</td><td><div><p>sponsored</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"null-x-https---shr.tiberbuapps.com-fhir-CodeSystem-Patient.Employment-organizedGroups\"> </a>\u00a0\u00a0<a href=\"CodeSystem-Patient.Employment.html#Patient.Employment-organizedGroups\">organizedGroups</a></td><td>https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment</td><td>organizedGroups</td><td><div><p>organizedGroups</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs",
+      "version" : "0.1.0",
+      "name" : "PatientEmployment",
+      "title" : "Patient's employment Options",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-08-23T12:29:17+03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:dcceb723-b73b-433f-b45d-48dea7aa1a58",
+        "timestamp" : "2024-08-23T12:30:56+03:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
+          "code" : "employed",
+          "display" : "employed"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
+          "code" : "selfEmployed",
+          "display" : "selft-employed"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
+          "code" : "sponsored",
+          "display" : "sponsored"
+        },
+        {
+          "system" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
+          "code" : "organizedGroups",
+          "display" : "organizedGroups"
+        }]
+      }
+    }
+  }]
+}

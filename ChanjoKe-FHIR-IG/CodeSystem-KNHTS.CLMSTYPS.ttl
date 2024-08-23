@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.CLMSTYPS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.CLMSTYPS</b></p><a name=\"KNHTS.CLMSTYPS\"> </a><a name=\"hcKNHTS.CLMSTYPS\"> </a><a name=\"KNHTS.CLMSTYPS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CLMTPS01<a name=\"KNHTS.CLMSTYPS-CLMTPS01\"> </a></td><td>OUTPATIENT</td><td>Claim for outpatient services.</td></tr><tr><td style=\"white-space:nowrap\">CLMTPS02<a name=\"KNHTS.CLMSTYPS-CLMTPS02\"> </a></td><td>INPATIENT</td><td>Claim for in-patient services.</td></tr><tr><td style=\"white-space:nowrap\">CLMTPS03<a name=\"KNHTS.CLMSTYPS-CLMTPS03\"> </a></td><td>DAY_CASE</td><td>Claim for day case services e.g. day surgery.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KNHTS_CLMS_TYPS"] ; # 
+  fhir:title [ fhir:v "KNHTS.CLMSTPS CodeSystem for claim types"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for KNHTS Claim types"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CLMTPS01" ] ;
+     fhir:display [ fhir:v "OUTPATIENT" ] ;
+     fhir:definition [ fhir:v "Claim for outpatient services." ]
+  ] [
+     fhir:code [ fhir:v "CLMTPS02" ] ;
+     fhir:display [ fhir:v "INPATIENT" ] ;
+     fhir:definition [ fhir:v "Claim for in-patient services." ]
+  ] [
+     fhir:code [ fhir:v "CLMTPS03" ] ;
+     fhir:display [ fhir:v "DAY_CASE" ] ;
+     fhir:definition [ fhir:v "Claim for day case services e.g. day surgery." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

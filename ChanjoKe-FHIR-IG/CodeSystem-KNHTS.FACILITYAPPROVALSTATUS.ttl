@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KNHTS.FACILITYAPPROVALSTATUS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.FACILITYAPPROVALSTATUS</b></p><a name=\"KNHTS.FACILITYAPPROVALSTATUS\"> </a><a name=\"hcKNHTS.FACILITYAPPROVALSTATUS\"> </a><a name=\"KNHTS.FACILITYAPPROVALSTATUS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"KNHTS.FACILITYAPPROVALSTATUS-yes\"> </a></td><td>YES</td><td>YES</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"KNHTS.FACILITYAPPROVALSTATUS-no\"> </a></td><td>NO</td><td>NO</td></tr><tr><td style=\"white-space:nowrap\">none<a name=\"KNHTS.FACILITYAPPROVALSTATUS-none\"> </a></td><td>NONE</td><td>NONE</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FACILITYAPPROVALSTATUS"] ; # 
+  fhir:title [ fhir:v "CodeSystem for Facility Approval Status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-23T12:29:17+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "intellisoftkenya"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "intellisoftkenya" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Facility Approval Status"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "yes" ] ;
+     fhir:display [ fhir:v "YES" ] ;
+     fhir:definition [ fhir:v "YES" ]
+  ] [
+     fhir:code [ fhir:v "no" ] ;
+     fhir:display [ fhir:v "NO" ] ;
+     fhir:definition [ fhir:v "NO" ]
+  ] [
+     fhir:code [ fhir:v "none" ] ;
+     fhir:display [ fhir:v "NONE" ] ;
+     fhir:definition [ fhir:v "NONE" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

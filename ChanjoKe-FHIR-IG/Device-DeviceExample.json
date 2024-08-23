@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Device",
+  "id" : "DeviceExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device DeviceExample</b></p><a name=\"DeviceExample\"> </a><a name=\"hcDeviceExample\"> </a><a name=\"DeviceExample-en-US\"> </a><p><b>status</b>: Active</p></div>"
+  },
+  "status" : "active"
+}

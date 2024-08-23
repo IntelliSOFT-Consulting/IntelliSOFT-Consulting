@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.OPERATIONALSTATUS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.OPERATIONALSTATUS</b></p><a name=\"KNHTS.OPERATIONALSTATUS\"> </a><a name=\"hcKNHTS.OPERATIONALSTATUS\"> </a><a name=\"KNHTS.OPERATIONALSTATUS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"KNHTS.OPERATIONALSTATUS-active\"> </a></td><td>Active</td><td>Active</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"KNHTS.OPERATIONALSTATUS-suspended\"> </a></td><td>Suspended</td><td>Suspended</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"KNHTS.OPERATIONALSTATUS-revoked\"> </a></td><td>Revoked</td><td>Revoked</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
+  "version" : "0.1.0",
+  "name" : "OPERATIONALSTATUS",
+  "title" : "CodeSystem for Practitioner's Operational Status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for Practitioner's Operational Status",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "Active"
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspended",
+    "definition" : "Suspended"
+  },
+  {
+    "code" : "revoked",
+    "display" : "Revoked",
+    "definition" : "Revoked"
+  }]
+}

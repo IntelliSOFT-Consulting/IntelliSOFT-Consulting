@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="PractitionerExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner PractitionerExample</b></p><a name="PractitionerExample"> </a><a name="hcPractitionerExample"> </a><a name="PractitionerExample-en-US"> </a><p><b>identifier</b>: <code>http://example.org/fhir/systems/practitioner-identifier</code>/123456</p><p><b>name</b>: John Doe </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1970-01-01</p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0360|2.7 MD}">Doctor of Medicine</span></p><p><b>period</b>: 2000-01-01 --&gt; 2025-01-01</p></blockquote></div>
+  </text>
+  <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/professional-cadre">
+    <valueCodeableConcept>
+      <coding>
+        <code value="general-practitioner"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/specialty">
+    <valueCodeableConcept>
+      <coding>
+        <code value="internal-medicine"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://example.org/fhir/systems/practitioner-identifier"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="John"/>
+    <prefix value="Dr."/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1970-01-01"/>
+  <qualification>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-type">
+      <valueCode value="licence"/>
+    </extension>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-institution">
+      <valueCode value="HarvardMedicalSchool&quot;"/>
+    </extension>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification">
+      <valueString value="Doctor of Medicine"/>
+    </extension>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/operational-status">
+      <valueCode value="active"/>
+    </extension>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/board-registration-number">
+      <valueString value="BRN12345"/>
+    </extension>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/license-renewal-duration">
+      <valueCode value="annual"/>
+    </extension>
+    <extension url="https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-license-number">
+      <valueString value="PLN12345"/>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
+        <code value="MD"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2000-01-01"/>
+      <end value="2025-01-01"/>
+    </period>
+  </qualification>
+</Practitioner>

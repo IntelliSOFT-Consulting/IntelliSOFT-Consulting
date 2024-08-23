@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.QUALIFICATIONTYPE",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.QUALIFICATIONTYPE</b></p><a name=\"KNHTS.QUALIFICATIONTYPE\"> </a><a name=\"hcKNHTS.QUALIFICATIONTYPE\"> </a><a name=\"KNHTS.QUALIFICATIONTYPE-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">training<a name=\"KNHTS.QUALIFICATIONTYPE-training\"> </a></td><td>Training</td><td>Training</td></tr><tr><td style=\"white-space:nowrap\">licence<a name=\"KNHTS.QUALIFICATIONTYPE-licence\"> </a></td><td>Licence</td><td>Licence</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE",
+  "version" : "0.1.0",
+  "name" : "QUALIFICATIONTYPE",
+  "title" : "CodeSystem for Practitioner's qualification type",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for Practitioner's qualification type",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "training",
+    "display" : "Training",
+    "definition" : "Training"
+  },
+  {
+    "code" : "licence",
+    "display" : "Licence",
+    "definition" : "Licence"
+  }]
+}

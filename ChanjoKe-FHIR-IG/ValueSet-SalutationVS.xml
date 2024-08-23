@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SalutationVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SalutationVS</b></p><a name="SalutationVS"> </a><a name="hcSalutationVS"> </a><a name="SalutationVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KNHTS.PAT.TITLE.html"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-mr">mr</a></td><td style="color: #cccccc">Mr</td><td>Mr</td></tr><tr><td><a href="CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-mrs">mrs</a></td><td style="color: #cccccc">Mrs</td><td>Mrs</td></tr><tr><td><a href="CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-miss">miss</a></td><td style="color: #cccccc">Miss</td><td>Miss</td></tr><tr><td><a href="CodeSystem-KNHTS.PAT.TITLE.html#KNHTS.PAT.TITLE-ms">ms</a></td><td style="color: #cccccc">Ms</td><td>Ms</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS"/>
+  <version value="0.1.0"/>
+  <name value="PT_TITLE"/>
+  <title value="Salutation"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Salutation"/>
+  <compose>
+    <include>
+      <system value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE"/>
+      <concept>
+        <code value="mr"/>
+      </concept>
+      <concept>
+        <code value="mrs"/>
+      </concept>
+      <concept>
+        <code value="miss"/>
+      </concept>
+      <concept>
+        <code value="ms"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.FACILITYAPPROVALSTATUS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.FACILITYAPPROVALSTATUS</b></p><a name="KNHTS.FACILITYAPPROVALSTATUS"> </a><a name="hcKNHTS.FACILITYAPPROVALSTATUS"> </a><a name="KNHTS.FACILITYAPPROVALSTATUS-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">yes<a name="KNHTS.FACILITYAPPROVALSTATUS-yes"> </a></td><td>YES</td><td>YES</td></tr><tr><td style="white-space:nowrap">no<a name="KNHTS.FACILITYAPPROVALSTATUS-no"> </a></td><td>NO</td><td>NO</td></tr><tr><td style="white-space:nowrap">none<a name="KNHTS.FACILITYAPPROVALSTATUS-none"> </a></td><td>NONE</td><td>NONE</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS"/>
+  <version value="0.1.0"/>
+  <name value="FACILITYAPPROVALSTATUS"/>
+  <title value="CodeSystem for Facility Approval Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Facility Approval Status"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="yes"/>
+    <display value="YES"/>
+    <definition value="YES"/>
+  </concept>
+  <concept>
+    <code value="no"/>
+    <display value="NO"/>
+    <definition value="NO"/>
+  </concept>
+  <concept>
+    <code value="none"/>
+    <display value="NONE"/>
+    <definition value="NONE"/>
+  </concept>
+</CodeSystem>

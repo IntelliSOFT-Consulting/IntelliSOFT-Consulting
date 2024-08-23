@@ -1,0 +1,57 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KNHTS.MARITALSTATUS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KNHTS.MARITALSTATUS</b></p><a name=\"KNHTS.MARITALSTATUS\"> </a><a name=\"hcKNHTS.MARITALSTATUS\"> </a><a name=\"KNHTS.MARITALSTATUS-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">divorced<a name=\"KNHTS.MARITALSTATUS-divorced\"> </a></td><td>divorced</td></tr><tr><td style=\"white-space:nowrap\">married<a name=\"KNHTS.MARITALSTATUS-married\"> </a></td><td>married</td></tr><tr><td style=\"white-space:nowrap\">polygamous<a name=\"KNHTS.MARITALSTATUS-polygamous\"> </a></td><td>polygamous</td></tr><tr><td style=\"white-space:nowrap\">customary<a name=\"KNHTS.MARITALSTATUS-customary\"> </a></td><td>customary</td></tr><tr><td style=\"white-space:nowrap\">unmarried<a name=\"KNHTS.MARITALSTATUS-unmarried\"> </a></td><td>unmarried</td></tr><tr><td style=\"white-space:nowrap\">widow<a name=\"KNHTS.MARITALSTATUS-widow\"> </a></td><td>widow</td></tr></table></div>"
+  },
+  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
+  "version" : "0.1.0",
+  "name" : "MARITAL_STATUS",
+  "title" : "CodeSystem for Patient's Marital (Civil) Status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-23T12:29:17+03:00",
+  "publisher" : "intellisoftkenya",
+  "contact" : [{
+    "name" : "intellisoftkenya",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "CodeSystem for Patient's Marital (Civil) Status",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "divorced",
+    "display" : "divorced",
+    "definition" : "divorced"
+  },
+  {
+    "code" : "married",
+    "display" : "married",
+    "definition" : "married"
+  },
+  {
+    "code" : "polygamous",
+    "display" : "polygamous",
+    "definition" : "polygamous"
+  },
+  {
+    "code" : "customary",
+    "display" : "customary",
+    "definition" : "customary"
+  },
+  {
+    "code" : "unmarried",
+    "display" : "unmarried",
+    "definition" : "unmarried"
+  },
+  {
+    "code" : "widow",
+    "display" : "widow",
+    "definition" : "widow"
+  }]
+}

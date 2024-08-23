@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KNHTS.CLMSDISP"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KNHTS.CLMSDISP</b></p><a name="KNHTS.CLMSDISP"> </a><a name="hcKNHTS.CLMSDISP"> </a><a name="KNHTS.CLMSDISP-en-US"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSDISP</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CLMSDISP01<a name="KNHTS.CLMSDISP-CLMSDISP01"> </a></td><td>Improved</td><td>Improved</td></tr><tr><td style="white-space:nowrap">CLMSDISP02<a name="KNHTS.CLMSDISP-CLMSDISP02"> </a></td><td>Recovered</td><td>Recovered</td></tr><tr><td style="white-space:nowrap">CLMSDISP03<a name="KNHTS.CLMSDISP-CLMSDISP03"> </a></td><td>Against_Advice</td><td>Leave against/discharged against medical advice</td></tr><tr><td style="white-space:nowrap">CLMSDISP04<a name="KNHTS.CLMSDISP-CLMSDISP04"> </a></td><td>Absconded</td><td>Absconded</td></tr><tr><td style="white-space:nowrap">CLMSDISP05<a name="KNHTS.CLMSDISP-CLMSDISP05"> </a></td><td>DIED</td><td>DIED</td></tr></table></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSDISP"/>
+  <version value="0.1.0"/>
+  <name value="KNHTS_CLMS_DISPOSITION"/>
+  <title value="KNHTS.CLMSDISP CodeSystem for claim disposition"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for KNHTS Claim Disposition"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="CLMSDISP01"/>
+    <display value="Improved"/>
+    <definition value="Improved"/>
+  </concept>
+  <concept>
+    <code value="CLMSDISP02"/>
+    <display value="Recovered"/>
+    <definition value="Recovered"/>
+  </concept>
+  <concept>
+    <code value="CLMSDISP03"/>
+    <display value="Against_Advice"/>
+    <definition value="Leave against/discharged against medical advice"/>
+  </concept>
+  <concept>
+    <code value="CLMSDISP04"/>
+    <display value="Absconded"/>
+    <definition value="Absconded"/>
+  </concept>
+  <concept>
+    <code value="CLMSDISP05"/>
+    <display value="DIED"/>
+    <definition value="DIED"/>
+  </concept>
+</CodeSystem>

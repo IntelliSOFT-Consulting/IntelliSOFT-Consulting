@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CodeSystemsVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CodeSystemsVS</b></p><a name="CodeSystemsVS"> </a><a name="hcCodeSystemsVS"> </a><a name="CodeSystemsVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KNHTS.CODESYSTEMS.html"><code>https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-knhts">knhts</a></td><td style="color: #cccccc">http://knhts.health.go.ke</td><td>http://knhts.health.go.ke</td></tr><tr><td><a href="CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-loinc">loinc</a></td><td style="color: #cccccc">http://loinc.org</td><td>http://loinc.org</td></tr><tr><td><a href="CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-icd11">icd11</a></td><td style="color: #cccccc">https://icd.who.int/</td><td>https://icd.who.int</td></tr><tr><td><a href="CodeSystem-KNHTS.CODESYSTEMS.html#KNHTS.CODESYSTEMS-clientRegistry">clientRegistry</a></td><td style="color: #cccccc">https:example.cr/</td><td>https:example.cr/</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS"/>
+  <version value="0.1.0"/>
+  <name value="PT_CODESYSTEMS"/>
+  <title value="Code Systems ValueSet"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-23T12:29:17+03:00"/>
+  <publisher value="intellisoftkenya"/>
+  <contact>
+    <name value="intellisoftkenya"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Code Systems ValueSet"/>
+  <compose>
+    <include>
+      <system value="https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS"/>
+      <concept>
+        <code value="knhts"/>
+      </concept>
+      <concept>
+        <code value="loinc"/>
+      </concept>
+      <concept>
+        <code value="icd11"/>
+      </concept>
+      <concept>
+        <code value="clientRegistry"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
