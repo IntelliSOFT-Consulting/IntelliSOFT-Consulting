@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Substance",
+  "id" : "SubstanceExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Substance SubstanceExample</b></p><a name=\"SubstanceExample\"> </a><a name=\"hcSubstanceExample\"> </a><a name=\"SubstanceExample-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 102002}\">Hemoglobin Okaloosa</span></p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "102002",
+      "display" : "Hemoglobin Okaloosa"
+    }],
+    "text" : "Hemoglobin Okaloosa"
+  }
+}

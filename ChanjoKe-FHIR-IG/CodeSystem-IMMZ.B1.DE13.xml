@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ.B1.DE13"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZ.B1.DE13</b></p><a name="IMMZ.B1.DE13"> </a><a name="hcIMMZ.B1.DE13"> </a><a name="IMMZ.B1.DE13-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DE14<a name="IMMZ.B1.DE13-DE14"> </a></td><td>Facility</td></tr><tr><td style="white-space:nowrap">DE15<a name="IMMZ.B1.DE13-DE15"> </a></td><td>Outreach</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_DE8"/>
+  <title value="Place of Vaccination"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Place of Vaccination"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="DE14"/>
+    <display value="Facility"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Outreach"/>
+  </concept>
+</CodeSystem>

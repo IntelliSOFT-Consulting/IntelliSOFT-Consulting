@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="aefiActionTakenVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet aefiActionTakenVS</b></p><a name="aefiActionTakenVS"> </a><a name="hcaefiActionTakenVS"> </a><a name="aefiActionTakenVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.F.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-IMMZ.F.html#IMMZ.F-DE21">DE21</a></td><td style="color: #cccccc">Action taken</td></tr><tr><td><a href="CodeSystem-IMMZ.F.html#IMMZ.F-DE22">DE22</a></td><td style="color: #cccccc">Treatment given</td></tr><tr><td><a href="CodeSystem-IMMZ.F.html#IMMZ.F-DE23">DE23</a></td><td style="color: #cccccc">Specify</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/aefiActionTakenVS"/>
+  <version value="0.1.0"/>
+  <name value="AEFIACTIONTAKEN"/>
+  <title value="AEFI Action Taken"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="AEFI Action Taken"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"/>
+      <concept>
+        <code value="DE21"/>
+      </concept>
+      <concept>
+        <code value="DE22"/>
+      </concept>
+      <concept>
+        <code value="DE23"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

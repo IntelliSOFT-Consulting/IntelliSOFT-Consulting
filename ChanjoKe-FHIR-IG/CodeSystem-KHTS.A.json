@@ -3,44 +3,48 @@
   "id" : "KHTS.A",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KHTS.A</b></p><a name=\"KHTS.A\"> </a><a name=\"hcKHTS.A\"> </a><a name=\"KHTS.A-en-US\"> </a><p>This case-insensitive code system <code>https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mombasa<a name=\"KHTS.A-mombasa\"> </a></td><td>Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td style=\"white-space:nowrap\">kilifi<a name=\"KHTS.A-kilifi\"> </a></td><td>Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td style=\"white-space:nowrap\">tanaRiver<a name=\"KHTS.A-tanaRiver\"> </a></td><td>Tana River\tHola</td><td>County of Residence, Tana River\tHola</td></tr><tr><td style=\"white-space:nowrap\">lamu<a name=\"KHTS.A-lamu\"> </a></td><td>Lamu</td><td>County of Residence, Lamu</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KHTS.A</b></p><a name=\"KHTS.A\"> </a><a name=\"hcKHTS.A\"> </a><a name=\"KHTS.A-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">C-001<a name=\"KHTS.A-C-001\"> </a></td><td>Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td style=\"white-space:nowrap\">C-002<a name=\"KHTS.A-C-002\"> </a></td><td>Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td style=\"white-space:nowrap\">C-003<a name=\"KHTS.A-C-003\"> </a></td><td>Tana River\tHola</td><td>County of Residence, Tana River\tHola</td></tr><tr><td style=\"white-space:nowrap\">C-004<a name=\"KHTS.A-C-004\"> </a></td><td>Lamu</td><td>County of Residence, Lamu</td></tr></table></div>"
   },
-  "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A",
   "version" : "0.1.0",
   "name" : "KHTS_A",
-  "title" : "KHTS.A CodeSystem for Counties in Kenya",
+  "title" : "KenyaCounties CodeSystem for Counties in Kenya",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-08-23T12:29:17+03:00",
-  "publisher" : "intellisoftkenya",
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
   "contact" : [{
-    "name" : "intellisoftkenya",
+    "name" : "Intellisoft Consulting Ltd",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://example.org/example-publisher"
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
     }]
   }],
-  "description" : "CodeSystem for KHTS.A Counties in Kenya",
+  "description" : "CodeSystem for Counties in Kenya",
   "caseSensitive" : false,
   "content" : "complete",
   "count" : 4,
   "concept" : [{
-    "code" : "mombasa",
+    "code" : "C-001",
     "display" : "Mombasa",
     "definition" : "County of Residence, Mombasa"
   },
   {
-    "code" : "kilifi",
+    "code" : "C-002",
     "display" : "Kilifi",
     "definition" : "County of Residence, Kilifi"
   },
   {
-    "code" : "tanaRiver",
+    "code" : "C-003",
     "display" : "Tana River\tHola",
     "definition" : "County of Residence, Tana River\tHola"
   },
   {
-    "code" : "lamu",
+    "code" : "C-004",
     "display" : "Lamu",
     "definition" : "County of Residence, Lamu"
   }]

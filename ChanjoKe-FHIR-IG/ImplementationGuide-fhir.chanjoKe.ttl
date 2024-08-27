@@ -1,0 +1,2946 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImplementationGuide/fhir.chanjoKe> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fhir.chanjoKe"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.chanjoKe</b></p><a name=\"fhir.chanjoKe\"> </a><a name=\"hcfhir.chanjoKe\"> </a><a name=\"fhir.chanjoKe-en-US\"> </a><h2>chanjoKeIG</h2><p>The official URL for this implementation guide is: </p><pre>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImplementationGuide/fhir.chanjoKe</pre><div><p>ChanjoKE Immunization Implementation Guide</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImplementationGuide/fhir.chanjoKe"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "chanjoKeIG"] ; # 
+  fhir:title [ fhir:v "ChanjoKE Immunization Implementation Guide"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ChanjoKE Immunization Implementation Guide"] ; # 
+  fhir:packageId [ fhir:v "fhir.chanjoKe"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2023+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ci-build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaAdministrativeGenderVS> ;
+         fhir:reference [ fhir:v "ValueSet/kenyaAdministrativeGenderVS" ]
+       ] ;
+       fhir:name [ fhir:v "Administrative Gender" ] ;
+       fhir:description [ fhir:v "Administrative Gender" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/AdverseEventProfile" ]
+       ] ;
+       fhir:name [ fhir:v "AdverseEventProfile" ] ;
+       fhir:description [ fhir:v "Profile for Adverse Event" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/aefiActionTakenVS> ;
+         fhir:reference [ fhir:v "ValueSet/aefiActionTakenVS" ]
+       ] ;
+       fhir:name [ fhir:v "AEFI Action Taken" ] ;
+       fhir:description [ fhir:v "AEFI Action Taken" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/aefiOutcomeVS> ;
+         fhir:reference [ fhir:v "ValueSet/aefiOutcomeVS" ]
+       ] ;
+       fhir:name [ fhir:v "AEFI Outcome" ] ;
+       fhir:description [ fhir:v "AEFI Outcome" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/aefi-outcome> ;
+         fhir:reference [ fhir:v "StructureDefinition/aefi-outcome" ]
+       ] ;
+       fhir:name [ fhir:v "AefiOutcomeExtension" ] ;
+       fhir:description [ fhir:v "AefiOutcomeExtension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/basic-profile" ]
+       ] ;
+       fhir:name [ fhir:v "BasicProfile" ] ;
+       fhir:description [ fhir:v "Profile for the Basic resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Basic" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Basic/BasicProfileExample> ;
+         fhir:reference [ fhir:v "Basic/BasicProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "BasicProfileExample" ] ;
+       fhir:description [ fhir:v "An example of a BasicProfile resource." ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/body-weight-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/body-weight-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Body Weight extension" ] ;
+       fhir:description [ fhir:v "Addition for the patient's body weight in kilograms." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/certificate-Issue-Date> ;
+         fhir:reference [ fhir:v "StructureDefinition/certificate-Issue-Date" ]
+       ] ;
+       fhir:name [ fhir:v "Certificate Issue Date" ] ;
+       fhir:description [ fhir:v "Date when the vaccination certificate was issued" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/certificate-Issued> ;
+         fhir:reference [ fhir:v "StructureDefinition/certificate-Issued" ]
+       ] ;
+       fhir:name [ fhir:v "Certificate Issued" ] ;
+       fhir:description [ fhir:v "Add-on extension to ascertain whether the individual was given a vaccination certificate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/childCanBeLocatedVS> ;
+         fhir:reference [ fhir:v "ValueSet/childCanBeLocatedVS" ]
+       ] ;
+       fhir:name [ fhir:v "Child can be located" ] ;
+       fhir:description [ fhir:v "Child can be located" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/HivStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Client's HIV Status" ] ;
+       fhir:description [ fhir:v "Client's HIV Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult> ;
+         fhir:reference [ fhir:v "ValueSet/clientTSTTestResult" ]
+       ] ;
+       fhir:name [ fhir:v "Client's TST Test Result" ] ;
+       fhir:description [ fhir:v "Client's TST Test Result" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE> ;
+         fhir:reference [ fhir:v "CodeSystem/STOCKADJUSTMENTTYPE" ]
+       ] ;
+       fhir:name [ fhir:v "codeSystem for Adjustment Type" ] ;
+       fhir:description [ fhir:v "CodeSystem for Adjustment Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPEExample> ;
+         fhir:reference [ fhir:v "CodeSystem/STOCKADJUSTMENTTYPEExample" ]
+       ] ;
+       fhir:name [ fhir:v "codeSystem for Adjustment Type" ] ;
+       fhir:description [ fhir:v "CodeSystem for Adjustment Type" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/VaccinesValueSet> ;
+         fhir:reference [ fhir:v "ValueSet/VaccinesValueSet" ]
+       ] ;
+       fhir:name [ fhir:v "Combination Codes for vaccine" ] ;
+       fhir:description [ fhir:v "This is a mixed value set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/contraindication-to-vaccine> ;
+         fhir:reference [ fhir:v "StructureDefinition/contraindication-to-vaccine" ]
+       ] ;
+       fhir:name [ fhir:v "ContraIndication to Vaccine" ] ;
+       fhir:description [ fhir:v "Evaluation to determine if the patient is ineligible for the vaccine due to contraindications." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/contraindicationToVaccineVS> ;
+         fhir:reference [ fhir:v "ValueSet/contraindicationToVaccineVS" ]
+       ] ;
+       fhir:name [ fhir:v "Contraindications to vaccine" ] ;
+       fhir:description [ fhir:v "Contraindications to vaccine" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaCountiesVS> ;
+         fhir:reference [ fhir:v "ValueSet/kenyaCountiesVS" ]
+       ] ;
+       fhir:name [ fhir:v "Counties in Kenya" ] ;
+       fhir:description [ fhir:v "Counties in Kenya" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes> ;
+         fhir:reference [ fhir:v "CodeSystem/DDCQRFormatCodes" ]
+       ] ;
+       fhir:name [ fhir:v "DDCC QR Format Codes" ] ;
+       fhir:description [ fhir:v "Format of the representation of QR code" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodesExample> ;
+         fhir:reference [ fhir:v "CodeSystem/DDCQRFormatCodesExample" ]
+       ] ;
+       fhir:name [ fhir:v "DDCC QR Format Codes" ] ;
+       fhir:description [ fhir:v "Format of the representation of QR code" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/DefaulterTracingRequest" ]
+       ] ;
+       fhir:name [ fhir:v "DefaulterTracingRequest" ] ;
+       fhir:description [ fhir:v "Service Request for defaulter tracing" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ServiceRequest/DefaulterTracingRequestExample> ;
+         fhir:reference [ fhir:v "ServiceRequest/DefaulterTracingRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "DefaulterTracingRequestExample" ] ;
+       fhir:description [ fhir:v "An example of a defaulter tracing request" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/DDCQRFormatCodesVS> ;
+         fhir:reference [ fhir:v "ValueSet/DDCQRFormatCodesVS" ]
+       ] ;
+       fhir:name [ fhir:v "Digital Certificate Formats" ] ;
+       fhir:description [ fhir:v "ValueSets for Digital Certificate Formats" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateComposition" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateComposition" ] ;
+       fhir:description [ fhir:v "Describes the logical structure for a Digital Documentation for a Disease Certificates." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Composition/DigitalCertificateCompositionExample> ;
+         fhir:reference [ fhir:v "Composition/DigitalCertificateCompositionExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateCompositionExample" ] ;
+       fhir:description [ fhir:v "Example of a Digital Certificate Composition" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateCompositionVaccinationStatus" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateCompositionVaccinationStatus" ] ;
+       fhir:description [ fhir:v "Digital Certificate for Vaccination Status Composition" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Composition/DigitalCertificateCompositionVaccinationStatusExample> ;
+         fhir:reference [ fhir:v "Composition/DigitalCertificateCompositionVaccinationStatusExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateCompositionVaccinationStatusExample" ] ;
+       fhir:description [ fhir:v "An example of a digital certificate for vaccination status composition" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocument> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateDocument" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocument" ] ;
+       fhir:description [ fhir:v "A Digital Certificate Document is a document bundle containing the Digital Certificate information." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Bundle/DigitalCertificateDocumentExample> ;
+         fhir:reference [ fhir:v "Bundle/DigitalCertificateDocumentExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentExample" ] ;
+       fhir:description [ fhir:v "An example of a digital certificate document" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocument"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocument>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateDocumentFolder" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentFolder" ] ;
+       fhir:description [ fhir:v "Digital Certificate Folder of the Paper Certificate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "List" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/List/DigitalCertificateDocumentFolderExample> ;
+         fhir:reference [ fhir:v "List/DigitalCertificateDocumentFolderExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentFolderExample" ] ;
+       fhir:description [ fhir:v "An example of a digital certificate document folder" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateDocumentReference" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentReference" ] ;
+       fhir:description [ fhir:v "Digital Certificate DocumentReference for QR codes including the QR image and the serialized content." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/DocumentReference/DigitalCertificateDocumentReferenceExample> ;
+         fhir:reference [ fhir:v "DocumentReference/DigitalCertificateDocumentReferenceExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentReferenceExample" ] ;
+       fhir:description [ fhir:v "An example of Digital Certificate Document Reference for QR codes" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReferenceQR> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateDocumentReferenceQR" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentReferenceQR" ] ;
+       fhir:description [ fhir:v "Digital Certificate DocumentReference for QR codes including the QR image and the serialized content." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/DocumentReference/DigitalCertificateDocumentReferenceQRExample> ;
+         fhir:reference [ fhir:v "DocumentReference/DigitalCertificateDocumentReferenceQRExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateDocumentReferenceQRExample" ] ;
+       fhir:description [ fhir:v "An example of a digital certificate document reference for QR codes" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReferenceQR"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReferenceQR>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificateOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateOrganization" ] ;
+       fhir:description [ fhir:v "Abstraction for a Digital Certificate Organization. There should be a Digital Certificate Organization associated to each public health authortiy (PHA)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Organization/DigitalCertificateOrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/DigitalCertificateOrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificateOrganizationExample" ] ;
+       fhir:description [ fhir:v "An example of a digital certificate organization" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/DigitalCertificatePatient" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificatePatient" ] ;
+       fhir:description [ fhir:v "A Digital Certificate Patient should" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/DigitalCertificatePatientExample> ;
+         fhir:reference [ fhir:v "Patient/DigitalCertificatePatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "DigitalCertificatePatientExample" ] ;
+       fhir:description [ fhir:v "An example of a digital certificate patient" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/disaggregationGroupVS> ;
+         fhir:reference [ fhir:v "ValueSet/disaggregationGroupVS" ]
+       ] ;
+       fhir:name [ fhir:v "Disaggregation Group" ] ;
+       fhir:description [ fhir:v "Disaggregation Group" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/DueOROverdueVaccinationVS> ;
+         fhir:reference [ fhir:v "ValueSet/DueOROverdueVaccinationVS" ]
+       ] ;
+       fhir:name [ fhir:v "Due OR Overdue Vaccination(s)" ] ;
+       fhir:description [ fhir:v "Due OR Overdue Vaccination(s)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AdverseEvent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/AdverseEvent/ExampleAdverseEvent> ;
+         fhir:reference [ fhir:v "AdverseEvent/ExampleAdverseEvent" ]
+       ] ;
+       fhir:name [ fhir:v "Example Adverse Event" ] ;
+       fhir:description [ fhir:v "An example instance of an adverse event profile." ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Condition/ConditionExample> ;
+         fhir:reference [ fhir:v "Condition/ConditionExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Condition" ] ;
+       fhir:description [ fhir:v "An example instance of a condition." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/exposedToCloseContactWithTBVs> ;
+         fhir:reference [ fhir:v "ValueSet/exposedToCloseContactWithTBVs" ]
+       ] ;
+       fhir:name [ fhir:v "Exposed to close contact with TB" ] ;
+       fhir:description [ fhir:v "Exposed to close contact with TB" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expected-date-of-next-order> ;
+         fhir:reference [ fhir:v "StructureDefinition/expected-date-of-next-order" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for  Expected Date of Next Order " ] ;
+       fhir:description [ fhir:v "AExtension for Expected Date of Next Order" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/action-taken> ;
+         fhir:reference [ fhir:v "StructureDefinition/action-taken" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Action Taken" ] ;
+       fhir:description [ fhir:v "Action Taken" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/allocated-quantity> ;
+         fhir:reference [ fhir:v "StructureDefinition/allocated-quantity" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Allocated Quantity" ] ;
+       fhir:description [ fhir:v "AExtension for Allocated Quantity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/batch-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/batch-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Batch Number " ] ;
+       fhir:description [ fhir:v "AExtension for Batch Number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/children> ;
+         fhir:reference [ fhir:v "StructureDefinition/children" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Children " ] ;
+       fhir:description [ fhir:v "AExtension for Children" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-of-last-order> ;
+         fhir:reference [ fhir:v "StructureDefinition/date-of-last-order" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Date Of last Order" ] ;
+       fhir:description [ fhir:v "Extension for Date Of last Order" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-received> ;
+         fhir:reference [ fhir:v "StructureDefinition/date-received" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Date Received" ] ;
+       fhir:description [ fhir:v "AExtension for Date Received" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/doses-in-stock> ;
+         fhir:reference [ fhir:v "StructureDefinition/doses-in-stock" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Doses in stock" ] ;
+       fhir:description [ fhir:v "AExtension for Doses in stock" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/event-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/event-details" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Event Details" ] ;
+       fhir:description [ fhir:v "Brief details on the event" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expiry-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/expiry-date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for ExpiryDate " ] ;
+       fhir:description [ fhir:v "AExtension for ExpiryDate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/facility-reported> ;
+         fhir:reference [ fhir:v "StructureDefinition/facility-reported" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Facility Reported" ] ;
+       fhir:description [ fhir:v "Facility Reported" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/issue-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/issue-date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Issue Date" ] ;
+       fhir:description [ fhir:v "AExtension for Issue Date" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-counties-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/kenya-counties-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Kenya counties" ] ;
+       fhir:description [ fhir:v "A code representing kenya counties" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/manufacturer-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/manufacturer-details" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Manufacturer Details " ] ;
+       fhir:description [ fhir:v "AExtension for Manufacturer Details" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/maximum> ;
+         fhir:reference [ fhir:v "StructureDefinition/maximum" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Maximum" ] ;
+       fhir:description [ fhir:v "AExtension for Maximum" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/minimum> ;
+         fhir:reference [ fhir:v "StructureDefinition/minimum" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Minimum" ] ;
+       fhir:description [ fhir:v "AExtension for Minimum" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/order-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/order-number" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Order number" ] ;
+       fhir:description [ fhir:v "AExtension for Order number" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/ordered-amount> ;
+         fhir:reference [ fhir:v "StructureDefinition/ordered-amount" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Ordered Amount " ] ;
+       fhir:description [ fhir:v "AExtension for Ordered Amount" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/origin> ;
+         fhir:reference [ fhir:v "StructureDefinition/origin" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Origin" ] ;
+       fhir:description [ fhir:v "AExtension for Origin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/physical-count> ;
+         fhir:reference [ fhir:v "StructureDefinition/physical-count" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Physical Count" ] ;
+       fhir:description [ fhir:v "AExtension for Physical Count" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/pregnant-women> ;
+         fhir:reference [ fhir:v "StructureDefinition/pregnant-women" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Pregnant women " ] ;
+       fhir:description [ fhir:v "AExtension for Pregnant women" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/products> ;
+         fhir:reference [ fhir:v "StructureDefinition/products" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Products " ] ;
+       fhir:description [ fhir:v "Extension for Products" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/quantity-issued> ;
+         fhir:reference [ fhir:v "StructureDefinition/quantity-issued" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Quantity Issued" ] ;
+       fhir:description [ fhir:v "AExtension for Quantity Issued" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reason-for-adjustment> ;
+         fhir:reference [ fhir:v "StructureDefinition/reason-for-adjustment" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Reason For Adjustment " ] ;
+       fhir:description [ fhir:v "AExtension for Reason For Adjustment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/new-vvm> ;
+         fhir:reference [ fhir:v "StructureDefinition/new-vvm" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Reason For New VVM" ] ;
+       fhir:description [ fhir:v "AExtension for New VVM" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/previous-vvm> ;
+         fhir:reference [ fhir:v "StructureDefinition/previous-vvm" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Reason For Previous VVM" ] ;
+       fhir:description [ fhir:v "AExtension for Previous VVM" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-origin> ;
+         fhir:reference [ fhir:v "StructureDefinition/stock-origin" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Reason For Stock Origin" ] ;
+       fhir:description [ fhir:v "AExtension for Stock Origin" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/recommended-stock> ;
+         fhir:reference [ fhir:v "StructureDefinition/recommended-stock" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Recommended Stock " ] ;
+       fhir:description [ fhir:v "AExtension for Recommended Stock" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/remaining-quantity> ;
+         fhir:reference [ fhir:v "StructureDefinition/remaining-quantity" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Remaining Quantity " ] ;
+       fhir:description [ fhir:v "AExtension for Remaining Quantity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-collected> ;
+         fhir:reference [ fhir:v "StructureDefinition/specimen-collected" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Specimen collected for investigation" ] ;
+       fhir:description [ fhir:v "Specimen collected for investigation" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/specimen-details" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Specimen Details" ] ;
+       fhir:description [ fhir:v "Specimen Details" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-adjustment-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/stock-adjustment-date" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Stock Adjustment Date" ] ;
+       fhir:description [ fhir:v "AExtension for Stock Adjustment Date" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/adjustment-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/adjustment-type" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Stock Adjustment Type" ] ;
+       fhir:description [ fhir:v "AExtension for Stock Adjustment Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/stock-location" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Stock Location " ] ;
+       fhir:description [ fhir:v "AExtension for Stock Location" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-quantity> ;
+         fhir:reference [ fhir:v "StructureDefinition/stock-quantity" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Stock Quantity" ] ;
+       fhir:description [ fhir:v "AExtension for Stock Quantity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/total-population> ;
+         fhir:reference [ fhir:v "StructureDefinition/total-population" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Total Population" ] ;
+       fhir:description [ fhir:v "Extension for Total Population" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/treatment-details" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Treatment Details" ] ;
+       fhir:description [ fhir:v "Treatment Details" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-given> ;
+         fhir:reference [ fhir:v "StructureDefinition/treatment-given" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Treatment Given" ] ;
+       fhir:description [ fhir:v "Treatment Given" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/types-of-aefi> ;
+         fhir:reference [ fhir:v "StructureDefinition/types-of-aefi" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for types of AEFI" ] ;
+       fhir:description [ fhir:v "Extension for types of AEFI" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccine" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Vaccine" ] ;
+       fhir:description [ fhir:v "AExtension for Vaccine" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vvm-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/vvm-status" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for VVM Status " ] ;
+       fhir:description [ fhir:v "AExtension for VVM Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-health-worker-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/kenya-health-worker-extension" ]
+       ] ;
+       fhir:name [ fhir:v "Healthworker extension" ] ;
+       fhir:description [ fhir:v "Add-on extension to ascertain whether the individual is a healthcare worker." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes> ;
+         fhir:reference [ fhir:v "CodeSystem/IdentifierTypes" ]
+       ] ;
+       fhir:name [ fhir:v "Identifier Types" ] ;
+       fhir:description [ fhir:v "Defined Identifier Types for KenyanRegistryPatient" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypesExample> ;
+         fhir:reference [ fhir:v "CodeSystem/IdentifierTypesExample" ]
+       ] ;
+       fhir:name [ fhir:v "Identifier Types" ] ;
+       fhir:description [ fhir:v "Defined Identifier Types for KenyanRegistryPatient" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.A" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.A CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.A Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZADataElementsCodeSystem> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZADataElementsCodeSystem" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.A CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.A Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZARegisterClient> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZARegisterClient" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.A Register Client" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.A Register Client Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.B" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.B CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.B Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZBDataElementsCodeSystem> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZBDataElementsCodeSystem" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.B CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.B Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZBUpdateClientHistory> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZBUpdateClientHistory" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.B Update Client History" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.B Update Client History Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZCAdministerVaccine" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.C Administer Vaccine" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.C Administer Vaccine Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Binary" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZCAdministerVaccineExample> ;
+         fhir:reference [ fhir:v "Binary/IMMZCAdministerVaccineExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.C Administer Vaccine Example" ] ;
+       fhir:description [ fhir:v "An example instance of the IMMZ.C Administer Vaccine Data Dictionary." ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.C" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.C CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.C Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZCDataElementsCodeSystem" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.C CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.C Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCRegisterClient> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZCRegisterClient" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.C Register Client" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.C Register Client Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.D" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.D CodeSystem for Defaulter Tracing" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.D Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZDDefaulterTracingCodeSystem> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZDDefaulterTracingCodeSystem" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.D CodeSystem for Defaulter Tracing" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.D Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZDdefaulterTracing> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZDdefaulterTracing" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.D Defaulter Tracing" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.D Defaulter Tracing Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Binary" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZDdefaulterTracingExample> ;
+         fhir:reference [ fhir:v "Binary/IMMZDdefaulterTracingExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.D Defaulter Tracing Example" ] ;
+       fhir:description [ fhir:v "An example instance of the IMMZ.D Defaulter Tracing Profile." ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZDdefaulterTracing"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZDdefaulterTracing>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.E" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.E CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.E Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.EExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.E CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.E Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZEGenerateReport" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.E Generate Report" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.E Report Generation Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Binary" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZEGenerateReportExample> ;
+         fhir:reference [ fhir:v "Binary/IMMZEGenerateReportExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.E Generate Report Example" ] ;
+       fhir:description [ fhir:v "An example instance of the IMMZ.E Generate Report Profile." ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZFaefi> ;
+         fhir:reference [ fhir:v "StructureDefinition/IMMZFaefi" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.F AEFI" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.F AEFI Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Binary" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZFaefiExample> ;
+         fhir:reference [ fhir:v "Binary/IMMZFaefiExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.F AEFI Example" ] ;
+       fhir:description [ fhir:v "An example instance of the IMMZ.F AEFI Data Dictionary." ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZFaefi"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZFaefi>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.F" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.F CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.F Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.FExample> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.FExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.F CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.F Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.G> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.G" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.G CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.GExample> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.GExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.G CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccination-certificate-coc> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccination-certificate-coc" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.G Vaccination Status- Continuity of Care" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.G Vaccination Status - Continuity of Care Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.H" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.H CodeSystem for Vaccine status" ] ;
+       fhir:description [ fhir:v "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.HExample> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.HExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.H CodeSystem for Vaccine status" ] ;
+       fhir:description [ fhir:v "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccination-certificate-vs> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccination-certificate-vs" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.H Vaccination Status" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.H Vaccination Status Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccination-certificate-core-data-set> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccination-certificate-core-data-set" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.J Vaccination Core DataSets" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.J Vaccination Certificate CoreDataSet Data Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:logical:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccination-certificate-pov> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccination-certificate-pov" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.K Vaccination Status- Proof of Vaccination" ] ;
+       fhir:description [ fhir:v "Data elements for the IMMZ.K Vaccination Status - Proof of Vaccination Dictionary." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.Z1" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.Z1 CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.Z1 Data Elements" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1Example> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.Z1Example" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZ.Z1 CodeSystem for Data Elements" ] ;
+       fhir:description [ fhir:v "CodeSystem for IMMZ.Z1 Data Elements" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Binary" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZARegisterClientExample> ;
+         fhir:reference [ fhir:v "Binary/IMMZARegisterClientExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZARegisterClientExample" ] ;
+       fhir:description [ fhir:v "An example of a IMMZA Register Client" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZARegisterClient"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZARegisterClient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Binary" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZBUpdateClientHistoryExample> ;
+         fhir:reference [ fhir:v "Binary/IMMZBUpdateClientHistoryExample" ]
+       ] ;
+       fhir:name [ fhir:v "IMMZBUpdateClientHistoryExample" ] ;
+       fhir:description [ fhir:v "Example instance for IMMZBUpdateClientHistory" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZBUpdateClientHistory"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZBUpdateClientHistory>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/improvementIndicatorVS> ;
+         fhir:reference [ fhir:v "ValueSet/improvementIndicatorVS" ]
+       ] ;
+       fhir:name [ fhir:v "Improvement Indicator" ] ;
+       fhir:description [ fhir:v "Improvement Indicator" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/inventory-items> ;
+         fhir:reference [ fhir:v "StructureDefinition/inventory-items" ]
+       ] ;
+       fhir:name [ fhir:v "InventoryItems" ] ;
+       fhir:description [ fhir:v "An item in the BasicProfile resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes> ;
+         fhir:reference [ fhir:v "CodeSystem/KenyaVaccineCodes" ]
+       ] ;
+       fhir:name [ fhir:v "Kenya Vaccine Codes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodesExample> ;
+         fhir:reference [ fhir:v "CodeSystem/KenyaVaccineCodesExample" ]
+       ] ;
+       fhir:name [ fhir:v "Kenya Vaccine Codes" ] ;
+       fhir:description [ fhir:v "CodeSystem for Kenya Vaccine Codes" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-administrative-gender-extension> ;
+         fhir:reference [ fhir:v "StructureDefinition/kenya-administrative-gender-extension" ]
+       ] ;
+       fhir:name [ fhir:v "KenyaAdministrativeGenderExtension" ] ;
+       fhir:description [ fhir:v "KenyaAdministrativeGenderExtension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A> ;
+         fhir:reference [ fhir:v "CodeSystem/KHTS.A" ]
+       ] ;
+       fhir:name [ fhir:v "KenyaCounties CodeSystem for Counties in Kenya" ] ;
+       fhir:description [ fhir:v "CodeSystem for Counties in Kenya" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.AExample> ;
+         fhir:reference [ fhir:v "CodeSystem/KHTS.AExample" ]
+       ] ;
+       fhir:name [ fhir:v "KenyaCounties CodeSystem for Counties in Kenya" ] ;
+       fhir:description [ fhir:v "CodeSystem for Counties in Kenya" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization> ;
+         fhir:reference [ fhir:v "StructureDefinition/KenyanImmunization" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanImmunization" ] ;
+       fhir:description [ fhir:v "Kenyan Registry Profile for Immunization." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Immunization/KenyanImmunizationExample> ;
+         fhir:reference [ fhir:v "Immunization/KenyanImmunizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanImmunizationExample" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation> ;
+         fhir:reference [ fhir:v "StructureDefinition/KenyanImmunizationRecommendation" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanImmunizationRecommendation" ] ;
+       fhir:description [ fhir:v "A patient's point-in-time set of recommendations (i.e. forecasting) according to a published schedule with optional supporting justification." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ImmunizationRecommendation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImmunizationRecommendation/KenyanImmunizationRecommendationExample> ;
+         fhir:reference [ fhir:v "ImmunizationRecommendation/KenyanImmunizationRecommendationExample" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanImmunizationRecommendationExample" ] ;
+       fhir:description [ fhir:v "An example of a Kenyan Immunization Recommendation" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRegistryPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/KenyanImmunizationRegistryPatient" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanImmunizationRegistryPatient" ] ;
+       fhir:description [ fhir:v "Kenyan Registry Profile for Patient." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanPractitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/KenyanPractitioner" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanPractitioner" ] ;
+       fhir:description [ fhir:v "Profile for a Kenyan Practitioner" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Practitioner/KenyanPractitionerExample> ;
+         fhir:reference [ fhir:v "Practitioner/KenyanPractitionerExample" ]
+       ] ;
+       fhir:name [ fhir:v "KenyanPractitionerExample" ] ;
+       fhir:description [ fhir:v "An example of a Kenyan Practitioner" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanPractitioner"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanPractitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Location/LocationExample> ;
+         fhir:reference [ fhir:v "Location/LocationExample" ]
+       ] ;
+       fhir:name [ fhir:v "LocationExample" ] ;
+       fhir:description [ fhir:v "An example of a Location" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalHIVStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/maternalHIVStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Maternal HIV Status" ] ;
+       fhir:description [ fhir:v "The HIV status of the client's biological mother when the client was born." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalTSTTestResultVs> ;
+         fhir:reference [ fhir:v "ValueSet/maternalTSTTestResultVs" ]
+       ] ;
+       fhir:name [ fhir:v "Maternal's TST Test Result" ] ;
+       fhir:description [ fhir:v "Maternal's TST Test Result" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Medication/MedicationExample> ;
+         fhir:reference [ fhir:v "Medication/MedicationExample" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationExample" ] ;
+       fhir:description [ fhir:v "An example of a Medication" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Organization/OrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "OrganizationExample" ] ;
+       fhir:description [ fhir:v "An example of an organization" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/PatientContactListVS> ;
+         fhir:reference [ fhir:v "ValueSet/PatientContactListVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Contact List" ] ;
+       fhir:description [ fhir:v "Paytient Contact List" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/PatientIdentifierTypeVS> ;
+         fhir:reference [ fhir:v "ValueSet/PatientIdentifierTypeVS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Identifier type" ] ;
+       fhir:description [ fhir:v "This is a set of valuesets that have been defined for the KenyanPatient Registry" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactList> ;
+         fhir:reference [ fhir:v "CodeSystem/PatientContactList" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Contact List" ] ;
+       fhir:description [ fhir:v "Patient's family members, friends or others that can be contacted by healthcare providers onbahalf of the patient" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactListExample> ;
+         fhir:reference [ fhir:v "CodeSystem/PatientContactListExample" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Contact List" ] ;
+       fhir:description [ fhir:v "Patient's family members, friends or others that can be contacted by healthcare providers on behalf of the patient" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/PatientExample> ;
+         fhir:reference [ fhir:v "Patient/PatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "PatientExample" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/placeOfVaccination> ;
+         fhir:reference [ fhir:v "ValueSet/placeOfVaccination" ]
+       ] ;
+       fhir:name [ fhir:v "Place of Vaccination" ] ;
+       fhir:description [ fhir:v "Place of Vaccination" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13> ;
+         fhir:reference [ fhir:v "CodeSystem/IMMZ.B1.DE13" ]
+       ] ;
+       fhir:name [ fhir:v "Place of Vaccination" ] ;
+       fhir:description [ fhir:v "Place of Vaccination" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Practitioner/PractitionerExample> ;
+         fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
+       ] ;
+       fhir:name [ fhir:v "PractitionerExample" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reactionSeverityVS> ;
+         fhir:reference [ fhir:v "ValueSet/reactionSeverityVS" ]
+       ] ;
+       fhir:name [ fhir:v "Reaction Severity" ] ;
+       fhir:description [ fhir:v "Reaction Severity" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reaction-severity> ;
+         fhir:reference [ fhir:v "StructureDefinition/reaction-severity" ]
+       ] ;
+       fhir:name [ fhir:v "ReactionSeverityExtension" ] ;
+       fhir:description [ fhir:v "ReactionSeverityExtension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/KenyanImmunizationNotDoneReasonsVS> ;
+         fhir:reference [ fhir:v "ValueSet/KenyanImmunizationNotDoneReasonsVS" ]
+       ] ;
+       fhir:name [ fhir:v "Reason Vaccine not administered" ] ;
+       fhir:description [ fhir:v "Reasons a Vaccine was not administered (Kenyan National Program)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyanImmunizationNotDoneReasonsCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KenyanImmunizationNotDoneReasonsCS" ]
+       ] ;
+       fhir:name [ fhir:v "Reason Vaccine not Administered" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyanImmunizationNotDoneReasonsCSExample> ;
+         fhir:reference [ fhir:v "CodeSystem/KenyanImmunizationNotDoneReasonsCSExample" ]
+       ] ;
+       fhir:name [ fhir:v "Reason Vaccine not Administered" ] ;
+       fhir:description [ fhir:v "CodeSystem for reasons vaccine not administered in Kenya" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reasonVaccineNotdministeredVS> ;
+         fhir:reference [ fhir:v "ValueSet/reasonVaccineNotdministeredVS" ]
+       ] ;
+       fhir:name [ fhir:v "Reason vaccine was not administered" ] ;
+       fhir:description [ fhir:v "Reason vaccine was not administered" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportIndicatorCodeVS> ;
+         fhir:reference [ fhir:v "ValueSet/reportIndicatorCodeVS" ]
+       ] ;
+       fhir:name [ fhir:v "Report Indicator Code" ] ;
+       fhir:description [ fhir:v "Report Indicator Code" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/reportStatusVS" ]
+       ] ;
+       fhir:name [ fhir:v "Report Status" ] ;
+       fhir:description [ fhir:v "Report Status" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportTypeVS> ;
+         fhir:reference [ fhir:v "ValueSet/reportTypeVS" ]
+       ] ;
+       fhir:name [ fhir:v "Report Type" ] ;
+       fhir:description [ fhir:v "Report Type" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaServiceRequestsVS> ;
+         fhir:reference [ fhir:v "ValueSet/kenyaServiceRequestsVS" ]
+       ] ;
+       fhir:name [ fhir:v "Service Requests" ] ;
+       fhir:description [ fhir:v "Service Requests to be used in Kenyan Context" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests> ;
+         fhir:reference [ fhir:v "CodeSystem/ServiceRequests" ]
+       ] ;
+       fhir:name [ fhir:v "Service Requests" ] ;
+       fhir:description [ fhir:v "Service Reequests to be used within the Kenyan Contexts" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequestsExample> ;
+         fhir:reference [ fhir:v "CodeSystem/ServiceRequestsExample" ]
+       ] ;
+       fhir:name [ fhir:v "Service Requests" ] ;
+       fhir:description [ fhir:v "Service Requests to be used within the Kenyan Contexts" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ServiceRequest/ServiceRequestExample> ;
+         fhir:reference [ fhir:v "ServiceRequest/ServiceRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "ServiceRequestExample" ] ;
+       fhir:description [ fhir:v "An example of a service request" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/StockAdjustmentVs> ;
+         fhir:reference [ fhir:v "ValueSet/StockAdjustmentVs" ]
+       ] ;
+       fhir:name [ fhir:v "Stock Adjustment" ] ;
+       fhir:description [ fhir:v "Stock Adjustment" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Substance" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Substance/SubstanceExample> ;
+         fhir:reference [ fhir:v "Substance/SubstanceExample" ]
+       ] ;
+       fhir:name [ fhir:v "SubstanceExample" ] ;
+       fhir:description [ fhir:v "Example Substance" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyDeliveryProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/SupplyDeliveryProfile" ]
+       ] ;
+       fhir:name [ fhir:v "SupplyDeliveryProfile" ] ;
+       fhir:description [ fhir:v "Record of delivery of what is supplied." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SupplyDelivery" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/SupplyDelivery/SupplyDeliveryProfileExample> ;
+         fhir:reference [ fhir:v "SupplyDelivery/SupplyDeliveryProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "SupplyDeliveryProfileExample" ] ;
+       fhir:description [ fhir:v "An example of a Supply Delivery Profile" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyDeliveryProfile"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyDeliveryProfile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/SupplyRequestProfile" ]
+       ] ;
+       fhir:name [ fhir:v "SupplyRequestProfile" ] ;
+       fhir:description [ fhir:v "A record of a request for a medication, substance or device used in the healthcare setting." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SupplyRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/SupplyRequest/SupplyRequestProfileExample> ;
+         fhir:reference [ fhir:v "SupplyRequest/SupplyRequestProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "SupplyRequestProfileExample" ] ;
+       fhir:description [ fhir:v "An example of a Supply Request" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile> ;
+         fhir:reference [ fhir:v "StructureDefinition/TaskProfile" ]
+       ] ;
+       fhir:name [ fhir:v "TaskProfile" ] ;
+       fhir:description [ fhir:v "These are requested orders. Will have a summary of all my orders" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Task/TaskProfileExample> ;
+         fhir:reference [ fhir:v "Task/TaskProfileExample" ]
+       ] ;
+       fhir:name [ fhir:v "TaskProfileExample" ] ;
+       fhir:description [ fhir:v "An example of a Task" ] ;
+       fhir:example [
+         fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile"^^xsd:anyURI ;
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfAEFIVS> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfAEFIVS" ]
+       ] ;
+       fhir:name [ fhir:v "Type of AEFI" ] ;
+       fhir:description [ fhir:v "Type of AEFI" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastDPTHepBHibDoseVS> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfLastDPTHepBHibDoseVS" ]
+       ] ;
+       fhir:name [ fhir:v "Type of last DPT-HepB+Hib dose" ] ;
+       fhir:description [ fhir:v "Type of last DPT-HepB+Hib dose" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastHPVDoseVS> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfLastHPVDoseVS" ]
+       ] ;
+       fhir:name [ fhir:v "Type of last HPV dose" ] ;
+       fhir:description [ fhir:v "Type of last HPV dose" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfLastMeaslesRubellaDoseVS" ]
+       ] ;
+       fhir:name [ fhir:v "Type of last Measles-Rubella dose" ] ;
+       fhir:description [ fhir:v "Type of last Measles-Rubella dose" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPCV10DoseVS> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfLastPCV10DoseVS" ]
+       ] ;
+       fhir:name [ fhir:v "Type of last PCV10 dose" ] ;
+       fhir:description [ fhir:v "Type of last PCV10 dose" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfLastPolioDose" ]
+       ] ;
+       fhir:name [ fhir:v "Type of last Polio dose" ] ;
+       fhir:description [ fhir:v "Type of last Polio dose" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS> ;
+         fhir:reference [ fhir:v "ValueSet/typeOfLastRotavirusDoseVS" ]
+       ] ;
+       fhir:name [ fhir:v "Type of last Rotavirus dose" ] ;
+       fhir:description [ fhir:v "Type of last Rotavirus dose" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/vaccineAdministeredVS> ;
+         fhir:reference [ fhir:v "ValueSet/vaccineAdministeredVS" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccine administered" ] ;
+       fhir:description [ fhir:v "Vaccine administered" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine-brand> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccine-brand" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccine Brand" ] ;
+       fhir:description [ fhir:v "Vaccine Brand" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/vaccineLibraryVS> ;
+         fhir:reference [ fhir:v "ValueSet/vaccineLibraryVS" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccine Library" ] ;
+       fhir:description [ fhir:v "Vaccine Library" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/validity-endDate-certificate> ;
+         fhir:reference [ fhir:v "StructureDefinition/validity-endDate-certificate" ]
+       ] ;
+       fhir:name [ fhir:v "Validity end date of the certificate." ] ;
+       fhir:description [ fhir:v "Validity end Date for the vaccination certificate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/validity-startdate-certificate> ;
+         fhir:reference [ fhir:v "StructureDefinition/validity-startdate-certificate" ]
+       ] ;
+       fhir:name [ fhir:v "Validity start date of the certificate." ] ;
+       fhir:description [ fhir:v "Validity Start Date for the vaccination certificate" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "dependancies.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "dependancies.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Dependancies" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "business-requirements.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "business-requirements.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Business Requirements" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "concepts.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "concepts.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Concepts" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "generic-personas.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "generic-personas.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Generic Personas" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "user-scenarios.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "user-scenarios.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "User Scenarios" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "business-processes.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "business-processes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Business Processes" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "decision-support-logic.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "decision-support-logic.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Decision Support Logic" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "functional-requirements.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "functional-requirements.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Functional Requirements" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "non-functional-requirements.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "non-functional-requirements.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Non-Functional Requirements" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

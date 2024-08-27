@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DDCQRFormatCodesExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DDCQRFormatCodesExample</b></p><a name=\"DDCQRFormatCodesExample\"> </a><a name=\"hcDDCQRFormatCodesExample\"> </a><a name=\"DDCQRFormatCodesExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodesExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">image<a name=\"DDCQRFormatCodesExample-image\"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>image</td></tr><tr><td style=\"white-space:nowrap\">serialized<a name=\"DDCQRFormatCodesExample-serialized\"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>serialized</td></tr><tr><td style=\"white-space:nowrap\">pdf<a name=\"DDCQRFormatCodesExample-pdf\"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>pdf</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodesExample",
+  "version" : "0.1.0",
+  "name" : "DDCQRFRMCDS",
+  "title" : "DDCC QR Format Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Format of the representation of QR code",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "image",
+    "display" : "http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+    "definition" : "image"
+  },
+  {
+    "code" : "serialized",
+    "display" : "http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+    "definition" : "serialized"
+  },
+  {
+    "code" : "pdf",
+    "display" : "http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+    "definition" : "pdf"
+  }]
+}

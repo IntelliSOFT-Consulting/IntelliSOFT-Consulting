@@ -1,0 +1,83 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"IMMZCAdministerVaccine","IMMZCAdministerVaccine","","","",0,*,"","","","null {[]} {[]}
+","IMMZ.C Administer Vaccine","Data elements for the IMMZ.C Administer Vaccine Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IMMZCAdministerVaccine.identifier","IMMZCAdministerVaccine.identifier","","","",1,1,"","","Y","string {[]} {[]}
+","unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID).","unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID).","","","","","","","","","",,,,,"",,,,"IMMZCAdministerVaccine.identifier",1,1,"",""
+"IMMZCAdministerVaccine.vaccinationVenue","IMMZCAdministerVaccine.vaccinationVenue","","","",1,1,"","","","code {[]} {[]}
+","Vaccination venue","Vaccination venue","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE1
+",,,,"IMMZCAdministerVaccine.vaccinationVenue",1,1,"",""
+"IMMZCAdministerVaccine.facility","IMMZCAdministerVaccine.facility","","","",1,1,"","","","code {[]} {[]}
+","Facility","Facility","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE2
+",,,,"IMMZCAdministerVaccine.facility",1,1,"",""
+"IMMZCAdministerVaccine.outreachSession","IMMZCAdministerVaccine.outreachSession","","","",1,1,"","","","code {[]} {[]}
+","Outreach session","Outreach session","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE3
+",,,,"IMMZCAdministerVaccine.outreachSession",1,1,"",""
+"IMMZCAdministerVaccine.nameOfFacility","IMMZCAdministerVaccine.nameOfFacility","","","",1,1,"","","","code {[]} {[]}
+","Name of facility","Name of facility","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE4
+",,,,"IMMZCAdministerVaccine.nameOfFacility",1,1,"",""
+"IMMZCAdministerVaccine.facilityType","IMMZCAdministerVaccine.facilityType","","","",1,1,"","","","code {[]} {[]}
+","Facility type","Facility type","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE5
+",,,,"IMMZCAdministerVaccine.facilityType",1,1,"",""
+"IMMZCAdministerVaccine.facilityLocation","IMMZCAdministerVaccine.facilityLocation","","","",1,1,"","","Y","string {[]} {[]}
+","Facility location","Facility location","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE6
+",,,,"IMMZCAdministerVaccine.facilityLocation",1,1,"",""
+"IMMZCAdministerVaccine.facilityId","IMMZCAdministerVaccine.facilityId","","","",1,1,"","","Y","string {[]} {[]}
+","Facility ID","Facility ID","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE7
+",,,,"IMMZCAdministerVaccine.facilityId",1,1,"",""
+"IMMZCAdministerVaccine.currentVaccineSchedule","IMMZCAdministerVaccine.currentVaccineSchedule","","","",1,1,"","","Y","string {[]} {[]}
+","Display client’s current vaccine schedule","Display client’s current vaccine schedule","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE9
+",,,,"IMMZCAdministerVaccine.currentVaccineSchedule",1,1,"",""
+"IMMZCAdministerVaccine.bodyWeight","IMMZCAdministerVaccine.bodyWeight","","","",1,1,"","","Y","string {[]} {[]}
+","Body weight","Body weight","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE10
+",,,,"IMMZCAdministerVaccine.bodyWeight",1,1,"",""
+"IMMZCAdministerVaccine.contraindicationToVaccine","IMMZCAdministerVaccine.contraindicationToVaccine","","","",1,1,"","","","boolean {[]} {[]}
+","Contraindications to vaccine","Contraindications to vaccine","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE11
+",,,,"IMMZCAdministerVaccine.contraindicationToVaccine",1,1,"",""
+"IMMZCAdministerVaccine.vaccineAdministered","IMMZCAdministerVaccine.vaccineAdministered","","","",1,1,"","","","boolean {[]} {[]}
+","Vaccine administered","Vaccine administered","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE14
+",,,,"IMMZCAdministerVaccine.vaccineAdministered",1,1,"",""
+"IMMZCAdministerVaccine.reasonVaccineNotAdministered","IMMZCAdministerVaccine.reasonVaccineNotAdministered","","","",1,1,"","","","code {[]} {[]}
+","Reason vaccine was not administered","Reason vaccine was not administered","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE17
+",,,,"IMMZCAdministerVaccine.reasonVaccineNotAdministered",1,1,"",""
+"IMMZCAdministerVaccine.vaccineName","IMMZCAdministerVaccine.vaccineName","","","",1,1,"","","","code {[]} {[]}
+","Vaccine name","Vaccine name","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE27
+",,,,"IMMZCAdministerVaccine.vaccineName",1,1,"",""
+"IMMZCAdministerVaccine.vaccineBrand","IMMZCAdministerVaccine.vaccineBrand","","","",1,1,"","","","code {[]} {[]}
+","Vaccine brand","Vaccine brand","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE28
+",,,,"IMMZCAdministerVaccine.vaccineBrand",1,1,"",""
+"IMMZCAdministerVaccine.vaccineManufacturer","IMMZCAdministerVaccine.vaccineManufacturer","","","",1,1,"","","","string {[]} {[]}
+","Vaccine manufacturer","Vaccine manufacturer","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE29
+",,,,"IMMZCAdministerVaccine.vaccineManufacturer",1,1,"",""
+"IMMZCAdministerVaccine.diseaseTargeted","IMMZCAdministerVaccine.diseaseTargeted","","","",1,1,"","","","code {[]} {[]}
+","Disease targeted","Disease targeted","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE30
+",,,,"IMMZCAdministerVaccine.diseaseTargeted",1,1,"",""
+"IMMZCAdministerVaccine.vaccineBatchNumber","IMMZCAdministerVaccine.vaccineBatchNumber","","","",1,1,"","","","string {[]} {[]}
+","Vaccine batch number","Vaccine batch number","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE31
+",,,,"IMMZCAdministerVaccine.vaccineBatchNumber",1,1,"",""
+"IMMZCAdministerVaccine.expirationDate","IMMZCAdministerVaccine.expirationDate","","","",1,1,"","","","string {[]} {[]}
+","Expiration date","Expiration date","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE32
+",,,,"IMMZCAdministerVaccine.expirationDate",1,1,"",""
+"IMMZCAdministerVaccine.doseQuantity","IMMZCAdministerVaccine.doseQuantity","","","",1,1,"","","","string {[]} {[]}
+","Dose quantity","Dose quantity","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE33
+",,,,"IMMZCAdministerVaccine.doseQuantity",1,1,"",""
+"IMMZCAdministerVaccine.siteAdministered","IMMZCAdministerVaccine.siteAdministered","","","",1,1,"","","","code {[]} {[]}
+","Site administered","Site administered","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE34
+",,,,"IMMZCAdministerVaccine.siteAdministered",1,1,"",""
+"IMMZCAdministerVaccine.vaccinatorName","IMMZCAdministerVaccine.vaccinatorName","","","",1,1,"","","","string {[]} {[]}
+","vaccinator name","vaccinator name","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE35
+",,,,"IMMZCAdministerVaccine.vaccinatorName",1,1,"",""
+"IMMZCAdministerVaccine.vaccinatorID","IMMZCAdministerVaccine.vaccinatorID","","","",1,1,"","","","string {[]} {[]}
+","Vaccinator ID","Vaccinator ID","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE36
+",,,,"IMMZCAdministerVaccine.vaccinatorID",1,1,"",""
+"IMMZCAdministerVaccine.certificateIssued","IMMZCAdministerVaccine.certificateIssued","","","",1,1,"","","","boolean {[]} {[]}
+","Certificate issued","Certificate issued","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE37
+",,,,"IMMZCAdministerVaccine.certificateIssued",1,1,"",""
+"IMMZCAdministerVaccine.dateIssued","IMMZCAdministerVaccine.dateIssued","","","",1,1,"","","","date {[]} {[]}
+","Date issued","Date issued","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE38
+",,,,"IMMZCAdministerVaccine.dateIssued",1,1,"",""
+"IMMZCAdministerVaccine.certificateValidFrom","IMMZCAdministerVaccine.certificateValidFrom","","","",1,1,"","","","date {[]} {[]}
+","Certificate valid from","Certificate valid from","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE39
+",,,,"IMMZCAdministerVaccine.certificateValidFrom",1,1,"",""
+"IMMZCAdministerVaccine.certificateValidUntil","IMMZCAdministerVaccine.certificateValidUntil","","","",1,1,"","","","date {[]} {[]}
+","Certificate valid until","Certificate valid until","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C#DE40
+",,,,"IMMZCAdministerVaccine.certificateValidUntil",1,1,"",""

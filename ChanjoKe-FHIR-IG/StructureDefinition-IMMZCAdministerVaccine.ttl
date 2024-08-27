@@ -1,0 +1,965 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZCAdministerVaccine"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition IMMZCAdministerVaccine</b></p><a name=\"IMMZCAdministerVaccine\"> </a><a name=\"hcIMMZCAdministerVaccine\"> </a><a name=\"IMMZCAdministerVaccine-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine\" title=\"Data elements for the IMMZ.C Administer Vaccine Data Dictionary.\">IMMZCAdministerVaccine</a><a name=\"IMMZCAdministerVaccine\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">IMMZ.C Administer Vaccine<br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.identifier\" title=\"unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID).\">identifier</a><a name=\"IMMZCAdministerVaccine.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID).</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccinationVenue\" title=\"Vaccination venue\">vaccinationVenue</a><a name=\"IMMZCAdministerVaccine.vaccinationVenue\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccination venue</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.facility\" title=\"Facility\">facility</a><a name=\"IMMZCAdministerVaccine.facility\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Facility</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.outreachSession\" title=\"Outreach session\">outreachSession</a><a name=\"IMMZCAdministerVaccine.outreachSession\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Outreach session</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.nameOfFacility\" title=\"Name of facility\">nameOfFacility</a><a name=\"IMMZCAdministerVaccine.nameOfFacility\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Name of facility</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.facilityType\" title=\"Facility type\">facilityType</a><a name=\"IMMZCAdministerVaccine.facilityType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Facility type</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.facilityLocation\" title=\"Facility location\">facilityLocation</a><a name=\"IMMZCAdministerVaccine.facilityLocation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Facility location</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.facilityId\" title=\"Facility ID\">facilityId</a><a name=\"IMMZCAdministerVaccine.facilityId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Facility ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.currentVaccineSchedule\" title=\"Display client’s current vaccine schedule\">currentVaccineSchedule</a><a name=\"IMMZCAdministerVaccine.currentVaccineSchedule\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Display client’s current vaccine schedule</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.bodyWeight\" title=\"Body weight\">bodyWeight</a><a name=\"IMMZCAdministerVaccine.bodyWeight\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Body weight</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.contraindicationToVaccine\" title=\"Contraindications to vaccine\">contraindicationToVaccine</a><a name=\"IMMZCAdministerVaccine.contraindicationToVaccine\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Contraindications to vaccine</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccineAdministered\" title=\"Vaccine administered\">vaccineAdministered</a><a name=\"IMMZCAdministerVaccine.vaccineAdministered\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine administered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.reasonVaccineNotAdministered\" title=\"Reason vaccine was not administered\">reasonVaccineNotAdministered</a><a name=\"IMMZCAdministerVaccine.reasonVaccineNotAdministered\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason vaccine was not administered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccineName\" title=\"Vaccine name\">vaccineName</a><a name=\"IMMZCAdministerVaccine.vaccineName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine name</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccineBrand\" title=\"Vaccine brand\">vaccineBrand</a><a name=\"IMMZCAdministerVaccine.vaccineBrand\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine brand</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccineManufacturer\" title=\"Vaccine manufacturer\">vaccineManufacturer</a><a name=\"IMMZCAdministerVaccine.vaccineManufacturer\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine manufacturer</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.diseaseTargeted\" title=\"Disease targeted\">diseaseTargeted</a><a name=\"IMMZCAdministerVaccine.diseaseTargeted\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Disease targeted</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccineBatchNumber\" title=\"Vaccine batch number\">vaccineBatchNumber</a><a name=\"IMMZCAdministerVaccine.vaccineBatchNumber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine batch number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.expirationDate\" title=\"Expiration date\">expirationDate</a><a name=\"IMMZCAdministerVaccine.expirationDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Expiration date</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.doseQuantity\" title=\"Dose quantity\">doseQuantity</a><a name=\"IMMZCAdministerVaccine.doseQuantity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dose quantity</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.siteAdministered\" title=\"Site administered\">siteAdministered</a><a name=\"IMMZCAdministerVaccine.siteAdministered\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Site administered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccinatorName\" title=\"vaccinator name\">vaccinatorName</a><a name=\"IMMZCAdministerVaccine.vaccinatorName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">vaccinator name</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.vaccinatorID\" title=\"Vaccinator ID\">vaccinatorID</a><a name=\"IMMZCAdministerVaccine.vaccinatorID\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccinator ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.certificateIssued\" title=\"Certificate issued\">certificateIssued</a><a name=\"IMMZCAdministerVaccine.certificateIssued\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Certificate issued</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.dateIssued\" title=\"Date issued\">dateIssued</a><a name=\"IMMZCAdministerVaccine.dateIssued\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date issued</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.certificateValidFrom\" title=\"Certificate valid from\">certificateValidFrom</a><a name=\"IMMZCAdministerVaccine.certificateValidFrom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Certificate valid from</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZCAdministerVaccine-definitions.html#IMMZCAdministerVaccine.certificateValidUntil\" title=\"Certificate valid until\">certificateValidUntil</a><a name=\"IMMZCAdministerVaccine.certificateValidUntil\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Certificate valid until</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/logical-target"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZCAdministerVaccine"] ; # 
+  fhir:title [ fhir:v "IMMZ.C Administer Vaccine"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Data elements for the IMMZ.C Administer Vaccine Data Dictionary."] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine" ] ;
+       fhir:short [ fhir:v "IMMZ.C Administer Vaccine" ] ;
+       fhir:definition [ fhir:v "Data elements for the IMMZ.C Administer Vaccine Data Dictionary." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.identifier" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.identifier" ] ;
+       fhir:short [ fhir:v "unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)." ] ;
+       fhir:definition [ fhir:v "unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.identifier" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccinationVenue" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinationVenue" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE1" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccination venue" ] ;
+       fhir:definition [ fhir:v "Vaccination venue" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinationVenue" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facility" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facility" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE2" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility" ] ;
+       fhir:definition [ fhir:v "Facility" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.facility" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.outreachSession" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.outreachSession" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE3" ]
+       ] ) ;
+       fhir:short [ fhir:v "Outreach session" ] ;
+       fhir:definition [ fhir:v "Outreach session" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.outreachSession" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.nameOfFacility" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.nameOfFacility" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE4" ]
+       ] ) ;
+       fhir:short [ fhir:v "Name of facility" ] ;
+       fhir:definition [ fhir:v "Name of facility" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.nameOfFacility" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facilityType" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityType" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE5" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility type" ] ;
+       fhir:definition [ fhir:v "Facility type" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityType" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facilityLocation" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityLocation" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE6" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility location" ] ;
+       fhir:definition [ fhir:v "Facility location" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityLocation" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facilityId" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityId" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE7" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility ID" ] ;
+       fhir:definition [ fhir:v "Facility ID" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityId" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.currentVaccineSchedule" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.currentVaccineSchedule" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE9" ]
+       ] ) ;
+       fhir:short [ fhir:v "Display client’s current vaccine schedule" ] ;
+       fhir:definition [ fhir:v "Display client’s current vaccine schedule" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.currentVaccineSchedule" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.bodyWeight" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.bodyWeight" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE10" ]
+       ] ) ;
+       fhir:short [ fhir:v "Body weight" ] ;
+       fhir:definition [ fhir:v "Body weight" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.bodyWeight" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.contraindicationToVaccine" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.contraindicationToVaccine" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE11" ]
+       ] ) ;
+       fhir:short [ fhir:v "Contraindications to vaccine" ] ;
+       fhir:definition [ fhir:v "Contraindications to vaccine" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.contraindicationToVaccine" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineAdministered" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineAdministered" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE14" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine administered" ] ;
+       fhir:definition [ fhir:v "Vaccine administered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineAdministered" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.reasonVaccineNotAdministered" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.reasonVaccineNotAdministered" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE17" ]
+       ] ) ;
+       fhir:short [ fhir:v "Reason vaccine was not administered" ] ;
+       fhir:definition [ fhir:v "Reason vaccine was not administered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.reasonVaccineNotAdministered" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineName" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE27" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine name" ] ;
+       fhir:definition [ fhir:v "Vaccine name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineBrand" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineBrand" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE28" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine brand" ] ;
+       fhir:definition [ fhir:v "Vaccine brand" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineBrand" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineManufacturer" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineManufacturer" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE29" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine manufacturer" ] ;
+       fhir:definition [ fhir:v "Vaccine manufacturer" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineManufacturer" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.diseaseTargeted" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.diseaseTargeted" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE30" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disease targeted" ] ;
+       fhir:definition [ fhir:v "Disease targeted" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.diseaseTargeted" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineBatchNumber" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineBatchNumber" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE31" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine batch number" ] ;
+       fhir:definition [ fhir:v "Vaccine batch number" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineBatchNumber" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.expirationDate" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.expirationDate" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE32" ]
+       ] ) ;
+       fhir:short [ fhir:v "Expiration date" ] ;
+       fhir:definition [ fhir:v "Expiration date" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.expirationDate" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.doseQuantity" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.doseQuantity" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE33" ]
+       ] ) ;
+       fhir:short [ fhir:v "Dose quantity" ] ;
+       fhir:definition [ fhir:v "Dose quantity" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.doseQuantity" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.siteAdministered" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.siteAdministered" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE34" ]
+       ] ) ;
+       fhir:short [ fhir:v "Site administered" ] ;
+       fhir:definition [ fhir:v "Site administered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.siteAdministered" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccinatorName" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinatorName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE35" ]
+       ] ) ;
+       fhir:short [ fhir:v "vaccinator name" ] ;
+       fhir:definition [ fhir:v "vaccinator name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinatorName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccinatorID" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinatorID" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE36" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccinator ID" ] ;
+       fhir:definition [ fhir:v "Vaccinator ID" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinatorID" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.certificateIssued" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateIssued" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE37" ]
+       ] ) ;
+       fhir:short [ fhir:v "Certificate issued" ] ;
+       fhir:definition [ fhir:v "Certificate issued" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateIssued" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.dateIssued" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.dateIssued" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE38" ]
+       ] ) ;
+       fhir:short [ fhir:v "Date issued" ] ;
+       fhir:definition [ fhir:v "Date issued" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.dateIssued" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.certificateValidFrom" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateValidFrom" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE39" ]
+       ] ) ;
+       fhir:short [ fhir:v "Certificate valid from" ] ;
+       fhir:definition [ fhir:v "Certificate valid from" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateValidFrom" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.certificateValidUntil" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateValidUntil" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE40" ]
+       ] ) ;
+       fhir:short [ fhir:v "Certificate valid until" ] ;
+       fhir:definition [ fhir:v "Certificate valid until" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateValidUntil" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine" ] ;
+       fhir:short [ fhir:v "IMMZ.C Administer Vaccine" ] ;
+       fhir:definition [ fhir:v "Data elements for the IMMZ.C Administer Vaccine Data Dictionary." ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.identifier" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.identifier" ] ;
+       fhir:short [ fhir:v "unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)." ] ;
+       fhir:definition [ fhir:v "unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccinationVenue" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinationVenue" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE1" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccination venue" ] ;
+       fhir:definition [ fhir:v "Vaccination venue" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facility" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facility" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE2" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility" ] ;
+       fhir:definition [ fhir:v "Facility" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.outreachSession" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.outreachSession" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE3" ]
+       ] ) ;
+       fhir:short [ fhir:v "Outreach session" ] ;
+       fhir:definition [ fhir:v "Outreach session" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.nameOfFacility" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.nameOfFacility" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE4" ]
+       ] ) ;
+       fhir:short [ fhir:v "Name of facility" ] ;
+       fhir:definition [ fhir:v "Name of facility" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facilityType" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityType" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE5" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility type" ] ;
+       fhir:definition [ fhir:v "Facility type" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facilityLocation" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityLocation" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE6" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility location" ] ;
+       fhir:definition [ fhir:v "Facility location" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.facilityId" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.facilityId" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE7" ]
+       ] ) ;
+       fhir:short [ fhir:v "Facility ID" ] ;
+       fhir:definition [ fhir:v "Facility ID" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.currentVaccineSchedule" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.currentVaccineSchedule" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE9" ]
+       ] ) ;
+       fhir:short [ fhir:v "Display client’s current vaccine schedule" ] ;
+       fhir:definition [ fhir:v "Display client’s current vaccine schedule" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.bodyWeight" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.bodyWeight" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE10" ]
+       ] ) ;
+       fhir:short [ fhir:v "Body weight" ] ;
+       fhir:definition [ fhir:v "Body weight" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.contraindicationToVaccine" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.contraindicationToVaccine" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE11" ]
+       ] ) ;
+       fhir:short [ fhir:v "Contraindications to vaccine" ] ;
+       fhir:definition [ fhir:v "Contraindications to vaccine" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineAdministered" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineAdministered" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE14" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine administered" ] ;
+       fhir:definition [ fhir:v "Vaccine administered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.reasonVaccineNotAdministered" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.reasonVaccineNotAdministered" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE17" ]
+       ] ) ;
+       fhir:short [ fhir:v "Reason vaccine was not administered" ] ;
+       fhir:definition [ fhir:v "Reason vaccine was not administered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineName" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE27" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine name" ] ;
+       fhir:definition [ fhir:v "Vaccine name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineBrand" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineBrand" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE28" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine brand" ] ;
+       fhir:definition [ fhir:v "Vaccine brand" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineManufacturer" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineManufacturer" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE29" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine manufacturer" ] ;
+       fhir:definition [ fhir:v "Vaccine manufacturer" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.diseaseTargeted" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.diseaseTargeted" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE30" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disease targeted" ] ;
+       fhir:definition [ fhir:v "Disease targeted" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccineBatchNumber" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccineBatchNumber" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE31" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccine batch number" ] ;
+       fhir:definition [ fhir:v "Vaccine batch number" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.expirationDate" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.expirationDate" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE32" ]
+       ] ) ;
+       fhir:short [ fhir:v "Expiration date" ] ;
+       fhir:definition [ fhir:v "Expiration date" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.doseQuantity" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.doseQuantity" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE33" ]
+       ] ) ;
+       fhir:short [ fhir:v "Dose quantity" ] ;
+       fhir:definition [ fhir:v "Dose quantity" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.siteAdministered" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.siteAdministered" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE34" ]
+       ] ) ;
+       fhir:short [ fhir:v "Site administered" ] ;
+       fhir:definition [ fhir:v "Site administered" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccinatorName" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinatorName" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE35" ]
+       ] ) ;
+       fhir:short [ fhir:v "vaccinator name" ] ;
+       fhir:definition [ fhir:v "vaccinator name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.vaccinatorID" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.vaccinatorID" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE36" ]
+       ] ) ;
+       fhir:short [ fhir:v "Vaccinator ID" ] ;
+       fhir:definition [ fhir:v "Vaccinator ID" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.certificateIssued" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateIssued" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE37" ]
+       ] ) ;
+       fhir:short [ fhir:v "Certificate issued" ] ;
+       fhir:definition [ fhir:v "Certificate issued" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.dateIssued" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.dateIssued" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE38" ]
+       ] ) ;
+       fhir:short [ fhir:v "Date issued" ] ;
+       fhir:definition [ fhir:v "Date issued" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.certificateValidFrom" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateValidFrom" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE39" ]
+       ] ) ;
+       fhir:short [ fhir:v "Certificate valid from" ] ;
+       fhir:definition [ fhir:v "Certificate valid from" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "IMMZCAdministerVaccine.certificateValidUntil" ] ;
+       fhir:path [ fhir:v "IMMZCAdministerVaccine.certificateValidUntil" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE40" ]
+       ] ) ;
+       fhir:short [ fhir:v "Certificate valid until" ] ;
+       fhir:definition [ fhir:v "Certificate valid until" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Immunization/KenyanImmunizationExample> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KenyanImmunizationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization KenyanImmunizationExample</b></p><a name=\"KenyanImmunizationExample\"> </a><a name=\"hcKenyanImmunizationExample\"> </a><a name=\"KenyanImmunizationExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/cvx 20}, {http://health.gov.tz/CodeSystems/VaccineCodes V004}, {http://id.who.int/icd11/mms XM1PB8}\">DTaP</span></p><p><b>patient</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p><p><b>occurrence</b>: 2023-10-03 11:27:00+0300</p><p><b>recorded</b>: 2023-10-03 11:29:00+0300</p><p><b>primarySource</b>: true</p><p><b>lotNumber</b>: ret-234235</p><p><b>expirationDate</b>: 2023-11-01</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0443 AP}, {https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/tz/actors xxx}\">Administering Provider</span></td><td><a href=\"Practitioner-PractitionerExample.html\">Practitioner</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20" ] ;
+       fhir:display [ fhir:v "DTaP" ]
+     ] [
+       fhir:system [ fhir:v "http://health.gov.tz/CodeSystems/VaccineCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "V004" ]
+     ] [
+       fhir:system [ fhir:v "http://id.who.int/icd11/mms"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "XM1PB8" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2023-10-03T11:27:00+03:00"^^xsd:dateTime] ; # 
+  fhir:recorded [ fhir:v "2023-10-03T11:29:00+03:00"^^xsd:dateTime] ; # 
+  fhir:primarySource [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:lotNumber [ fhir:v "ret-234235"] ; # 
+  fhir:expirationDate [ fhir:v "2023-11-01"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:function [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0443"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AP" ]
+       ] [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/tz/actors"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "xxx" ]
+       ] )
+     ] ;
+     fhir:actor [
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Practitioner/PractitionerExample> ;
+       fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

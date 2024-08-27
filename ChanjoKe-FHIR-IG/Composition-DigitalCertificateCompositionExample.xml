@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="DigitalCertificateCompositionExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition DigitalCertificateCompositionExample</b></p><a name="DigitalCertificateCompositionExample"> </a><a name="hcDigitalCertificateCompositionExample"> </a><a name="DigitalCertificateCompositionExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers</code>/DC123456789 (use: usual, )</p><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11485-0}">Anesthesia records</span></p><p><b>date</b>: 2020-02-02</p><p><b>author</b>: <a href="Organization-DigitalCertificateOrganizationExample.html">Organization Kenya Ministry of Health</a></p><p><b>title</b>: Anesthesia records</p><h3>Attesters</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style="display: none">*</td><td>Legal</td><td>2020-02-02</td><td><a href="Organization-DigitalCertificateOrganizationExample.html">Organization Kenya Ministry of Health</a></td></tr></table><h3>Events</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td>2020-02-02 --&gt; 2020-02-03</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers"/>
+    <value value="DC123456789"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11485-0"/>
+      <display value="Anesthesia records"/>
+    </coding>
+    <text value="Anesthesia records"/>
+  </type>
+  <subject>
+    <reference value="Patient/DigitalCertificatePatientExample"/>
+  </subject>
+  <date value="2020-02-02"/>
+  <author>
+    <reference value="Organization/DigitalCertificateOrganizationExample"/>
+  </author>
+  <title value="Anesthesia records"/>
+  <attester>
+    <mode value="legal"/>
+    <time value="2020-02-02"/>
+    <party>
+      <reference value="Organization/DigitalCertificateOrganizationExample"/>
+    </party>
+  </attester>
+  <event>
+    <period>
+      <start value="2020-02-02"/>
+      <end value="2020-02-03"/>
+    </period>
+  </event>
+</Composition>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="kenyaCountiesVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet kenyaCountiesVS</b></p><a name="kenyaCountiesVS"> </a><a name="hckenyaCountiesVS"> </a><a name="kenyaCountiesVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KHTS.A.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KHTS.A.html#KHTS.A-C-001">C-001</a></td><td style="color: #cccccc">Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td><a href="CodeSystem-KHTS.A.html#KHTS.A-C-002">C-002</a></td><td style="color: #cccccc">Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td><a href="CodeSystem-KHTS.A.html#KHTS.A-C-003">C-003</a></td><td style="color: #cccccc">Tana River	Hola</td><td>County of Residence, Tana River	Hola</td></tr><tr><td><a href="CodeSystem-KHTS.A.html#KHTS.A-C-004">C-004</a></td><td style="color: #cccccc">Lamu</td><td>County of Residence, Lamu</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaCountiesVS"/>
+  <version value="0.1.0"/>
+  <name value="KHTS1VS"/>
+  <title value="Counties in Kenya"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Counties in Kenya"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A"/>
+      <concept>
+        <code value="C-001"/>
+      </concept>
+      <concept>
+        <code value="C-002"/>
+      </concept>
+      <concept>
+        <code value="C-003"/>
+      </concept>
+      <concept>
+        <code value="C-004"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

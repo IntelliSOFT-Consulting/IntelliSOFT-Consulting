@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DueOROverdueVaccinationVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet DueOROverdueVaccinationVS</b></p><a name="DueOROverdueVaccinationVS"> </a><a name="hcDueOROverdueVaccinationVS"> </a><a name="DueOROverdueVaccinationVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-KenyaVaccineCodes.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-KenyaVaccineCodes.html#KenyaVaccineCodes-BCG">BCG</a></td><td style="color: #cccccc">BCG</td><td>Bacillus Calmette-Guerin vaccine</td></tr><tr><td><a href="CodeSystem-KenyaVaccineCodes.html#KenyaVaccineCodes-OPV">OPV</a></td><td style="color: #cccccc">OPV</td><td>Oral Polio Vaccine</td></tr><tr><td><a href="CodeSystem-KenyaVaccineCodes.html#KenyaVaccineCodes-PCV">PCV</a></td><td style="color: #cccccc">PCV 10</td><td>Pneumococcal Conjugate Vaccine</td></tr><tr><td><a href="CodeSystem-KenyaVaccineCodes.html#KenyaVaccineCodes-Rota">Rota</a></td><td style="color: #cccccc">Rota</td><td>Rotavirus vaccine</td></tr><tr><td><a href="CodeSystem-KenyaVaccineCodes.html#KenyaVaccineCodes-DTP-Hib-Hep-B">DTP-Hib-Hep-B</a></td><td style="color: #cccccc">DTP-Hib-Hep B</td><td>Diptheria, Pertussis, Haemophilus influenzae type b</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/DueOROverdueVaccinationVS"/>
+  <version value="0.1.0"/>
+  <name value="IMMZD1DE10VS"/>
+  <title value="Due OR Overdue Vaccination(s)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Due OR Overdue Vaccination(s)"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes"/>
+      <concept>
+        <code value="BCG"/>
+      </concept>
+      <concept>
+        <code value="OPV"/>
+      </concept>
+      <concept>
+        <code value="PCV"/>
+      </concept>
+      <concept>
+        <code value="Rota"/>
+      </concept>
+      <concept>
+        <code value="DTP-Hib-Hep-B"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

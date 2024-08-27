@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="typeOfLastMeaslesRubellaDoseVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet typeOfLastMeaslesRubellaDoseVS</b></p><a name="typeOfLastMeaslesRubellaDoseVS"> </a><a name="hctypeOfLastMeaslesRubellaDoseVS"> </a><a name="typeOfLastMeaslesRubellaDoseVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.B.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE50">DE50</a></td><td>Measles-Rubella 1</td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE51">DE51</a></td><td>Measles-Rubella 2</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS"/>
+  <version value="0.1.0"/>
+  <name value="IMMZB1DE49VS"/>
+  <title value="Type of last Measles-Rubella dose"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Type of last Measles-Rubella dose"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"/>
+      <concept>
+        <code value="DE50"/>
+        <display value="Measles-Rubella 1"/>
+      </concept>
+      <concept>
+        <code value="DE51"/>
+        <display value="Measles-Rubella 2"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

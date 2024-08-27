@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZBDataElementsCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZBDataElementsCodeSystem</b></p><a name="IMMZBDataElementsCodeSystem"> </a><a name="hcIMMZBDataElementsCodeSystem"> </a><a name="IMMZBDataElementsCodeSystem-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZBDataElementsCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZBDataElementsCodeSystem-DE1"> </a></td><td>Client's HIV status</td></tr><tr><td style="white-space:nowrap">DE2<a name="IMMZBDataElementsCodeSystem-DE2"> </a></td><td>Positive</td></tr><tr><td style="white-space:nowrap">DE3<a name="IMMZBDataElementsCodeSystem-DE3"> </a></td><td>Negative</td></tr><tr><td style="white-space:nowrap">DE4<a name="IMMZBDataElementsCodeSystem-DE4"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">DE5<a name="IMMZBDataElementsCodeSystem-DE5"> </a></td><td>Client is currently receiving HAART</td></tr><tr><td style="white-space:nowrap">DE6<a name="IMMZBDataElementsCodeSystem-DE6"> </a></td><td>Yes</td></tr><tr><td style="white-space:nowrap">DE7<a name="IMMZBDataElementsCodeSystem-DE7"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">DE8<a name="IMMZBDataElementsCodeSystem-DE8"> </a></td><td>Maternal HIV status</td></tr><tr><td style="white-space:nowrap">DE9<a name="IMMZBDataElementsCodeSystem-DE9"> </a></td><td>Positive</td></tr><tr><td style="white-space:nowrap">DE10<a name="IMMZBDataElementsCodeSystem-DE10"> </a></td><td>Negative</td></tr><tr><td style="white-space:nowrap">DE11<a name="IMMZBDataElementsCodeSystem-DE11"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">DE12<a name="IMMZBDataElementsCodeSystem-DE12"> </a></td><td>Birth Weight(Kgs)</td></tr><tr><td style="white-space:nowrap">DE13<a name="IMMZBDataElementsCodeSystem-DE13"> </a></td><td>Place of vaccination</td></tr><tr><td style="white-space:nowrap">DE14<a name="IMMZBDataElementsCodeSystem-DE14"> </a></td><td>Facility</td></tr><tr><td style="white-space:nowrap">DE15<a name="IMMZBDataElementsCodeSystem-DE15"> </a></td><td>Outreach</td></tr><tr><td style="white-space:nowrap">DE16<a name="IMMZBDataElementsCodeSystem-DE16"> </a></td><td>Date of last dose</td></tr><tr><td style="white-space:nowrap">DE17<a name="IMMZBDataElementsCodeSystem-DE17"> </a></td><td>Number of weeks since last dose</td></tr><tr><td style="white-space:nowrap">DE18<a name="IMMZBDataElementsCodeSystem-DE18"> </a></td><td>Number of months since last dose</td></tr><tr><td style="white-space:nowrap">DE19<a name="IMMZBDataElementsCodeSystem-DE19"> </a></td><td>Number of years since last dose</td></tr><tr><td style="white-space:nowrap">DE20<a name="IMMZBDataElementsCodeSystem-DE20"> </a></td><td>Scheduled/appointment date</td></tr><tr><td style="white-space:nowrap">DE21<a name="IMMZBDataElementsCodeSystem-DE21"> </a></td><td>Vaccinator name</td></tr><tr><td style="white-space:nowrap">DE22<a name="IMMZBDataElementsCodeSystem-DE22"> </a></td><td>Vaccinator ID</td></tr><tr><td style="white-space:nowrap">DE23<a name="IMMZBDataElementsCodeSystem-DE23"> </a></td><td>Client’s age when they received the last dose</td></tr><tr><td style="white-space:nowrap">DE24<a name="IMMZBDataElementsCodeSystem-DE24"> </a></td><td>Client has completed vaccine primary series</td></tr><tr><td style="white-space:nowrap">DE25<a name="IMMZBDataElementsCodeSystem-DE25"> </a></td><td>Type of last Polio dose</td></tr><tr><td style="white-space:nowrap">DE26<a name="IMMZBDataElementsCodeSystem-DE26"> </a></td><td>bOPV</td></tr><tr><td style="white-space:nowrap">DE27<a name="IMMZBDataElementsCodeSystem-DE27"> </a></td><td>OPV I</td></tr><tr><td style="white-space:nowrap">DE28<a name="IMMZBDataElementsCodeSystem-DE28"> </a></td><td>OPV II</td></tr><tr><td style="white-space:nowrap">DE29<a name="IMMZBDataElementsCodeSystem-DE29"> </a></td><td>OPV III</td></tr><tr><td style="white-space:nowrap">DE30<a name="IMMZBDataElementsCodeSystem-DE30"> </a></td><td>Maternal's TST Test Result</td></tr><tr><td style="white-space:nowrap">DE31<a name="IMMZBDataElementsCodeSystem-DE31"> </a></td><td>TST-Positive</td></tr><tr><td style="white-space:nowrap">DE32<a name="IMMZBDataElementsCodeSystem-DE32"> </a></td><td>TST-Negative</td></tr><tr><td style="white-space:nowrap">DE33<a name="IMMZBDataElementsCodeSystem-DE33"> </a></td><td>Exposed to close contact with TB</td></tr><tr><td style="white-space:nowrap">DE34<a name="IMMZBDataElementsCodeSystem-DE34"> </a></td><td>Yes</td></tr><tr><td style="white-space:nowrap">DE35<a name="IMMZBDataElementsCodeSystem-DE35"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">DE36<a name="IMMZBDataElementsCodeSystem-DE36"> </a></td><td>Client's TST Test Result</td></tr><tr><td style="white-space:nowrap">DE37<a name="IMMZBDataElementsCodeSystem-DE37"> </a></td><td>TST-Positive</td></tr><tr><td style="white-space:nowrap">DE38<a name="IMMZBDataElementsCodeSystem-DE38"> </a></td><td>TST-Negative</td></tr><tr><td style="white-space:nowrap">DE39<a name="IMMZBDataElementsCodeSystem-DE39"> </a></td><td>Client's CD4 percentage</td></tr><tr><td style="white-space:nowrap">DE40<a name="IMMZBDataElementsCodeSystem-DE40"> </a></td><td>Maternal HIV status</td></tr><tr><td style="white-space:nowrap">DE41<a name="IMMZBDataElementsCodeSystem-DE41"> </a></td><td>Positive</td></tr><tr><td style="white-space:nowrap">DE42<a name="IMMZBDataElementsCodeSystem-DE42"> </a></td><td>Negative</td></tr><tr><td style="white-space:nowrap">DE43<a name="IMMZBDataElementsCodeSystem-DE43"> </a></td><td>Unknown</td></tr><tr><td style="white-space:nowrap">DE44<a name="IMMZBDataElementsCodeSystem-DE44"> </a></td><td>Type of last Rotavirus dose</td></tr><tr><td style="white-space:nowrap">DE45<a name="IMMZBDataElementsCodeSystem-DE45"> </a></td><td>Rotavirus-1</td></tr><tr><td style="white-space:nowrap">DE46<a name="IMMZBDataElementsCodeSystem-DE46"> </a></td><td>Rotavirus-2</td></tr><tr><td style="white-space:nowrap">DE47<a name="IMMZBDataElementsCodeSystem-DE47"> </a></td><td>Rotavirus-3</td></tr><tr><td style="white-space:nowrap">DE48<a name="IMMZBDataElementsCodeSystem-DE48"> </a></td><td>Any of the previous Rotavirus doses was administered with an unknown product</td></tr><tr><td style="white-space:nowrap">DE49<a name="IMMZBDataElementsCodeSystem-DE49"> </a></td><td>Type of last Measles-Rubella dose</td></tr><tr><td style="white-space:nowrap">DE50<a name="IMMZBDataElementsCodeSystem-DE50"> </a></td><td>Measles-Rubella 1</td></tr><tr><td style="white-space:nowrap">DE51<a name="IMMZBDataElementsCodeSystem-DE51"> </a></td><td>Measles-Rubella 2</td></tr><tr><td style="white-space:nowrap">DE52<a name="IMMZBDataElementsCodeSystem-DE52"> </a></td><td>Date started HAART</td></tr><tr><td style="white-space:nowrap">DE53<a name="IMMZBDataElementsCodeSystem-DE53"> </a></td><td>Number of months since HAART was initiated</td></tr><tr><td style="white-space:nowrap">DE54<a name="IMMZBDataElementsCodeSystem-DE54"> </a></td><td>Type of last HPV dose</td></tr><tr><td style="white-space:nowrap">DE55<a name="IMMZBDataElementsCodeSystem-DE55"> </a></td><td>HPV-1</td></tr><tr><td style="white-space:nowrap">DE56<a name="IMMZBDataElementsCodeSystem-DE56"> </a></td><td>HPV-2</td></tr><tr><td style="white-space:nowrap">DE57<a name="IMMZBDataElementsCodeSystem-DE57"> </a></td><td>Number of months between first and second HPV doses</td></tr><tr><td style="white-space:nowrap">DE58<a name="IMMZBDataElementsCodeSystem-DE58"> </a></td><td>Type of last PCV10 dose</td></tr><tr><td style="white-space:nowrap">DE59<a name="IMMZBDataElementsCodeSystem-DE59"> </a></td><td>PCV10-1</td></tr><tr><td style="white-space:nowrap">DE60<a name="IMMZBDataElementsCodeSystem-DE60"> </a></td><td>PCV10-2</td></tr><tr><td style="white-space:nowrap">DE61<a name="IMMZBDataElementsCodeSystem-DE61"> </a></td><td>PCV10-3</td></tr><tr><td style="white-space:nowrap">DE62<a name="IMMZBDataElementsCodeSystem-DE62"> </a></td><td>Type of last DPT-HepB+Hib dose</td></tr><tr><td style="white-space:nowrap">DE63<a name="IMMZBDataElementsCodeSystem-DE63"> </a></td><td>DPT-HepB+HiB 1</td></tr><tr><td style="white-space:nowrap">DE64<a name="IMMZBDataElementsCodeSystem-DE64"> </a></td><td>DPT-HepB+HiB 2</td></tr><tr><td style="white-space:nowrap">DE65<a name="IMMZBDataElementsCodeSystem-DE65"> </a></td><td>DPT-HepB+HiB 3</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZBDataElementsCodeSystem"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_B"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="Client's HIV status"/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="Positive"/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="Negative"/>
+  </concept>
+  <concept>
+    <code value="DE4"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="DE5"/>
+    <display value="Client is currently receiving HAART"/>
+  </concept>
+  <concept>
+    <code value="DE6"/>
+    <display value="Yes"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Maternal HIV status"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="Positive"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="Negative"/>
+  </concept>
+  <concept>
+    <code value="DE11"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="DE12"/>
+    <display value="Birth Weight(Kgs)"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Place of vaccination"/>
+  </concept>
+  <concept>
+    <code value="DE14"/>
+    <display value="Facility"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Outreach"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Date of last dose"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Number of weeks since last dose"/>
+  </concept>
+  <concept>
+    <code value="DE18"/>
+    <display value="Number of months since last dose"/>
+  </concept>
+  <concept>
+    <code value="DE19"/>
+    <display value="Number of years since last dose"/>
+  </concept>
+  <concept>
+    <code value="DE20"/>
+    <display value="Scheduled/appointment date"/>
+  </concept>
+  <concept>
+    <code value="DE21"/>
+    <display value="Vaccinator name"/>
+  </concept>
+  <concept>
+    <code value="DE22"/>
+    <display value="Vaccinator ID"/>
+  </concept>
+  <concept>
+    <code value="DE23"/>
+    <display value="Client’s age when they received the last dose"/>
+  </concept>
+  <concept>
+    <code value="DE24"/>
+    <display value="Client has completed vaccine primary series"/>
+  </concept>
+  <concept>
+    <code value="DE25"/>
+    <display value="Type of last Polio dose"/>
+  </concept>
+  <concept>
+    <code value="DE26"/>
+    <display value="bOPV"/>
+  </concept>
+  <concept>
+    <code value="DE27"/>
+    <display value="OPV I"/>
+  </concept>
+  <concept>
+    <code value="DE28"/>
+    <display value="OPV II"/>
+  </concept>
+  <concept>
+    <code value="DE29"/>
+    <display value="OPV III"/>
+  </concept>
+  <concept>
+    <code value="DE30"/>
+    <display value="Maternal's TST Test Result"/>
+  </concept>
+  <concept>
+    <code value="DE31"/>
+    <display value="TST-Positive"/>
+  </concept>
+  <concept>
+    <code value="DE32"/>
+    <display value="TST-Negative"/>
+  </concept>
+  <concept>
+    <code value="DE33"/>
+    <display value="Exposed to close contact with TB"/>
+  </concept>
+  <concept>
+    <code value="DE34"/>
+    <display value="Yes"/>
+  </concept>
+  <concept>
+    <code value="DE35"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="DE36"/>
+    <display value="Client's TST Test Result"/>
+  </concept>
+  <concept>
+    <code value="DE37"/>
+    <display value="TST-Positive"/>
+  </concept>
+  <concept>
+    <code value="DE38"/>
+    <display value="TST-Negative"/>
+  </concept>
+  <concept>
+    <code value="DE39"/>
+    <display value="Client's CD4 percentage"/>
+  </concept>
+  <concept>
+    <code value="DE40"/>
+    <display value="Maternal HIV status"/>
+  </concept>
+  <concept>
+    <code value="DE41"/>
+    <display value="Positive"/>
+  </concept>
+  <concept>
+    <code value="DE42"/>
+    <display value="Negative"/>
+  </concept>
+  <concept>
+    <code value="DE43"/>
+    <display value="Unknown"/>
+  </concept>
+  <concept>
+    <code value="DE44"/>
+    <display value="Type of last Rotavirus dose"/>
+  </concept>
+  <concept>
+    <code value="DE45"/>
+    <display value="Rotavirus-1"/>
+  </concept>
+  <concept>
+    <code value="DE46"/>
+    <display value="Rotavirus-2"/>
+  </concept>
+  <concept>
+    <code value="DE47"/>
+    <display value="Rotavirus-3"/>
+  </concept>
+  <concept>
+    <code value="DE48"/>
+    <display value="Any of the previous Rotavirus doses was administered with an unknown product"/>
+  </concept>
+  <concept>
+    <code value="DE49"/>
+    <display value="Type of last Measles-Rubella dose"/>
+  </concept>
+  <concept>
+    <code value="DE50"/>
+    <display value="Measles-Rubella 1"/>
+  </concept>
+  <concept>
+    <code value="DE51"/>
+    <display value="Measles-Rubella 2"/>
+  </concept>
+  <concept>
+    <code value="DE52"/>
+    <display value="Date started HAART"/>
+  </concept>
+  <concept>
+    <code value="DE53"/>
+    <display value="Number of months since HAART was initiated"/>
+  </concept>
+  <concept>
+    <code value="DE54"/>
+    <display value="Type of last HPV dose"/>
+  </concept>
+  <concept>
+    <code value="DE55"/>
+    <display value="HPV-1"/>
+  </concept>
+  <concept>
+    <code value="DE56"/>
+    <display value="HPV-2"/>
+  </concept>
+  <concept>
+    <code value="DE57"/>
+    <display value="Number of months between first and second HPV doses"/>
+  </concept>
+  <concept>
+    <code value="DE58"/>
+    <display value="Type of last PCV10 dose"/>
+  </concept>
+  <concept>
+    <code value="DE59"/>
+    <display value="PCV10-1"/>
+  </concept>
+  <concept>
+    <code value="DE60"/>
+    <display value="PCV10-2"/>
+  </concept>
+  <concept>
+    <code value="DE61"/>
+    <display value="PCV10-3"/>
+  </concept>
+  <concept>
+    <code value="DE62"/>
+    <display value="Type of last DPT-HepB+Hib dose"/>
+  </concept>
+  <concept>
+    <code value="DE63"/>
+    <display value="DPT-HepB+HiB 1"/>
+  </concept>
+  <concept>
+    <code value="DE64"/>
+    <display value="DPT-HepB+HiB 2"/>
+  </concept>
+  <concept>
+    <code value="DE65"/>
+    <display value="DPT-HepB+HiB 3"/>
+  </concept>
+</CodeSystem>

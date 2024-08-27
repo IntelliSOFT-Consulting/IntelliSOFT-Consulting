@@ -1,0 +1,60 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"IMMZBUpdateClientHistory","IMMZBUpdateClientHistory","","","",0,*,"","","","null {[]} {[]}
+","IMMZ.B Update Client History","Data elements for the IMMZ.B Update Client History Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IMMZBUpdateClientHistory.hivStatus","IMMZBUpdateClientHistory.hivStatus","","","",1,1,"","","Y","code {[]} {[]}
+","Client's HIV status","Client's HIV status","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B#DE1
+",,,,"IMMZBUpdateClientHistory.hivStatus",1,1,"",""
+"IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART","IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART","","","",1,1,"","","Y","boolean {[]} {[]}
+","Client is currently receiving HAART?","Client is currently receiving HAART?","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART",1,1,"",""
+"IMMZBUpdateClientHistory.maternalHIVStatus","IMMZBUpdateClientHistory.maternalHIVStatus","","","",1,1,"","","Y","code {[]} {[]}
+","The HIV status of the client's biological mother when the client was born.","The HIV status of the client's biological mother when the client was born.","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS","",,,,"IMMZBUpdateClientHistory.maternalHIVStatus",1,1,"",""
+"IMMZBUpdateClientHistory.birthWeight","IMMZBUpdateClientHistory.birthWeight","","","",1,1,"","","Y","decimal {[]} {[]}
+","Client Birthweight (Kgs)","Client Birthweight (Kgs)","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.birthWeight",1,1,"",""
+"IMMZBUpdateClientHistory.placeOFVaccination","IMMZBUpdateClientHistory.placeOFVaccination","","","",1,1,"","","Y","code {[]} {[]}
+","Client's Place of Vaccination","Client's Place of Vaccination","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/placeOfVaccination","",,,,"IMMZBUpdateClientHistory.placeOFVaccination",1,1,"",""
+"IMMZBUpdateClientHistory.dateofLastDosa","IMMZBUpdateClientHistory.dateofLastDosa","","","",1,1,"","","Y","date {[]} {[]}
+","Date of last dose","Date of last dose","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.dateofLastDosa",1,1,"",""
+"IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose","IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose","","","",1,1,"","","Y","integer {[]} {[]}
+","Number of weeks since last dose","The number of weeks since the last vaccine product dose that was administered to the client (per product/antigen).","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose",1,1,"",""
+"IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose","IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose","","","",1,1,"","","Y","integer {[]} {[]}
+","Number of Months since last dose","The number of months since the last vaccine product dose that was administered to the client (per product/antigen).","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose",1,1,"",""
+"IMMZBUpdateClientHistory.numberOfYearsSinceLastDose","IMMZBUpdateClientHistory.numberOfYearsSinceLastDose","","","",1,1,"","","Y","integer {[]} {[]}
+","Number of Years since last dose","The number of years since the last vaccine product dose that was administered to the client (per product/antigen).","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.numberOfYearsSinceLastDose",1,1,"",""
+"IMMZBUpdateClientHistory.scheduledAppointmentDate","IMMZBUpdateClientHistory.scheduledAppointmentDate","","","",1,1,"","","Y","date {[]} {[]}
+","Scheduled Appointment Date","Scheduled Appointment Date","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.scheduledAppointmentDate",1,1,"",""
+"IMMZBUpdateClientHistory.vaccinatorName","IMMZBUpdateClientHistory.vaccinatorName","","","",1,1,"","","Y","string {[]} {[]}
+","Vaccinator name","Vaccinator name","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.vaccinatorName",1,1,"",""
+"IMMZBUpdateClientHistory.vaccinatorID","IMMZBUpdateClientHistory.vaccinatorID","","","",1,1,"","","Y","string {[]} {[]}
+","Vaccinator ID","Vaccinator ID","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.vaccinatorID",1,1,"",""
+"IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose","IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose","","","",1,1,"","","Y","decimal {[]} {[]}
+","Client’s age when they received the last dose","Client’s age when they received the last dose","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose",1,1,"",""
+"IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries","IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries","","","",1,1,"","","Y","boolean {[]} {[]}
+","Has Client Completed vaccine primary series","Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries",1,1,"",""
+"IMMZBUpdateClientHistory.typeOfLastPolioDose","IMMZBUpdateClientHistory.typeOfLastPolioDose","","","",1,1,"","","Y","code {[]} {[]}
+","Type of last Polio dose","The type of the last Polio vaccine dose administered to the client","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose","",,,,"IMMZBUpdateClientHistory.typeOfLastPolioDose",1,1,"",""
+"IMMZBUpdateClientHistory.maternalTSTTestResult","IMMZBUpdateClientHistory.maternalTSTTestResult","","","",1,1,"","","Y","code {[]} {[]}
+","Maternal's TST Test Result from","Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalTSTTestResultVs","",,,,"IMMZBUpdateClientHistory.maternalTSTTestResult",1,1,"",""
+"IMMZBUpdateClientHistory.exposedToCloseContactWithTB","IMMZBUpdateClientHistory.exposedToCloseContactWithTB","","","",1,1,"","","Y","boolean {[]} {[]}
+","Exposed to close contact with TB","Exposed to close contact with TB","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.exposedToCloseContactWithTB",1,1,"",""
+"IMMZBUpdateClientHistory.clientsTSTTestResult","IMMZBUpdateClientHistory.clientsTSTTestResult","","","",1,1,"","","Y","code {[]} {[]}
+","Client's TST Test Result","Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult","",,,,"IMMZBUpdateClientHistory.clientsTSTTestResult",1,1,"",""
+"IMMZBUpdateClientHistory.clientCD4percentage","IMMZBUpdateClientHistory.clientCD4percentage","","","",1,1,"","","Y","decimal {[]} {[]}
+","Client's CD4 percentage","Represents the client's CD4 percentage level. The CD4 percentage (CD%) is the percentage of white blood cells (lymphocytes) that are CD4 cells","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.clientCD4percentage",1,1,"",""
+"IMMZBUpdateClientHistory.typeOfLastRotavirusDose","IMMZBUpdateClientHistory.typeOfLastRotavirusDose","","","",1,1,"","","Y","code {[]} {[]}
+","Type of last Rotavirus dose","The type of the last Rotavirus vaccine dose administered to the client","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS","",,,,"IMMZBUpdateClientHistory.typeOfLastRotavirusDose",1,1,"",""
+"IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct","IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct","","","",1,1,"","","Y","boolean {[]} {[]}
+","previous Rotavirus doses was administered with an unknown product?","Indicates whether or not any of the client's previous Rotavirus doses were administered using an unknown vaccine product","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct",1,1,"",""
+"IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose","IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose","","","",1,1,"","","Y","code {[]} {[]}
+","Type of last Measles-Rubella dose","The type of the last Measles-Rubella  vaccine dose administered to the client","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS","",,,,"IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose",1,1,"",""
+"IMMZBUpdateClientHistory.dateStartedHAART","IMMZBUpdateClientHistory.dateStartedHAART","","","",1,1,"","","Y","date {[]} {[]}
+","Date started HAART","The date when the client has started their Highly Active Antiretroviral Therapy (HAART) session(s)","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.dateStartedHAART",1,1,"",""
+"IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated","IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated","","","",1,1,"","","Y","integer {[]} {[]}
+","Number of months since HAART was initiated","The number of months since the client has started their Highly Active Antiretroviral Therapy (HAART)","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated",1,1,"",""
+"IMMZBUpdateClientHistory.typeOfLastHPVdose","IMMZBUpdateClientHistory.typeOfLastHPVdose","","","",1,1,"","","Y","code {[]} {[]}
+","Type of last HPV dose","Type of last HPV dose","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastHPVDoseVS","",,,,"IMMZBUpdateClientHistory.typeOfLastHPVdose",1,1,"",""
+"IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses","IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses","","","",1,1,"","","Y","integer {[]} {[]}
+","Number of months between first and second HPV doses","Number of months between first and second HPV doses","","","","","","","","","",,,,,"",,,,"IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses",1,1,"",""
+"IMMZBUpdateClientHistory.typeOfLastPCV10Dose","IMMZBUpdateClientHistory.typeOfLastPCV10Dose","","","",1,1,"","","Y","code {[]} {[]}
+","Type of last PCV10 dose","Type of last PCV10 dose","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPCV10DoseVS","",,,,"IMMZBUpdateClientHistory.typeOfLastPCV10Dose",1,1,"",""
+"IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose","IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose","","","",1,1,"","","Y","code {[]} {[]}
+","Type of last DPT-HepB+Hib dose","Type of last DPT-HepB+Hib dose","","","","","","","","","",,"required","","https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastDPTHepBHibDoseVS","",,,,"IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose",1,1,"",""

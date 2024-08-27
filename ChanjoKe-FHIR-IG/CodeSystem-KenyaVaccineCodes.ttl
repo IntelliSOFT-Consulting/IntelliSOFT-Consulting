@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KenyaVaccineCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KenyaVaccineCodes</b></p><a name=\"KenyaVaccineCodes\"> </a><a name=\"hcKenyaVaccineCodes\"> </a><a name=\"KenyaVaccineCodes-en-US\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>cvxp</td><td>cvxp</td><td>Coding</td><td>cvx mapping for this code</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>cvxp</b></td></tr><tr><td style=\"white-space:nowrap\">BCG<a name=\"KenyaVaccineCodes-BCG\"> </a></td><td>BCG</td><td>Bacillus Calmette-Guerin vaccine</td><td>19</td></tr><tr><td style=\"white-space:nowrap\">OPV<a name=\"KenyaVaccineCodes-OPV\"> </a></td><td>OPV</td><td>Oral Polio Vaccine</td><td>02</td></tr><tr><td style=\"white-space:nowrap\">PCV<a name=\"KenyaVaccineCodes-PCV\"> </a></td><td>PCV 10</td><td>Pneumococcal Conjugate Vaccine</td><td>177</td></tr><tr><td style=\"white-space:nowrap\">Rota<a name=\"KenyaVaccineCodes-Rota\"> </a></td><td>Rota</td><td>Rotavirus vaccine</td><td>122</td></tr><tr><td style=\"white-space:nowrap\">DTP-Hib-Hep-B<a name=\"KenyaVaccineCodes-DTP-Hib-Hep-B\"> </a></td><td>DTP-Hib-Hep B</td><td>Diptheria, Pertussis, Haemophilus influenzae type b</td><td>102</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KenyaVaccineCodes"] ; # 
+  fhir:title [ fhir:v "Kenya Vaccine Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "cvxp" ] ;
+     fhir:description [ fhir:v "cvx mapping for this code" ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BCG" ] ;
+     fhir:display [ fhir:v "BCG" ] ;
+     fhir:definition [ fhir:v "Bacillus Calmette-Guerin vaccine" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "cvxp" ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "19" ]
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "OPV" ] ;
+     fhir:display [ fhir:v "OPV" ] ;
+     fhir:definition [ fhir:v "Oral Polio Vaccine" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "cvxp" ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "02" ]
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PCV" ] ;
+     fhir:display [ fhir:v "PCV 10" ] ;
+     fhir:definition [ fhir:v "Pneumococcal Conjugate Vaccine" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "cvxp" ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "177" ]
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Rota" ] ;
+     fhir:display [ fhir:v "Rota" ] ;
+     fhir:definition [ fhir:v "Rotavirus vaccine" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "cvxp" ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "122" ]
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DTP-Hib-Hep-B" ] ;
+     fhir:display [ fhir:v "DTP-Hib-Hep B" ] ;
+     fhir:definition [ fhir:v "Diptheria, Pertussis, Haemophilus influenzae type b" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "cvxp" ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "102" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

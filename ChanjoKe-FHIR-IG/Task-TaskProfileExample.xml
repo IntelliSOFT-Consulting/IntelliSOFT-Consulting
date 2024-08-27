@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="TaskProfileExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task TaskProfileExample</b></p><a name="TaskProfileExample"> </a><a name="hcTaskProfileExample"> </a><a name="TaskProfileExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/task</code>/123456 (use: official, )</p><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href="SupplyRequest-SupplyRequestProfileExample.html">SupplyRequest: extension = 2020-02-02,2020-02-02,100,50,50,100,50,100,100,50; identifier = https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest#123456 (use: official, ); item[x] = -&gt;Medication Codeine phosphate; quantity = 50 mm; occurrence[x] = 2020-02-02; authoredOn = 2020-02-02</a></p><p><b>authoredOn</b>: 2020-02-02</p><p><b>location</b>: <a href="Location-LocationExample.html">Location Example Hospital</a></p></div>
+  </text>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/products">
+    <valueCode value="product-code"/>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/task"/>
+    <value value="123456"/>
+  </identifier>
+  <status value="requested"/>
+  <intent value="order"/>
+  <focus>
+    <reference value="SupplyRequest/SupplyRequestProfileExample"/>
+  </focus>
+  <authoredOn value="2020-02-02"/>
+  <location>
+    <reference value="Location/LocationExample"/>
+  </location>
+</Task>

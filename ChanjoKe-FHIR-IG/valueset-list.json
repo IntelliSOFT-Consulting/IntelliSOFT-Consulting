@@ -1,215 +1,397 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CitizenshipVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/DDCQRFormatCodesVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CITIZENSHIPVS",
-      "title" : "Patient's Citizenship ValueSet",
-      "description" : "Patient's Citizenship ValueSet",
+      "name" : "DDCQRFMTCodesVS",
+      "title" : "Digital Certificate Formats",
+      "description" : "ValueSets for Digital Certificate Formats",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsResponseVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/DueOROverdueVaccinationVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTSCLMRSPVS",
-      "title" : "Claims Response status",
-      "description" : "Claims Response status",
+      "name" : "IMMZD1DE10VS",
+      "title" : "Due OR Overdue Vaccination(s)",
+      "description" : "Due OR Overdue Vaccination(s)",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/ClaimsStatusVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTSCLMVS",
-      "title" : "Claims status",
-      "description" : "Claims status",
-      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS"]
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CodeSystemsVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PT_CODESYSTEMS",
-      "title" : "Code Systems ValueSet",
-      "description" : "Code Systems ValueSet",
+      "name" : "IMMZB1DE1VS",
+      "title" : "Client's HIV Status",
+      "description" : "Client's HIV Status",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/CurrencyVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/KenyanImmunizationNotDoneReasonsVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "CURRENCYVS",
-      "title" : "Currency ValueSet",
-      "description" : "Currency ValueSet",
-      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY"]
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/EmploymentTypeVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "EMPLOYMENTTYPE",
-      "title" : "Patient Employment Type",
-      "description" : "Patient Employment Type",
+      "name" : "KenyanImmunizationNotDoneReasonsVS",
+      "title" : "Reason Vaccine not administered",
+      "description" : "Reasons a Vaccine was not administered (Kenyan National Program)",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE"
+        "http://health.go.ke/CodeSystems/KenyanImmunizationNotDoneReasons"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityApprovalStatusVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/PatientContactListVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "FACILITYAPPROVALSTATUS",
-      "title" : "Code Systems Facility Approval Status",
-      "description" : "Code Systems Facility Approval Status",
+      "name" : "PATCONTACTSLSTS",
+      "title" : "Patient Contact List",
+      "description" : "Paytient Contact List",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactList"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityCategoryVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/PatientIdentifierTypeVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "FACILITYCATEGORY",
-      "title" : "Code Systems Facility Category",
-      "description" : "Code Systems Facility Category",
+      "name" : "PTDIDTYPS",
+      "title" : "Patient Identifier type",
+      "description" : "This is a set of valuesets that have been defined for the KenyanPatient Registry",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/FacilityLevelVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/StockAdjustmentVs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "FACILITYCATEGORY",
-      "title" : "Code Systems Facility Level",
-      "description" : "Code Systems Facility Level",
+      "name" : "STOCKADJUSTMENTS",
+      "title" : "Stock Adjustment",
+      "description" : "Stock Adjustment",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/IdentifierUseVs",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/VaccinesValueSet",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "IDENTIFIERUSE",
-      "title" : "Patient identifier usage valueSet",
-      "description" : "Patient identifier usage valueSet",
+      "name" : "VaccinesValueSet",
+      "title" : "Combination Codes for vaccine",
+      "description" : "This is a mixed value set",
+      "systems" : ["http://www.whocc.no/atc", "http://hl7.org/fhir/sid/cvx"]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/aefiActionTakenVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "AEFIACTIONTAKEN",
+      "title" : "AEFI Action Taken",
+      "description" : "AEFI Action Taken",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/KenyaCountiesVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/aefiOutcomeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZFDE33VS",
+      "title" : "AEFI Outcome",
+      "description" : "AEFI Outcome",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/childCanBeLocatedVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZD1DE1VS",
+      "title" : "Child can be located",
+      "description" : "Child can be located",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE36VS",
+      "title" : "Client's TST Test Result",
+      "description" : "Client's TST Test Result",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/contraindicationToVaccineVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZC1DE11VS",
+      "title" : "Contraindications to vaccine",
+      "description" : "Contraindications to vaccine",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/disaggregationGroupVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZE1DE32VS",
+      "title" : "Disaggregation Group",
+      "description" : "Disaggregation Group",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/exposedToCloseContactWithTBVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE33VS",
+      "title" : "Exposed to close contact with TB",
+      "description" : "Exposed to close contact with TB",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/improvementIndicatorVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZE1DE22VS",
+      "title" : "Improvement Indicator",
+      "description" : "Improvement Indicator",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaAdministrativeGenderVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KHTSADMNGENDER",
+      "title" : "Administrative Gender",
+      "description" : "Administrative Gender",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaCountiesVS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "KHTS1VS",
       "title" : "Counties in Kenya",
       "description" : "Counties in Kenya",
-      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A"]
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/LicenseRenewalDurationVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "LICENSECURRENTRENEWALDURATION",
-      "title" : "Practitioner's License Current Renewal Duration",
-      "description" : "Practitioner's License Current Renewal Duration",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/MaritalStatusVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaServiceRequestsVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "MARITALSTATUSVS",
-      "title" : "Patient's Marital (Civil) Status",
-      "description" : "Patient's Marital (Civil) Status",
+      "name" : "KHTSSVSRQTS",
+      "title" : "Service Requests",
+      "description" : "Service Requests to be used in Kenyan Context",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientContactRlshipVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalHIVStatusVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PT_CONTACTRELATIONSHIP",
-      "title" : "Patient Contact Relationship ValueSet",
-      "description" : "Patient Contact Relationship ValueSet",
+      "name" : "IMMZB1DE8VS",
+      "title" : "Maternal HIV Status",
+      "description" : "The HIV status of the client's biological mother when the client was born.",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PatientIdentifierTypesVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalTSTTestResultVs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PT_IDENTIFIERTYPES",
-      "title" : "Patient Identifier Types ValueSet",
-      "description" : "Patient Identifier Types ValueSet",
+      "name" : "IMMZB1DE30VS",
+      "title" : "Maternal's TST Test Result",
+      "description" : "Maternal's TST Test Result",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerOperationalStatusVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/placeOfVaccination",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PRACTQUALIFICATIONTYPE",
-      "title" : "Practitioner's Operational Status",
-      "description" : "Practitioner's Operational Status",
+      "name" : "IMMZB1DE13VS",
+      "title" : "Place of Vaccination",
+      "description" : "Place of Vaccination",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PractitionerQualificationTypeVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reactionSeverityVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PRACTQUALIFICATIONTYPE",
-      "title" : "Practitioner's Qualifification Type",
-      "description" : "Practitioner's Qualifification Type",
+      "name" : "IMMZFDE26VS",
+      "title" : "Reaction Severity",
+      "description" : "Reaction Severity",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/PrimaryCareNetworkVS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reasonVaccineNotdministeredVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PRIMARYCARENETWORKS",
-      "title" : "Primary Care Networks",
-      "description" : "Primary Care Networks",
-      "systems" : ["https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS"]
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/SalutationVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PT_TITLE",
-      "title" : "Salutation",
-      "description" : "Salutation",
+      "name" : "IMMZC1DE17VS",
+      "title" : "Reason vaccine was not administered",
+      "description" : "Reason vaccine was not administered",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"
       ]
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/ValueSet/patientEmploymentVs",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportIndicatorCodeVS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PatientEmployment",
-      "title" : "Patient's employment Options",
-      "description" : "ValueSet for Patient's employment",
+      "name" : "IMMZE1DE11VS",
+      "title" : "Report Indicator Code",
+      "description" : "Report Indicator Code",
       "systems" : [
-        "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment"
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportStatusVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZE1DE2VS",
+      "title" : "Report Status",
+      "description" : "Report Status",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportTypeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZE1DE6VS",
+      "title" : "Report Type",
+      "description" : "Report Type",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfAEFIVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZFDE1VS",
+      "title" : "Type of AEFI",
+      "description" : "Type of AEFI",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastDPTHepBHibDoseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE62VS",
+      "title" : "Type of last DPT-HepB+Hib dose",
+      "description" : "Type of last DPT-HepB+Hib dose",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastHPVDoseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE54VS",
+      "title" : "Type of last HPV dose",
+      "description" : "Type of last HPV dose",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE49VS",
+      "title" : "Type of last Measles-Rubella dose",
+      "description" : "Type of last Measles-Rubella dose",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPCV10DoseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE58VS",
+      "title" : "Type of last PCV10 dose",
+      "description" : "Type of last PCV10 dose",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE25VS",
+      "title" : "Type of last Polio dose",
+      "description" : "Type of last Polio dose",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZB1DE44VS",
+      "title" : "Type of last Rotavirus dose",
+      "description" : "Type of last Rotavirus dose",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/vaccineAdministeredVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZC1DE14VS",
+      "title" : "Vaccine administered",
+      "description" : "Vaccine administered",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"
+      ]
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/vaccineLibraryVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZZ1DE1VS",
+      "title" : "Vaccine Library",
+      "description" : "Vaccine Library",
+      "systems" : [
+        "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1"
       ]
     }
   ]

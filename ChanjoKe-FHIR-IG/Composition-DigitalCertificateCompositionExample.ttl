@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Composition/DigitalCertificateCompositionExample> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DigitalCertificateCompositionExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition DigitalCertificateCompositionExample</b></p><a name=\"DigitalCertificateCompositionExample\"> </a><a name=\"hcDigitalCertificateCompositionExample\"> </a><a name=\"DigitalCertificateCompositionExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers</code>/DC123456789 (use: usual, )</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11485-0}\">Anesthesia records</span></p><p><b>date</b>: 2020-02-02</p><p><b>author</b>: <a href=\"Organization-DigitalCertificateOrganizationExample.html\">Organization Kenya Ministry of Health</a></p><p><b>title</b>: Anesthesia records</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td>2020-02-02</td><td><a href=\"Organization-DigitalCertificateOrganizationExample.html\">Organization Kenya Ministry of Health</a></td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>2020-02-02 --&gt; 2020-02-03</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DC123456789" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11485-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11485-0" ] ;
+       fhir:display [ fhir:v "Anesthesia records" ]
+     ] ) ;
+     fhir:text [ fhir:v "Anesthesia records" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/DigitalCertificatePatientExample> ;
+     fhir:reference [ fhir:v "Patient/DigitalCertificatePatientExample" ]
+  ] ; # 
+  fhir:date [ fhir:v "2020-02-02"^^xsd:date] ; # 
+  fhir:author ( [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Organization/DigitalCertificateOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/DigitalCertificateOrganizationExample" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Anesthesia records"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:time [ fhir:v "2020-02-02"^^xsd:date ] ;
+     fhir:party [
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Organization/DigitalCertificateOrganizationExample> ;
+       fhir:reference [ fhir:v "Organization/DigitalCertificateOrganizationExample" ]
+     ]
+  ] ) ; # 
+  fhir:event ( [
+     fhir:period [
+       fhir:start [ fhir:v "2020-02-02"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-02-03"^^xsd:date ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

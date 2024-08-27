@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "contraindicationToVaccineVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet contraindicationToVaccineVS</b></p><a name=\"contraindicationToVaccineVS\"> </a><a name=\"hccontraindicationToVaccineVS\"> </a><a name=\"contraindicationToVaccineVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.C.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.C.html#IMMZ.C-DE12\">DE12</a></td><td style=\"color: #cccccc\">Yes</td></tr><tr><td><a href=\"CodeSystem-IMMZ.C.html#IMMZ.C-DE13\">DE13</a></td><td style=\"color: #cccccc\">No</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/contraindicationToVaccineVS",
+  "version" : "0.1.0",
+  "name" : "IMMZC1DE11VS",
+  "title" : "Contraindications to vaccine",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Contraindications to vaccine",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C",
+      "concept" : [{
+        "code" : "DE12"
+      },
+      {
+        "code" : "DE13"
+      }]
+    }]
+  }
+}

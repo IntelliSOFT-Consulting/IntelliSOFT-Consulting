@@ -5,75 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://shr.tiberbuapps.com/fhir/Practitioner/PractitionerExample> a fhir:Practitioner ;
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Practitioner/PractitionerExample> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PractitionerExample"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner PractitionerExample</b></p><a name=\"PractitionerExample\"> </a><a name=\"hcPractitionerExample\"> </a><a name=\"PractitionerExample-en-US\"> </a><p><b>identifier</b>: <code>http://example.org/fhir/systems/practitioner-identifier</code>/123456</p><p><b>name</b>: John Doe </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1970-01-01</p><blockquote><p><b>qualification</b></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0360|2.7 MD}\">Doctor of Medicine</span></p><p><b>period</b>: 2000-01-01 --&gt; 2025-01-01</p></blockquote></div>"
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/professional-cadre"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:code [ fhir:v "general-practitioner" ]
-       ] )
-     ]
-  ] [
-     fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/specialty"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:code [ fhir:v "internal-medicine" ]
-       ] )
-     ]
-  ] ) ; # 
-  fhir:identifier ( [
-     fhir:system [ fhir:v "http://example.org/fhir/systems/practitioner-identifier"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "123456" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:family [ fhir:v "Doe" ] ;
-     fhir:given ( [ fhir:v "John" ] ) ;
-     fhir:prefix ( [ fhir:v "Dr." ] )
-  ] ) ; # 
-  fhir:gender [ fhir:v "male"] ; # 
-  fhir:birthDate [ fhir:v "1970-01-01"^^xsd:date] ; # 
-  fhir:qualification ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-type"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "licence" ]
-     ] [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-institution"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "HarvardMedicalSchool\"" ]
-     ] [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Doctor of Medicine" ]
-     ] [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/operational-status"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "active" ]
-     ] [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/board-registration-number"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "BRN12345" ]
-     ] [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/license-renewal-duration"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "annual" ]
-     ] [
-       fhir:url [ fhir:v "https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-license-number"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "PLN12345" ]
-     ] ) ;
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0360|2.7"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "MD" ]
-       ] )
-     ] ;
-     fhir:period [
-       fhir:start [ fhir:v "2000-01-01"^^xsd:date ] ;
-       fhir:end [ fhir:v "2025-01-01"^^xsd:date ]
-     ]
-  ] ) . # 
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner PractitionerExample</b></p><a name=\"PractitionerExample\"> </a><a name=\"hcPractitionerExample\"> </a><a name=\"PractitionerExample-en-US\"> </a></div>"
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

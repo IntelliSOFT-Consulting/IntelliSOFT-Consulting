@@ -1,0 +1,81 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IMMZ.Z1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.Z1</b></p><a name=\"IMMZ.Z1\"> </a><a name=\"hcIMMZ.Z1\"> </a><a name=\"IMMZ.Z1-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.Z1-DE1\"> </a></td><td>BCG Vaccines</td><td>Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.Z1-DE7\"> </a></td><td>HPV Vaccines</td><td>Vaccine terminology codes for Human Papillomavirus (HPV)</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.Z1-DE9\"> </a></td><td>Measles - Rubella Vaccines</td><td>Vaccine terminology codes for Measles</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.Z1-DE13\"> </a></td><td>Pneumococcal Vaccines</td><td>Vaccine terminology codes for Pneumococcal</td></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.Z1-DE14\"> </a></td><td>Polio Vaccines</td><td>Vaccine terminology codes for Polio</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.Z1-DE16\"> </a></td><td>Rotavirus Vaccines</td><td>Vaccine terminology codes for Rotavirus</td></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.Z1-DE17\"> </a></td><td>Rubella Vaccines</td><td>Vaccine terminology codes for Rubella</td></tr><tr><td style=\"white-space:nowrap\">DE23<a name=\"IMMZ.Z1-DE23\"> </a></td><td>Yellow Fever Vaccines</td><td>Vaccine terminology codes for Yellow Fever</td></tr><tr><td style=\"white-space:nowrap\">DE25<a name=\"IMMZ.Z1-DE25\"> </a></td><td>Inactivated Polio Vaccines</td><td>Vaccine terminology codes for Inactivated Polio Vaccines</td></tr><tr><td style=\"white-space:nowrap\">DE26<a name=\"IMMZ.Z1-DE26\"> </a></td><td>Oral Polio Vaccines</td><td>Vaccine terminology codes for Oral Polio Vaccines</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1",
+  "version" : "0.1.0",
+  "name" : "IMMZ_Z1",
+  "title" : "IMMZ.Z1 CodeSystem for Data Elements",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "CodeSystem for IMMZ.Z1 Data Elements",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "BCG Vaccines",
+    "definition" : "Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)"
+  },
+  {
+    "code" : "DE7",
+    "display" : "HPV Vaccines",
+    "definition" : "Vaccine terminology codes for Human Papillomavirus (HPV)"
+  },
+  {
+    "code" : "DE9",
+    "display" : "Measles - Rubella Vaccines",
+    "definition" : "Vaccine terminology codes for Measles"
+  },
+  {
+    "code" : "DE13",
+    "display" : "Pneumococcal Vaccines",
+    "definition" : "Vaccine terminology codes for Pneumococcal"
+  },
+  {
+    "code" : "DE14",
+    "display" : "Polio Vaccines",
+    "definition" : "Vaccine terminology codes for Polio"
+  },
+  {
+    "code" : "DE16",
+    "display" : "Rotavirus Vaccines",
+    "definition" : "Vaccine terminology codes for Rotavirus"
+  },
+  {
+    "code" : "DE17",
+    "display" : "Rubella Vaccines",
+    "definition" : "Vaccine terminology codes for Rubella"
+  },
+  {
+    "code" : "DE23",
+    "display" : "Yellow Fever Vaccines",
+    "definition" : "Vaccine terminology codes for Yellow Fever"
+  },
+  {
+    "code" : "DE25",
+    "display" : "Inactivated Polio Vaccines",
+    "definition" : "Vaccine terminology codes for Inactivated Polio Vaccines"
+  },
+  {
+    "code" : "DE26",
+    "display" : "Oral Polio Vaccines",
+    "definition" : "Vaccine terminology codes for Oral Polio Vaccines"
+  }]
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "childCanBeLocatedVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet childCanBeLocatedVS</b></p><a name=\"childCanBeLocatedVS\"> </a><a name=\"hcchildCanBeLocatedVS\"> </a><a name=\"childCanBeLocatedVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.D.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.D.html#IMMZ.D-DE2\">DE2</a></td><td style=\"color: #cccccc\">Yes</td></tr><tr><td><a href=\"CodeSystem-IMMZ.D.html#IMMZ.D-DE3\">DE3</a></td><td style=\"color: #cccccc\">No</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/childCanBeLocatedVS",
+  "version" : "0.1.0",
+  "name" : "IMMZD1DE1VS",
+  "title" : "Child can be located",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Child can be located",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D",
+      "concept" : [{
+        "code" : "DE2"
+      },
+      {
+        "code" : "DE3"
+      }]
+    }]
+  }
+}

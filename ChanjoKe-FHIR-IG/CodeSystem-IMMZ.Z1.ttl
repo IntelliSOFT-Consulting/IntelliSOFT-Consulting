@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ.Z1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.Z1</b></p><a name=\"IMMZ.Z1\"> </a><a name=\"hcIMMZ.Z1\"> </a><a name=\"IMMZ.Z1-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.Z1-DE1\"> </a></td><td>BCG Vaccines</td><td>Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.Z1-DE7\"> </a></td><td>HPV Vaccines</td><td>Vaccine terminology codes for Human Papillomavirus (HPV)</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.Z1-DE9\"> </a></td><td>Measles - Rubella Vaccines</td><td>Vaccine terminology codes for Measles</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.Z1-DE13\"> </a></td><td>Pneumococcal Vaccines</td><td>Vaccine terminology codes for Pneumococcal</td></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.Z1-DE14\"> </a></td><td>Polio Vaccines</td><td>Vaccine terminology codes for Polio</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.Z1-DE16\"> </a></td><td>Rotavirus Vaccines</td><td>Vaccine terminology codes for Rotavirus</td></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.Z1-DE17\"> </a></td><td>Rubella Vaccines</td><td>Vaccine terminology codes for Rubella</td></tr><tr><td style=\"white-space:nowrap\">DE23<a name=\"IMMZ.Z1-DE23\"> </a></td><td>Yellow Fever Vaccines</td><td>Vaccine terminology codes for Yellow Fever</td></tr><tr><td style=\"white-space:nowrap\">DE25<a name=\"IMMZ.Z1-DE25\"> </a></td><td>Inactivated Polio Vaccines</td><td>Vaccine terminology codes for Inactivated Polio Vaccines</td></tr><tr><td style=\"white-space:nowrap\">DE26<a name=\"IMMZ.Z1-DE26\"> </a></td><td>Oral Polio Vaccines</td><td>Vaccine terminology codes for Oral Polio Vaccines</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_Z1"] ; # 
+  fhir:title [ fhir:v "IMMZ.Z1 CodeSystem for Data Elements"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for IMMZ.Z1 Data Elements"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DE1" ] ;
+     fhir:display [ fhir:v "BCG Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)" ]
+  ] [
+     fhir:code [ fhir:v "DE7" ] ;
+     fhir:display [ fhir:v "HPV Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Human Papillomavirus (HPV)" ]
+  ] [
+     fhir:code [ fhir:v "DE9" ] ;
+     fhir:display [ fhir:v "Measles - Rubella Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Measles" ]
+  ] [
+     fhir:code [ fhir:v "DE13" ] ;
+     fhir:display [ fhir:v "Pneumococcal Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Pneumococcal" ]
+  ] [
+     fhir:code [ fhir:v "DE14" ] ;
+     fhir:display [ fhir:v "Polio Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Polio" ]
+  ] [
+     fhir:code [ fhir:v "DE16" ] ;
+     fhir:display [ fhir:v "Rotavirus Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Rotavirus" ]
+  ] [
+     fhir:code [ fhir:v "DE17" ] ;
+     fhir:display [ fhir:v "Rubella Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Rubella" ]
+  ] [
+     fhir:code [ fhir:v "DE23" ] ;
+     fhir:display [ fhir:v "Yellow Fever Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Yellow Fever" ]
+  ] [
+     fhir:code [ fhir:v "DE25" ] ;
+     fhir:display [ fhir:v "Inactivated Polio Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Inactivated Polio Vaccines" ]
+  ] [
+     fhir:code [ fhir:v "DE26" ] ;
+     fhir:display [ fhir:v "Oral Polio Vaccines" ] ;
+     fhir:definition [ fhir:v "Vaccine terminology codes for Oral Polio Vaccines" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

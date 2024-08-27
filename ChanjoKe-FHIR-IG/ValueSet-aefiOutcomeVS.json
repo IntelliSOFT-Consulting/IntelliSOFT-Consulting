@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aefiOutcomeVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet aefiOutcomeVS</b></p><a name=\"aefiOutcomeVS\"> </a><a name=\"hcaefiOutcomeVS\"> </a><a name=\"aefiOutcomeVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.F.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE34\">DE34</a></td><td style=\"color: #cccccc\">Recovered</td><td>The client fully recovered</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE35\">DE35</a></td><td style=\"color: #cccccc\">Recovering</td><td>The client is recovering</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE36\">DE36</a></td><td style=\"color: #cccccc\">Not Recovered</td><td>The client is did not recover</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE37\">DE37</a></td><td style=\"color: #cccccc\">Unknown</td><td>The AEFI outcome is unknown</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE38\">DE38</a></td><td style=\"color: #cccccc\">Died</td><td>The adverse event resulted in the client's death</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/aefiOutcomeVS",
+  "version" : "0.1.0",
+  "name" : "IMMZFDE33VS",
+  "title" : "AEFI Outcome",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "AEFI Outcome",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F",
+      "concept" : [{
+        "code" : "DE34"
+      },
+      {
+        "code" : "DE35"
+      },
+      {
+        "code" : "DE36"
+      },
+      {
+        "code" : "DE37"
+      },
+      {
+        "code" : "DE38"
+      }]
+    }]
+  }
+}

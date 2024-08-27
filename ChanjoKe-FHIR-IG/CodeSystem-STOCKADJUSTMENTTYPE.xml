@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="STOCKADJUSTMENTTYPE"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem STOCKADJUSTMENTTYPE</b></p><a name="STOCKADJUSTMENTTYPE"> </a><a name="hcSTOCKADJUSTMENTTYPE"> </a><a name="STOCKADJUSTMENTTYPE-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">positiveAdjustment<a name="STOCKADJUSTMENTTYPE-positiveAdjustment"> </a></td><td>Positive Adjustment</td><td>Positive Adjustment Type</td></tr><tr><td style="white-space:nowrap">negativeAdjustment<a name="STOCKADJUSTMENTTYPE-negativeAdjustment"> </a></td><td>Negative Adjustment</td><td>Stock Adjustment Type</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_Z1"/>
+  <title value="codeSystem for Adjustment Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for Adjustment Type"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="positiveAdjustment"/>
+    <display value="Positive Adjustment"/>
+    <definition value="Positive Adjustment Type"/>
+  </concept>
+  <concept>
+    <code value="negativeAdjustment"/>
+    <display value="Negative Adjustment"/>
+    <definition value="Stock Adjustment Type"/>
+  </concept>
+</CodeSystem>

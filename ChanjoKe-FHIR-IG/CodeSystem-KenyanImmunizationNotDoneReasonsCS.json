@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KenyanImmunizationNotDoneReasonsCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KenyanImmunizationNotDoneReasonsCS</b></p><a name=\"KenyanImmunizationNotDoneReasonsCS\"> </a><a name=\"hcKenyanImmunizationNotDoneReasonsCS\"> </a><a name=\"KenyanImmunizationNotDoneReasonsCS-en-US\"> </a><p>This  code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyanImmunizationNotDoneReasonsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Stock<a name=\"KenyanImmunizationNotDoneReasonsCS-Stock\"> </a></td><td>Product out of stock</td><td>There was no product supply on hand to perform the service.</td></tr><tr><td style=\"white-space:nowrap\">ColdChainBreak<a name=\"KenyanImmunizationNotDoneReasonsCS-ColdChainBreak\"> </a></td><td>Cold chain break</td><td>The vaccine experienced a cold chain break.</td></tr><tr><td style=\"white-space:nowrap\">ClientObjection<a name=\"KenyanImmunizationNotDoneReasonsCS-ClientObjection\"> </a></td><td>Client objection</td><td>The client or their guardian objects to receiving the vaccine.</td></tr><tr><td style=\"white-space:nowrap\">Caregiver<a name=\"KenyanImmunizationNotDoneReasonsCS-Caregiver\"> </a></td><td>Caregiver refusal</td><td>The client's caregiver refused the vaccine.</td></tr><tr><td style=\"white-space:nowrap\">Expired<a name=\"KenyanImmunizationNotDoneReasonsCS-Expired\"> </a></td><td>Expired product</td><td>The vaccine was expired at the time of administration.</td></tr><tr><td style=\"white-space:nowrap\">Disease<a name=\"KenyanImmunizationNotDoneReasonsCS-Disease\"> </a></td><td>Client acquired the disease</td><td>The immunization event was not carried out due to the client having had the disease.</td></tr><tr><td style=\"white-space:nowrap\">Unspecified<a name=\"KenyanImmunizationNotDoneReasonsCS-Unspecified\"> </a></td><td>Unspecified reason</td><td>The immunization event was not carried out for an unspecified reason.</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyanImmunizationNotDoneReasonsCS",
+  "version" : "0.1.0",
+  "name" : "KenyanImmunizationNotDoneReasonsCS",
+  "title" : "Reason Vaccine not Administered",
+  "status" : "draft",
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "copyright" : "Public Domain of some kind",
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "Stock",
+    "display" : "Product out of stock",
+    "definition" : "There was no product supply on hand to perform the service."
+  },
+  {
+    "code" : "ColdChainBreak",
+    "display" : "Cold chain break",
+    "definition" : "The vaccine experienced a cold chain break."
+  },
+  {
+    "code" : "ClientObjection",
+    "display" : "Client objection",
+    "definition" : "The client or their guardian objects to receiving the vaccine."
+  },
+  {
+    "code" : "Caregiver",
+    "display" : "Caregiver refusal",
+    "definition" : "The client's caregiver refused the vaccine."
+  },
+  {
+    "code" : "Expired",
+    "display" : "Expired product",
+    "definition" : "The vaccine was expired at the time of administration."
+  },
+  {
+    "code" : "Disease",
+    "display" : "Client acquired the disease",
+    "definition" : "The immunization event was not carried out due to the client having had the disease."
+  },
+  {
+    "code" : "Unspecified",
+    "display" : "Unspecified reason",
+    "definition" : "The immunization event was not carried out for an unspecified reason."
+  }]
+}

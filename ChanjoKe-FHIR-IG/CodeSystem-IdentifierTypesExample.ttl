@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypesExample> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IdentifierTypesExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IdentifierTypesExample</b></p><a name=\"IdentifierTypesExample\"> </a><a name=\"hcIdentifierTypesExample\"> </a><a name=\"IdentifierTypesExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypesExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">birthcertificate<a name=\"IdentifierTypesExample-birthcertificate\"> </a></td><td>Birth Certificate</td></tr><tr><td style=\"white-space:nowrap\">nationalId<a name=\"IdentifierTypesExample-nationalId\"> </a></td><td>National ID</td></tr><tr><td style=\"white-space:nowrap\">passport<a name=\"IdentifierTypesExample-passport\"> </a></td><td>Passport</td></tr><tr><td style=\"white-space:nowrap\">nemis<a name=\"IdentifierTypesExample-nemis\"> </a></td><td>NEMIS No</td></tr><tr><td style=\"white-space:nowrap\">bNo<a name=\"IdentifierTypesExample-bNo\"> </a></td><td>Birth Notification Number</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypesExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IDENTIFIERTYPES"] ; # 
+  fhir:title [ fhir:v "Identifier Types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Defined Identifier Types for KenyanRegistryPatient"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "birthcertificate" ] ;
+     fhir:display [ fhir:v "Birth Certificate" ]
+  ] [
+     fhir:code [ fhir:v "nationalId" ] ;
+     fhir:display [ fhir:v "National ID" ]
+  ] [
+     fhir:code [ fhir:v "passport" ] ;
+     fhir:display [ fhir:v "Passport" ]
+  ] [
+     fhir:code [ fhir:v "nemis" ] ;
+     fhir:display [ fhir:v "NEMIS No" ]
+  ] [
+     fhir:code [ fhir:v "bNo" ] ;
+     fhir:display [ fhir:v "Birth Notification Number" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

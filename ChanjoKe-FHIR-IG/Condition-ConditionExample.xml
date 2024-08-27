@@ -3,9 +3,9 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="ConditionExample"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ConditionExample</b></p><a name="ConditionExample"> </a><a name="hcConditionExample"> </a><a name="ConditionExample-en-US"> </a><p><b>subject</b>: <a href="Patient-SHAPatientExample.html">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456 (use: official, ))</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ConditionExample</b></p><a name="ConditionExample"> </a><a name="hcConditionExample"> </a><a name="ConditionExample-en-US"> </a><p><b>subject</b>: <a href="Patient-PatientExample.html">Grahame Grieve Male, DoB: 1969-04-13</a></p></div>
   </text>
   <subject>
-    <reference value="Patient/SHAPatientExample"/>
+    <reference value="Patient/PatientExample"/>
   </subject>
 </Condition>

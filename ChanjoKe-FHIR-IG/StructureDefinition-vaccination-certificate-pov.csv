@@ -1,0 +1,116 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: WHO Digital Documentation of COVID Certificates"
+"vaccination-certificate-vs","vaccination-certificate-vs","","","",0,*,"","","","null {[]} {[]}
+","IMMZ.K Vaccination Status- Proof of Vaccination","Data elements for the IMMZ.K Vaccination Status - Proof of Vaccination Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"vaccination-certificate-vs.name","vaccination-certificate-vs.name","","","",1,1,"","","Y","string {[]} {[]}
+","Client Name","Client Name","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.name",1,1,"",""
+"vaccination-certificate-vs.birthDate","vaccination-certificate-vs.birthDate","","","",0,1,"","","Y","date {[]} {[]}
+","Date of birth","Date of birth","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.birthDate",0,1,"",""
+"vaccination-certificate-vs.identifier","vaccination-certificate-vs.identifier","","","",0,1,"","","Y","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier]]} {[]}
+","Unique identifier","Unique identifier","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.identifier",0,1,"",""
+"vaccination-certificate-vs.certificate","vaccination-certificate-vs.certificate","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Certificate Metadata","Certificate Metadata","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"vaccination-certificate-vs.certificate.id","vaccination-certificate-vs.certificate.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"vaccination-certificate-vs.certificate.extension","vaccination-certificate-vs.certificate.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"vaccination-certificate-vs.certificate.modifierExtension","vaccination-certificate-vs.certificate.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"vaccination-certificate-vs.certificate.issuer","vaccination-certificate-vs.certificate.issuer","","","",1,1,"","","","code {[]} {[]}
+","Certificate issuer","Certificate issuer","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.issuer",1,1,"","","Composition.author.identifier"
+"vaccination-certificate-vs.certificate.kid","vaccination-certificate-vs.certificate.kid","","","",0,1,"","","","string {[]} {[]}
+","Key ID used to verify the signature of the certificate","Key ID used to verify the signature of the certificate","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.kid",0,1,"",""
+"vaccination-certificate-vs.certificate.hcid","vaccination-certificate-vs.certificate.hcid","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier]]} {[]}
+","Health certificate identifier (HCID)","Health certificate identifier (HCID)","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.hcid",1,1,"",""
+"vaccination-certificate-vs.certificate.ddccid","vaccination-certificate-vs.certificate.ddccid","","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier]]} {[]}
+","DDCC Identifier","DDCC Identifier","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.ddccid",0,1,"",""
+"vaccination-certificate-vs.certificate.version","vaccination-certificate-vs.certificate.version","","","",1,1,"","","","string {[]} {[]}
+","Certificate schema version","Certificate schema version","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.version",1,1,"",""
+"vaccination-certificate-vs.certificate.period","vaccination-certificate-vs.certificate.period","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
+","Certificate Validity Period","Certificate Validity Period","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.period",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","Composition.event.period"
+"vaccination-certificate-vs.certificate.period.id","vaccination-certificate-vs.certificate.period.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"vaccination-certificate-vs.certificate.period.extension","vaccination-certificate-vs.certificate.period.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"vaccination-certificate-vs.certificate.period.url","vaccination-certificate-vs.certificate.period.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"vaccination-certificate-vs.certificate.period.value[x]","vaccination-certificate-vs.certificate.period.value[x]","","","",0,1,"","","","base64Binary {[]} {[]}
+boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"vaccination-certificate-vs.certificate.period.start","vaccination-certificate-vs.certificate.period.start","","","",0,1,"","","","dateTime {[]} {[]}
+","Certificate valid from","Certificate valid from","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.period.start",0,1,"",""
+"vaccination-certificate-vs.certificate.period.end","vaccination-certificate-vs.certificate.period.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Certificate valid until","Certificate valid until","","","","","","","","","",,,,,"",,,,"vaccination-certificate-core-data-set.certificate.period.end",0,1,"",""
+"vaccination-certificate-vs.vaccination","vaccination-certificate-vs.vaccination","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Vaccination Event","Vaccination Event","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE4
+",,,,"vaccination-certificate-core-data-set.vaccination",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"vaccination-certificate-vs.vaccination.id","vaccination-certificate-vs.vaccination.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"vaccination-certificate-vs.vaccination.extension","vaccination-certificate-vs.vaccination.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"vaccination-certificate-vs.vaccination.modifierExtension","vaccination-certificate-vs.vaccination.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"vaccination-certificate-vs.vaccination.vaccine","vaccination-certificate-vs.vaccination.vaccine","","","",1,1,"","","","code {[]} {[]}
+","Vaccine or prophylaxis","Vaccine or prophylaxis","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE5
+",,,,"vaccination-certificate-core-data-set.vaccination.vaccine",1,1,"",""
+"vaccination-certificate-vs.vaccination.brand","vaccination-certificate-vs.vaccination.brand","","","",1,1,"","","","code {[]} {[]}
+","Vaccine brand","Vaccine brand","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE6
+",,,,"vaccination-certificate-core-data-set.vaccination.brand",1,1,"",""
+"vaccination-certificate-vs.vaccination.manufacturer","vaccination-certificate-vs.vaccination.manufacturer","","","",0,1,"","","","code {[]} {[]}
+","Vaccine manufacturer","Vaccine manufacturer","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE7
+",,,,"vaccination-certificate-core-data-set.vaccination.manufacturer",0,1,"",""
+"vaccination-certificate-vs.vaccination.maholder","vaccination-certificate-vs.vaccination.maholder","","","",0,1,"","","","code {[]} {[]}
+","Vaccine market authorization holder","Vaccine market authorization holder","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE8
+",,,,"vaccination-certificate-core-data-set.vaccination.maholder",0,1,"",""
+"vaccination-certificate-vs.vaccination.lot","vaccination-certificate-vs.vaccination.lot","","","",1,1,"","","","string {[]} {[]}
+","Vaccine lot number","Vaccine lot number","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE9
+",,,,"vaccination-certificate-core-data-set.vaccination.lot",1,1,"",""
+"vaccination-certificate-vs.vaccination.date","vaccination-certificate-vs.vaccination.date","","","",1,1,"","","","dateTime {[]} {[]}
+","	Date of vaccination","	Date of vaccination","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE10
+",,,,"vaccination-certificate-core-data-set.vaccination.date",1,1,"",""
+"vaccination-certificate-vs.vaccination.validFrom","vaccination-certificate-vs.vaccination.validFrom","","","",1,1,"","","","date {[]} {[]}
+","Vaccination valid from","Vaccination valid from","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE11
+",,,,"vaccination-certificate-core-data-set.vaccination.validFrom",1,1,"",""
+"vaccination-certificate-vs.vaccination.dose","vaccination-certificate-vs.vaccination.dose","","","",1,1,"","","","positiveInt {[]} {[]}
+","Dose number","Dose number","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE12
+",,,,"vaccination-certificate-core-data-set.vaccination.dose",1,1,"",""
+"vaccination-certificate-vs.vaccination.totalDoses","vaccination-certificate-vs.vaccination.totalDoses","","","",0,1,"","","","positiveInt {[]} {[]}
+","Total doses","Total doses","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE13
+",,,,"vaccination-certificate-core-data-set.vaccination.totalDoses",0,1,"",""
+"vaccination-certificate-vs.vaccination.country","vaccination-certificate-vs.vaccination.country","","","",1,1,"","","Y","code {[]} {[]}
+","Country of vaccination","Country of vaccination","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE14
+",,,,"vaccination-certificate-core-data-set.vaccination.country",1,1,"",""
+"vaccination-certificate-vs.vaccination.centre","vaccination-certificate-vs.vaccination.centre","","","",0,1,"","","","string {[]} {[]}
+","Administering centre","Administering centre","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE15
+",,,,"vaccination-certificate-core-data-set.vaccination.centre",0,1,"",""
+"vaccination-certificate-vs.vaccination.signature","vaccination-certificate-vs.vaccination.signature","","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature]]} {[]}
+","Signature of health worker","Signature of health worker","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE16
+",,,,"vaccination-certificate-core-data-set.vaccination.signature",0,1,"",""
+"vaccination-certificate-vs.vaccination.practitioner","vaccination-certificate-vs.vaccination.practitioner","","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier]]} {[]}
+","Health worker identifier","Health worker identifier","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE17
+",,,,"vaccination-certificate-core-data-set.vaccination.practitioner",0,1,"",""
+"vaccination-certificate-vs.vaccination.disease","vaccination-certificate-vs.vaccination.disease","","","",0,1,"","","","code {[]} {[]}
+","Disease or agent targeted","Disease or agent targeted","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE18
+",,,,"vaccination-certificate-core-data-set.vaccination.disease",0,1,"",""
+"vaccination-certificate-vs.vaccination.nextDose","vaccination-certificate-vs.vaccination.nextDose","","","",0,1,"","","","date {[]} {[]}
+","Due date of next dose","Due date of next dose","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H#DE19
+",,,,"vaccination-certificate-core-data-set.vaccination.nextDose",0,1,"",""

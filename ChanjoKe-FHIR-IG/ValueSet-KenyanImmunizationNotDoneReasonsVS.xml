@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="KenyanImmunizationNotDoneReasonsVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet KenyanImmunizationNotDoneReasonsVS</b></p><a name="KenyanImmunizationNotDoneReasonsVS"> </a><a name="hcKenyanImmunizationNotDoneReasonsVS"> </a><a name="KenyanImmunizationNotDoneReasonsVS-en-US"> </a><ul><li>Include all codes defined in <code>http://health.go.ke/CodeSystems/KenyanImmunizationNotDoneReasons</code></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/KenyanImmunizationNotDoneReasonsVS"/>
+  <version value="0.1.0"/>
+  <name value="KenyanImmunizationNotDoneReasonsVS"/>
+  <title value="Reason Vaccine not administered"/>
+  <status value="draft"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Reasons a Vaccine was not administered (Kenyan National Program)"/>
+  <compose>
+    <include>
+      <system value="http://health.go.ke/CodeSystems/KenyanImmunizationNotDoneReasons"/>
+    </include>
+  </compose>
+</ValueSet>

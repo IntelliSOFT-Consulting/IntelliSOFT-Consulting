@@ -1,0 +1,9 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizationExample</b></p><a name=\"OrganizationExample\"> </a><a name=\"hcOrganizationExample\"> </a><a name=\"OrganizationExample-en-US\"> </a><p><b>name</b>: Example Organization</p></div>"
+  },
+  "name" : "Example Organization"
+}

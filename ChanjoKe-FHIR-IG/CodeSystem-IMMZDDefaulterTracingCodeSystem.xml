@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZDDefaulterTracingCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZDDefaulterTracingCodeSystem</b></p><a name="IMMZDDefaulterTracingCodeSystem"> </a><a name="hcIMMZDDefaulterTracingCodeSystem"> </a><a name="IMMZDDefaulterTracingCodeSystem-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZDDefaulterTracingCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZDDefaulterTracingCodeSystem-DE1"> </a></td><td>Child can be located</td></tr><tr><td style="white-space:nowrap">DE2<a name="IMMZDDefaulterTracingCodeSystem-DE2"> </a></td><td>Yes</td></tr><tr><td style="white-space:nowrap">DE3<a name="IMMZDDefaulterTracingCodeSystem-DE3"> </a></td><td>No</td></tr><tr><td style="white-space:nowrap">DE6<a name="IMMZDDefaulterTracingCodeSystem-DE6"> </a></td><td>Name of client</td></tr><tr><td style="white-space:nowrap">DE7<a name="IMMZDDefaulterTracingCodeSystem-DE7"> </a></td><td>Age</td></tr><tr><td style="white-space:nowrap">DE8<a name="IMMZDDefaulterTracingCodeSystem-DE8"> </a></td><td>Location</td></tr><tr><td style="white-space:nowrap">DE9<a name="IMMZDDefaulterTracingCodeSystem-DE9"> </a></td><td>mother/father/guardian's contact number</td></tr><tr><td style="white-space:nowrap">DE10<a name="IMMZDDefaulterTracingCodeSystem-DE10"> </a></td><td>Due/overdue vaccination(s)</td></tr><tr><td style="white-space:nowrap">DE11<a name="IMMZDDefaulterTracingCodeSystem-DE11"> </a></td><td>Client gets vaccinated</td></tr><tr><td style="white-space:nowrap">DE13<a name="IMMZDDefaulterTracingCodeSystem-DE13"> </a></td><td>Reason for late vaccination</td></tr><tr><td style="white-space:nowrap">DE15<a name="IMMZDDefaulterTracingCodeSystem-DE15"> </a></td><td>Reason for missed vaccination</td></tr><tr><td style="white-space:nowrap">DE16<a name="IMMZDDefaulterTracingCodeSystem-DE16"> </a></td><td>Client is vaccinated</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZDDefaulterTracingCodeSystem"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_D"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="Child can be located"/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="Yes"/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="No"/>
+  </concept>
+  <concept>
+    <code value="DE6"/>
+    <display value="Name of client"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="Age"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Location"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="mother/father/guardian's contact number"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="Due/overdue vaccination(s)"/>
+  </concept>
+  <concept>
+    <code value="DE11"/>
+    <display value="Client gets vaccinated"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Reason for late vaccination"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Reason for missed vaccination"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Client is vaccinated"/>
+  </concept>
+</CodeSystem>

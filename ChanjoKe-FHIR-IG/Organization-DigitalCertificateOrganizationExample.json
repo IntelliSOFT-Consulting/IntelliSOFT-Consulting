@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Organization",
+  "id" : "DigitalCertificateOrganizationExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization DigitalCertificateOrganizationExample</b></p><a name=\"DigitalCertificateOrganizationExample\"> </a><a name=\"hcDigitalCertificateOrganizationExample\"> </a><a name=\"DigitalCertificateOrganizationExample-en-US\"> </a><p><b>name</b>: Kenya Ministry of Health</p></div>"
+  },
+  "name" : "Kenya Ministry of Health"
+}

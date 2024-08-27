@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/AdverseEvent/ExampleAdverseEvent> a fhir:AdverseEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleAdverseEvent"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent ExampleAdverseEvent</b></p><a name=\"ExampleAdverseEvent\"> </a><a name=\"hcExampleAdverseEvent\"> </a><a name=\"ExampleAdverseEvent-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers</code>/AE123456789</p><p><b>actuality</b>: Adverse Event</p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p><p><b>date</b>: 2024-05-12</p><p><b>recordedDate</b>: 2024-05-13</p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Substance-SubstanceExample.html\">Substance Hemoglobin Okaloosa</a></td></tr></table><p><b>subjectMedicalHistory</b>: <a href=\"Condition-ConditionExample.html\">Condition</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/types-of-aefi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DE3" ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/event-details"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Patient developed a rash within 24 hours of vaccination." ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/action-taken"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DE22" ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/facility-reported"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Central Hospital" ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-given"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Anti-allergies" ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-details"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Administered antihistamine." ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-collected"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Specimen x" ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-details"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "No specimens collected." ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reaction-severity"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DE27" ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/aefi-outcome"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DE34" ]
+  ] ) ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "AE123456789" ]
+  ] ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:subject [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-05-12"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2024-05-13"^^xsd:date] ; # 
+  fhir:suspectEntity ( [
+     fhir:instance [
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Substance/SubstanceExample> ;
+       fhir:reference [ fhir:v "Substance/SubstanceExample" ]
+     ]
+  ] ) ; # 
+  fhir:subjectMedicalHistory ( [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Condition/ConditionExample> ;
+     fhir:reference [ fhir:v "Condition/ConditionExample" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,702 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZEGenerateReport"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition IMMZEGenerateReport</b></p><a name=\"IMMZEGenerateReport\"> </a><a name=\"hcIMMZEGenerateReport\"> </a><a name=\"IMMZEGenerateReport-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport\" title=\"Data elements for the IMMZ.E Report Generation Data Dictionary.\">IMMZEGenerateReport</a><a name=\"IMMZEGenerateReport\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">IMMZ.E Generate Report<br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportIdentification\" title=\"A unique identifier for the instance of the report that has been generated\">reportIdentification</a><a name=\"IMMZEGenerateReport.reportIdentification\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Identification</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportStatus\" title=\"The status of the report (for example, initial, complete, etc.)\">reportStatus</a><a name=\"IMMZEGenerateReport.reportStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Status</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportType\" title=\"The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)\">reportType</a><a name=\"IMMZEGenerateReport.reportType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Type</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportIndicatorCode\" title=\"The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)\">reportIndicatorCode</a><a name=\"IMMZEGenerateReport.reportIndicatorCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Indicator Code</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportSubjectArea\" title=\"Location (facility or place) for which the data in the report is being represented.\">reportSubjectArea</a><a name=\"IMMZEGenerateReport.reportSubjectArea\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Subject Area</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportGenerationDate\" title=\"Location (facility or place) for which the data in the report is being represented.\">reportGenerationDate</a><a name=\"IMMZEGenerateReport.reportGenerationDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Generation Date</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportingPeriodStart\" title=\"The start date of the reporting period for which data in the report has been included.\">reportingPeriodStart</a><a name=\"IMMZEGenerateReport.reportingPeriodStart\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reporting Period Start</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportingPeriodEnd\" title=\"The start date of the reporting period for which data in the report has been included.\">reportingPeriodEnd</a><a name=\"IMMZEGenerateReport.reportingPeriodEnd\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reporting Period End</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.improvementIndicator\" title=\"Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)\">improvementIndicator</a><a name=\"IMMZEGenerateReport.improvementIndicator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Improvement Indicator</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.reportGeneratorOrAuthor\" title=\"Indicates the organization, or location which is generating or producing the report\">reportGeneratorOrAuthor</a><a name=\"IMMZEGenerateReport.reportGeneratorOrAuthor\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Report Generator / Author</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.measureIdentifierMeaning\" title=\"Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)\">measureIdentifierMeaning</a><a name=\"IMMZEGenerateReport.measureIdentifierMeaning\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Measure Identifier / Meaning</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.measureNumerator\" title=\"The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score.\">measureNumerator</a><a name=\"IMMZEGenerateReport.measureNumerator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Measure Numerator</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.measureDenominator\" title=\"The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score.\">measureDenominator</a><a name=\"IMMZEGenerateReport.measureDenominator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Measure Denominator</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.disaggregationGroup\" title=\"Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)\">disaggregationGroup</a><a name=\"IMMZEGenerateReport.disaggregationGroup\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Disaggregation Group</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning\" title=\"The type or value of this stratum represents (male , female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element (for example: if By-Sex is used as the disaggregation group, valid values would be 'Male', 'Female', 'Intersex')\">disaggregationMeasureIdentifierMeaning</a><a name=\"IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Disaggregation Measure Identifier / Meaning</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.disaggregationNumerator\" title=\"The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score.\">disaggregationNumerator</a><a name=\"IMMZEGenerateReport.disaggregationNumerator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Disaggregation Numerator</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.disaggregationDenominator\" title=\"The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score\">disaggregationDenominator</a><a name=\"IMMZEGenerateReport.disaggregationDenominator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Disaggregation Denominator</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-IMMZEGenerateReport-definitions.html#IMMZEGenerateReport.disaggregatedScore\" title=\"The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records.\">disaggregatedScore</a><a name=\"IMMZEGenerateReport.disaggregatedScore\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: black; null\" title=\"This element is included in summaries\">Σ</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Disaggregated Score</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/logical-target"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZEGenerateReport"] ; # 
+  fhir:title [ fhir:v "IMMZ.E Generate Report"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Data elements for the IMMZ.E Report Generation Data Dictionary."] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "IMMZEGenerateReport" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport" ] ;
+       fhir:short [ fhir:v "IMMZ.E Generate Report" ] ;
+       fhir:definition [ fhir:v "Data elements for the IMMZ.E Report Generation Data Dictionary." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportIdentification" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportIdentification" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE1" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Identification" ] ;
+       fhir:definition [ fhir:v "A unique identifier for the instance of the report that has been generated" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportIdentification" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportStatus" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportStatus" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE2" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Status" ] ;
+       fhir:definition [ fhir:v "The status of the report (for example, initial, complete, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportStatus" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportType" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportType" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE3" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Type" ] ;
+       fhir:definition [ fhir:v "The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportType" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportIndicatorCode" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportIndicatorCode" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE11" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Indicator Code" ] ;
+       fhir:definition [ fhir:v "The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportIndicatorCode" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportSubjectArea" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportSubjectArea" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE18" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Subject Area" ] ;
+       fhir:definition [ fhir:v "Location (facility or place) for which the data in the report is being represented." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportSubjectArea" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportGenerationDate" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportGenerationDate" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE19" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Generation Date" ] ;
+       fhir:definition [ fhir:v "Location (facility or place) for which the data in the report is being represented." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportGenerationDate" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportingPeriodStart" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportingPeriodStart" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE20" ]
+       ] ) ;
+       fhir:short [ fhir:v "Reporting Period Start" ] ;
+       fhir:definition [ fhir:v "The start date of the reporting period for which data in the report has been included." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportingPeriodStart" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportingPeriodEnd" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportingPeriodEnd" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE21" ]
+       ] ) ;
+       fhir:short [ fhir:v "Reporting Period End" ] ;
+       fhir:definition [ fhir:v "The start date of the reporting period for which data in the report has been included." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportingPeriodEnd" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.improvementIndicator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.improvementIndicator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE22" ]
+       ] ) ;
+       fhir:short [ fhir:v "Improvement Indicator" ] ;
+       fhir:definition [ fhir:v "Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.improvementIndicator" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportGeneratorOrAuthor" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportGeneratorOrAuthor" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE25" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Generator / Author" ] ;
+       fhir:definition [ fhir:v "Indicates the organization, or location which is generating or producing the report" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.reportGeneratorOrAuthor" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.measureIdentifierMeaning" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.measureIdentifierMeaning" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE26" ]
+       ] ) ;
+       fhir:short [ fhir:v "Measure Identifier / Meaning" ] ;
+       fhir:definition [ fhir:v "Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.measureIdentifierMeaning" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.measureNumerator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.measureNumerator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE30" ]
+       ] ) ;
+       fhir:short [ fhir:v "Measure Numerator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.measureNumerator" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.measureDenominator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.measureDenominator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE31" ]
+       ] ) ;
+       fhir:short [ fhir:v "Measure Denominator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.measureDenominator" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationGroup" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationGroup" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE32" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Group" ] ;
+       fhir:definition [ fhir:v "Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationGroup" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE41" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Measure Identifier / Meaning" ] ;
+       fhir:definition [ fhir:v "The type or value of this stratum represents (male , female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element (for example: if By-Sex is used as the disaggregation group, valid values would be 'Male', 'Female', 'Intersex')" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationNumerator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationNumerator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE42" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Numerator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationNumerator" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationDenominator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationDenominator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE43" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Denominator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationDenominator" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregatedScore" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregatedScore" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE44" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregated Score" ] ;
+       fhir:definition [ fhir:v "The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "IMMZEGenerateReport.disaggregatedScore" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "IMMZEGenerateReport" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport" ] ;
+       fhir:short [ fhir:v "IMMZ.E Generate Report" ] ;
+       fhir:definition [ fhir:v "Data elements for the IMMZ.E Report Generation Data Dictionary." ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportIdentification" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportIdentification" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE1" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Identification" ] ;
+       fhir:definition [ fhir:v "A unique identifier for the instance of the report that has been generated" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportStatus" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportStatus" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE2" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Status" ] ;
+       fhir:definition [ fhir:v "The status of the report (for example, initial, complete, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportType" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportType" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE3" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Type" ] ;
+       fhir:definition [ fhir:v "The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportIndicatorCode" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportIndicatorCode" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE11" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Indicator Code" ] ;
+       fhir:definition [ fhir:v "The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportSubjectArea" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportSubjectArea" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE18" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Subject Area" ] ;
+       fhir:definition [ fhir:v "Location (facility or place) for which the data in the report is being represented." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportGenerationDate" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportGenerationDate" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE19" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Generation Date" ] ;
+       fhir:definition [ fhir:v "Location (facility or place) for which the data in the report is being represented." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportingPeriodStart" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportingPeriodStart" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE20" ]
+       ] ) ;
+       fhir:short [ fhir:v "Reporting Period Start" ] ;
+       fhir:definition [ fhir:v "The start date of the reporting period for which data in the report has been included." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportingPeriodEnd" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportingPeriodEnd" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE21" ]
+       ] ) ;
+       fhir:short [ fhir:v "Reporting Period End" ] ;
+       fhir:definition [ fhir:v "The start date of the reporting period for which data in the report has been included." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.improvementIndicator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.improvementIndicator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE22" ]
+       ] ) ;
+       fhir:short [ fhir:v "Improvement Indicator" ] ;
+       fhir:definition [ fhir:v "Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.reportGeneratorOrAuthor" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.reportGeneratorOrAuthor" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE25" ]
+       ] ) ;
+       fhir:short [ fhir:v "Report Generator / Author" ] ;
+       fhir:definition [ fhir:v "Indicates the organization, or location which is generating or producing the report" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.measureIdentifierMeaning" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.measureIdentifierMeaning" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE26" ]
+       ] ) ;
+       fhir:short [ fhir:v "Measure Identifier / Meaning" ] ;
+       fhir:definition [ fhir:v "Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.measureNumerator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.measureNumerator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE30" ]
+       ] ) ;
+       fhir:short [ fhir:v "Measure Numerator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.measureDenominator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.measureDenominator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE31" ]
+       ] ) ;
+       fhir:short [ fhir:v "Measure Denominator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationGroup" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationGroup" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE32" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Group" ] ;
+       fhir:definition [ fhir:v "Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE41" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Measure Identifier / Meaning" ] ;
+       fhir:definition [ fhir:v "The type or value of this stratum represents (male , female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element (for example: if By-Sex is used as the disaggregation group, valid values would be 'Male', 'Female', 'Intersex')" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationNumerator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationNumerator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE42" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Numerator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregationDenominator" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregationDenominator" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE43" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregation Denominator" ] ;
+       fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "IMMZEGenerateReport.disaggregatedScore" ] ;
+       fhir:path [ fhir:v "IMMZEGenerateReport.disaggregatedScore" ] ;
+       fhir:code ( [
+         fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "DE44" ]
+       ] ) ;
+       fhir:short [ fhir:v "Disaggregated Score" ] ;
+       fhir:definition [ fhir:v "The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

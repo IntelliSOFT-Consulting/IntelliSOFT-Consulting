@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "typeOfLastPolioDose"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet typeOfLastPolioDose</b></p><a name=\"typeOfLastPolioDose\"> </a><a name=\"hctypeOfLastPolioDose\"> </a><a name=\"typeOfLastPolioDose-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.B.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.B.html#IMMZ.B-DE26\">DE26</a></td><td>bOPV</td></tr><tr><td><a href=\"CodeSystem-IMMZ.B.html#IMMZ.B-DE27\">DE27</a></td><td>OPV I</td></tr><tr><td><a href=\"CodeSystem-IMMZ.B.html#IMMZ.B-DE28\">DE28</a></td><td>OPV II</td></tr><tr><td><a href=\"CodeSystem-IMMZ.B.html#IMMZ.B-DE29\">DE29</a></td><td>OPV III</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZB1DE25VS"] ; # 
+  fhir:title [ fhir:v "Type of last Polio dose"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of last Polio dose"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DE26" ] ;
+         fhir:display [ fhir:v "bOPV" ]
+       ] [
+         fhir:code [ fhir:v "DE27" ] ;
+         fhir:display [ fhir:v "OPV I" ]
+       ] [
+         fhir:code [ fhir:v "DE28" ] ;
+         fhir:display [ fhir:v "OPV II" ]
+       ] [
+         fhir:code [ fhir:v "DE29" ] ;
+         fhir:display [ fhir:v "OPV III" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

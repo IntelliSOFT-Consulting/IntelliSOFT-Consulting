@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IMMZ.B1.DE13",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.B1.DE13</b></p><a name=\"IMMZ.B1.DE13\"> </a><a name=\"hcIMMZ.B1.DE13\"> </a><a name=\"IMMZ.B1.DE13-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.B1.DE13-DE14\"> </a></td><td>Facility</td></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.B1.DE13-DE15\"> </a></td><td>Outreach</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13",
+  "version" : "0.1.0",
+  "name" : "IMMZ_DE8",
+  "title" : "Place of Vaccination",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Place of Vaccination",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "DE14",
+    "display" : "Facility"
+  },
+  {
+    "code" : "DE15",
+    "display" : "Outreach"
+  }]
+}

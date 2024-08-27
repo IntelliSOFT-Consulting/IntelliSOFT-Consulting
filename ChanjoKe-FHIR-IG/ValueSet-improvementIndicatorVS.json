@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "improvementIndicatorVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet improvementIndicatorVS</b></p><a name=\"improvementIndicatorVS\"> </a><a name=\"hcimprovementIndicatorVS\"> </a><a name=\"improvementIndicatorVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.E.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE23\">DE23</a></td><td style=\"color: #cccccc\">Increase is Improvement</td><td>Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE24\">DE24</a></td><td style=\"color: #cccccc\">Decrease is Improvement</td><td>Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/improvementIndicatorVS",
+  "version" : "0.1.0",
+  "name" : "IMMZE1DE22VS",
+  "title" : "Improvement Indicator",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Improvement Indicator",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E",
+      "concept" : [{
+        "code" : "DE23"
+      },
+      {
+        "code" : "DE24"
+      }]
+    }]
+  }
+}

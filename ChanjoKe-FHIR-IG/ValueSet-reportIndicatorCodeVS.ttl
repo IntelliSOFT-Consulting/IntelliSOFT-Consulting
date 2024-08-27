@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportIndicatorCodeVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "reportIndicatorCodeVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet reportIndicatorCodeVS</b></p><a name=\"reportIndicatorCodeVS\"> </a><a name=\"hcreportIndicatorCodeVS\"> </a><a name=\"reportIndicatorCodeVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.E.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE12\">DE12</a></td><td style=\"color: #cccccc\">Dropout rate</td><td>An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE13\">DE13</a></td><td style=\"color: #cccccc\">Defaulters</td><td>An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE14\">DE14</a></td><td style=\"color: #cccccc\">Coverage</td><td>An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE15\">DE15</a></td><td style=\"color: #cccccc\">AEFI Case Rate</td><td>An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE16\">DE16</a></td><td style=\"color: #cccccc\">Open Vial Wastage</td><td>An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE17\">DE17</a></td><td style=\"color: #cccccc\">Closed Vial Wastage</td><td>An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportIndicatorCodeVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZE1DE11VS"] ; # 
+  fhir:title [ fhir:v "Report Indicator Code"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Report Indicator Code"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DE12" ]
+       ] [
+         fhir:code [ fhir:v "DE13" ]
+       ] [
+         fhir:code [ fhir:v "DE14" ]
+       ] [
+         fhir:code [ fhir:v "DE15" ]
+       ] [
+         fhir:code [ fhir:v "DE16" ]
+       ] [
+         fhir:code [ fhir:v "DE17" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

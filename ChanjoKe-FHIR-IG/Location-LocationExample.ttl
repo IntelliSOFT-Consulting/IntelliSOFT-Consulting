@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://shr.tiberbuapps.com/fhir/Location/LocationExample> a fhir:Location ;
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Location/LocationExample> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "LocationExample"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><a name=\"LocationExample-en-US\"> </a><p><b>name</b>: Kenya Medical Research Institute</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><a name=\"LocationExample-en-US\"> </a><p><b>name</b>: Example Hospital</p></div>"
   ] ; # 
-  fhir:name [ fhir:v "Kenya Medical Research Institute"] . # 
+  fhir:name [ fhir:v "Example Hospital"] . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ServiceRequests"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ServiceRequests</b></p><a name=\"ServiceRequests\"> </a><a name=\"hcServiceRequests\"> </a><a name=\"ServiceRequests-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">108252007<a name=\"ServiceRequests-108252007\"> </a></td><td>Laboratory procedure</td></tr><tr><td style=\"white-space:nowrap\">363679005<a name=\"ServiceRequests-363679005\"> </a></td><td>Imaging</td></tr><tr><td style=\"white-space:nowrap\">409063005<a name=\"ServiceRequests-409063005\"> </a></td><td>Counselling</td></tr><tr><td style=\"white-space:nowrap\">409073007<a name=\"ServiceRequests-409073007\"> </a></td><td>Education</td></tr><tr><td style=\"white-space:nowrap\">387713003<a name=\"ServiceRequests-387713003\"> </a></td><td>Surgical procedure</td></tr><tr><td style=\"white-space:nowrap\">KNHTS-001<a name=\"ServiceRequests-KNHTS-001\"> </a></td><td>Defaulter Tracing</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SVREQS_A"] ; # 
+  fhir:title [ fhir:v "Service Requests"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Service Reequests to be used within the Kenyan Contexts"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "108252007" ] ;
+     fhir:display [ fhir:v "Laboratory procedure" ]
+  ] [
+     fhir:code [ fhir:v "363679005" ] ;
+     fhir:display [ fhir:v "Imaging" ]
+  ] [
+     fhir:code [ fhir:v "409063005" ] ;
+     fhir:display [ fhir:v "Counselling" ]
+  ] [
+     fhir:code [ fhir:v "409073007" ] ;
+     fhir:display [ fhir:v "Education" ]
+  ] [
+     fhir:code [ fhir:v "387713003" ] ;
+     fhir:display [ fhir:v "Surgical procedure" ]
+  ] [
+     fhir:code [ fhir:v "KNHTS-001" ] ;
+     fhir:display [ fhir:v "Defaulter Tracing" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

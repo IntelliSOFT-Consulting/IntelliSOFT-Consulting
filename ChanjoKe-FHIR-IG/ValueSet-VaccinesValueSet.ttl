@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/VaccinesValueSet> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VaccinesValueSet"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VaccinesValueSet</b></p><a name=\"VaccinesValueSet\"> </a><a name=\"hcVaccinesValueSet\"> </a><a name=\"VaccinesValueSet-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-CVX.html\"><code>http://hl7.org/fhir/sid/cvx</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>02</td><td style=\"color: #cccccc\">OPV</td></tr><tr><td>03</td><td style=\"color: #cccccc\">MMR</td></tr><tr><td>19</td><td style=\"color: #cccccc\">BCG</td></tr><tr><td>137</td><td style=\"color: #cccccc\">HPV, unspecified formulation</td></tr><tr><td>178</td><td style=\"color: #cccccc\">OPV bivalent</td></tr><tr><td>133</td><td style=\"color: #cccccc\">Pneumococcal conjugate PCV 13</td></tr><tr><td>122</td><td style=\"color: #cccccc\">rotavirus, unspecified formulation</td></tr><tr><td>10</td><td style=\"color: #cccccc\">IPV</td></tr><tr><td>107</td><td style=\"color: #cccccc\">DTaP, unspecified formulation</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>V04CB01</td><td style=\"color: #cccccc\">vitamin A concentrates</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/VaccinesValueSet"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VaccinesValueSet"] ; # 
+  fhir:title [ fhir:v "Combination Codes for vaccine"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a mixed value set"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "02" ]
+       ] [
+         fhir:code [ fhir:v "03" ]
+       ] [
+         fhir:code [ fhir:v "19" ]
+       ] [
+         fhir:code [ fhir:v "137" ]
+       ] [
+         fhir:code [ fhir:v "178" ]
+       ] [
+         fhir:code [ fhir:v "133" ]
+       ] [
+         fhir:code [ fhir:v "122" ]
+       ] [
+         fhir:code [ fhir:v "10" ]
+       ] [
+         fhir:code [ fhir:v "107" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "V04CB01" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

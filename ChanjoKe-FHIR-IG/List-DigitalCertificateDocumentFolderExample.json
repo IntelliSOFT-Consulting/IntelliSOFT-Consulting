@@ -1,0 +1,21 @@
+{
+  "resourceType" : "List",
+  "id" : "DigitalCertificateDocumentFolderExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: List DigitalCertificateDocumentFolderExample</b></p><a name=\"DigitalCertificateDocumentFolderExample\"> </a><a name=\"hcDigitalCertificateDocumentFolderExample\"> </a><a name=\"DigitalCertificateDocumentFolderExample-en-US\"> </a><table class=\"clstu\"><tr><td>Mode: Snapshot List </td><td>Status: Current </td></tr><tr><td>Subject: <a href=\"Patient-DigitalCertificatePatientExample.html\">John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789\u00a0(use:\u00a0usual,\u00a0))</a></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"DocumentReference-DigitalCertificateDocumentReferenceExample.html\">DocumentReference: status = current; date = 2020-02-02 01:02:03+0200</a></td></tr></table></div>"
+  },
+  "status" : "current",
+  "mode" : "snapshot",
+  "subject" : {
+    "reference" : "Patient/DigitalCertificatePatientExample"
+  },
+  "entry" : [{
+    "item" : {
+      "reference" : "DocumentReference/DigitalCertificateDocumentReferenceExample"
+    }
+  }]
+}

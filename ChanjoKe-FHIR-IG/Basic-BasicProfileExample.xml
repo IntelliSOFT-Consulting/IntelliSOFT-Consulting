@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="BasicProfileExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic BasicProfileExample</b></p><a name="BasicProfileExample"> </a><a name="hcBasicProfileExample"> </a><a name="BasicProfileExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/basic-profile-identifiers</code>/12345</p><p><b>code</b>: <span title="Codes:">referral</span></p><p><b>subject</b>: <a href="Location-LocationExample.html">Location Example Hospital</a></p></div>
+  </text>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/inventory-items">
+    <extension url="item">
+      <extension url="https://example.org/fhir/StructureDefinition/bcg-vaccine">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/vaccine-codes"/>
+            <code value="bcg"/>
+            <display value="Referral"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="quantity">
+        <valueQuantity>
+          <value value="100"/>
+          <unit value="doses"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="doses"/>
+        </valueQuantity>
+      </extension>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/basic-profile-identifiers"/>
+    <value value="12345"/>
+  </identifier>
+  <code>
+    <coding>
+      <code value="referral"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Location/LocationExample"/>
+  </subject>
+</Basic>

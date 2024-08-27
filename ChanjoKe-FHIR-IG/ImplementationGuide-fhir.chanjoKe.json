@@ -1,0 +1,2992 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "fhir.chanjoKe",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.chanjoKe</b></p><a name=\"fhir.chanjoKe\"> </a><a name=\"hcfhir.chanjoKe\"> </a><a name=\"fhir.chanjoKe-en-US\"> </a><h2>chanjoKeIG</h2><p>The official URL for this implementation guide is: </p><pre>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImplementationGuide/fhir.chanjoKe</pre><div><p>ChanjoKE Immunization Implementation Guide</p>\n</div></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImplementationGuide/fhir.chanjoKe",
+  "version" : "0.1.0",
+  "name" : "chanjoKeIG",
+  "title" : "ChanjoKE Immunization Implementation Guide",
+  "status" : "draft",
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "ChanjoKE Immunization Implementation Guide",
+  "packageId" : "fhir.chanjoKe",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "6.0.2"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.1.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/kenyaAdministrativeGenderVS"
+      },
+      "name" : "Administrative Gender",
+      "description" : "Administrative Gender",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AdverseEventProfile"
+      },
+      "name" : "AdverseEventProfile",
+      "description" : "Profile for Adverse Event",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/aefiActionTakenVS"
+      },
+      "name" : "AEFI Action Taken",
+      "description" : "AEFI Action Taken",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/aefiOutcomeVS"
+      },
+      "name" : "AEFI Outcome",
+      "description" : "AEFI Outcome",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/aefi-outcome"
+      },
+      "name" : "AefiOutcomeExtension",
+      "description" : "AefiOutcomeExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/basic-profile"
+      },
+      "name" : "BasicProfile",
+      "description" : "Profile for the Basic resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/BasicProfileExample"
+      },
+      "name" : "BasicProfileExample",
+      "description" : "An example of a BasicProfile resource.",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/body-weight-extension"
+      },
+      "name" : "Body Weight extension",
+      "description" : "Addition for the patient's body weight in kilograms.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/certificate-Issue-Date"
+      },
+      "name" : "Certificate Issue Date",
+      "description" : "Date when the vaccination certificate was issued",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/certificate-Issued"
+      },
+      "name" : "Certificate Issued",
+      "description" : "Add-on extension to ascertain whether the individual was given a vaccination certificate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/childCanBeLocatedVS"
+      },
+      "name" : "Child can be located",
+      "description" : "Child can be located",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/HivStatusVS"
+      },
+      "name" : "Client's HIV Status",
+      "description" : "Client's HIV Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/clientTSTTestResult"
+      },
+      "name" : "Client's TST Test Result",
+      "description" : "Client's TST Test Result",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/STOCKADJUSTMENTTYPE"
+      },
+      "name" : "codeSystem for Adjustment Type",
+      "description" : "CodeSystem for Adjustment Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/STOCKADJUSTMENTTYPEExample"
+      },
+      "name" : "codeSystem for Adjustment Type",
+      "description" : "CodeSystem for Adjustment Type",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VaccinesValueSet"
+      },
+      "name" : "Combination Codes for vaccine",
+      "description" : "This is a mixed value set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/contraindication-to-vaccine"
+      },
+      "name" : "ContraIndication to Vaccine",
+      "description" : "Evaluation to determine if the patient is ineligible for the vaccine due to contraindications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/contraindicationToVaccineVS"
+      },
+      "name" : "Contraindications to vaccine",
+      "description" : "Contraindications to vaccine",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/kenyaCountiesVS"
+      },
+      "name" : "Counties in Kenya",
+      "description" : "Counties in Kenya",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DDCQRFormatCodes"
+      },
+      "name" : "DDCC QR Format Codes",
+      "description" : "Format of the representation of QR code",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DDCQRFormatCodesExample"
+      },
+      "name" : "DDCC QR Format Codes",
+      "description" : "Format of the representation of QR code",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DefaulterTracingRequest"
+      },
+      "name" : "DefaulterTracingRequest",
+      "description" : "Service Request for defaulter tracing",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/DefaulterTracingRequestExample"
+      },
+      "name" : "DefaulterTracingRequestExample",
+      "description" : "An example of a defaulter tracing request",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DDCQRFormatCodesVS"
+      },
+      "name" : "Digital Certificate Formats",
+      "description" : "ValueSets for Digital Certificate Formats",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateComposition"
+      },
+      "name" : "DigitalCertificateComposition",
+      "description" : "Describes the logical structure for a Digital Documentation for a Disease Certificates.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/DigitalCertificateCompositionExample"
+      },
+      "name" : "DigitalCertificateCompositionExample",
+      "description" : "Example of a Digital Certificate Composition",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateCompositionVaccinationStatus"
+      },
+      "name" : "DigitalCertificateCompositionVaccinationStatus",
+      "description" : "Digital Certificate for Vaccination Status Composition",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/DigitalCertificateCompositionVaccinationStatusExample"
+      },
+      "name" : "DigitalCertificateCompositionVaccinationStatusExample",
+      "description" : "An example of a digital certificate for vaccination status composition",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateDocument"
+      },
+      "name" : "DigitalCertificateDocument",
+      "description" : "A Digital Certificate Document is a document bundle containing the Digital Certificate information.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/DigitalCertificateDocumentExample"
+      },
+      "name" : "DigitalCertificateDocumentExample",
+      "description" : "An example of a digital certificate document",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocument"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateDocumentFolder"
+      },
+      "name" : "DigitalCertificateDocumentFolder",
+      "description" : "Digital Certificate Folder of the Paper Certificate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "List"
+      }],
+      "reference" : {
+        "reference" : "List/DigitalCertificateDocumentFolderExample"
+      },
+      "name" : "DigitalCertificateDocumentFolderExample",
+      "description" : "An example of a digital certificate document folder",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateDocumentReference"
+      },
+      "name" : "DigitalCertificateDocumentReference",
+      "description" : "Digital Certificate DocumentReference for QR codes including the QR image and the serialized content.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DigitalCertificateDocumentReferenceExample"
+      },
+      "name" : "DigitalCertificateDocumentReferenceExample",
+      "description" : "An example of Digital Certificate Document Reference for QR codes",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateDocumentReferenceQR"
+      },
+      "name" : "DigitalCertificateDocumentReferenceQR",
+      "description" : "Digital Certificate DocumentReference for QR codes including the QR image and the serialized content.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DigitalCertificateDocumentReferenceQRExample"
+      },
+      "name" : "DigitalCertificateDocumentReferenceQRExample",
+      "description" : "An example of a digital certificate document reference for QR codes",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReferenceQR"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificateOrganization"
+      },
+      "name" : "DigitalCertificateOrganization",
+      "description" : "Abstraction for a Digital Certificate Organization. There should be a Digital Certificate Organization associated to each public health authortiy (PHA)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/DigitalCertificateOrganizationExample"
+      },
+      "name" : "DigitalCertificateOrganizationExample",
+      "description" : "An example of a digital certificate organization",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DigitalCertificatePatient"
+      },
+      "name" : "DigitalCertificatePatient",
+      "description" : "A Digital Certificate Patient should",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/DigitalCertificatePatientExample"
+      },
+      "name" : "DigitalCertificatePatientExample",
+      "description" : "An example of a digital certificate patient",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/disaggregationGroupVS"
+      },
+      "name" : "Disaggregation Group",
+      "description" : "Disaggregation Group",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DueOROverdueVaccinationVS"
+      },
+      "name" : "Due OR Overdue Vaccination(s)",
+      "description" : "Due OR Overdue Vaccination(s)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AdverseEvent"
+      }],
+      "reference" : {
+        "reference" : "AdverseEvent/ExampleAdverseEvent"
+      },
+      "name" : "Example Adverse Event",
+      "description" : "An example instance of an adverse event profile.",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ConditionExample"
+      },
+      "name" : "Example Condition",
+      "description" : "An example instance of a condition.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/exposedToCloseContactWithTBVs"
+      },
+      "name" : "Exposed to close contact with TB",
+      "description" : "Exposed to close contact with TB",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/expected-date-of-next-order"
+      },
+      "name" : "Extension for  Expected Date of Next Order ",
+      "description" : "AExtension for Expected Date of Next Order",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/action-taken"
+      },
+      "name" : "Extension for Action Taken",
+      "description" : "Action Taken",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/allocated-quantity"
+      },
+      "name" : "Extension for Allocated Quantity",
+      "description" : "AExtension for Allocated Quantity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/batch-number"
+      },
+      "name" : "Extension for Batch Number ",
+      "description" : "AExtension for Batch Number",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/children"
+      },
+      "name" : "Extension for Children ",
+      "description" : "AExtension for Children",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-of-last-order"
+      },
+      "name" : "Extension for Date Of last Order",
+      "description" : "Extension for Date Of last Order",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-received"
+      },
+      "name" : "Extension for Date Received",
+      "description" : "AExtension for Date Received",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/doses-in-stock"
+      },
+      "name" : "Extension for Doses in stock",
+      "description" : "AExtension for Doses in stock",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/event-details"
+      },
+      "name" : "Extension for Event Details",
+      "description" : "Brief details on the event",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/expiry-date"
+      },
+      "name" : "Extension for ExpiryDate ",
+      "description" : "AExtension for ExpiryDate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/facility-reported"
+      },
+      "name" : "Extension for Facility Reported",
+      "description" : "Facility Reported",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/issue-date"
+      },
+      "name" : "Extension for Issue Date",
+      "description" : "AExtension for Issue Date",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/kenya-counties-extension"
+      },
+      "name" : "Extension for Kenya counties",
+      "description" : "A code representing kenya counties",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/manufacturer-details"
+      },
+      "name" : "Extension for Manufacturer Details ",
+      "description" : "AExtension for Manufacturer Details",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/maximum"
+      },
+      "name" : "Extension for Maximum",
+      "description" : "AExtension for Maximum",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/minimum"
+      },
+      "name" : "Extension for Minimum",
+      "description" : "AExtension for Minimum",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/order-number"
+      },
+      "name" : "Extension for Order number",
+      "description" : "AExtension for Order number",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ordered-amount"
+      },
+      "name" : "Extension for Ordered Amount ",
+      "description" : "AExtension for Ordered Amount",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/origin"
+      },
+      "name" : "Extension for Origin",
+      "description" : "AExtension for Origin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/physical-count"
+      },
+      "name" : "Extension for Physical Count",
+      "description" : "AExtension for Physical Count",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pregnant-women"
+      },
+      "name" : "Extension for Pregnant women ",
+      "description" : "AExtension for Pregnant women",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/products"
+      },
+      "name" : "Extension for Products ",
+      "description" : "Extension for Products",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/quantity-issued"
+      },
+      "name" : "Extension for Quantity Issued",
+      "description" : "AExtension for Quantity Issued",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/reason-for-adjustment"
+      },
+      "name" : "Extension for Reason For Adjustment ",
+      "description" : "AExtension for Reason For Adjustment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/new-vvm"
+      },
+      "name" : "Extension for Reason For New VVM",
+      "description" : "AExtension for New VVM",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/previous-vvm"
+      },
+      "name" : "Extension for Reason For Previous VVM",
+      "description" : "AExtension for Previous VVM",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/stock-origin"
+      },
+      "name" : "Extension for Reason For Stock Origin",
+      "description" : "AExtension for Stock Origin",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/recommended-stock"
+      },
+      "name" : "Extension for Recommended Stock ",
+      "description" : "AExtension for Recommended Stock",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/remaining-quantity"
+      },
+      "name" : "Extension for Remaining Quantity ",
+      "description" : "AExtension for Remaining Quantity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/specimen-collected"
+      },
+      "name" : "Extension for Specimen collected for investigation",
+      "description" : "Specimen collected for investigation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/specimen-details"
+      },
+      "name" : "Extension for Specimen Details",
+      "description" : "Specimen Details",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/stock-adjustment-date"
+      },
+      "name" : "Extension for Stock Adjustment Date",
+      "description" : "AExtension for Stock Adjustment Date",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/adjustment-type"
+      },
+      "name" : "Extension for Stock Adjustment Type",
+      "description" : "AExtension for Stock Adjustment Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/stock-location"
+      },
+      "name" : "Extension for Stock Location ",
+      "description" : "AExtension for Stock Location",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/stock-quantity"
+      },
+      "name" : "Extension for Stock Quantity",
+      "description" : "AExtension for Stock Quantity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/total-population"
+      },
+      "name" : "Extension for Total Population",
+      "description" : "Extension for Total Population",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-details"
+      },
+      "name" : "Extension for Treatment Details",
+      "description" : "Treatment Details",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-given"
+      },
+      "name" : "Extension for Treatment Given",
+      "description" : "Treatment Given",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/types-of-aefi"
+      },
+      "name" : "Extension for types of AEFI",
+      "description" : "Extension for types of AEFI",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccine"
+      },
+      "name" : "Extension for Vaccine",
+      "description" : "AExtension for Vaccine",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vvm-status"
+      },
+      "name" : "Extension for VVM Status ",
+      "description" : "AExtension for VVM Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/kenya-health-worker-extension"
+      },
+      "name" : "Healthworker extension",
+      "description" : "Add-on extension to ascertain whether the individual is a healthcare worker.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IdentifierTypes"
+      },
+      "name" : "Identifier Types",
+      "description" : "Defined Identifier Types for KenyanRegistryPatient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IdentifierTypesExample"
+      },
+      "name" : "Identifier Types",
+      "description" : "Defined Identifier Types for KenyanRegistryPatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.A"
+      },
+      "name" : "IMMZ.A CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.A Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZADataElementsCodeSystem"
+      },
+      "name" : "IMMZ.A CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.A Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZARegisterClient"
+      },
+      "name" : "IMMZ.A Register Client",
+      "description" : "Data elements for the IMMZ.A Register Client Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.B"
+      },
+      "name" : "IMMZ.B CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.B Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZBDataElementsCodeSystem"
+      },
+      "name" : "IMMZ.B CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.B Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZBUpdateClientHistory"
+      },
+      "name" : "IMMZ.B Update Client History",
+      "description" : "Data elements for the IMMZ.B Update Client History Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZCAdministerVaccine"
+      },
+      "name" : "IMMZ.C Administer Vaccine",
+      "description" : "Data elements for the IMMZ.C Administer Vaccine Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/IMMZCAdministerVaccineExample"
+      },
+      "name" : "IMMZ.C Administer Vaccine Example",
+      "description" : "An example instance of the IMMZ.C Administer Vaccine Data Dictionary.",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZCAdministerVaccine"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.C"
+      },
+      "name" : "IMMZ.C CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.C Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZCDataElementsCodeSystem"
+      },
+      "name" : "IMMZ.C CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.C Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZCRegisterClient"
+      },
+      "name" : "IMMZ.C Register Client",
+      "description" : "Data elements for the IMMZ.C Register Client Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.D"
+      },
+      "name" : "IMMZ.D CodeSystem for Defaulter Tracing",
+      "description" : "CodeSystem for IMMZ.D Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZDDefaulterTracingCodeSystem"
+      },
+      "name" : "IMMZ.D CodeSystem for Defaulter Tracing",
+      "description" : "CodeSystem for IMMZ.D Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZDdefaulterTracing"
+      },
+      "name" : "IMMZ.D Defaulter Tracing",
+      "description" : "Data elements for the IMMZ.D Defaulter Tracing Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/IMMZDdefaulterTracingExample"
+      },
+      "name" : "IMMZ.D Defaulter Tracing Example",
+      "description" : "An example instance of the IMMZ.D Defaulter Tracing Profile.",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZDdefaulterTracing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.E"
+      },
+      "name" : "IMMZ.E CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.E Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.EExample"
+      },
+      "name" : "IMMZ.E CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.E Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZEGenerateReport"
+      },
+      "name" : "IMMZ.E Generate Report",
+      "description" : "Data elements for the IMMZ.E Report Generation Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/IMMZEGenerateReportExample"
+      },
+      "name" : "IMMZ.E Generate Report Example",
+      "description" : "An example instance of the IMMZ.E Generate Report Profile.",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZEGenerateReport"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/IMMZFaefi"
+      },
+      "name" : "IMMZ.F AEFI",
+      "description" : "Data elements for the IMMZ.F AEFI Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/IMMZFaefiExample"
+      },
+      "name" : "IMMZ.F AEFI Example",
+      "description" : "An example instance of the IMMZ.F AEFI Data Dictionary.",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZFaefi"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.F"
+      },
+      "name" : "IMMZ.F CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.F Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.FExample"
+      },
+      "name" : "IMMZ.F CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.F Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.G"
+      },
+      "name" : "IMMZ.G CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.GExample"
+      },
+      "name" : "IMMZ.G CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccination-certificate-coc"
+      },
+      "name" : "IMMZ.G Vaccination Status- Continuity of Care",
+      "description" : "Data elements for the IMMZ.G Vaccination Status - Continuity of Care Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.H"
+      },
+      "name" : "IMMZ.H CodeSystem for Vaccine status",
+      "description" : "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.HExample"
+      },
+      "name" : "IMMZ.H CodeSystem for Vaccine status",
+      "description" : "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccination-certificate-vs"
+      },
+      "name" : "IMMZ.H Vaccination Status",
+      "description" : "Data elements for the IMMZ.H Vaccination Status Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccination-certificate-core-data-set"
+      },
+      "name" : "IMMZ.J Vaccination Core DataSets",
+      "description" : "Data elements for the IMMZ.J Vaccination Certificate CoreDataSet Data Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccination-certificate-pov"
+      },
+      "name" : "IMMZ.K Vaccination Status- Proof of Vaccination",
+      "description" : "Data elements for the IMMZ.K Vaccination Status - Proof of Vaccination Dictionary.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.Z1"
+      },
+      "name" : "IMMZ.Z1 CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.Z1 Data Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.Z1Example"
+      },
+      "name" : "IMMZ.Z1 CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.Z1 Data Elements",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/IMMZARegisterClientExample"
+      },
+      "name" : "IMMZARegisterClientExample",
+      "description" : "An example of a IMMZA Register Client",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZARegisterClient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/IMMZBUpdateClientHistoryExample"
+      },
+      "name" : "IMMZBUpdateClientHistoryExample",
+      "description" : "Example instance for IMMZBUpdateClientHistory",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZBUpdateClientHistory"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/improvementIndicatorVS"
+      },
+      "name" : "Improvement Indicator",
+      "description" : "Improvement Indicator",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/inventory-items"
+      },
+      "name" : "InventoryItems",
+      "description" : "An item in the BasicProfile resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KenyaVaccineCodes"
+      },
+      "name" : "Kenya Vaccine Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KenyaVaccineCodesExample"
+      },
+      "name" : "Kenya Vaccine Codes",
+      "description" : "CodeSystem for Kenya Vaccine Codes",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/kenya-administrative-gender-extension"
+      },
+      "name" : "KenyaAdministrativeGenderExtension",
+      "description" : "KenyaAdministrativeGenderExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KHTS.A"
+      },
+      "name" : "KenyaCounties CodeSystem for Counties in Kenya",
+      "description" : "CodeSystem for Counties in Kenya",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KHTS.AExample"
+      },
+      "name" : "KenyaCounties CodeSystem for Counties in Kenya",
+      "description" : "CodeSystem for Counties in Kenya",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/KenyanImmunization"
+      },
+      "name" : "KenyanImmunization",
+      "description" : "Kenyan Registry Profile for Immunization.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/KenyanImmunizationExample"
+      },
+      "name" : "KenyanImmunizationExample",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/KenyanImmunizationRecommendation"
+      },
+      "name" : "KenyanImmunizationRecommendation",
+      "description" : "A patient's point-in-time set of recommendations (i.e. forecasting) according to a published schedule with optional supporting justification.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ImmunizationRecommendation"
+      }],
+      "reference" : {
+        "reference" : "ImmunizationRecommendation/KenyanImmunizationRecommendationExample"
+      },
+      "name" : "KenyanImmunizationRecommendationExample",
+      "description" : "An example of a Kenyan Immunization Recommendation",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/KenyanImmunizationRegistryPatient"
+      },
+      "name" : "KenyanImmunizationRegistryPatient",
+      "description" : "Kenyan Registry Profile for Patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/KenyanPractitioner"
+      },
+      "name" : "KenyanPractitioner",
+      "description" : "Profile for a Kenyan Practitioner",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/KenyanPractitionerExample"
+      },
+      "name" : "KenyanPractitionerExample",
+      "description" : "An example of a Kenyan Practitioner",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanPractitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LocationExample"
+      },
+      "name" : "LocationExample",
+      "description" : "An example of a Location",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/maternalHIVStatusVS"
+      },
+      "name" : "Maternal HIV Status",
+      "description" : "The HIV status of the client's biological mother when the client was born.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/maternalTSTTestResultVs"
+      },
+      "name" : "Maternal's TST Test Result",
+      "description" : "Maternal's TST Test Result",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/MedicationExample"
+      },
+      "name" : "MedicationExample",
+      "description" : "An example of a Medication",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/OrganizationExample"
+      },
+      "name" : "OrganizationExample",
+      "description" : "An example of an organization",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PatientContactListVS"
+      },
+      "name" : "Patient Contact List",
+      "description" : "Paytient Contact List",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PatientIdentifierTypeVS"
+      },
+      "name" : "Patient Identifier type",
+      "description" : "This is a set of valuesets that have been defined for the KenyanPatient Registry",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PatientContactList"
+      },
+      "name" : "Patient's Contact List",
+      "description" : "Patient's family members, friends or others that can be contacted by healthcare providers onbahalf of the patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PatientContactListExample"
+      },
+      "name" : "Patient's Contact List",
+      "description" : "Patient's family members, friends or others that can be contacted by healthcare providers on behalf of the patient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PatientExample"
+      },
+      "name" : "PatientExample",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/placeOfVaccination"
+      },
+      "name" : "Place of Vaccination",
+      "description" : "Place of Vaccination",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/IMMZ.B1.DE13"
+      },
+      "name" : "Place of Vaccination",
+      "description" : "Place of Vaccination",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "name" : "PractitionerExample",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reactionSeverityVS"
+      },
+      "name" : "Reaction Severity",
+      "description" : "Reaction Severity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/reaction-severity"
+      },
+      "name" : "ReactionSeverityExtension",
+      "description" : "ReactionSeverityExtension",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/KenyanImmunizationNotDoneReasonsVS"
+      },
+      "name" : "Reason Vaccine not administered",
+      "description" : "Reasons a Vaccine was not administered (Kenyan National Program)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KenyanImmunizationNotDoneReasonsCS"
+      },
+      "name" : "Reason Vaccine not Administered",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/KenyanImmunizationNotDoneReasonsCSExample"
+      },
+      "name" : "Reason Vaccine not Administered",
+      "description" : "CodeSystem for reasons vaccine not administered in Kenya",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reasonVaccineNotdministeredVS"
+      },
+      "name" : "Reason vaccine was not administered",
+      "description" : "Reason vaccine was not administered",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reportIndicatorCodeVS"
+      },
+      "name" : "Report Indicator Code",
+      "description" : "Report Indicator Code",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reportStatusVS"
+      },
+      "name" : "Report Status",
+      "description" : "Report Status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/reportTypeVS"
+      },
+      "name" : "Report Type",
+      "description" : "Report Type",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/kenyaServiceRequestsVS"
+      },
+      "name" : "Service Requests",
+      "description" : "Service Requests to be used in Kenyan Context",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ServiceRequests"
+      },
+      "name" : "Service Requests",
+      "description" : "Service Reequests to be used within the Kenyan Contexts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ServiceRequestsExample"
+      },
+      "name" : "Service Requests",
+      "description" : "Service Requests to be used within the Kenyan Contexts",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ServiceRequestExample"
+      },
+      "name" : "ServiceRequestExample",
+      "description" : "An example of a service request",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/StockAdjustmentVs"
+      },
+      "name" : "Stock Adjustment",
+      "description" : "Stock Adjustment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Substance"
+      }],
+      "reference" : {
+        "reference" : "Substance/SubstanceExample"
+      },
+      "name" : "SubstanceExample",
+      "description" : "Example Substance",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SupplyDeliveryProfile"
+      },
+      "name" : "SupplyDeliveryProfile",
+      "description" : "Record of delivery of what is supplied.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyDelivery"
+      }],
+      "reference" : {
+        "reference" : "SupplyDelivery/SupplyDeliveryProfileExample"
+      },
+      "name" : "SupplyDeliveryProfileExample",
+      "description" : "An example of a Supply Delivery Profile",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyDeliveryProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SupplyRequestProfile"
+      },
+      "name" : "SupplyRequestProfile",
+      "description" : "A record of a request for a medication, substance or device used in the healthcare setting.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SupplyRequest"
+      }],
+      "reference" : {
+        "reference" : "SupplyRequest/SupplyRequestProfileExample"
+      },
+      "name" : "SupplyRequestProfileExample",
+      "description" : "An example of a Supply Request",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TaskProfile"
+      },
+      "name" : "TaskProfile",
+      "description" : "These are requested orders. Will have a summary of all my orders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/TaskProfileExample"
+      },
+      "name" : "TaskProfileExample",
+      "description" : "An example of a Task",
+      "exampleCanonical" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfAEFIVS"
+      },
+      "name" : "Type of AEFI",
+      "description" : "Type of AEFI",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfLastDPTHepBHibDoseVS"
+      },
+      "name" : "Type of last DPT-HepB+Hib dose",
+      "description" : "Type of last DPT-HepB+Hib dose",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfLastHPVDoseVS"
+      },
+      "name" : "Type of last HPV dose",
+      "description" : "Type of last HPV dose",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfLastMeaslesRubellaDoseVS"
+      },
+      "name" : "Type of last Measles-Rubella dose",
+      "description" : "Type of last Measles-Rubella dose",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfLastPCV10DoseVS"
+      },
+      "name" : "Type of last PCV10 dose",
+      "description" : "Type of last PCV10 dose",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfLastPolioDose"
+      },
+      "name" : "Type of last Polio dose",
+      "description" : "Type of last Polio dose",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/typeOfLastRotavirusDoseVS"
+      },
+      "name" : "Type of last Rotavirus dose",
+      "description" : "Type of last Rotavirus dose",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vaccineAdministeredVS"
+      },
+      "name" : "Vaccine administered",
+      "description" : "Vaccine administered",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccine-brand"
+      },
+      "name" : "Vaccine Brand",
+      "description" : "Vaccine Brand",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vaccineLibraryVS"
+      },
+      "name" : "Vaccine Library",
+      "description" : "Vaccine Library",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/validity-endDate-certificate"
+      },
+      "name" : "Validity end date of the certificate.",
+      "description" : "Validity end Date for the vaccination certificate",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/validity-startdate-certificate"
+      },
+      "name" : "Validity start date of the certificate.",
+      "description" : "Validity Start Date for the vaccination certificate",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "dependancies.html"
+        }],
+        "nameUrl" : "dependancies.html",
+        "title" : "Dependancies",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "business-requirements.html"
+        }],
+        "nameUrl" : "business-requirements.html",
+        "title" : "Business Requirements",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "concepts.html"
+        }],
+        "nameUrl" : "concepts.html",
+        "title" : "Concepts",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "generic-personas.html"
+        }],
+        "nameUrl" : "generic-personas.html",
+        "title" : "Generic Personas",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "user-scenarios.html"
+        }],
+        "nameUrl" : "user-scenarios.html",
+        "title" : "User Scenarios",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "business-processes.html"
+        }],
+        "nameUrl" : "business-processes.html",
+        "title" : "Business Processes",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "decision-support-logic.html"
+        }],
+        "nameUrl" : "decision-support-logic.html",
+        "title" : "Decision Support Logic",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "functional-requirements.html"
+        }],
+        "nameUrl" : "functional-requirements.html",
+        "title" : "Functional Requirements",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "non-functional-requirements.html"
+        }],
+        "nameUrl" : "non-functional-requirements.html",
+        "title" : "Non-Functional Requirements",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

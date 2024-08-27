@@ -1,0 +1,15 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Binary/IMMZEGenerateReportExample> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZEGenerateReportExample"] ; # 
+  fhir:contentType [ fhir:v "application/fhir+json"] ; # 
+  fhir:data [ fhir:v "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cHM6Ly9pbnRlbGxpc29mdC1jb25zdWx0aW5nLmdpdGh1Yi5pby9pZ3MvQ2hhbmpvS2UtRkhJUi1JRy9TdHJ1Y3R1cmVEZWZpbml0aW9uL0lNTVpFR2VuZXJhdGVSZXBvcnQiLAogICJyZXBvcnRJZGVudGlmaWNhdGlvbiI6ICJERTEiLAogICJyZXBvcnRTdGF0dXMiOiAiREUyIiwKICAicmVwb3J0VHlwZSI6ICJERTMiLAogICJyZXBvcnRJbmRpY2F0b3JDb2RlIjogIkRFMTEiLAogICJyZXBvcnRTdWJqZWN0QXJlYSI6ICJERTE4IiwKICAicmVwb3J0R2VuZXJhdGlvbkRhdGUiOiAiMjAyNC0wOC0wMSIsCiAgInJlcG9ydGluZ1BlcmlvZFN0YXJ0IjogIjIwMjQtMDEtMDEiLAogICJyZXBvcnRpbmdQZXJpb2RFbmQiOiAiMjAyNC0wNi0zMCIsCiAgImltcHJvdmVtZW50SW5kaWNhdG9yIjogIkRFMjIiLAogICJyZXBvcnRHZW5lcmF0b3JPckF1dGhvciI6ICJERTI1IiwKICAibWVhc3VyZUlkZW50aWZpZXJNZWFuaW5nIjogIkRFMjYiLAogICJtZWFzdXJlTnVtZXJhdG9yIjogIkRFMzAiLAogICJtZWFzdXJlRGVub21pbmF0b3IiOiAiREUzMSIsCiAgImRpc2FnZ3JlZ2F0aW9uR3JvdXAiOiAiREUzMiIsCiAgImRpc2FnZ3JlZ2F0aW9uTWVhc3VyZUlkZW50aWZpZXJNZWFuaW5nIjogIkRFNDEiLAogICJkaXNhZ2dyZWdhdGlvbk51bWVyYXRvciI6ICJERTQyIiwKICAiZGlzYWdncmVnYXRpb25EZW5vbWluYXRvciI6ICJERTQzIiwKICAiZGlzYWdncmVnYXRlZFNjb3JlIjogIkRFNDQiCn0K"^^xsd:base64Binary] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ImmunizationRecommendation/KenyanImmunizationRecommendationExample> a fhir:ImmunizationRecommendation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KenyanImmunizationRecommendationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImmunizationRecommendation KenyanImmunizationRecommendationExample</b></p><a name=\"KenyanImmunizationRecommendationExample\"> </a><a name=\"hcKenyanImmunizationRecommendationExample\"> </a><a name=\"KenyanImmunizationRecommendationExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenyan-immunization-recommendation</code>/1234567890 (use: official, )</p><p><b>patient</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p><p><b>date</b>: 2020-02-02</p><p><b>authority</b>: <a href=\"Organization-OrganizationExample.html\">Organization Example Organization</a></p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/cvx 143}\">Adenovirus types 4 and 7</span></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 1857005}\">Gestational rubella syndrome</span></p><p><b>contraindicatedVaccineCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/cvx 143}\">Adenovirus types 4 and 7</span></p><p><b>forecastStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\">Due</span></p><p><b>forecastReason</b>: <span title=\"Codes:{http://snomed.info/sct 77176002}\">Smoker</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 30981-5}\">Earliest date to give</span></td><td>2020-02-02</td></tr></table><p><b>description</b>: Adenovirus types 4 and 7</p><p><b>series</b>: 1</p><p><b>doseNumber</b>: 1</p><p><b>seriesDoses</b>: 1</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenyan-immunization-recommendation"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567890" ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
+  ] ; # 
+  fhir:date [ fhir:v "2020-02-02"^^xsd:date] ; # 
+  fhir:authority [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ; # 
+  fhir:recommendation ( [
+     fhir:vaccineCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "143" ] ;
+         fhir:display [ fhir:v "Adenovirus types 4 and 7" ]
+       ] ) ;
+       fhir:text [ fhir:v "Adenovirus types 4 and 7" ]
+     ] ) ;
+     fhir:targetDisease [
+       fhir:coding ( [
+         a sct:1857005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1857005" ] ;
+         fhir:display [ fhir:v "Gestational rubella syndrome" ]
+       ] ) ;
+       fhir:text [ fhir:v "Gestational rubella syndrome" ]
+     ] ;
+     fhir:contraindicatedVaccineCode ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "143" ] ;
+         fhir:display [ fhir:v "Adenovirus types 4 and 7" ]
+       ] ) ;
+       fhir:text [ fhir:v "Adenovirus types 4 and 7" ]
+     ] ) ;
+     fhir:forecastStatus [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "due" ] ;
+         fhir:display [ fhir:v "Due" ]
+       ] ) ;
+       fhir:text [ fhir:v "Due" ]
+     ] ;
+     fhir:forecastReason ( [
+       fhir:coding ( [
+         a sct:77176002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "77176002" ] ;
+         fhir:display [ fhir:v "Smoker" ]
+       ] )
+     ] ) ;
+     fhir:dateCriterion ( [
+       fhir:code [
+         fhir:coding ( [
+           a loinc:30981-5 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "30981-5" ] ;
+           fhir:display [ fhir:v "Earliest date to give" ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "2020-02-02"^^xsd:date ]
+     ] ) ;
+     fhir:description [ fhir:v "Adenovirus types 4 and 7" ] ;
+     fhir:series [ fhir:v "1" ] ;
+     fhir:doseNumber [ fhir:v "1" ] ;
+     fhir:seriesDoses [ fhir:v "1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

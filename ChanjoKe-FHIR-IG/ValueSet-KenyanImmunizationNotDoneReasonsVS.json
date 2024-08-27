@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KenyanImmunizationNotDoneReasonsVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KenyanImmunizationNotDoneReasonsVS</b></p><a name=\"KenyanImmunizationNotDoneReasonsVS\"> </a><a name=\"hcKenyanImmunizationNotDoneReasonsVS\"> </a><a name=\"KenyanImmunizationNotDoneReasonsVS-en-US\"> </a><ul><li>Include all codes defined in <code>http://health.go.ke/CodeSystems/KenyanImmunizationNotDoneReasons</code></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/KenyanImmunizationNotDoneReasonsVS",
+  "version" : "0.1.0",
+  "name" : "KenyanImmunizationNotDoneReasonsVS",
+  "title" : "Reason Vaccine not administered",
+  "status" : "draft",
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Reasons a Vaccine was not administered (Kenyan National Program)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://health.go.ke/CodeSystems/KenyanImmunizationNotDoneReasons"
+    }]
+  }
+}

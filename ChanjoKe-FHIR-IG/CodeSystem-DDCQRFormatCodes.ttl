@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DDCQRFormatCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem DDCQRFormatCodes</b></p><a name=\"DDCQRFormatCodes\"> </a><a name=\"hcDDCQRFormatCodes\"> </a><a name=\"DDCQRFormatCodes-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">image<a name=\"DDCQRFormatCodes-image\"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>image</td></tr><tr><td style=\"white-space:nowrap\">serialized<a name=\"DDCQRFormatCodes-serialized\"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>serialized</td></tr><tr><td style=\"white-space:nowrap\">pdf<a name=\"DDCQRFormatCodes-pdf\"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>pdf</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DDCQRFRMCDS"] ; # 
+  fhir:title [ fhir:v "DDCC QR Format Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Format of the representation of QR code"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "image" ] ;
+     fhir:display [ fhir:v "http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem" ] ;
+     fhir:definition [ fhir:v "image" ]
+  ] [
+     fhir:code [ fhir:v "serialized" ] ;
+     fhir:display [ fhir:v "http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem" ] ;
+     fhir:definition [ fhir:v "serialized" ]
+  ] [
+     fhir:code [ fhir:v "pdf" ] ;
+     fhir:display [ fhir:v "http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem" ] ;
+     fhir:definition [ fhir:v "pdf" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Composition",
+  "id" : "DigitalCertificateCompositionExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition DigitalCertificateCompositionExample</b></p><a name=\"DigitalCertificateCompositionExample\"> </a><a name=\"hcDigitalCertificateCompositionExample\"> </a><a name=\"DigitalCertificateCompositionExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers</code>/DC123456789\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11485-0}\">Anesthesia records</span></p><p><b>date</b>: 2020-02-02</p><p><b>author</b>: <a href=\"Organization-DigitalCertificateOrganizationExample.html\">Organization Kenya Ministry of Health</a></p><p><b>title</b>: Anesthesia records</p><h3>Attesters</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td style=\"display: none\">*</td><td>Legal</td><td>2020-02-02</td><td><a href=\"Organization-DigitalCertificateOrganizationExample.html\">Organization Kenya Ministry of Health</a></td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>2020-02-02 --&gt; 2020-02-03</td></tr></table></div>"
+  },
+  "identifier" : {
+    "use" : "usual",
+    "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers",
+    "value" : "DC123456789"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11485-0",
+      "display" : "Anesthesia records"
+    }],
+    "text" : "Anesthesia records"
+  },
+  "subject" : {
+    "reference" : "Patient/DigitalCertificatePatientExample"
+  },
+  "date" : "2020-02-02",
+  "author" : [{
+    "reference" : "Organization/DigitalCertificateOrganizationExample"
+  }],
+  "title" : "Anesthesia records",
+  "attester" : [{
+    "mode" : "legal",
+    "time" : "2020-02-02",
+    "party" : {
+      "reference" : "Organization/DigitalCertificateOrganizationExample"
+    }
+  }],
+  "event" : [{
+    "period" : {
+      "start" : "2020-02-02",
+      "end" : "2020-02-03"
+    }
+  }]
+}

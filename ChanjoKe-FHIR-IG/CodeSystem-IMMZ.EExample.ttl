@@ -1,0 +1,207 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ.EExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.EExample</b></p><a name=\"IMMZ.EExample\"> </a><a name=\"hcIMMZ.EExample\"> </a><a name=\"IMMZ.EExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.EExample-DE1\"> </a></td><td>Report Identification</td><td>A unique identifier for the instance of the report that has been generated</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.EExample-DE2\"> </a></td><td>Report Status</td><td>The status of the report (for example, initial, complete, etc.)</td></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.EExample-DE3\"> </a></td><td>Complete</td><td>The report is complete and ready to use</td></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZ.EExample-DE4\"> </a></td><td>Pending</td><td>The report is currently being generated</td></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZ.EExample-DE5\"> </a></td><td>Error</td><td>An error occurred while generating the report</td></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZ.EExample-DE6\"> </a></td><td>Report Type</td><td>The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.EExample-DE7\"> </a></td><td>Individual</td><td>An individual report which provides information on the performance for a given measure with respect to a single subject</td></tr><tr><td style=\"white-space:nowrap\">DE8<a name=\"IMMZ.EExample-DE8\"> </a></td><td>Subject List</td><td>A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.EExample-DE9\"> </a></td><td>Summary</td><td>A summary report that returns the number of members in each population criteria for the measure</td></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZ.EExample-DE10\"> </a></td><td>Data Exchange</td><td>A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)</td></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZ.EExample-DE11\"> </a></td><td>Report Indicator Code</td><td>The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)</td></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZ.EExample-DE12\"> </a></td><td>Dropout rate</td><td>An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.EExample-DE13\"> </a></td><td>Defaulters</td><td>An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason</td></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.EExample-DE14\"> </a></td><td>Coverage</td><td>An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)</td></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.EExample-DE15\"> </a></td><td>AEFI Case Rate</td><td>An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.EExample-DE16\"> </a></td><td>Open Vial Wastage</td><td>An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization</td></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.EExample-DE17\"> </a></td><td>Closed Vial Wastage</td><td>An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc.</td></tr><tr><td style=\"white-space:nowrap\">DE18<a name=\"IMMZ.EExample-DE18\"> </a></td><td>Report Subject Area</td><td>Location (facility or place) for which the data in the report is being represented.</td></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZ.EExample-DE19\"> </a></td><td>Report Generation Date</td><td>The date and time on which the report was generated.</td></tr><tr><td style=\"white-space:nowrap\">DE20<a name=\"IMMZ.EExample-DE20\"> </a></td><td>Reporting Period Start</td><td>The start date of the reporting period for which data in the report has been included.</td></tr><tr><td style=\"white-space:nowrap\">DE21<a name=\"IMMZ.EExample-DE21\"> </a></td><td>Reporting Period End</td><td>The end date of the reporting period for which data in the report has been included.</td></tr><tr><td style=\"white-space:nowrap\">DE22<a name=\"IMMZ.EExample-DE22\"> </a></td><td>Improvement Indicator</td><td>Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)</td></tr><tr><td style=\"white-space:nowrap\">DE23<a name=\"IMMZ.EExample-DE23\"> </a></td><td>Increase is Improvement</td><td>Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)</td></tr><tr><td style=\"white-space:nowrap\">DE24<a name=\"IMMZ.EExample-DE24\"> </a></td><td>Decrease is Improvement</td><td>Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)</td></tr><tr><td style=\"white-space:nowrap\">DE25<a name=\"IMMZ.EExample-DE25\"> </a></td><td>Report Generator / Author</td><td>Indicates the organization, or location which is generating or producing the report</td></tr><tr><td style=\"white-space:nowrap\">DE26<a name=\"IMMZ.EExample-DE26\"> </a></td><td>Measure Identifier / Meaning</td><td>Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)</td></tr><tr><td style=\"white-space:nowrap\">DE27<a name=\"IMMZ.EExample-DE27\"> </a></td><td>Measured Score</td><td>The calculated score of the measure / indicator which is being reported on.</td></tr><tr><td style=\"white-space:nowrap\">DE30<a name=\"IMMZ.EExample-DE30\"> </a></td><td>Measure Numerator</td><td>The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score.</td></tr><tr><td style=\"white-space:nowrap\">DE31<a name=\"IMMZ.EExample-DE31\"> </a></td><td>Measure Denominator</td><td>The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score.</td></tr><tr><td style=\"white-space:nowrap\">DE32<a name=\"IMMZ.EExample-DE32\"> </a></td><td>Disaggregation Group</td><td>Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)</td></tr><tr><td style=\"white-space:nowrap\">DE33<a name=\"IMMZ.EExample-DE33\"> </a></td><td>By-Sex</td><td>Represents a disaggregation grouped by the indicator population's sex values</td></tr><tr><td style=\"white-space:nowrap\">DE34<a name=\"IMMZ.EExample-DE34\"> </a></td><td>By-Region</td><td>Represents a disaggregation grouped by the indicator population's administrative regions</td></tr><tr><td style=\"white-space:nowrap\">DE35<a name=\"IMMZ.EExample-DE35\"> </a></td><td>By-Age Group</td><td>Represents a disaggregation grouped by the indicator population's age groups</td></tr><tr><td style=\"white-space:nowrap\">DE36<a name=\"IMMZ.EExample-DE36\"> </a></td><td>By-Dose Number</td><td>Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE37<a name=\"IMMZ.EExample-DE37\"> </a></td><td>By-Vaccine Type</td><td>Represents a disaggregation grouped by the indicator population's vaccine types</td></tr><tr><td style=\"white-space:nowrap\">DE38<a name=\"IMMZ.EExample-DE38\"> </a></td><td>By-Vaccine Manufacturer</td><td>Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE39<a name=\"IMMZ.EExample-DE39\"> </a></td><td>By-Reaction Manifestation</td><td>Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE40<a name=\"IMMZ.EExample-DE40\"> </a></td><td>By-Occupation</td><td>Represents a disaggregation grouped by the indicator population's occupations</td></tr><tr><td style=\"white-space:nowrap\">DE41<a name=\"IMMZ.EExample-DE41\"> </a></td><td>Disaggregation Measure Identifier / Meaning</td><td>The type or value of this stratum</td></tr><tr><td style=\"white-space:nowrap\">DE42<a name=\"IMMZ.EExample-DE42\"> </a></td><td>Disaggregation Numerator</td><td>The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score.</td></tr><tr><td style=\"white-space:nowrap\">DE43<a name=\"IMMZ.EExample-DE43\"> </a></td><td>Disaggregation Denominator</td><td>The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score</td></tr><tr><td style=\"white-space:nowrap\">DE44<a name=\"IMMZ.EExample-DE44\"> </a></td><td>Disaggregated Score</td><td>The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_E"] ; # 
+  fhir:title [ fhir:v "IMMZ.E CodeSystem for Data Elements"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for IMMZ.E Data Elements"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DE1" ] ;
+     fhir:display [ fhir:v "Report Identification" ] ;
+     fhir:definition [ fhir:v "A unique identifier for the instance of the report that has been generated" ]
+  ] [
+     fhir:code [ fhir:v "DE2" ] ;
+     fhir:display [ fhir:v "Report Status" ] ;
+     fhir:definition [ fhir:v "The status of the report (for example, initial, complete, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "DE3" ] ;
+     fhir:display [ fhir:v "Complete" ] ;
+     fhir:definition [ fhir:v "The report is complete and ready to use" ]
+  ] [
+     fhir:code [ fhir:v "DE4" ] ;
+     fhir:display [ fhir:v "Pending" ] ;
+     fhir:definition [ fhir:v "The report is currently being generated" ]
+  ] [
+     fhir:code [ fhir:v "DE5" ] ;
+     fhir:display [ fhir:v "Error" ] ;
+     fhir:definition [ fhir:v "An error occurred while generating the report" ]
+  ] [
+     fhir:code [ fhir:v "DE6" ] ;
+     fhir:display [ fhir:v "Report Type" ] ;
+     fhir:definition [ fhir:v "The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "DE7" ] ;
+     fhir:display [ fhir:v "Individual" ] ;
+     fhir:definition [ fhir:v "An individual report which provides information on the performance for a given measure with respect to a single subject" ]
+  ] [
+     fhir:code [ fhir:v "DE8" ] ;
+     fhir:display [ fhir:v "Subject List" ] ;
+     fhir:definition [ fhir:v "A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure" ]
+  ] [
+     fhir:code [ fhir:v "DE9" ] ;
+     fhir:display [ fhir:v "Summary" ] ;
+     fhir:definition [ fhir:v "A summary report that returns the number of members in each population criteria for the measure" ]
+  ] [
+     fhir:code [ fhir:v "DE10" ] ;
+     fhir:display [ fhir:v "Data Exchange" ] ;
+     fhir:definition [ fhir:v "A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)" ]
+  ] [
+     fhir:code [ fhir:v "DE11" ] ;
+     fhir:display [ fhir:v "Report Indicator Code" ] ;
+     fhir:definition [ fhir:v "The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "DE12" ] ;
+     fhir:display [ fhir:v "Dropout rate" ] ;
+     fhir:definition [ fhir:v "An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)" ]
+  ] [
+     fhir:code [ fhir:v "DE13" ] ;
+     fhir:display [ fhir:v "Defaulters" ] ;
+     fhir:definition [ fhir:v "An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason" ]
+  ] [
+     fhir:code [ fhir:v "DE14" ] ;
+     fhir:display [ fhir:v "Coverage" ] ;
+     fhir:definition [ fhir:v "An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)" ]
+  ] [
+     fhir:code [ fhir:v "DE15" ] ;
+     fhir:display [ fhir:v "AEFI Case Rate" ] ;
+     fhir:definition [ fhir:v "An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product" ]
+  ] [
+     fhir:code [ fhir:v "DE16" ] ;
+     fhir:display [ fhir:v "Open Vial Wastage" ] ;
+     fhir:definition [ fhir:v "An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization" ]
+  ] [
+     fhir:code [ fhir:v "DE17" ] ;
+     fhir:display [ fhir:v "Closed Vial Wastage" ] ;
+     fhir:definition [ fhir:v "An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc." ]
+  ] [
+     fhir:code [ fhir:v "DE18" ] ;
+     fhir:display [ fhir:v "Report Subject Area" ] ;
+     fhir:definition [ fhir:v "Location (facility or place) for which the data in the report is being represented." ]
+  ] [
+     fhir:code [ fhir:v "DE19" ] ;
+     fhir:display [ fhir:v "Report Generation Date" ] ;
+     fhir:definition [ fhir:v "The date and time on which the report was generated." ]
+  ] [
+     fhir:code [ fhir:v "DE20" ] ;
+     fhir:display [ fhir:v "Reporting Period Start" ] ;
+     fhir:definition [ fhir:v "The start date of the reporting period for which data in the report has been included." ]
+  ] [
+     fhir:code [ fhir:v "DE21" ] ;
+     fhir:display [ fhir:v "Reporting Period End" ] ;
+     fhir:definition [ fhir:v "The end date of the reporting period for which data in the report has been included." ]
+  ] [
+     fhir:code [ fhir:v "DE22" ] ;
+     fhir:display [ fhir:v "Improvement Indicator" ] ;
+     fhir:definition [ fhir:v "Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)" ]
+  ] [
+     fhir:code [ fhir:v "DE23" ] ;
+     fhir:display [ fhir:v "Increase is Improvement" ] ;
+     fhir:definition [ fhir:v "Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)" ]
+  ] [
+     fhir:code [ fhir:v "DE24" ] ;
+     fhir:display [ fhir:v "Decrease is Improvement" ] ;
+     fhir:definition [ fhir:v "Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)" ]
+  ] [
+     fhir:code [ fhir:v "DE25" ] ;
+     fhir:display [ fhir:v "Report Generator / Author" ] ;
+     fhir:definition [ fhir:v "Indicates the organization, or location which is generating or producing the report" ]
+  ] [
+     fhir:code [ fhir:v "DE26" ] ;
+     fhir:display [ fhir:v "Measure Identifier / Meaning" ] ;
+     fhir:definition [ fhir:v "Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)" ]
+  ] [
+     fhir:code [ fhir:v "DE27" ] ;
+     fhir:display [ fhir:v "Measured Score" ] ;
+     fhir:definition [ fhir:v "The calculated score of the measure / indicator which is being reported on." ]
+  ] [
+     fhir:code [ fhir:v "DE30" ] ;
+     fhir:display [ fhir:v "Measure Numerator" ] ;
+     fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score." ]
+  ] [
+     fhir:code [ fhir:v "DE31" ] ;
+     fhir:display [ fhir:v "Measure Denominator" ] ;
+     fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score." ]
+  ] [
+     fhir:code [ fhir:v "DE32" ] ;
+     fhir:display [ fhir:v "Disaggregation Group" ] ;
+     fhir:definition [ fhir:v "Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "DE33" ] ;
+     fhir:display [ fhir:v "By-Sex" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's sex values" ]
+  ] [
+     fhir:code [ fhir:v "DE34" ] ;
+     fhir:display [ fhir:v "By-Region" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's administrative regions" ]
+  ] [
+     fhir:code [ fhir:v "DE35" ] ;
+     fhir:display [ fhir:v "By-Age Group" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's age groups" ]
+  ] [
+     fhir:code [ fhir:v "DE36" ] ;
+     fhir:display [ fhir:v "By-Dose Number" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine" ]
+  ] [
+     fhir:code [ fhir:v "DE37" ] ;
+     fhir:display [ fhir:v "By-Vaccine Type" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's vaccine types" ]
+  ] [
+     fhir:code [ fhir:v "DE38" ] ;
+     fhir:display [ fhir:v "By-Vaccine Manufacturer" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine" ]
+  ] [
+     fhir:code [ fhir:v "DE39" ] ;
+     fhir:display [ fhir:v "By-Reaction Manifestation" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine" ]
+  ] [
+     fhir:code [ fhir:v "DE40" ] ;
+     fhir:display [ fhir:v "By-Occupation" ] ;
+     fhir:definition [ fhir:v "Represents a disaggregation grouped by the indicator population's occupations" ]
+  ] [
+     fhir:code [ fhir:v "DE41" ] ;
+     fhir:display [ fhir:v "Disaggregation Measure Identifier / Meaning" ] ;
+     fhir:definition [ fhir:v "The type or value of this stratum" ]
+  ] [
+     fhir:code [ fhir:v "DE42" ] ;
+     fhir:display [ fhir:v "Disaggregation Numerator" ] ;
+     fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score." ]
+  ] [
+     fhir:code [ fhir:v "DE43" ] ;
+     fhir:display [ fhir:v "Disaggregation Denominator" ] ;
+     fhir:definition [ fhir:v "The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score" ]
+  ] [
+     fhir:code [ fhir:v "DE44" ] ;
+     fhir:display [ fhir:v "Disaggregated Score" ] ;
+     fhir:definition [ fhir:v "The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

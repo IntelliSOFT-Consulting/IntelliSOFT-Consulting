@@ -3,7 +3,7 @@
   "id" : "LocationExample",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><a name=\"LocationExample-en-US\"> </a><p><b>name</b>: Kenya Medical Research Institute</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><a name=\"LocationExample-en-US\"> </a><p><b>name</b>: Example Hospital</p></div>"
   },
-  "name" : "Kenya Medical Research Institute"
+  "name" : "Example Hospital"
 }

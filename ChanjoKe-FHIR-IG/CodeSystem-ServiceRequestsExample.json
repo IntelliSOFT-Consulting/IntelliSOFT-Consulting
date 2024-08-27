@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ServiceRequestsExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ServiceRequestsExample</b></p><a name=\"ServiceRequestsExample\"> </a><a name=\"hcServiceRequestsExample\"> </a><a name=\"ServiceRequestsExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequestsExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">108252007<a name=\"ServiceRequestsExample-108252007\"> </a></td><td>Laboratory procedure</td></tr><tr><td style=\"white-space:nowrap\">363679005<a name=\"ServiceRequestsExample-363679005\"> </a></td><td>Imaging</td></tr><tr><td style=\"white-space:nowrap\">409063005<a name=\"ServiceRequestsExample-409063005\"> </a></td><td>Counselling</td></tr><tr><td style=\"white-space:nowrap\">409073007<a name=\"ServiceRequestsExample-409073007\"> </a></td><td>Education</td></tr><tr><td style=\"white-space:nowrap\">387713003<a name=\"ServiceRequestsExample-387713003\"> </a></td><td>Surgical procedure</td></tr><tr><td style=\"white-space:nowrap\">KNHTS-001<a name=\"ServiceRequestsExample-KNHTS-001\"> </a></td><td>Defaulter Tracing</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequestsExample",
+  "version" : "0.1.0",
+  "name" : "SVREQS_A",
+  "title" : "Service Requests",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Service Requests to be used within the Kenyan Contexts",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "108252007",
+    "display" : "Laboratory procedure"
+  },
+  {
+    "code" : "363679005",
+    "display" : "Imaging"
+  },
+  {
+    "code" : "409063005",
+    "display" : "Counselling"
+  },
+  {
+    "code" : "409073007",
+    "display" : "Education"
+  },
+  {
+    "code" : "387713003",
+    "display" : "Surgical procedure"
+  },
+  {
+    "code" : "KNHTS-001",
+    "display" : "Defaulter Tracing"
+  }]
+}

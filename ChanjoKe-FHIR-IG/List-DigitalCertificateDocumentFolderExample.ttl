@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/List/DigitalCertificateDocumentFolderExample> a fhir:List ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DigitalCertificateDocumentFolderExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: List DigitalCertificateDocumentFolderExample</b></p><a name=\"DigitalCertificateDocumentFolderExample\"> </a><a name=\"hcDigitalCertificateDocumentFolderExample\"> </a><a name=\"DigitalCertificateDocumentFolderExample-en-US\"> </a><table class=\"clstu\"><tr><td>Mode: Snapshot List </td><td>Status: Current </td></tr><tr><td>Subject: <a href=\"Patient-DigitalCertificatePatientExample.html\">John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789 (use: usual, ))</a></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"DocumentReference-DigitalCertificateDocumentReferenceExample.html\">DocumentReference: status = current; date = 2020-02-02 01:02:03+0200</a></td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:mode [ fhir:v "snapshot"] ; # 
+  fhir:subject [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/DigitalCertificatePatientExample> ;
+     fhir:reference [ fhir:v "Patient/DigitalCertificatePatientExample" ]
+  ] ; # 
+  fhir:entry ( [
+     fhir:item [
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/DocumentReference/DigitalCertificateDocumentReferenceExample> ;
+       fhir:reference [ fhir:v "DocumentReference/DigitalCertificateDocumentReferenceExample" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

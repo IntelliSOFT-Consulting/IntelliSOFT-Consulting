@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/vaccineLibraryVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vaccineLibraryVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vaccineLibraryVS</b></p><a name=\"vaccineLibraryVS\"> </a><a name=\"hcvaccineLibraryVS\"> </a><a name=\"vaccineLibraryVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.Z1.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE1\">DE1</a></td><td style=\"color: #cccccc\">BCG Vaccines</td><td>Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE9\">DE9</a></td><td style=\"color: #cccccc\">Measles - Rubella Vaccines</td><td>Vaccine terminology codes for Measles</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE13\">DE13</a></td><td style=\"color: #cccccc\">Pneumococcal Vaccines</td><td>Vaccine terminology codes for Pneumococcal</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE14\">DE14</a></td><td style=\"color: #cccccc\">Polio Vaccines</td><td>Vaccine terminology codes for Polio</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE16\">DE16</a></td><td style=\"color: #cccccc\">Rotavirus Vaccines</td><td>Vaccine terminology codes for Rotavirus</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE17\">DE17</a></td><td style=\"color: #cccccc\">Rubella Vaccines</td><td>Vaccine terminology codes for Rubella</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE23\">DE23</a></td><td style=\"color: #cccccc\">Yellow Fever Vaccines</td><td>Vaccine terminology codes for Yellow Fever</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE25\">DE25</a></td><td style=\"color: #cccccc\">Inactivated Polio Vaccines</td><td>Vaccine terminology codes for Inactivated Polio Vaccines</td></tr><tr><td><a href=\"CodeSystem-IMMZ.Z1.html#IMMZ.Z1-DE26\">DE26</a></td><td style=\"color: #cccccc\">Oral Polio Vaccines</td><td>Vaccine terminology codes for Oral Polio Vaccines</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/vaccineLibraryVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZZ1DE1VS"] ; # 
+  fhir:title [ fhir:v "Vaccine Library"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Vaccine Library"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DE1" ]
+       ] [
+         fhir:code [ fhir:v "DE9" ]
+       ] [
+         fhir:code [ fhir:v "DE13" ]
+       ] [
+         fhir:code [ fhir:v "DE14" ]
+       ] [
+         fhir:code [ fhir:v "DE16" ]
+       ] [
+         fhir:code [ fhir:v "DE17" ]
+       ] [
+         fhir:code [ fhir:v "DE23" ]
+       ] [
+         fhir:code [ fhir:v "DE25" ]
+       ] [
+         fhir:code [ fhir:v "DE26" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

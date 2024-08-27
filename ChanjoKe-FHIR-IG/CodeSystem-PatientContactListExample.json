@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PatientContactListExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PatientContactListExample</b></p><a name=\"PatientContactListExample\"> </a><a name=\"hcPatientContactListExample\"> </a><a name=\"PatientContactListExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactListExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"PatientContactListExample-DE1\"> </a></td><td>Father</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"PatientContactListExample-DE2\"> </a></td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"PatientContactListExample-DE3\"> </a></td><td>Guardian</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactListExample",
+  "version" : "0.1.0",
+  "name" : "PATIENTCONTACTS",
+  "title" : "Patient's Contact List",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Patient's family members, friends or others that can be contacted by healthcare providers on behalf of the patient",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "Father"
+  },
+  {
+    "code" : "DE2",
+    "display" : "Mother"
+  },
+  {
+    "code" : "DE3",
+    "display" : "Guardian"
+  }]
+}
