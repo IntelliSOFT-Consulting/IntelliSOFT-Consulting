@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="IMMZBUpdateClientHistory"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition IMMZBUpdateClientHistory</b></p><a name="IMMZBUpdateClientHistory"> </a><a name="hcIMMZBUpdateClientHistory"> </a><a name="IMMZBUpdateClientHistory-en-US"> </a><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory" title="Data elements for the IMMZ.B Update Client History Data Dictionary.">IMMZBUpdateClientHistory</a><a name="IMMZBUpdateClientHistory"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">IMMZ.B Update Client History<br/><span style="font-weight:bold">Instances of this logical model can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.hivStatus" title="Client's HIV status">hivStatus</a><a name="IMMZBUpdateClientHistory.hivStatus"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's HIV status<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-HivStatusVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS">Client's HIV Status</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART" title="Client is currently receiving HAART?">clientCurrentlyReceivingHAART</a><a name="IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client is currently receiving HAART?</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.maternalHIVStatus" title="The HIV status of the client's biological mother when the client was born.">maternalHIVStatus</a><a name="IMMZBUpdateClientHistory.maternalHIVStatus"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The HIV status of the client's biological mother when the client was born.<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-HivStatusVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS">Client's HIV Status</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.birthWeight" title="Client Birthweight (Kgs)">birthWeight</a><a name="IMMZBUpdateClientHistory.birthWeight"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client Birthweight (Kgs)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.placeOFVaccination" title="Client's Place of Vaccination">placeOFVaccination</a><a name="IMMZBUpdateClientHistory.placeOFVaccination"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's Place of Vaccination<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-placeOfVaccination.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/placeOfVaccination">Place of Vaccination</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.dateofLastDosa" title="Date of last dose">dateofLastDosa</a><a name="IMMZBUpdateClientHistory.dateofLastDosa"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of last dose</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose" title="The number of weeks since the last vaccine product dose that was administered to the client (per product/antigen).">numberOfWeeksSinceLastDose</a><a name="IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Number of weeks since last dose</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose" title="The number of months since the last vaccine product dose that was administered to the client (per product/antigen).">numberOfMonthsSinceLastDose</a><a name="IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Number of Months since last dose</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.numberOfYearsSinceLastDose" title="The number of years since the last vaccine product dose that was administered to the client (per product/antigen).">numberOfYearsSinceLastDose</a><a name="IMMZBUpdateClientHistory.numberOfYearsSinceLastDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Number of Years since last dose</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.scheduledAppointmentDate" title="Scheduled Appointment Date">scheduledAppointmentDate</a><a name="IMMZBUpdateClientHistory.scheduledAppointmentDate"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Scheduled Appointment Date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.vaccinatorName" title="Vaccinator name">vaccinatorName</a><a name="IMMZBUpdateClientHistory.vaccinatorName"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccinator name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.vaccinatorID" title="Vaccinator ID">vaccinatorID</a><a name="IMMZBUpdateClientHistory.vaccinatorID"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccinator ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose" title="Client’s age when they received the last dose">clientAgeWhenTheyReceivedTheLastDose</a><a name="IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client’s age when they received the last dose</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries" title="Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.">hasClientcompletedVaccinePrimarySeries</a><a name="IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Has Client Completed vaccine primary series</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.typeOfLastPolioDose" title="The type of the last Polio vaccine dose administered to the client">typeOfLastPolioDose</a><a name="IMMZBUpdateClientHistory.typeOfLastPolioDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of last Polio dose<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-typeOfLastPolioDose.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose">Type of last Polio dose</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.maternalTSTTestResult" title="Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)">maternalTSTTestResult</a><a name="IMMZBUpdateClientHistory.maternalTSTTestResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Maternal's TST Test Result from<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-maternalTSTTestResultVs.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalTSTTestResultVs">Maternal's TST Test Result</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.exposedToCloseContactWithTB" title="Exposed to close contact with TB">exposedToCloseContactWithTB</a><a name="IMMZBUpdateClientHistory.exposedToCloseContactWithTB"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Exposed to close contact with TB</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.clientsTSTTestResult" title="Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)">clientsTSTTestResult</a><a name="IMMZBUpdateClientHistory.clientsTSTTestResult"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's TST Test Result<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-clientTSTTestResult.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult">Client's TST Test Result</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.clientCD4percentage" title="Represents the client's CD4 percentage level. The CD4 percentage (CD%) is the percentage of white blood cells (lymphocytes) that are CD4 cells">clientCD4percentage</a><a name="IMMZBUpdateClientHistory.clientCD4percentage"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Client's CD4 percentage</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.typeOfLastRotavirusDose" title="The type of the last Rotavirus vaccine dose administered to the client">typeOfLastRotavirusDose</a><a name="IMMZBUpdateClientHistory.typeOfLastRotavirusDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of last Rotavirus dose<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-typeOfLastRotavirusDoseVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS">Type of last Rotavirus dose</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct" title="Indicates whether or not any of the client's previous Rotavirus doses were administered using an unknown vaccine product">previousRotavirusDosesAdmnisteredWithAnUnknownProduct</a><a name="IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">previous Rotavirus doses was administered with an unknown product?</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose" title="The type of the last Measles-Rubella  vaccine dose administered to the client">typeOfLastMeaslesRubellaDose</a><a name="IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of last Measles-Rubella dose<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-typeOfLastMeaslesRubellaDoseVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS">Type of last Measles-Rubella dose</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.dateStartedHAART" title="The date when the client has started their Highly Active Antiretroviral Therapy (HAART) session(s)">dateStartedHAART</a><a name="IMMZBUpdateClientHistory.dateStartedHAART"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date started HAART</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated" title="The number of months since the client has started their Highly Active Antiretroviral Therapy (HAART)">numberOfMonthsSinceHAARTwasInitiated</a><a name="IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Number of months since HAART was initiated</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.typeOfLastHPVdose" title="Type of last HPV dose">typeOfLastHPVdose</a><a name="IMMZBUpdateClientHistory.typeOfLastHPVdose"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of last HPV dose<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-typeOfLastHPVDoseVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastHPVDoseVS">Type of last HPV dose</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses" title="Number of months between first and second HPV doses">numberOfMonthsBetweenFirstAndSecondHPVDoses</a><a name="IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Number of months between first and second HPV doses</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.typeOfLastPCV10Dose" title="Type of last PCV10 dose">typeOfLastPCV10Dose</a><a name="IMMZBUpdateClientHistory.typeOfLastPCV10Dose"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of last PCV10 dose<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-typeOfLastPCV10DoseVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPCV10DoseVS">Type of last PCV10 dose</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-IMMZBUpdateClientHistory-definitions.html#IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose" title="Type of last DPT-HepB+Hib dose">typeOfLastDPTHepBHibdose</a><a name="IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of last DPT-HepB+Hib dose<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-typeOfLastDPTHepBHibDoseVS.html" title="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastDPTHepBHibDoseVS">Type of last DPT-HepB+Hib dose</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZBUpdateClientHistory"/>
+  <version value="0.1.0"/>
+  <name value="IMMZBUpdateClientHistory"/>
+  <title value="IMMZ.B Update Client History"/>
+  <status value="active"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Data elements for the IMMZ.B Update Client History Data Dictionary."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/IMMZBUpdateClientHistory"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="IMMZBUpdateClientHistory">
+      <path value="IMMZBUpdateClientHistory"/>
+      <short value="IMMZ.B Update Client History"/>
+      <definition value="Data elements for the IMMZ.B Update Client History Data Dictionary."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.hivStatus">
+      <path value="IMMZBUpdateClientHistory.hivStatus"/>
+      <code>
+        <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"/>
+        <code value="DE1"/>
+      </code>
+      <short value="Client's HIV status"/>
+      <definition value="Client's HIV status"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.hivStatus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART">
+      <path value="IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART"/>
+      <short value="Client is currently receiving HAART?"/>
+      <definition value="Client is currently receiving HAART?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.maternalHIVStatus">
+      <path value="IMMZBUpdateClientHistory.maternalHIVStatus"/>
+      <short value="The HIV status of the client's biological mother when the client was born."/>
+      <definition value="The HIV status of the client's biological mother when the client was born."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.maternalHIVStatus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.birthWeight">
+      <path value="IMMZBUpdateClientHistory.birthWeight"/>
+      <short value="Client Birthweight (Kgs)"/>
+      <definition value="Client Birthweight (Kgs)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.birthWeight"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.placeOFVaccination">
+      <path value="IMMZBUpdateClientHistory.placeOFVaccination"/>
+      <short value="Client's Place of Vaccination"/>
+      <definition value="Client's Place of Vaccination"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.placeOFVaccination"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/placeOfVaccination"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.dateofLastDosa">
+      <path value="IMMZBUpdateClientHistory.dateofLastDosa"/>
+      <short value="Date of last dose"/>
+      <definition value="Date of last dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.dateofLastDosa"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose">
+      <path value="IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose"/>
+      <short value="Number of weeks since last dose"/>
+      <definition value="The number of weeks since the last vaccine product dose that was administered to the client (per product/antigen)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose">
+      <path value="IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose"/>
+      <short value="Number of Months since last dose"/>
+      <definition value="The number of months since the last vaccine product dose that was administered to the client (per product/antigen)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfYearsSinceLastDose">
+      <path value="IMMZBUpdateClientHistory.numberOfYearsSinceLastDose"/>
+      <short value="Number of Years since last dose"/>
+      <definition value="The number of years since the last vaccine product dose that was administered to the client (per product/antigen)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.numberOfYearsSinceLastDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.scheduledAppointmentDate">
+      <path value="IMMZBUpdateClientHistory.scheduledAppointmentDate"/>
+      <short value="Scheduled Appointment Date"/>
+      <definition value="Scheduled Appointment Date"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.scheduledAppointmentDate"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.vaccinatorName">
+      <path value="IMMZBUpdateClientHistory.vaccinatorName"/>
+      <short value="Vaccinator name"/>
+      <definition value="Vaccinator name"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.vaccinatorName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.vaccinatorID">
+      <path value="IMMZBUpdateClientHistory.vaccinatorID"/>
+      <short value="Vaccinator ID"/>
+      <definition value="Vaccinator ID"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.vaccinatorID"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose">
+      <path value="IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose"/>
+      <short value="Client’s age when they received the last dose"/>
+      <definition value="Client’s age when they received the last dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries">
+      <path value="IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries"/>
+      <short value="Has Client Completed vaccine primary series"/>
+      <definition value="Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastPolioDose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastPolioDose"/>
+      <short value="Type of last Polio dose"/>
+      <definition value="The type of the last Polio vaccine dose administered to the client"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.typeOfLastPolioDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.maternalTSTTestResult">
+      <path value="IMMZBUpdateClientHistory.maternalTSTTestResult"/>
+      <short value="Maternal's TST Test Result from"/>
+      <definition value="Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.maternalTSTTestResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalTSTTestResultVs"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.exposedToCloseContactWithTB">
+      <path value="IMMZBUpdateClientHistory.exposedToCloseContactWithTB"/>
+      <short value="Exposed to close contact with TB"/>
+      <definition value="Exposed to close contact with TB"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.exposedToCloseContactWithTB"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientsTSTTestResult">
+      <path value="IMMZBUpdateClientHistory.clientsTSTTestResult"/>
+      <short value="Client's TST Test Result"/>
+      <definition value="Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.clientsTSTTestResult"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientCD4percentage">
+      <path value="IMMZBUpdateClientHistory.clientCD4percentage"/>
+      <short value="Client's CD4 percentage"/>
+      <definition value="Represents the client's CD4 percentage level. The CD4 percentage (CD%) is the percentage of white blood cells (lymphocytes) that are CD4 cells"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.clientCD4percentage"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastRotavirusDose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastRotavirusDose"/>
+      <short value="Type of last Rotavirus dose"/>
+      <definition value="The type of the last Rotavirus vaccine dose administered to the client"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.typeOfLastRotavirusDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct">
+      <path value="IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct"/>
+      <short value="previous Rotavirus doses was administered with an unknown product?"/>
+      <definition value="Indicates whether or not any of the client's previous Rotavirus doses were administered using an unknown vaccine product"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose"/>
+      <short value="Type of last Measles-Rubella dose"/>
+      <definition value="The type of the last Measles-Rubella  vaccine dose administered to the client"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.dateStartedHAART">
+      <path value="IMMZBUpdateClientHistory.dateStartedHAART"/>
+      <short value="Date started HAART"/>
+      <definition value="The date when the client has started their Highly Active Antiretroviral Therapy (HAART) session(s)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.dateStartedHAART"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated">
+      <path value="IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated"/>
+      <short value="Number of months since HAART was initiated"/>
+      <definition value="The number of months since the client has started their Highly Active Antiretroviral Therapy (HAART)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastHPVdose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastHPVdose"/>
+      <short value="Type of last HPV dose"/>
+      <definition value="Type of last HPV dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.typeOfLastHPVdose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastHPVDoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses">
+      <path value="IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses"/>
+      <short value="Number of months between first and second HPV doses"/>
+      <definition value="Number of months between first and second HPV doses"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastPCV10Dose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastPCV10Dose"/>
+      <short value="Type of last PCV10 dose"/>
+      <definition value="Type of last PCV10 dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.typeOfLastPCV10Dose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPCV10DoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose"/>
+      <short value="Type of last DPT-HepB+Hib dose"/>
+      <definition value="Type of last DPT-HepB+Hib dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastDPTHepBHibDoseVS"/>
+      </binding>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="IMMZBUpdateClientHistory">
+      <path value="IMMZBUpdateClientHistory"/>
+      <short value="IMMZ.B Update Client History"/>
+      <definition value="Data elements for the IMMZ.B Update Client History Data Dictionary."/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.hivStatus">
+      <path value="IMMZBUpdateClientHistory.hivStatus"/>
+      <code>
+        <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"/>
+        <code value="DE1"/>
+      </code>
+      <short value="Client's HIV status"/>
+      <definition value="Client's HIV status"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART">
+      <path value="IMMZBUpdateClientHistory.clientCurrentlyReceivingHAART"/>
+      <short value="Client is currently receiving HAART?"/>
+      <definition value="Client is currently receiving HAART?"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.maternalHIVStatus">
+      <path value="IMMZBUpdateClientHistory.maternalHIVStatus"/>
+      <short value="The HIV status of the client's biological mother when the client was born."/>
+      <definition value="The HIV status of the client's biological mother when the client was born."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.birthWeight">
+      <path value="IMMZBUpdateClientHistory.birthWeight"/>
+      <short value="Client Birthweight (Kgs)"/>
+      <definition value="Client Birthweight (Kgs)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.placeOFVaccination">
+      <path value="IMMZBUpdateClientHistory.placeOFVaccination"/>
+      <short value="Client's Place of Vaccination"/>
+      <definition value="Client's Place of Vaccination"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/placeOfVaccination"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.dateofLastDosa">
+      <path value="IMMZBUpdateClientHistory.dateofLastDosa"/>
+      <short value="Date of last dose"/>
+      <definition value="Date of last dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose">
+      <path value="IMMZBUpdateClientHistory.numberOfWeeksSinceLastDose"/>
+      <short value="Number of weeks since last dose"/>
+      <definition value="The number of weeks since the last vaccine product dose that was administered to the client (per product/antigen)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose">
+      <path value="IMMZBUpdateClientHistory.numberOfMonthsSinceLastDose"/>
+      <short value="Number of Months since last dose"/>
+      <definition value="The number of months since the last vaccine product dose that was administered to the client (per product/antigen)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfYearsSinceLastDose">
+      <path value="IMMZBUpdateClientHistory.numberOfYearsSinceLastDose"/>
+      <short value="Number of Years since last dose"/>
+      <definition value="The number of years since the last vaccine product dose that was administered to the client (per product/antigen)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.scheduledAppointmentDate">
+      <path value="IMMZBUpdateClientHistory.scheduledAppointmentDate"/>
+      <short value="Scheduled Appointment Date"/>
+      <definition value="Scheduled Appointment Date"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.vaccinatorName">
+      <path value="IMMZBUpdateClientHistory.vaccinatorName"/>
+      <short value="Vaccinator name"/>
+      <definition value="Vaccinator name"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.vaccinatorID">
+      <path value="IMMZBUpdateClientHistory.vaccinatorID"/>
+      <short value="Vaccinator ID"/>
+      <definition value="Vaccinator ID"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose">
+      <path value="IMMZBUpdateClientHistory.clientAgeWhenTheyReceivedTheLastDose"/>
+      <short value="Client’s age when they received the last dose"/>
+      <definition value="Client’s age when they received the last dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries">
+      <path value="IMMZBUpdateClientHistory.hasClientcompletedVaccinePrimarySeries"/>
+      <short value="Has Client Completed vaccine primary series"/>
+      <definition value="Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastPolioDose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastPolioDose"/>
+      <short value="Type of last Polio dose"/>
+      <definition value="The type of the last Polio vaccine dose administered to the client"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPolioDose"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.maternalTSTTestResult">
+      <path value="IMMZBUpdateClientHistory.maternalTSTTestResult"/>
+      <short value="Maternal's TST Test Result from"/>
+      <definition value="Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/maternalTSTTestResultVs"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.exposedToCloseContactWithTB">
+      <path value="IMMZBUpdateClientHistory.exposedToCloseContactWithTB"/>
+      <short value="Exposed to close contact with TB"/>
+      <definition value="Exposed to close contact with TB"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientsTSTTestResult">
+      <path value="IMMZBUpdateClientHistory.clientsTSTTestResult"/>
+      <short value="Client's TST Test Result"/>
+      <definition value="Represents whether or not the Tuberculin Skin Test (TST) is considered positive or negative for the client. The TST test is a standard method to determine whether a person is infected with Mycobacterium Tuberculosis (MTB)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.clientCD4percentage">
+      <path value="IMMZBUpdateClientHistory.clientCD4percentage"/>
+      <short value="Client's CD4 percentage"/>
+      <definition value="Represents the client's CD4 percentage level. The CD4 percentage (CD%) is the percentage of white blood cells (lymphocytes) that are CD4 cells"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastRotavirusDose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastRotavirusDose"/>
+      <short value="Type of last Rotavirus dose"/>
+      <definition value="The type of the last Rotavirus vaccine dose administered to the client"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct">
+      <path value="IMMZBUpdateClientHistory.previousRotavirusDosesAdmnisteredWithAnUnknownProduct"/>
+      <short value="previous Rotavirus doses was administered with an unknown product?"/>
+      <definition value="Indicates whether or not any of the client's previous Rotavirus doses were administered using an unknown vaccine product"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastMeaslesRubellaDose"/>
+      <short value="Type of last Measles-Rubella dose"/>
+      <definition value="The type of the last Measles-Rubella  vaccine dose administered to the client"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastMeaslesRubellaDoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.dateStartedHAART">
+      <path value="IMMZBUpdateClientHistory.dateStartedHAART"/>
+      <short value="Date started HAART"/>
+      <definition value="The date when the client has started their Highly Active Antiretroviral Therapy (HAART) session(s)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated">
+      <path value="IMMZBUpdateClientHistory.numberOfMonthsSinceHAARTwasInitiated"/>
+      <short value="Number of months since HAART was initiated"/>
+      <definition value="The number of months since the client has started their Highly Active Antiretroviral Therapy (HAART)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastHPVdose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastHPVdose"/>
+      <short value="Type of last HPV dose"/>
+      <definition value="Type of last HPV dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastHPVDoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses">
+      <path value="IMMZBUpdateClientHistory.numberOfMonthsBetweenFirstAndSecondHPVDoses"/>
+      <short value="Number of months between first and second HPV doses"/>
+      <definition value="Number of months between first and second HPV doses"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="integer"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastPCV10Dose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastPCV10Dose"/>
+      <short value="Type of last PCV10 dose"/>
+      <definition value="Type of last PCV10 dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastPCV10DoseVS"/>
+      </binding>
+    </element>
+    <element id="IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose">
+      <path value="IMMZBUpdateClientHistory.typeOfLastDPTHepBHibdose"/>
+      <short value="Type of last DPT-HepB+Hib dose"/>
+      <definition value="Type of last DPT-HepB+Hib dose"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastDPTHepBHibDoseVS"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

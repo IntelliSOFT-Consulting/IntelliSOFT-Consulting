@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/DocumentReference/DigitalCertificateDocumentReferenceExample> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DigitalCertificateDocumentReferenceExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DigitalCertificateDocumentReferenceExample</b></p><a name=\"DigitalCertificateDocumentReferenceExample\"> </a><a name=\"hcDigitalCertificateDocumentReferenceExample\"> </a><a name=\"DigitalCertificateDocumentReferenceExample-en-US\"> </a><p><b>status</b>: Current</p><p><b>subject</b>: <a href=\"Patient-DigitalCertificatePatientExample.html\">John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789 (use: usual, ))</a></p><p><b>date</b>: 2020-02-02 01:02:03+0200</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td><td><b>Hash</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://attachment.example.org/DCD123456789\">http://attachment.example.org/DCD123456789</a></td><td><code>081923b8f24c1ccf677178d924c64d89b0b6212f</code></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:subject [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/DigitalCertificatePatientExample> ;
+     fhir:reference [ fhir:v "Patient/DigitalCertificatePatientExample" ]
+  ] ; # 
+  fhir:date [ fhir:v "2020-02-02T01:02:03.456+02:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:url [ fhir:v "http://attachment.example.org/DCD123456789"^^xsd:anyURI ] ;
+       fhir:hash [ fhir:v "081923b8f24c1ccf677178d924c64d89b0b6212f"^^xsd:base64Binary ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

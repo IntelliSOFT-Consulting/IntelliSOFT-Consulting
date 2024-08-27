@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="HivStatusVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet HivStatusVS</b></p><a name="HivStatusVS"> </a><a name="hcHivStatusVS"> </a><a name="HivStatusVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.B.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE2">DE2</a></td><td style="color: #cccccc">Positive</td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE3">DE3</a></td><td style="color: #cccccc">Negative</td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE4">DE4</a></td><td style="color: #cccccc">Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/HivStatusVS"/>
+  <version value="0.1.0"/>
+  <name value="IMMZB1DE1VS"/>
+  <title value="Client's HIV Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Client's HIV Status"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"/>
+      <concept>
+        <code value="DE2"/>
+      </concept>
+      <concept>
+        <code value="DE3"/>
+      </concept>
+      <concept>
+        <code value="DE4"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

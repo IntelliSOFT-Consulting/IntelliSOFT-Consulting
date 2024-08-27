@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SupplyDelivery xmlns="http://hl7.org/fhir">
+  <id value="SupplyDeliveryProfileExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyDeliveryProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SupplyDelivery SupplyDeliveryProfileExample</b></p><a name="SupplyDeliveryProfileExample"> </a><a name="hcSupplyDeliveryProfileExample"> </a><a name="SupplyDeliveryProfileExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/supply-delivery</code>/123456 (use: official, )</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/supply-item-type medication}">Medication</span></p><h3>SuppliedItems</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Quantity</b></td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td>10</td><td><a href="Medication-MedicationExample.html">Medication Codeine phosphate</a></td></tr></table></div>
+  </text>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-received">
+    <valueDate value="2020-02-02"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/origin">
+    <valueString value="Nairobi"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/order-number">
+    <valueInteger value="123456"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine">
+    <valueCode value="11485-0"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expiry-date">
+    <valueDate value="2020-02-02"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-quantity">
+    <valueInteger value="100"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/manufacturer-details">
+    <valueString value="Manufacturer details"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/allocated-quantity">
+    <valueInteger value="50"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/remaining-quantity">
+    <valueInteger value="50"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/issue-date">
+    <valueDate value="2020-02-02"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-location">
+    <valueString value="Nairobi"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/batch-number">
+    <valueString value="123456"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/quantity-issued">
+    <valueInteger value="10"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vvm-status">
+    <valueString value="done"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reason-for-adjustment">
+    <valueString value="Reason for adjustment"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-origin">
+    <valueString value="Nairobi"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/previous-vvm">
+    <valueString value="done"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/new-vvm">
+    <valueString value="done"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/physical-count">
+    <valueInteger value="50"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-adjustment-date">
+    <valueDate value="2020-02-02"/>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/supply-delivery"/>
+    <value value="123456"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/supply-item-type"/>
+      <code value="medication"/>
+      <display value="Medication"/>
+    </coding>
+    <text value="Medication"/>
+  </type>
+  <suppliedItem>
+    <quantity>
+      <value value="10"/>
+    </quantity>
+    <itemReference>
+      <reference value="Medication/MedicationExample"/>
+    </itemReference>
+  </suppliedItem>
+</SupplyDelivery>

@@ -1,0 +1,57 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"IMMZEGenerateReport","IMMZEGenerateReport","","","",0,*,"","","","null {[]} {[]}
+","IMMZ.E Generate Report","Data elements for the IMMZ.E Report Generation Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IMMZEGenerateReport.reportIdentification","IMMZEGenerateReport.reportIdentification","","","",1,1,"","","Y","string {[]} {[]}
+","Report Identification","A unique identifier for the instance of the report that has been generated","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE1
+",,,,"IMMZEGenerateReport.reportIdentification",1,1,"",""
+"IMMZEGenerateReport.reportStatus","IMMZEGenerateReport.reportStatus","","","",1,1,"","","Y","code {[]} {[]}
+","Report Status","The status of the report (for example, initial, complete, etc.)","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE2
+",,,,"IMMZEGenerateReport.reportStatus",1,1,"",""
+"IMMZEGenerateReport.reportType","IMMZEGenerateReport.reportType","","","",1,1,"","","Y","code {[]} {[]}
+","Report Type","The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE3
+",,,,"IMMZEGenerateReport.reportType",1,1,"",""
+"IMMZEGenerateReport.reportIndicatorCode","IMMZEGenerateReport.reportIndicatorCode","","","",1,1,"","","Y","code {[]} {[]}
+","Report Indicator Code","The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE11
+",,,,"IMMZEGenerateReport.reportIndicatorCode",1,1,"",""
+"IMMZEGenerateReport.reportSubjectArea","IMMZEGenerateReport.reportSubjectArea","","","",1,1,"","","Y","string {[]} {[]}
+","Report Subject Area","Location (facility or place) for which the data in the report is being represented.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE18
+",,,,"IMMZEGenerateReport.reportSubjectArea",1,1,"",""
+"IMMZEGenerateReport.reportGenerationDate","IMMZEGenerateReport.reportGenerationDate","","","",1,1,"","","Y","date {[]} {[]}
+","Report Generation Date","Location (facility or place) for which the data in the report is being represented.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE19
+",,,,"IMMZEGenerateReport.reportGenerationDate",1,1,"",""
+"IMMZEGenerateReport.reportingPeriodStart","IMMZEGenerateReport.reportingPeriodStart","","","",1,1,"","","Y","date {[]} {[]}
+","Reporting Period Start","The start date of the reporting period for which data in the report has been included.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE20
+",,,,"IMMZEGenerateReport.reportingPeriodStart",1,1,"",""
+"IMMZEGenerateReport.reportingPeriodEnd","IMMZEGenerateReport.reportingPeriodEnd","","","",1,1,"","","Y","date {[]} {[]}
+","Reporting Period End","The start date of the reporting period for which data in the report has been included.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE21
+",,,,"IMMZEGenerateReport.reportingPeriodEnd",1,1,"",""
+"IMMZEGenerateReport.improvementIndicator","IMMZEGenerateReport.improvementIndicator","","","",1,1,"","","Y","code {[]} {[]}
+","Improvement Indicator","Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE22
+",,,,"IMMZEGenerateReport.improvementIndicator",1,1,"",""
+"IMMZEGenerateReport.reportGeneratorOrAuthor","IMMZEGenerateReport.reportGeneratorOrAuthor","","","",1,1,"","","Y","string {[]} {[]}
+","Report Generator / Author","Indicates the organization, or location which is generating or producing the report","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE25
+",,,,"IMMZEGenerateReport.reportGeneratorOrAuthor",1,1,"",""
+"IMMZEGenerateReport.measureIdentifierMeaning","IMMZEGenerateReport.measureIdentifierMeaning","","","",1,1,"","","Y","string {[]} {[]}
+","Measure Identifier / Meaning","Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE26
+",,,,"IMMZEGenerateReport.measureIdentifierMeaning",1,1,"",""
+"IMMZEGenerateReport.measureNumerator","IMMZEGenerateReport.measureNumerator","","","",1,1,"","","Y","string {[]} {[]}
+","Measure Numerator","The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE30
+",,,,"IMMZEGenerateReport.measureNumerator",1,1,"",""
+"IMMZEGenerateReport.measureDenominator","IMMZEGenerateReport.measureDenominator","","","",1,1,"","","Y","string {[]} {[]}
+","Measure Denominator","The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE31
+",,,,"IMMZEGenerateReport.measureDenominator",1,1,"",""
+"IMMZEGenerateReport.disaggregationGroup","IMMZEGenerateReport.disaggregationGroup","","","",1,1,"","","Y","code {[]} {[]}
+","Disaggregation Group","Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE32
+",,,,"IMMZEGenerateReport.disaggregationGroup",1,1,"",""
+"IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning","IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning","","","",1,1,"","","Y","code {[]} {[]}
+","Disaggregation Measure Identifier / Meaning","The type or value of this stratum represents (male , female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element (for example: if By-Sex is used as the disaggregation group, valid values would be 'Male', 'Female', 'Intersex')","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE41
+",,,,"IMMZEGenerateReport.disaggregationMeasureIdentifierMeaning",1,1,"",""
+"IMMZEGenerateReport.disaggregationNumerator","IMMZEGenerateReport.disaggregationNumerator","","","",1,1,"","","Y","code {[]} {[]}
+","Disaggregation Numerator","The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE42
+",,,,"IMMZEGenerateReport.disaggregationNumerator",1,1,"",""
+"IMMZEGenerateReport.disaggregationDenominator","IMMZEGenerateReport.disaggregationDenominator","","","",1,1,"","","Y","code {[]} {[]}
+","Disaggregation Denominator","The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE43
+",,,,"IMMZEGenerateReport.disaggregationDenominator",1,1,"",""
+"IMMZEGenerateReport.disaggregatedScore","IMMZEGenerateReport.disaggregatedScore","","","",1,1,"","","Y","code {[]} {[]}
+","Disaggregated Score","The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records.","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E#DE44
+",,,,"IMMZEGenerateReport.disaggregatedScore",1,1,"",""

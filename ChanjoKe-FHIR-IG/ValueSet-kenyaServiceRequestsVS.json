@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "kenyaServiceRequestsVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet kenyaServiceRequestsVS</b></p><a name=\"kenyaServiceRequestsVS\"> </a><a name=\"hckenyaServiceRequestsVS\"> </a><a name=\"kenyaServiceRequestsVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ServiceRequests.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ServiceRequests.html#ServiceRequests-108252007\">108252007</a></td><td style=\"color: #cccccc\">Laboratory procedure</td></tr><tr><td><a href=\"CodeSystem-ServiceRequests.html#ServiceRequests-363679005\">363679005</a></td><td style=\"color: #cccccc\">Imaging</td></tr><tr><td><a href=\"CodeSystem-ServiceRequests.html#ServiceRequests-409063005\">409063005</a></td><td style=\"color: #cccccc\">Counselling</td></tr><tr><td><a href=\"CodeSystem-ServiceRequests.html#ServiceRequests-409073007\">409073007</a></td><td style=\"color: #cccccc\">Education</td></tr><tr><td><a href=\"CodeSystem-ServiceRequests.html#ServiceRequests-387713003\">387713003</a></td><td style=\"color: #cccccc\">Surgical procedure</td></tr><tr><td><a href=\"CodeSystem-ServiceRequests.html#ServiceRequests-KNHTS-001\">KNHTS-001</a></td><td style=\"color: #cccccc\">Defaulter Tracing</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaServiceRequestsVS",
+  "version" : "0.1.0",
+  "name" : "KHTSSVSRQTS",
+  "title" : "Service Requests",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Service Requests to be used in Kenyan Context",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests",
+      "concept" : [{
+        "code" : "108252007"
+      },
+      {
+        "code" : "363679005"
+      },
+      {
+        "code" : "409063005"
+      },
+      {
+        "code" : "409073007"
+      },
+      {
+        "code" : "387713003"
+      },
+      {
+        "code" : "KNHTS-001"
+      }]
+    }]
+  }
+}

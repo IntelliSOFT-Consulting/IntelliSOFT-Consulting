@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ.Z1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZ.Z1</b></p><a name="IMMZ.Z1"> </a><a name="hcIMMZ.Z1"> </a><a name="IMMZ.Z1-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZ.Z1-DE1"> </a></td><td>BCG Vaccines</td><td>Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)</td></tr><tr><td style="white-space:nowrap">DE7<a name="IMMZ.Z1-DE7"> </a></td><td>HPV Vaccines</td><td>Vaccine terminology codes for Human Papillomavirus (HPV)</td></tr><tr><td style="white-space:nowrap">DE9<a name="IMMZ.Z1-DE9"> </a></td><td>Measles - Rubella Vaccines</td><td>Vaccine terminology codes for Measles</td></tr><tr><td style="white-space:nowrap">DE13<a name="IMMZ.Z1-DE13"> </a></td><td>Pneumococcal Vaccines</td><td>Vaccine terminology codes for Pneumococcal</td></tr><tr><td style="white-space:nowrap">DE14<a name="IMMZ.Z1-DE14"> </a></td><td>Polio Vaccines</td><td>Vaccine terminology codes for Polio</td></tr><tr><td style="white-space:nowrap">DE16<a name="IMMZ.Z1-DE16"> </a></td><td>Rotavirus Vaccines</td><td>Vaccine terminology codes for Rotavirus</td></tr><tr><td style="white-space:nowrap">DE17<a name="IMMZ.Z1-DE17"> </a></td><td>Rubella Vaccines</td><td>Vaccine terminology codes for Rubella</td></tr><tr><td style="white-space:nowrap">DE23<a name="IMMZ.Z1-DE23"> </a></td><td>Yellow Fever Vaccines</td><td>Vaccine terminology codes for Yellow Fever</td></tr><tr><td style="white-space:nowrap">DE25<a name="IMMZ.Z1-DE25"> </a></td><td>Inactivated Polio Vaccines</td><td>Vaccine terminology codes for Inactivated Polio Vaccines</td></tr><tr><td style="white-space:nowrap">DE26<a name="IMMZ.Z1-DE26"> </a></td><td>Oral Polio Vaccines</td><td>Vaccine terminology codes for Oral Polio Vaccines</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_Z1"/>
+  <title value="IMMZ.Z1 CodeSystem for Data Elements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for IMMZ.Z1 Data Elements"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="BCG Vaccines"/>
+    <definition value="Vaccine terminology codes for Bacillus Calmette–Guérin (BCG)"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="HPV Vaccines"/>
+    <definition value="Vaccine terminology codes for Human Papillomavirus (HPV)"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="Measles - Rubella Vaccines"/>
+    <definition value="Vaccine terminology codes for Measles"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Pneumococcal Vaccines"/>
+    <definition value="Vaccine terminology codes for Pneumococcal"/>
+  </concept>
+  <concept>
+    <code value="DE14"/>
+    <display value="Polio Vaccines"/>
+    <definition value="Vaccine terminology codes for Polio"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Rotavirus Vaccines"/>
+    <definition value="Vaccine terminology codes for Rotavirus"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Rubella Vaccines"/>
+    <definition value="Vaccine terminology codes for Rubella"/>
+  </concept>
+  <concept>
+    <code value="DE23"/>
+    <display value="Yellow Fever Vaccines"/>
+    <definition value="Vaccine terminology codes for Yellow Fever"/>
+  </concept>
+  <concept>
+    <code value="DE25"/>
+    <display value="Inactivated Polio Vaccines"/>
+    <definition value="Vaccine terminology codes for Inactivated Polio Vaccines"/>
+  </concept>
+  <concept>
+    <code value="DE26"/>
+    <display value="Oral Polio Vaccines"/>
+    <definition value="Vaccine terminology codes for Oral Polio Vaccines"/>
+  </concept>
+</CodeSystem>

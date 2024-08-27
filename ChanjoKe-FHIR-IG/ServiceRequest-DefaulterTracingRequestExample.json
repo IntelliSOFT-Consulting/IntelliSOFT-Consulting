@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "DefaulterTracingRequestExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest DefaulterTracingRequestExample</b></p><a name=\"DefaulterTracingRequestExample\"> </a><a name=\"hcDefaulterTracingRequestExample\"> </a><a name=\"DefaulterTracingRequestExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/serviceRequest</code>/123456\u00a0(use:\u00a0official,\u00a0)</p><p><b>basedOn</b>: <a href=\"ServiceRequest-ServiceRequestExample.html\">ServiceRequest: status = active; intent = order</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests 108252007}\">Laboratory procedure</span></p><p><b>priority</b>: Routine</p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">John Doe</a></p><p><b>authoredOn</b>: 2020-02-02</p><p><b>requester</b>: <a href=\"Practitioner-KenyanPractitionerExample.html\">Example Practitioner</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/serviceRequest",
+    "value" : "123456"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/ServiceRequestExample"
+  }],
+  "status" : "active",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests",
+      "code" : "108252007"
+    }]
+  }],
+  "priority" : "routine",
+  "subject" : {
+    "reference" : "Patient/PatientExample",
+    "display" : "John Doe"
+  },
+  "authoredOn" : "2020-02-02",
+  "requester" : {
+    "reference" : "Practitioner/KenyanPractitionerExample",
+    "display" : "Example Practitioner"
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="kenyaAdministrativeGenderVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet kenyaAdministrativeGenderVS</b></p><a name="kenyaAdministrativeGenderVS"> </a><a name="hckenyaAdministrativeGenderVS"> </a><a name="kenyaAdministrativeGenderVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.A.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-IMMZ.A.html#IMMZ.A-DE6">DE6</a></td><td style="color: #cccccc">Male</td><td>Client's biological sex is male</td></tr><tr><td><a href="CodeSystem-IMMZ.A.html#IMMZ.A-DE7">DE7</a></td><td style="color: #cccccc">Female</td><td>Client's biological sex is female</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/kenyaAdministrativeGenderVS"/>
+  <version value="0.1.0"/>
+  <name value="KHTSADMNGENDER"/>
+  <title value="Administrative Gender"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Administrative Gender"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A"/>
+      <concept>
+        <code value="DE6"/>
+      </concept>
+      <concept>
+        <code value="DE7"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

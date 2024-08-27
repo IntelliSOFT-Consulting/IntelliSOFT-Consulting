@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VaccinesValueSet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VaccinesValueSet</b></p><a name="VaccinesValueSet"> </a><a name="hcVaccinesValueSet"> </a><a name="VaccinesValueSet-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-CVX.html"><code>http://hl7.org/fhir/sid/cvx</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>02</td><td style="color: #cccccc">OPV</td></tr><tr><td>03</td><td style="color: #cccccc">MMR</td></tr><tr><td>19</td><td style="color: #cccccc">BCG</td></tr><tr><td>137</td><td style="color: #cccccc">HPV, unspecified formulation</td></tr><tr><td>178</td><td style="color: #cccccc">OPV bivalent</td></tr><tr><td>133</td><td style="color: #cccccc">Pneumococcal conjugate PCV 13</td></tr><tr><td>122</td><td style="color: #cccccc">rotavirus, unspecified formulation</td></tr><tr><td>10</td><td style="color: #cccccc">IPV</td></tr><tr><td>107</td><td style="color: #cccccc">DTaP, unspecified formulation</td></tr></table></li><li>Include these codes as defined in <a href="http://www.whocc.no/atc"><code>http://www.whocc.no/atc</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>V04CB01</td><td style="color: #cccccc">vitamin A concentrates</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/VaccinesValueSet"/>
+  <version value="0.1.0"/>
+  <name value="VaccinesValueSet"/>
+  <title value="Combination Codes for vaccine"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="This is a mixed value set"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <concept>
+        <code value="02"/>
+      </concept>
+      <concept>
+        <code value="03"/>
+      </concept>
+      <concept>
+        <code value="19"/>
+      </concept>
+      <concept>
+        <code value="137"/>
+      </concept>
+      <concept>
+        <code value="178"/>
+      </concept>
+      <concept>
+        <code value="133"/>
+      </concept>
+      <concept>
+        <code value="122"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+      </concept>
+      <concept>
+        <code value="107"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.whocc.no/atc"/>
+      <concept>
+        <code value="V04CB01"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

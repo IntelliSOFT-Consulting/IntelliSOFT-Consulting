@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IdentifierTypes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IdentifierTypes</b></p><a name="IdentifierTypes"> </a><a name="hcIdentifierTypes"> </a><a name="IdentifierTypes-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">birthcertificate<a name="IdentifierTypes-birthcertificate"> </a></td><td>Birth Certificate</td></tr><tr><td style="white-space:nowrap">nationalId<a name="IdentifierTypes-nationalId"> </a></td><td>National ID</td></tr><tr><td style="white-space:nowrap">passport<a name="IdentifierTypes-passport"> </a></td><td>Passport</td></tr><tr><td style="white-space:nowrap">nemis<a name="IdentifierTypes-nemis"> </a></td><td>NEMIS No</td></tr><tr><td style="white-space:nowrap">bNo<a name="IdentifierTypes-bNo"> </a></td><td>Birth Notification Number</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes"/>
+  <version value="0.1.0"/>
+  <name value="IDENTIFIERTYPES"/>
+  <title value="Identifier Types"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Defined Identifier Types for KenyanRegistryPatient"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="birthcertificate"/>
+    <display value="Birth Certificate"/>
+  </concept>
+  <concept>
+    <code value="nationalId"/>
+    <display value="National ID"/>
+  </concept>
+  <concept>
+    <code value="passport"/>
+    <display value="Passport"/>
+  </concept>
+  <concept>
+    <code value="nemis"/>
+    <display value="NEMIS No"/>
+  </concept>
+  <concept>
+    <code value="bNo"/>
+    <display value="Birth Notification Number"/>
+  </concept>
+</CodeSystem>

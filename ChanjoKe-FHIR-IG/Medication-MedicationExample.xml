@@ -3,7 +3,7 @@
 <Medication xmlns="http://hl7.org/fhir">
   <id value="MedicationExample"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication MedicationExample</b></p><a name="MedicationExample"> </a><a name="hcMedicationExample"> </a><a name="MedicationExample-en-US"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 261000}">Codeine phosphate</span></p><p><b>status</b>: Active</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication MedicationExample</b></p><a name="MedicationExample"> </a><a name="hcMedicationExample"> </a><a name="MedicationExample-en-US"> </a><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 261000}">Codeine phosphate</span></p></div>
   </text>
   <code>
     <coding>
@@ -13,5 +13,4 @@
     </coding>
     <text value="Codeine phosphate"/>
   </code>
-  <status value="active"/>
 </Medication>

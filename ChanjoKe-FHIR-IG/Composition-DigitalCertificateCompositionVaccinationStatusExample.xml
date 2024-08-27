@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="DigitalCertificateCompositionVaccinationStatusExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Composition DigitalCertificateCompositionVaccinationStatusExample</b></p><a name="DigitalCertificateCompositionVaccinationStatusExample"> </a><a name="hcDigitalCertificateCompositionVaccinationStatusExample"> </a><a name="DigitalCertificateCompositionVaccinationStatusExample-en-US"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title="Codes:{http://loinc.org 11485-0}">Anesthesia records</span></p><p><b>date</b>: 2020-02-02</p><p><b>author</b>: <a href="Practitioner-PractitionerExample.html">Practitioner</a></p><p><b>title</b>: Anesthesia records</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11485-0"/>
+      <display value="Anesthesia records"/>
+    </coding>
+    <text value="Anesthesia records"/>
+  </type>
+  <date value="2020-02-02"/>
+  <author>
+    <reference value="Practitioner/PractitionerExample"/>
+  </author>
+  <title value="Anesthesia records"/>
+  <section>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11369-6"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="Immunization/KenyanImmunizationExample"/>
+    </focus>
+    <entry>
+      <reference value="Immunization/KenyanImmunizationExample"/>
+    </entry>
+  </section>
+</Composition>

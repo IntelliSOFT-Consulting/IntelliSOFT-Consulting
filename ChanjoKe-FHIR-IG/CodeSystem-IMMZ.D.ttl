@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ.D"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.D</b></p><a name=\"IMMZ.D\"> </a><a name=\"hcIMMZ.D\"> </a><a name=\"IMMZ.D-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.D-DE1\"> </a></td><td>Child can be located</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.D-DE2\"> </a></td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.D-DE3\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZ.D-DE6\"> </a></td><td>Name of client</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.D-DE7\"> </a></td><td>Age</td></tr><tr><td style=\"white-space:nowrap\">DE8<a name=\"IMMZ.D-DE8\"> </a></td><td>Location</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.D-DE9\"> </a></td><td>mother/father/guardian's contact number</td></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZ.D-DE10\"> </a></td><td>Due/overdue vaccination(s)</td></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZ.D-DE11\"> </a></td><td>Client gets vaccinated</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.D-DE13\"> </a></td><td>Reason for late vaccination</td></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.D-DE15\"> </a></td><td>Reason for missed vaccination</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.D-DE16\"> </a></td><td>Client is vaccinated</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_D"] ; # 
+  fhir:title [ fhir:v "IMMZ.D CodeSystem for Defaulter Tracing"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for IMMZ.D Data Elements"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DE1" ] ;
+     fhir:display [ fhir:v "Child can be located" ]
+  ] [
+     fhir:code [ fhir:v "DE2" ] ;
+     fhir:display [ fhir:v "Yes" ]
+  ] [
+     fhir:code [ fhir:v "DE3" ] ;
+     fhir:display [ fhir:v "No" ]
+  ] [
+     fhir:code [ fhir:v "DE6" ] ;
+     fhir:display [ fhir:v "Name of client" ]
+  ] [
+     fhir:code [ fhir:v "DE7" ] ;
+     fhir:display [ fhir:v "Age" ]
+  ] [
+     fhir:code [ fhir:v "DE8" ] ;
+     fhir:display [ fhir:v "Location" ]
+  ] [
+     fhir:code [ fhir:v "DE9" ] ;
+     fhir:display [ fhir:v "mother/father/guardian's contact number" ]
+  ] [
+     fhir:code [ fhir:v "DE10" ] ;
+     fhir:display [ fhir:v "Due/overdue vaccination(s)" ]
+  ] [
+     fhir:code [ fhir:v "DE11" ] ;
+     fhir:display [ fhir:v "Client gets vaccinated" ]
+  ] [
+     fhir:code [ fhir:v "DE13" ] ;
+     fhir:display [ fhir:v "Reason for late vaccination" ]
+  ] [
+     fhir:code [ fhir:v "DE15" ] ;
+     fhir:display [ fhir:v "Reason for missed vaccination" ]
+  ] [
+     fhir:code [ fhir:v "DE16" ] ;
+     fhir:display [ fhir:v "Client is vaccinated" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

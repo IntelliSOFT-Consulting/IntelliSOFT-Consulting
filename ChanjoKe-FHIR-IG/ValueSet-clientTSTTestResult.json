@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "clientTSTTestResult",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet clientTSTTestResult</b></p><a name=\"clientTSTTestResult\"> </a><a name=\"hcclientTSTTestResult\"> </a><a name=\"clientTSTTestResult-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.B.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.B.html#IMMZ.B-DE31\">DE31</a></td><td>TST-Positive</td></tr><tr><td><a href=\"CodeSystem-IMMZ.B.html#IMMZ.B-DE32\">DE32</a></td><td>TST-Negative</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/clientTSTTestResult",
+  "version" : "0.1.0",
+  "name" : "IMMZB1DE36VS",
+  "title" : "Client's TST Test Result",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Client's TST Test Result",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B",
+      "concept" : [{
+        "code" : "DE31",
+        "display" : "TST-Positive"
+      },
+      {
+        "code" : "DE32",
+        "display" : "TST-Negative"
+      }]
+    }]
+  }
+}

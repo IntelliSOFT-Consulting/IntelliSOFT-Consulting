@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="DigitalCertificatePatientExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient DigitalCertificatePatientExample</b></p><a name="DigitalCertificatePatientExample"> </a><a name="hcDigitalCertificatePatientExample"> </a><a name="DigitalCertificatePatientExample-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789 (use: usual, ))</p><hr/></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers"/>
+    <value value="DCP123456789"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="John Doe"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1990-01-01"/>
+</Patient>

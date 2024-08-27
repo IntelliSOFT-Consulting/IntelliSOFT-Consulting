@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KenyaVaccineCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KenyaVaccineCodes</b></p><a name="KenyaVaccineCodes"> </a><a name="hcKenyaVaccineCodes"> </a><a name="KenyaVaccineCodes-en-US"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>cvxp</td><td>cvxp</td><td>Coding</td><td>cvx mapping for this code</td></tr></table><p><b>Concepts</b></p><p>This  code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>cvxp</b></td></tr><tr><td style="white-space:nowrap">BCG<a name="KenyaVaccineCodes-BCG"> </a></td><td>BCG</td><td>Bacillus Calmette-Guerin vaccine</td><td>19</td></tr><tr><td style="white-space:nowrap">OPV<a name="KenyaVaccineCodes-OPV"> </a></td><td>OPV</td><td>Oral Polio Vaccine</td><td>02</td></tr><tr><td style="white-space:nowrap">PCV<a name="KenyaVaccineCodes-PCV"> </a></td><td>PCV 10</td><td>Pneumococcal Conjugate Vaccine</td><td>177</td></tr><tr><td style="white-space:nowrap">Rota<a name="KenyaVaccineCodes-Rota"> </a></td><td>Rota</td><td>Rotavirus vaccine</td><td>122</td></tr><tr><td style="white-space:nowrap">DTP-Hib-Hep-B<a name="KenyaVaccineCodes-DTP-Hib-Hep-B"> </a></td><td>DTP-Hib-Hep B</td><td>Diptheria, Pertussis, Haemophilus influenzae type b</td><td>102</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes"/>
+  <version value="0.1.0"/>
+  <name value="KenyaVaccineCodes"/>
+  <title value="Kenya Vaccine Codes"/>
+  <status value="draft"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="5"/>
+  <property>
+    <code value="cvxp"/>
+    <description value="cvx mapping for this code"/>
+    <type value="Coding"/>
+  </property>
+  <concept>
+    <code value="BCG"/>
+    <display value="BCG"/>
+    <definition value="Bacillus Calmette-Guerin vaccine"/>
+    <property>
+      <code value="cvxp"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="19"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="OPV"/>
+    <display value="OPV"/>
+    <definition value="Oral Polio Vaccine"/>
+    <property>
+      <code value="cvxp"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="02"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="PCV"/>
+    <display value="PCV 10"/>
+    <definition value="Pneumococcal Conjugate Vaccine"/>
+    <property>
+      <code value="cvxp"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="177"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="Rota"/>
+    <display value="Rota"/>
+    <definition value="Rotavirus vaccine"/>
+    <property>
+      <code value="cvxp"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="122"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="DTP-Hib-Hep-B"/>
+    <display value="DTP-Hib-Hep B"/>
+    <definition value="Diptheria, Pertussis, Haemophilus influenzae type b"/>
+    <property>
+      <code value="cvxp"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="102"/>
+      </valueCoding>
+    </property>
+  </concept>
+</CodeSystem>

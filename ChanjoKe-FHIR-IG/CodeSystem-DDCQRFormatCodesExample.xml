@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DDCQRFormatCodesExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem DDCQRFormatCodesExample</b></p><a name="DDCQRFormatCodesExample"> </a><a name="hcDDCQRFormatCodesExample"> </a><a name="DDCQRFormatCodesExample-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodesExample</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">image<a name="DDCQRFormatCodesExample-image"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>image</td></tr><tr><td style="white-space:nowrap">serialized<a name="DDCQRFormatCodesExample-serialized"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>serialized</td></tr><tr><td style="white-space:nowrap">pdf<a name="DDCQRFormatCodesExample-pdf"> </a></td><td>http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</td><td>pdf</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodesExample"/>
+  <version value="0.1.0"/>
+  <name value="DDCQRFRMCDS"/>
+  <title value="DDCC QR Format Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Format of the representation of QR code"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="image"/>
+    <display value="http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
+    <definition value="image"/>
+  </concept>
+  <concept>
+    <code value="serialized"/>
+    <display value="http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
+    <definition value="serialized"/>
+  </concept>
+  <concept>
+    <code value="pdf"/>
+    <display value="http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
+    <definition value="pdf"/>
+  </concept>
+</CodeSystem>

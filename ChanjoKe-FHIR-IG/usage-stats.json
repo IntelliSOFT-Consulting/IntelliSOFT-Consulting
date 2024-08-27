@@ -1,785 +1,580 @@
 {
-  "package": "fhir.kenyaClaimsIG",
+  "package": "fhir.chanjoKe",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-remand-number",
-      "title": "Admission Remand Number",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/action-taken",
+      "title": "Extension for Action Taken",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/adjustment-type",
+      "title": "Extension for Stock Adjustment Type",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/aefi-outcome",
+      "title": "AefiOutcomeExtension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/allocated-quantity",
+      "title": "Extension for Allocated Quantity",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/batch-number",
+      "title": "Extension for Batch Number ",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-types",
-      "title": "Admission Types",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/body-weight-extension",
+      "title": "Body Weight extension",
       "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
+        "decimal"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/certificate-Issue-Date",
+      "title": "Certificate Issue Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/certificate-Issued",
+      "title": "Certificate Issued",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/children",
+      "title": "Extension for Children ",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/contraindication-to-vaccine",
+      "title": "ContraIndication to Vaccine",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-of-last-order",
+      "title": "Extension for Date Of last Order",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-received",
+      "title": "Extension for Date Received",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/doses-in-stock",
+      "title": "Extension for Doses in stock",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/event-details",
+      "title": "Extension for Event Details",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expected-date-of-next-order",
+      "title": "Extension for  Expected Date of Next Order ",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expiry-date",
+      "title": "Extension for ExpiryDate ",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/facility-reported",
+      "title": "Extension for Facility Reported",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/inventory-items",
+      "title": "InventoryItems",
+      "types": [
+        "base64Binary",
         "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/approved",
-      "title": "Approved",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/authorization-offLine-date",
-      "title": "Extension for authorization OffLineDate  ",
-      "types": [
-        "date"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-identifier",
-      "title": "Extension for Batch Identifier ",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-number",
-      "title": "Extension for Batch Number",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-period",
-      "title": "Extension for Batch Period  ",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-score",
-      "title": "Biometrics Score",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-verified",
-      "title": "Biometrics Verified",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/board-registration-number",
-      "title": "Board Registration Number",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/building-house-no",
-      "title": "Extension for Patient\u0027s building_house_no",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/citizenship",
-      "title": "Citizenship",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/constituency",
-      "title": "constituency",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/county",
-      "title": "Extension for Patient\u0027s County",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-expiry-date",
-      "title": "Extension for Current License Expiry Date",
-      "types": [
-        "date"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-number",
-      "title": "Extension for Current License Number",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-renewal-date",
-      "title": "Extension for Current License Renewal Date",
-      "types": [
-        "date"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-type",
-      "title": "Extension for Current License Type",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/deceased-datetime",
-      "title": "Deceased Datetime",
-      "types": [
-        "date"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/diagnosis-related-group",
-      "title": "Extension for Diagnosis Related Group",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-category",
-      "title": "Disability Category",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-cause",
-      "title": "Disability Cause",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-subcategory",
-      "title": "Disability Sub-Category",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-OffLine-Date",
-      "title": "Extension for Eligibility OffLineDate ",
-      "types": [
-        "date"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-offLine",
-      "title": "Extension for eligibilityOffLine ",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-name",
-      "title": "Employer Name",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-pin",
-      "title": "Employer Pin",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/employment-type",
-      "title": "Patient Employment Type",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/episode",
-      "title": "Extension for Episode",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/estimated-contribution",
-      "title": "Estimated Contribution",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-category",
-      "title": "Facility Category",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-level",
-      "title": "Facility Level",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-owner",
-      "title": "Facility Owner",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-registration-number",
-      "title": "Extension for Facility Registration Number",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-type-category",
-      "title": "Facility Type Category",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/fund",
-      "title": "Fund",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
+        "canonical",
         "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
         "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
         "boolean",
-        "string"
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income",
-      "title": "Gross income",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/issue-date",
+      "title": "Extension for Issue Date",
       "types": [
-        "integer"
+        "date"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income-currency",
-      "title": "Gross Income Currency",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-administrative-gender-extension",
+      "title": "KenyaAdministrativeGenderExtension",
       "types": [
         "code"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/identification-residence",
-      "title": "Extension for Patient\u0027s identification residence",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/in-lawful-custody",
-      "title": "In Lawful Custody",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/is-lawful-citizen",
-      "title": "Is lawful Citizen",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/item-tax",
-      "title": "Extension for ItemTax",
-      "types": [
-        "Money"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/kenya-counties-extension",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-counties-extension",
       "title": "Extension for Kenya counties",
       "types": [
         "code"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/kra-pin",
-      "title": "Extension Patient\u0027s KRA PIN",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-health-worker-extension",
+      "title": "Healthworker extension",
       "types": [
-        "string",
-        "string"
+        "boolean"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/latitude",
-      "title": "Extension for Patient\u0027s latitude",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/license-renewal-duration",
-      "title": "License Renewal Duration",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/longitude",
-      "title": "Extension for Patient\u0027s longitude",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/manufacturer-details",
+      "title": "Extension for Manufacturer Details ",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/maximum-bed-allocation",
-      "title": "Maximum Bed Allocation",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/maximum",
+      "title": "Extension for Maximum",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/newborn",
-      "title": "Extension for Newborn  ",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-beds",
-      "title": "Number of Beds",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/minimum",
+      "title": "Extension for Minimum",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-cots",
-      "title": "Number of Cots",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/new-vvm",
+      "title": "Extension for Reason For New VVM",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/order-number",
+      "title": "Extension for Order number",
       "types": [
         "integer"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-late-night",
-      "title": "Open Late Night",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/ordered-amount",
+      "title": "Extension for Ordered Amount ",
       "types": [
-        "boolean"
+        "integer"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-public-holiday",
-      "title": "Open Public Holiday",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-weekends",
-      "title": "Open Weekends",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-whole-day",
-      "title": "Open Whole Day",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/operational-status",
-      "title": "Operational Status",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-board-registration-number",
-      "title": "Extension for Owner Board Registration Number ",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/origin",
+      "title": "Extension for Origin",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-current-license-number",
-      "title": "Extension for Owner Current License Number ",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/physical-count",
+      "title": "Extension for Physical Count",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/pregnant-women",
+      "title": "Extension for Pregnant women ",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/previous-vvm",
+      "title": "Extension for Reason For Previous VVM",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-id-number",
-      "title": "Extension for Owner Id Number",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/products",
+      "title": "Extension for Products ",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/quantity-issued",
+      "title": "Extension for Quantity Issued",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reaction-severity",
+      "title": "ReactionSeverityExtension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reason-for-adjustment",
+      "title": "Extension for Reason For Adjustment ",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/package",
-      "title": "Extension for Package",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/recommended-stock",
+      "title": "Extension for Recommended Stock ",
       "types": [
-        "boolean"
+        "integer"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/parent-facility-code",
-      "title": "Parent Facility Code",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/remaining-quantity",
+      "title": "Extension for Remaining Quantity ",
       "types": [
-        "code"
+        "integer"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-invoice",
-      "title": "Extension for Patient Invoice",
-      "types": [
-        "Identifier"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-is-alive",
-      "title": "Patient Is Alive",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-share",
-      "title": "Extension for Patient Share",
-      "types": [
-        "Money"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/payer-share",
-      "title": "Extension for PayerShare",
-      "types": [
-        "Money"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/pcn",
-      "title": "PCN",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/person-with-disability",
-      "title": "Person Disability Status",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/physical-address",
-      "title": "Physical Address",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-collected",
+      "title": "Extension for Specimen collected for investigation",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/place-of-birth",
-      "title": "Extension for Place of Birth",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-details",
+      "title": "Extension for Specimen Details",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-license-number",
-      "title": "Current License Number",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-adjustment-date",
+      "title": "Extension for Stock Adjustment Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-location",
+      "title": "Extension for Stock Location ",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-marital-status",
-      "title": "Practitioner Marital Status",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/preferred-primary-care-network",
-      "title": "PatientPreferredPrimaryCareNetwork",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/professional-cadre",
-      "title": "Professional Cadre",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/province-state-country",
-      "title": "Extension for Patient\u0027s Province State Country",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-origin",
+      "title": "Extension for Reason For Stock Origin",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification",
-      "title": "Qualification",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-quantity",
+      "title": "Extension for Stock Quantity",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/total-population",
+      "title": "Extension for Total Population",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-details",
+      "title": "Extension for Treatment Details",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-institution",
-      "title": "Qulaification Institution",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-type",
-      "title": "Qualification type",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/regulatory-body",
-      "title": "Regulatory Body",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/specialty",
-      "title": "Practitioner Specialty",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/sub-county",
-      "title": "Extension for Patient\u0027s Sub-County",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/tax",
-      "title": "Extension for Tax",
-      "types": [
-        "Money"
-      ]
-    },
-    {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/village-estate",
-      "title": "Extension for Patient\u0027s Village Estate",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-given",
+      "title": "Extension for Treatment Given",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/ward",
-      "title": "Extension for Patient\u0027s Ward",
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/types-of-aefi",
+      "title": "Extension for types of AEFI",
       "types": [
         "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine",
+      "title": "Extension for Vaccine",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine-brand",
+      "title": "Vaccine Brand",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/validity-endDate-certificate",
+      "title": "Validity end date of the certificate.",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/validity-startdate-certificate",
+      "title": "Validity start date of the certificate.",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vvm-status",
+      "title": "Extension for VVM Status ",
+      "types": [
+        "string"
       ]
     }
   ],
   "profiles": {
-    "Claim": [
+    "AdverseEvent": [
       {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimProfile",
-        "title": "Claims"
-      }
-    ],
-    "ClaimResponse": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/ClaimResponse-ke",
-        "title": "ClaimResponse"
-      }
-    ],
-    "Composition": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/Composition-ke-Profile",
-        "title": "Composition_ke_Profile"
-      }
-    ],
-    "Condition": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/Condition-Diagnosis-ke-Profile",
-        "title": "ConditionDiagnosis"
-      },
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/Condition-Problem-List-ke-Profile",
-        "title": "Condition_Problem_List_ke_Profile"
-      }
-    ],
-    "Encounter": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/Encounter-ke-Profile",
-        "title": "Encounter_ke_Profile"
-      }
-    ],
-    "Medication": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/Medication-ke-Profile",
-        "title": "Medication_ke_Profile"
-      }
-    ],
-    "MedicationRequest": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/MedicationRequest-ke-Profile",
-        "title": "MedicationRequestProfile"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/Observation-ke-Profile",
-        "title": "Observation_ke_Profile"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/PractitionerProfile",
-        "title": "PractitionerProfile"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAOrganization",
-        "title": "SHAOrganization"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/SHAPatient",
-        "title": "SHAPatient"
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile",
+        "title": "AdverseEventProfile"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "https://shr.tiberbuapps.com/fhir/StructureDefinition/ServiceRequest-ke-Profile",
-        "title": "ServiceRequest_ke_Profile"
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest",
+        "title": "DefaulterTracingRequest"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition",
+        "title": "DigitalCertificateComposition"
+      },
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus",
+        "title": "DigitalCertificateCompositionVaccinationStatus"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocument",
+        "title": "DigitalCertificateDocument"
+      }
+    ],
+    "List": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentFolder",
+        "title": "DigitalCertificateDocumentFolder"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference",
+        "title": "DigitalCertificateDocumentReference"
+      },
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReferenceQR",
+        "title": "DigitalCertificateDocumentReferenceQR"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization",
+        "title": "DigitalCertificateOrganization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRegistryPatient",
+        "title": "KenyanImmunizationRegistryPatient"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunization",
+        "title": "KenyanImmunization"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation",
+        "title": "KenyanImmunizationRecommendation"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanPractitioner",
+        "title": "KenyanPractitioner"
+      }
+    ],
+    "SupplyDelivery": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyDeliveryProfile",
+        "title": "SupplyDeliveryProfile"
+      }
+    ],
+    "SupplyRequest": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile",
+        "title": "SupplyRequestProfile"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile",
+        "title": "TaskProfile"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile",
+        "title": "BasicProfile"
       }
     ]
   },
   "usage": {
-    "http://example.org/fhir/StructureDefinition/admission-types": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/approved": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/constituency": [
-      "Organization.address"
-    ],
-    "http://example.org/fhir/StructureDefinition/county": [
-      "Organization.address"
-    ],
-    "http://example.org/fhir/StructureDefinition/current-license-number": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/current-license-renewal-date": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/current-license-type": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/facility-category": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/facility-level": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/facility-owner": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/facility-registration-number": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/facility-type-category": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/fund": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/latitude": [
-      "Organization.address"
-    ],
-    "http://example.org/fhir/StructureDefinition/longitude": [
-      "Organization.address"
-    ],
-    "http://example.org/fhir/StructureDefinition/maximum-bed-allocation": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/number-of-beds": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/number-of-cots": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/open-late-night": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/open-public-holiday": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/open-weekends": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/open-whole-day": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/owner-board-registration-number": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/owner-current-license-number": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/owner-id-number": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/parent-facility-code": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/pcn": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/physical-address": [
-      "Organization.address"
-    ],
-    "http://example.org/fhir/StructureDefinition/regulatory-body": [
-      "Organization"
-    ],
-    "http://example.org/fhir/StructureDefinition/sub-county": [
-      "Organization.address"
-    ],
-    "http://example.org/fhir/StructureDefinition/ward": [
-      "Organization.address"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -789,23 +584,33 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
+      "vaccination-certificate-core-data-set",
+      "vaccination-certificate-core-data-set.certificate",
+      "vaccination-certificate-core-data-set.vaccination",
+      "vaccination-certificate-vs",
+      "vaccination-certificate-vs.certificate",
+      "vaccination-certificate-vs.vaccination"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/StructureDefinition/organization-period": [
+      "vaccination-certificate-core-data-set.certificate",
+      "vaccination-certificate-vs.certificate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature": [
+      "vaccination-certificate-core-data-set.vaccination",
+      "vaccination-certificate-vs.vaccination"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
-      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -820,247 +625,171 @@
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/logical-target": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-remand-number": [
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/action-taken": [
+      "AdverseEvent"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/admission-types": [
-      "Organization"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/aefi-outcome": [
+      "AdverseEvent"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/approved": [
-      "Organization"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/allocated-quantity": [
+      "SupplyDelivery"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/authorization-offLine-date": [
-      "Claim"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/batch-number": [
+      "SupplyDelivery"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-identifier": [
-      "Claim"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/body-weight-extension": [
+      "Immunization"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-number": [
-      "Claim"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/certificate-Issue-Date": [
+      "Immunization"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/batch-period": [
-      "Claim"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/certificate-Issued": [
+      "Immunization"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-score": [
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/children": [
+      "SupplyRequest"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/biometrics-verified": [
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/contraindication-to-vaccine": [
+      "Immunization"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/board-registration-number": [
-      "Practitioner.qualification"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-of-last-order": [
+      "SupplyRequest"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/building-house-no": [
-      "Patient",
-      "Patient.address"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-received": [
+      "SupplyDelivery"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/citizenship": [
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/doses-in-stock": [
+      "SupplyRequest"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/constituency": [
-      "Organization.address"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/event-details": [
+      "AdverseEvent"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/county": [
-      "Organization.address",
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expected-date-of-next-order": [
+      "SupplyRequest"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-number": [
-      "Organization"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expiry-date": [
+      "SupplyDelivery"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-renewal-date": [
-      "Organization"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/facility-reported": [
+      "AdverseEvent"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/current-license-type": [
-      "Organization"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/inventory-items": [
+      "Basic"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/deceased-datetime": [
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/issue-date": [
+      "SupplyDelivery"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-category": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-cause": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/disability-subcategory": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-OffLine-Date": [
-      "Claim"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/eligibility-offLine": [
-      "Claim"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-name": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/employer-pin": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/employment-type": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/episode": [
-      "Claim"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/estimated-contribution": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-category": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-level": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-owner": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-registration-number": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/facility-type-category": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/fund": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/gross-income-currency": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/identification-residence": [
-      "Patient",
-      "Patient.address"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/is-lawful-citizen": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/item-tax": [
-      "Claim.item.detail"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/kenya-counties-extension": [
-      "Claim"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/kra-pin": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/latitude": [
-      "Organization.address",
-      "Patient.address"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/license-renewal-duration": [
-      "Practitioner.qualification"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/longitude": [
-      "Organization.address",
-      "Patient.address"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/maximum-bed-allocation": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/newborn": [
-      "Claim"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-beds": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/number-of-cots": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-late-night": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-public-holiday": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-weekends": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/open-whole-day": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/operational-status": [
-      "Practitioner.qualification"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-board-registration-number": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-current-license-number": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/owner-id-number": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/package": [
-      "Claim.item"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/parent-facility-code": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-invoice": [
-      "Claim.item"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/patient-is-alive": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/payer-share": [
-      "Claim.item"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/pcn": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/person-with-disability": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/physical-address": [
-      "Organization.address"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/place-of-birth": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/practitioner-license-number": [
-      "Practitioner.qualification"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/preferred-primary-care-network": [
-      "Patient"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/professional-cadre": [
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-administrative-gender-extension": [
       "Practitioner"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification": [
-      "Practitioner.qualification"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-institution": [
-      "Practitioner.qualification"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/qualification-type": [
-      "Practitioner.qualification"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/regulatory-body": [
-      "Organization"
-    ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/specialty": [
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-counties-extension": [
+      "Patient",
       "Practitioner"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/sub-county": [
-      "Organization.address",
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-health-worker-extension": [
+      "Immunization"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/tax": [
-      "Claim.item"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/manufacturer-details": [
+      "SupplyDelivery"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/village-estate": [
-      "Patient",
-      "Patient.address"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/maximum": [
+      "SupplyRequest"
     ],
-    "https://shr.tiberbuapps.com/fhir/StructureDefinition/ward": [
-      "Organization.address",
-      "Patient"
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/minimum": [
+      "SupplyRequest"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/new-vvm": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/order-number": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/ordered-amount": [
+      "SupplyRequest"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/origin": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/physical-count": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/pregnant-women": [
+      "SupplyRequest"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/previous-vvm": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/products": [
+      "Task"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/quantity-issued": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reaction-severity": [
+      "AdverseEvent"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reason-for-adjustment": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/recommended-stock": [
+      "SupplyRequest"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/remaining-quantity": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-collected": [
+      "AdverseEvent"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-details": [
+      "AdverseEvent"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-adjustment-date": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-location": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-origin": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/stock-quantity": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/total-population": [
+      "SupplyRequest"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-details": [
+      "AdverseEvent"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-given": [
+      "AdverseEvent"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/types-of-aefi": [
+      "AdverseEvent"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine": [
+      "SupplyDelivery"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vaccine-brand": [
+      "Immunization"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/validity-endDate-certificate": [
+      "Immunization"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/validity-startdate-certificate": [
+      "Immunization"
+    ],
+    "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/vvm-status": [
+      "SupplyDelivery"
     ]
   }
 }

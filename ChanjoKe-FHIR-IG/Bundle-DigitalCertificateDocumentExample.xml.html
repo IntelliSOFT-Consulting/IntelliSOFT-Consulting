@@ -1,0 +1,472 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DigitalCertificateDocumentExample - XML Representation - ChanjoKE Immunization Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11.143"}
+    h3,h4,h5,h6{--heading-prefix:"11.143"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ChanjoKE Immunization Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dependancies.html">Changes</a></li>
+    </ul>
+  </li>
+
+   <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes</a></li>
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+    </ul>
+  </li>
+
+
+   <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+    </ul>
+  </li>
+</ul>  
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DigitalCertificateDocumentExample</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ChanjoKE Immunization Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-DigitalCertificateDocumentExample.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-DigitalCertificateDocumentExample.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-DigitalCertificateDocumentExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: DigitalCertificateDocumentExample - XML Representation</h2>
+
+
+<p><a href="Bundle-DigitalCertificateDocumentExample.xml" no-download="true">Raw xml</a> | <a href="Bundle-DigitalCertificateDocumentExample.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DigitalCertificateDocumentExample&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocument&quot;/&gt;
+  &lt;/meta&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DCD123456789&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;transaction&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2020-02-02T01:02:03.456+02:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link">link</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.relation">relation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;publication&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.link.url">url</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/hcid/DCD123456789&quot;/&gt;
+  &lt;/link&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/compositions/DCD123456789&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition">Composition</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DigitalCertificateCompositionExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateComposition&quot;/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Composition_DigitalCertificateCompositionExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Composition DigitalCertificateCompositionExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DigitalCertificateCompositionExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDigitalCertificateCompositionExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;DigitalCertificateCompositionExample-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers&lt;/code&gt;/DC123456789 (use: usual, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://loinc.org 11485-0}&quot;&gt;Anesthesia records&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2020-02-02&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=&quot;Organization-DigitalCertificateOrganizationExample.html&quot;&gt;Organization Kenya Ministry of Health&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Anesthesia records&lt;/p&gt;&lt;h3&gt;Attesters&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Mode&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Time&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Party&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;Legal&lt;/td&gt;&lt;td&gt;2020-02-02&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Organization-DigitalCertificateOrganizationExample.html&quot;&gt;Organization Kenya Ministry of Health&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Events&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Period&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;2020-02-02 --&amp;gt; 2020-02-03&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DC123456789&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;final&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;11485-0&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anesthesia records&quot;/&gt;
+          &lt;/coding&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anesthesia records&quot;/&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.subject">subject</a>&gt;<a href="Patient-DigitalCertificatePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/DigitalCertificatePatientExample&quot;/&gt;
+        &lt;/subject&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-02-02&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.author">author</a>&gt;<a href="Organization-DigitalCertificateOrganizationExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/DigitalCertificateOrganizationExample&quot;/&gt;
+        &lt;/author&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anesthesia records&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester">attester</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;legal&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.time">time</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-02-02&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.attester.party">party</a>&gt;<a href="Organization-DigitalCertificateOrganizationExample.html" style="color: Maroon">&#x1F517;</a> 
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/DigitalCertificateOrganizationExample&quot;/&gt;
+          &lt;/party&gt;
+        &lt;/attester&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.event">event</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/composition.html#Composition.event.period">period</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-02-02&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-02-03&quot;/&gt;
+          &lt;/period&gt;
+        &lt;/event&gt;
+      &lt;/Composition&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Composition&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/patients/DCD123456789&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DigitalCertificatePatientExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient&quot;/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Patient_DigitalCertificatePatientExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Patient DigitalCertificatePatientExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DigitalCertificatePatientExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDigitalCertificatePatientExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;DigitalCertificatePatientExample-en-US&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789 (use: usual, ))&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DCP123456789&quot;/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;John Doe&quot;/&gt;
+        &lt;/name&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1990-01-01&quot;/&gt;
+      &lt;/Patient&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Patient&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/organizations/DCD123456789&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization">Organization</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DigitalCertificateOrganizationExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization&quot;/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Organization_DigitalCertificateOrganizationExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Organization DigitalCertificateOrganizationExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DigitalCertificateOrganizationExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDigitalCertificateOrganizationExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;DigitalCertificateOrganizationExample-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Kenya Ministry of Health&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Kenya Ministry of Health&quot;/&gt;
+      &lt;/Organization&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Organization&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/documentReferences/DCD123456789&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">DocumentReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;DigitalCertificateDocumentReferenceQRExample&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReferenceQR&quot;/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;DocumentReference_DigitalCertificateDocumentReferenceQRExample&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference DigitalCertificateDocumentReferenceQRExample&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;DigitalCertificateDocumentReferenceQRExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcDigitalCertificateDocumentReferenceQRExample&quot;&gt; &lt;/a&gt;&lt;a name=&quot;DigitalCertificateDocumentReferenceQRExample-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://loinc.org 55107-7}&quot;&gt;Addendum Document&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-DigitalCertificatePatientExample.html&quot;&gt;John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789 (use: usual, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authenticator&lt;/b&gt;: &lt;a href=&quot;Organization-DigitalCertificateOrganizationExample.html&quot;&gt;Organization Kenya Ministry of Health&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;image/png&lt;/td&gt;&lt;td&gt;(base64 data - 4,036 base64 chars)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;format&lt;/b&gt;: &lt;a href=&quot;CodeSystem-DDCQRFormatCodes.html#DDCQRFormatCodes-image&quot;&gt;DDCC QR Format Codes&lt;/a&gt; image: http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;image/png&lt;/td&gt;&lt;td&gt;(base64 data - 4,036 base64 chars)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;format&lt;/b&gt;: &lt;a href=&quot;CodeSystem-DDCQRFormatCodes.html#DDCQRFormatCodes-serialized&quot;&gt;DDCC QR Format Codes&lt;/a&gt; serialized: http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;application/pdf&lt;/td&gt;&lt;td&gt;(base64 data - 5,284 base64 chars)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;format&lt;/b&gt;: &lt;a href=&quot;CodeSystem-DDCQRFormatCodes.html#DDCQRFormatCodes-pdf&quot;&gt;DDCC QR Format Codes&lt;/a&gt; pdf: http://smart.who.int/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;current&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://loinc.org&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;55107-7&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Addendum Document&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">subject</a>&gt;<a href="Patient-DigitalCertificatePatientExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/DigitalCertificatePatientExample&quot;/&gt;
+        &lt;/subject&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.authenticator">authenticator</a>&gt;<a href="Organization-DigitalCertificateOrganizationExample.html" style="color: Maroon">&#x1F517;</a> 
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization/DigitalCertificateOrganizationExample&quot;/&gt;
+        &lt;/authenticator&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;image/png&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;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&quot;/&gt;
+          &lt;/attachment&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.format">format</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;image&quot;/&gt;
+          &lt;/format&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;image/png&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAABpaWkSEhK3t7fg4OD29vaZmZlERERtbW3o6OhXV1d6enqpqana2tqTk5MwMDDPz8+KiorGxsb5+fmfn5/t7e2Ojo67u7usrKzS0tKSkpLw8PB2dnbBwcGzs7OCgoJPT083NzdGRkZgYGA+Pj4gICAqKioUFBRbW1sbGxvJdbt4AAALDUlEQVR4nO2daWOyOhCFq61StW4Vt7rh0u39/z/wNjPcenAYDAKtbed8oiEZeKwmYTIZbm5MJpPJZDKZTCaTyWQymUwmk8mUqaDuqxY2O7iSw4SOIzruCdPrw7FxAOUTKK+HVNTyvotAXOac6jVvYTMuadPxMx0PhekutK1DeRuNNsGcj+riMuUR3mqE9x6E+AVIIbw1QiOsipB7mry/w8l3EEazO12zsUb48OjUdZU2TLuJPgqiIRB2yDSXtCNqwGYl4TjzLqJChLPMOm2NkNWA8hWVdIHwAc72qOQVTSBhO/MuZoUI7zLrNLIJcSR88CAcoAkkxI9K6s4IFRmhU2mEbEj9HVZPOOwHJ9pohMHY6SWT8Ikqoc0FtYr/0Ag3pzfRH5ZG2K+daqsRsgaZhDdwY6xnKlHHQybcirvol0YYCNudcgnvqUSd0zBhR9xFYIRGeDmh1tPMfzRh12nMx303y4xwssWErXn3f80DV2faAsIlz05Z4dURNvmEZu5BmODx8AkIU/QLCIdGaIRXT8i/w+efQBg+OK3QxHD0ofVSEO4jV3Xqzo421Cyi49F1E6ZoR6eHgpBvDB/N2dC/H0eIvjYkxAkz+9oSz4dGaIRfSMj+0icPwsZ3E262nRNFknAI4knlytXcblzBU+SO3weCsPPkzm58CKPTm9huSiPUlDIesnDOjY7XQBCizhBq+nbCFhjqG+GpjPBoqJp1i+sgLLZuMW43MjSShPv7D+2GdDr0IPznGuyfkZBtI+Eo6yba40KEPkp5tkA/TTZhynjIhq5vhTRBiL42H8Iz6xZGaIR/lbBVu/XUCxIum8tls7lz5QnC+Uf5MpzS8TT8OG7O3QVqLToe0sV2Tdd4iYQvvjeRCOqoRonxcJn4qNLFDg/20+zoeImnm5XfcV6dGfGlpK8txat/TTJCI7z5JsKweVQoT/MJPsTba4Sf5Rk9jbM5yiaEyzfxjsojjOCaj+IsTyfjMZA/ALxJuX7IWlDJBkruwUSIhGgOXVq41FpMjx6EOaJNWPLp6V6akCO+ERqhEaYRxp2fD+FKEKb0NNdBuIYSXPZLjBZIyA8p7LzFZwtWygqpPyH64g+lEY6Uj14l1J6eSiAcw9n8T09GaIQ/hVDO2pBw50N4oGPuaeJnfGj2JAwlCNEcE2JIfBmEy/anJuOXwWDwGk2ORUNXMthlE3L9JphjD8CMzK3o9EQj5Pq4cYNMTB5fXeO+azzpFiJEzcmSDF5O8eojoSb0RCWEhKw9ELL41yNDHopJC8+unlBuL0LCS1dmpIzwtxBi1FPiCTgvIf98UiZbaJS1F+aYECe4+Wdt0bNbJltDybLnhC6YkEqGO7dAdh9TOTVeMwnvXIPnh8apuQkZYpzaPa3TkfY8Ku6OJc9jajxR7stPPmvArMT3k4tknDdKft1ZCT9NtuYpZvPKnzDhquaiygnLeHoywqN+NmF2pAIrzEvI08mVKP8Wwm3LQy5waxjPyLnkLZOwTXFg3fpHxUSigJBDxlQqChCrA+GMTFza6+TNOBDKcp8RP2Wg1i7DIYAREPKXIaqcsJo5jZT2fCg9ZEZohELajVVOGJRG2HI7/mdyy8SAMgHMV7QPYeOO0ZuaQjhzVVczQdhuPXxqBekF1nHGAUhdgIQ9uuaYjI4LEXLruSDcU3kiziSbcEHlC0HYw2bYgIcduQkOx0P1ISU3IaazYMWb6vwJs+NpUghlbKK2VbNYxJAR/kzCA1wzUAh5ZSaezWSvciMh+0s3cGMNjZBL5O9QbrfNT7juHsXzpV73VONF/0NT/oOb4Vn0gs6oakAnuNtvgAl0PNcCV7LgD4x31fJl2kB4cJWmo0KEPkpZP9SErmrUk/hixEJPFHqE5RaxKgnP7JlBaQub6pOE5mszwnL1+wlz/A5lF8hSCTECC7eIYafEhJf6S6WUvnTB1wnxBP8D7qgOdoGccQCd1+2p6EtZYzBHfemCOuI572DDvrTnTCw2JRBq4yErJXJP2yU7FaYT46EUm9tCSRn+Uh9CdQ1YZqST8TSoxJxGSu4/LC/axAh/O+GZ32F2J4/y+h2WTTjcfD5pb3gKPVo9nCji83Q2pLORD2FdJAlkh8sbW+VKaG7M2QPBDxD3onCPMj3jOclnCyk1ri2bUFNiRwkfv8HpJ3H9YlFf8vlQSo1NLIFQi6dBFYs2McK/RKj+Dnm9WmYc8CLEPFFVEtLaUz2g1SUelZa0PsS9a/twXHuKr1+nBmtX1ONZGy0Z9bjj2sOK1Zap6PiAhGS0PqLLMCGVxGmzG3Qx/ghp7Sk2VGynM/dZER2zz3cLNRN+GtaL8l/C6SS7OdWsEdgM/TTSWVBGhlb0nvM6YQdqJnxtrIFCKF1kauYPbFalN9EIfxfhFAjfoWZKDiyNULo5cxNGiqH8hBgTxYQrF4fU4Pn3lmKSeseYqPv9saDX6EAoE2oBoUyJ/fgD16DDRvn6xwCo+wH3NHS20VIMFfPTyAw8CXElLOEY2b1SfyoIWSlfd5Q0VyxDqz+hmhfjXmkg1y1YZxxbZecYMsK/R5iIp8F56dUSQkj+hDcR/BscxQGkt3S8o/D5xisd86WfIMSeRVH9g390/Agh9kwY0nXiVRrYHxCL76hOV3g7motj9ecU9C/D5M4Jn/FZcpvEmXV8FE5wUSkrpFLaeFh2TBRGdeBWFy9CLTH4hYTVxNNohOoqdyWEVUYM/V3Cn/otlT2NJOSeJv4fykgFSbi4JkIUWlqr90HiBjxocC+PO4DxoWcNhDf4UfmobEL5fHiGUOYYkoTqiG+ERmiEBQm5R8V9TzjsIOHmmghDzE/TTFfiFSqYnwZS3MT7gKX2aJqLJqcXSFk/LGMfsL/UHEMoOeKz1L3cKCOsWkZI+j2ES6WS5g5J8QVnE3IEVDHCvHkTb5afivMmSuGqfG0VQguNkPImpkSb3L658n6cgPEywgvfYcnSvPoo1bGChNXnZDdCIzTCc4Q1D8Jiu4L883nHeoZ1tTUk3eYnjL4z1+4DYY+yD/A/YMLLdEjYgMTgSMiGAne150e6x0szDvjnZI+FH7HmIsO93Ozw4RDAM7kvkRA9wsV8bZW/pTNHdk9tTmOERliAUP4O50DYyiaUV3uvkNDrPTOScPvuXgbTA8KdK+lMIYhMJTy9Yuedl+bGT8eor/IIc7wrSNQ8E+etEmrCV5cZoREa4Z8m3Iw+lfL+wzOE/NpEPp654+FOEN7RXoXt9xFOhLkchGiIx30MW2HC7Oy/X0AoJ/oXEvIXAEOPjNAIv4QQNxlhQMDkMkK5YbMawpBfp92dH3fJsub0/m28ye3UFW2A8HXKjd022C4b8ifcU+P8u0pLex+w5vBZASHrlRtgJR9C1qV+mhIIfd7gwUrsmclL+I3vdDbCqyCUi2Lb4oTyd6gSyllb2b/DYT840UYjHDsF2JcyYWv80WrMrpaOOw7YUdkm05EkpPI4h0sXrkwXGIsbCnxyWOqEmnK8wxIjaLWdzim7ZKW09BP5Vfl7SFHqm+Wkynu/hRE6/QbC7HWLtkaIz4dIOM0kjJfL2UTK+7NIUcmEkUgOAJqNgTCMaP7Jt9c9NpttgXBNlQIwyj6ONpX3kZCSCWyYcw3XfBeEDaqK3o08hD4646epASEL00+cydAqx8OaILw0A88XEZ7JfSnnNJLwi9eAjfBHEqpvtEJhGqfcv8Pn2qnKIAzqvkr8Gw7pdQ6YEGENlVLSprwfz77zqBgJc/hGg9FBMWQymUwmk8lkMplMJpPJZDKZTCbUf31gDaENLi1jAAAAAElFTkSuQmCC&quot;/&gt;
+          &lt;/attachment&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.format">format</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;serialized&quot;/&gt;
+          &lt;/format&gt;
+        &lt;/content&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">content</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">attachment</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/pdf&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;JVBERi0xLjcKJeLjz9MKNiAwIG9iago8PAovRmlsdGVyIC9GbGF0ZURlY29kZQovTGVuZ3RoIDE0MAo+PgpzdHJlYW0KeJwBgQB+/////wAAAGlpaRISEre3t+Dg4Pb29pmZmURERG1tbejo6FdXV3p6eqmpqdra2pOTkzAwMM/Pz4qKisbGxvn5+Z+fn+3t7Y6Ojru7u6ysrNLS0pKSkvDw8HZ2dsHBwbOzs4KCgk9PTzc3N0ZGRmBgYD4+PiAgICoqKhQUFFtbWxsbGybYRLYKZW5kc3RyZWFtCmVuZG9iago1IDAgb2JqClsvSW5kZXhlZCAvRGV2aWNlUkdCIDQyIDYgMCBSXQplbmRvYmoKNCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDIyNQovSGVpZ2h0IDIyNQovQml0c1BlckNvbXBvbmVudCA4Ci9Db2xvclNwYWNlIDUgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCi9MZW5ndGggMjgyNwo+PgpzdHJlYW0KeJztneliozoMhZu0CVmarSFbs5Gl7XTe/wFvLXGbQ4SICTBNW51fjLFlvkwxRpbF3Z3JZDKZTCaTyWQymUwmk8lkMpmcgrqv2tjs6EqOUzqO6LgvTG+Op8YBlE+hvB5SUdv7KgLRzQXVa97CZlzSoeMXOh4J0z1oW4fyDhptgjkf1UU3pQHea4AtD0D8708BvDdAA6wEkAeZvPfg9AsAo/mDrvlEA3x8cuq5SluG3UYfBdEIALtkmks6ETVgsxJwknkVURHAeWadjgbIakD5mkp6APgIZ/tU8oYmELCTeRXzIoAPmXUa2YD4BHz0AByiCQTEX0rqwQBTZYB3JQKyIfUerBxwNAjOtNUAg4nTaybgM1VCm0tqFf9DA9yeX8RgVBbgoHaunQbIGmYC3sF1sV6oRH0OMuBOXMWgLMBAmO6WC9iiEnUmw4BdcRWBARrglYDaILP4zoA9pwkfD9zMMsIZFgO2F73/tQhcnVkbAFc8I2WFtwbY5BOauUdhgp+DzwCYou8PODJAA7xtQL4HX74BYPjotEYTo/GHNisBeIhc1Zk7O95Ss4iOxzcNmKI9nR4JQL4ufBFnQ3+/GyB61RAQ58jsVUu8DxqgAf4rQPaLPnsANr4YcLvrnimSgCMQTyTXruZu6wqeI3f8PhSA3Wd3dusDGJ1fxG5bFqCmlOcgC6fZ6GANBCDqAqCmrwZsg6GBAZ7JAO8KAmavTdwGYKG1iUmnkaGxBDy0PrQf0enQA/Cva3B4QUC2jYDjrIvoTIoA+ijlbQJ9MtmAKc9BNnRzC6AJQPSq+QBeWJswQAP8jYDt2r2nXhFw1Vytms29K08ALj7KV+GMjmfhx3Fz4Tqotel4RJ3tm67xCgFffS8iEa5RiRLPwVXil0oXezfYJ7On4xWeblZ9wXl14UEvJb1qKa77G5IBGuCXAIbNk0J5mk/wIV5dI/wszxhknM1xNiB038QrKg0wgi6fxFmeQsbPPubHa5Trg6wllWyhpAUmQgREc+i9wpXUQnryAMwRRsKSr0staUI+6A3QAA3wXPGw5wO4FoApg8xNAG6gBJf1Eo8JBOTXEvbR4tsEa1QEED3ux7IAx8oPrwJqr0slAE7gbO7XJQM0wG8BKKdqCLj3ATzSMQ8y8Rs9NHsWhhKAaI4BMbq9BMBV51PTyetwOHyLpqeikSsZ7rMBuX4TzPH7/pzMren0VAPk+rgBg0xMn95c44FrPO0VAUQtyJCMRE5x3SOgJnQ6JYSArAMAsvjWkdEMhaSFWlcPKPcIIeCViy9SBvgzADGWKfHCmxeQb52UGRYaZR2EOQbESW3uqVr04tbBNlCy6juhuyWkktHerYC1Yiinxlsm4INr8PLYODc3JUNMU2vRQhzpwE/D/ankZUKNp8p1eclnhZeV+OPkIhmzjZJ/66yETyZbixSzOeUPmHBIc1HlgCW8Lhngp741YHYQAivMC8hTyLUo/wrAXdtDLhprFE/CueRPJmCHgrt69Y+Kif39IceBqVAU9VUHwDmZuHLAyZsoIJTlPg/6lOez1g1H9UUAyH8KUdWA1cxkpLT3QekMM0ADTEq7rsoBg7IA226j/lxufRjSBv7FmjYUbN0xek1TAOeu6nouADvtx0+tISvAJk4UABkHELBPfU7I6KQIIDdeCMADlScCSLIBl1S+FIB9bIYN+Hkjt7Hhc1B9LckLiCkoWPGuOH/A7DiZFEAZbajttCwUCGSA3xHwCF0GCiAvvsRzmOwlbARkv+gWrquhAXKJvAflXtncgJveSTxJ6vfONVkOPjTjf3AzPIvezjlVDegEj/cNMIH+5VrgSpb8e/GWWO6mA4BHV2k2LgLoo5T1QU3okEY9iz+LWOh0Qsev3OVVIeCFnS8obd1y5AOo7REywKL68YA57kE5+LFUQIyrwl1eOB4x4JV+USllFF1yNyGe4J//gerg4MeJAtBF3ZmJUZQ1AXM0ii5pCF7wHjQcRfvOxHJbHFB7DrJSgvG0La4zYTrxHJRiczsoKcEv6gOorvDKxHEyTgaVmMlIyf2DpYWRGODPBrxwD2aP7iive7BkwNH28716y7Pm8frxTBGfp7MhnY18AOsikx87V/6wVa6E5iac4g/e+uPxE65RplC8IPk2IaXGqmUDahqiCT7+A6efRf+FQrnk+6CUGm1YAqAWJ4MqFEZigL8HUL0HeTFaJgrwAsScThUC0upSPaD1I34arWgFiMfVzvG0uhR3X6cGG1fU56kaLQr1ecw6wJrUjqHo+IiAZLQ+pm4YkErifNYN6ox/QVpdig0V2qTMo1VEx+za3UHNhE+G9ar8H+EUkt2ZaqoHbIY+GekaKCGBKrrIeR2wCzUTXjXWUAGUzjA1WQc2q9BtaIA/CXAGgO9QMyVdlQYo3Zm5ASPFUG5AjHRiwLWLLmrwlHtHkUb9U6RT63Aq6De6EKCEWkKAUmIf/dA16LJR7v8U1tQa8iBDZxttxVAhn4xMmJMQV8ISDnk9KPVnApCV8reOkuYKJVD1B1RzWbSUBnJtgnXBh1VyRiAD/G2AiTgZnIveKiAE1095N8Df4UkcEHpPx3sKhG+80TH3/AzB8iyKzx/+peMnCJZnwJD6iRdiINI/Fl9RnXr4czIXR90vKHxfhr5dEL7Rs+R2hwtr9Cic1KJSFkCltOdgyZFOGK4xopKWP6CWsPtKwEriZDRAdQm7EsAKA4F+LeA3/ROVg4wE5EEm/h+UQQgScHlDgCg0tFEvg8QN+GnBwzvu3sW3nA0A3uEv5aOSAeX74AVAmRFIAqoPegM0QAMsAMhjKe5dwucNAm5vCDDEfDLNdCW+Z4L5ZCAlTbyHV+qAprloet5ByvpgCXt4/aVmBELJBz1L3YWNMsBqZYBOPwZwpVTSfB9DrOQDyHFNhQDz5ja8W30qzm0ohSvutXUILTRAym2YEkZy/8eVD+IkiVcBXvkFSZbmukepThQErDxTugEaoAFmAtY8AAtt7fHPsx3rBRbONpAMm98pBs5cZwCAfUoawD//lNfhELABCbsRkA0FrreXJ7rGKxMF+GdKj4U/sOYMw13YIzrmqL4L2SkREB2/hbxqlX8ikwG90m9qMxkDNMBrAeU9uADAdjag7O29OkCvb75IwN27+zBLHwD3rqQ7g8gwFfC8x+47r71Nnk+hXKUB5vhqj6h5IWZbBdSE3w8zQAM0wN8KuB1/KuX7gxcA+bOFfDx3x6O9AHygTQe7LwOcCnM5ANEQP+4xHoUBs1PzVg8op/ZXAvJ/P0YUGaABVg+IO4UYkBdfptcByv2WlQCG/Anr3uK0xZW1oG9e4zXuZq5oC4BvM27s9rD22JA/4IEa594TWtp3eDXnzhoAWW/cACv5ALKu9MmUAOjzQQ3WsAhg5d8ANcBbBpSrXrvigPIeVAHlVK3ke3A0CM601QAnTgGOogzYnny0mrBbpeuOA/ZIdsh0JAGpPE660oOeqYOJuKDAJ82kCqgpxxckMSBW26ScANT61HJG5Fbl3wBFqR93kyrtexMGePcjALPXJjoaIL4PIuAsEzBeC2cTKZ+xIkXlAkZiTz9oPgHAMKI5J19d79RsvgPADVUKwCg7NDpUPkBAygGwZcwN9PkuABtUFV0ZOQB9dMEnUwNAFuaMuJBAVT4HawLwyoQ5/wjwQnZKOZORgP92hdcAvyGg+mEpFKZcyn0PvtTOVQJgUPdV4j/hmF7niGkMNlApJdHJ++nsOz8NI2EOPzIwPiqGTCaTyWQymUwmk8lkMplMJpPpd+o/530NoQplbmRzdHJlYW0KZW5kb2JqCjcgMCBvYmoKPDwKL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAzNgo+PgpzdHJlYW0KeJwr5DK1NFUwAEIIbWhkrGeqkJzLpR9hoOCSzxXIBQB1BAbUCmVuZHN0cmVhbQplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvUGFnZQovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovUmVzb3VyY2VzIDw8Ci9YT2JqZWN0IDw8Ci9YMCA0IDAgUgo+Pgo+PgovQ29udGVudHMgNyAwIFIKL1BhcmVudCAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvUGFnZXMKL0tpZHMgWzMgMCBSXQovQ291bnQgMQo+PgplbmRvYmoKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2JqCjggMCBvYmoKPDwKL1Byb2R1Y2VyIChpTG92ZVBERikKL01vZERhdGUgKEQ6MjAyNDA4MDEwNzU2MjNaKQo+PgplbmRvYmoKOSAwIG9iago8PAovU2l6ZSAxMAovUm9vdCAxIDAgUgovSW5mbyA4IDAgUgovSUQgWzw3NTlEMUY1MDAxRTZGMDAxQzI1QUZERjJGOEJCQTQwRj4gPDM0MDEzMzJDODMxRkY1OEUxNDdFRTJDNDlGQzMzRTkzPl0KL1R5cGUgL1hSZWYKL1cgWzEgMiAyXQovRmlsdGVyIC9GbGF0ZURlY29kZQovSW5kZXggWzAgMTBdCi9MZW5ndGggNDYKPj4Kc3RyZWFtCnicY2Bg+P+fkfcZAwMj71oQoQMkGAWBBMNjEMEPJHgOAgk+cRARx8AAAM4MBlAKZW5kc3RyZWFtCmVuZG9iagpzdGFydHhyZWYKMzY3OAolJUVPRgo=&quot;/&gt;
+          &lt;/attachment&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.format">format</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;pdf&quot;/&gt;
+          &lt;/format&gt;
+        &lt;/content&gt;
+      &lt;/DocumentReference&gt;
+    &lt;/resource&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;POST&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;DocumentReference&quot;/&gt;
+    &lt;/request&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.signature">signature</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.type">type</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso-astm:E1762-95:2013&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1.2.840.10065.1.12.1.1&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Author's Signature&quot;/&gt;
+    &lt;/type&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.when">when</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2020-02-02T01:02:03.456+02:00&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.who">who</a>&gt;<a href="Patient-PatientExample.html" style="color: Maroon">&#x1F517;</a> 
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/PatientExample&quot;/&gt;
+    &lt;/who&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.onBehalfOf">onBehalfOf</a>&gt;<a href="Patient-PatientExample.html" style="color: Maroon">&#x1F517;</a> 
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/PatientExample&quot;/&gt;
+    &lt;/onBehalfOf&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.targetFormat">targetFormat</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;image/png&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.sigFormat">sigFormat</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;image/png&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Signature#Signature.data">data</a>
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;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&quot;/&gt;
+  &lt;/signature&gt;
+&lt;/Bundle&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.intellisoftkenya.com/">Intellisoft Consulting Ltd</a>.  Package fhir.chanjoKe#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 20:30+0000">2024-08-27</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

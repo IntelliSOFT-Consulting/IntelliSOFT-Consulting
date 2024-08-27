@@ -1,0 +1,45 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"IMMZFaefi","IMMZFaefi","","","",0,*,"","","","null {[]} {[]}
+","IMMZ.F AEFI","Data elements for the IMMZ.F AEFI Data Dictionary.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IMMZFaefi.typeOfAEFI","IMMZFaefi.typeOfAEFI","","","",1,1,"","","Y","code {[]} {[]}
+","Type of AEFI","Type of AEFI","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE1
+",,,,"IMMZFaefi.typeOfAEFI",1,1,"",""
+"IMMZFaefi.briefDetailsOnTheEvent","IMMZFaefi.briefDetailsOnTheEvent","","","",1,1,"","","Y","string {[]} {[]}
+","Brief details on the event","Brief details on the event","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE14
+",,,,"IMMZFaefi.briefDetailsOnTheEvent",1,1,"",""
+"IMMZFaefi.onsetOfEvent","IMMZFaefi.onsetOfEvent","","","",1,1,"","","Y","string {[]} {[]}
+","Onset of event ","Onset of event","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE15
+",,,,"IMMZFaefi.onsetOfEvent",1,1,"",""
+"IMMZFaefi.date","IMMZFaefi.date","","","",1,1,"","","Y","date {[]} {[]}
+","Date","Date","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE16
+",,,,"IMMZFaefi.date",1,1,"",""
+"IMMZFaefi.time","IMMZFaefi.time","","","",1,1,"","","Y","string {[]} {[]}
+","Time","Time","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE17
+",,,,"IMMZFaefi.time",1,1,"",""
+"IMMZFaefi.pastMedicalHistory","IMMZFaefi.pastMedicalHistory","","","",1,1,"","","Y","string {[]} {[]}
+","Past medical history","Past medical history","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE19
+",,,,"IMMZFaefi.pastMedicalHistory",1,1,"",""
+"IMMZFaefi.actionTaken","IMMZFaefi.actionTaken","","","",1,1,"","","Y","code {[]} {[]}
+","Action taken","Action taken","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE21
+",,,,"IMMZFaefi.actionTaken",1,1,"",""
+"IMMZFaefi.reactionSeverity","IMMZFaefi.reactionSeverity","","","",1,1,"","","Y","code {[]} {[]}
+","Reaction Severity","Reaction Severity","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE26
+",,,,"IMMZFaefi.reactionSeverity",1,1,"",""
+"IMMZFaefi.aefiOutcome","IMMZFaefi.aefiOutcome","","","",1,1,"","","Y","code {[]} {[]}
+","AEFI Outcome","AEFI Outcome","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE33
+",,,,"IMMZFaefi.aefiOutcome",1,1,"",""
+"IMMZFaefi.nameOFPersonReporting","IMMZFaefi.nameOFPersonReporting","","","",1,1,"","","Y","string {[]} {[]}
+","Name of person reporting","Name of person reporting","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE40
+",,,,"IMMZFaefi.nameOFPersonReporting",1,1,"",""
+"IMMZFaefi.phoneNumber","IMMZFaefi.phoneNumber","","","",1,1,"","","Y","string {[]} {[]}
+","Phone number","Phone number","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE41
+",,,,"IMMZFaefi.phoneNumber",1,1,"",""
+"IMMZFaefi.hcwHandlingAEFI","IMMZFaefi.hcwHandlingAEFI","","","",1,1,"","","Y","string {[]} {[]}
+","HCW handling AEFI","HCW handling AEFI","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE42
+",,,,"IMMZFaefi.hcwHandlingAEFI",1,1,"",""
+"IMMZFaefi.dateReported","IMMZFaefi.dateReported","","","",1,1,"","","Y","string {[]} {[]}
+","Date Reported","Date Reported","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE43
+",,,,"IMMZFaefi.dateReported",1,1,"",""
+"IMMZFaefi.facilityReported","IMMZFaefi.facilityReported","","","",1,1,"","","Y","string {[]} {[]}
+","Facility Reported","Facility Reported","","","","","","","","","",,,,,"https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F#DE44
+",,,,"IMMZFaefi.facilityReported",1,1,"",""

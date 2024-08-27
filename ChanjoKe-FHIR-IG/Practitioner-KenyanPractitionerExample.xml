@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="KenyanPractitionerExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanPractitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner KenyanPractitionerExample</b></p><a name="KenyanPractitionerExample"> </a><a name="hcKenyanPractitionerExample"> </a><a name="KenyanPractitionerExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/practitioner</code>/123456 (use: official, )</p><p><b>name</b>: John Doe </p><p><b>telecom</b>: ph: 0722000000</p><p><b>birthDate</b>: 1980-01-01</p></div>
+  </text>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/kenya-administrative-gender-extension">
+    <valueCode value="DE6"/>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/practitioner"/>
+    <value value="123456"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="John"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="0722000000"/>
+  </telecom>
+  <birthDate value="1980-01-01"/>
+</Practitioner>

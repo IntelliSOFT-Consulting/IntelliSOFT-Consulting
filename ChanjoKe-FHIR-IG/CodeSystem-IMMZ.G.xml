@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ.G"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZ.G</b></p><a name="IMMZ.G"> </a><a name="hcIMMZ.G"> </a><a name="IMMZ.G-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.G</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZ.G-DE1"> </a></td><td>vaccination</td></tr><tr><td style="white-space:nowrap">DE2<a name="IMMZ.G-DE2"> </a></td><td>centre</td></tr><tr><td style="white-space:nowrap">DE3<a name="IMMZ.G-DE3"> </a></td><td>sex</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.G"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_G"/>
+  <title value="IMMZ.G CodeSystem for Data Elements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="vaccination"/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="centre"/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="sex"/>
+  </concept>
+</CodeSystem>

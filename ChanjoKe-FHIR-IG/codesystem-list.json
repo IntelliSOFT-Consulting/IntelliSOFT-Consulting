@@ -1,204 +1,284 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KHTS.A",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DDCQRFRMCDS",
+      "title" : "DDCC QR Format Codes",
+      "description" : "Format of the representation of QR code"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/DDCQRFormatCodesExample",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "DDCQRFRMCDS",
+      "title" : "DDCC QR Format Codes",
+      "description" : "Format of the representation of QR code"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_A",
+      "title" : "IMMZ.A CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.A Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_B",
+      "title" : "IMMZ.B CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.B Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B1.DE13",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_DE8",
+      "title" : "Place of Vaccination",
+      "description" : "Place of Vaccination"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_C",
+      "title" : "IMMZ.C CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.C Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.D",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_D",
+      "title" : "IMMZ.D CodeSystem for Defaulter Tracing",
+      "description" : "CodeSystem for IMMZ.D Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_E",
+      "title" : "IMMZ.E CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.E Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_E",
+      "title" : "IMMZ.E CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.E Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_F",
+      "title" : "IMMZ.F CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.F Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.FExample",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_F",
+      "title" : "IMMZ.F CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.F Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.G",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_G",
+      "title" : "IMMZ.G CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.GExample",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_G",
+      "title" : "IMMZ.G CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_H",
+      "title" : "IMMZ.H CodeSystem for Vaccine status",
+      "description" : "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.HExample",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_H",
+      "title" : "IMMZ.H CodeSystem for Vaccine status",
+      "description" : "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IMMZ_Z1",
+      "title" : "IMMZ.Z1 CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.Z1 Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.Z1Example",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_Z1",
+      "title" : "IMMZ.Z1 CodeSystem for Data Elements",
+      "description" : "CodeSystem for IMMZ.Z1 Data Elements"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZADataElementsCodeSystem",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_A",
+      "title" : null,
+      "description" : null
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZBDataElementsCodeSystem",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_B",
+      "title" : null,
+      "description" : null
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_C",
+      "title" : null,
+      "description" : null
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZDDefaulterTracingCodeSystem",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IMMZ_D",
+      "title" : null,
+      "description" : null
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IDENTIFIERTYPES",
+      "title" : "Identifier Types",
+      "description" : "Defined Identifier Types for KenyanRegistryPatient"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypesExample",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "IDENTIFIERTYPES",
+      "title" : "Identifier Types",
+      "description" : "Defined Identifier Types for KenyanRegistryPatient"
+    },
+    {
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.A",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "KHTS_A",
-      "title" : "KHTS.A CodeSystem for Counties in Kenya",
-      "description" : "CodeSystem for KHTS.A Counties in Kenya"
+      "title" : "KenyaCounties CodeSystem for Counties in Kenya",
+      "description" : "CodeSystem for Counties in Kenya"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CIIZENSHIP",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.AExample",
       "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PATIENT_CITIZENSHIP",
-      "title" : "CodeSystem for Patient's Citizenship",
-      "description" : "CodeSystem for Patient's Citizenship"
+      "status" : "active",
+      "name" : "KHTS_A",
+      "title" : "KenyaCounties CodeSystem for Counties in Kenya",
+      "description" : "CodeSystem for Counties in Kenya"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSACCOMODATIONTYPE",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodes",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTS_CLMS_ACCOMODATIONTYPES",
-      "title" : "KNHTS.CLMSACCOMODATIONTYPE CodeSystem for claim accomodation type",
-      "description" : "CodeSystem for KNHTS Claim Accomodation Types"
+      "name" : "KenyaVaccineCodes",
+      "title" : "Kenya Vaccine Codes",
+      "description" : null
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSDISP",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyaVaccineCodesExample",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTS_CLMS_DISPOSITION",
-      "title" : "KNHTS.CLMSDISP CodeSystem for claim disposition",
-      "description" : "CodeSystem for KNHTS Claim Disposition"
+      "name" : null,
+      "title" : null,
+      "description" : null
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSRSPSTS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyanImmunizationNotDoneReasonsCS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTS_CLMS_RSP",
-      "title" : "KNHTS.CLMSRSP CodeSystem for claim response status",
-      "description" : "CodeSystem for KNHTS Claim status"
+      "name" : "KenyanImmunizationNotDoneReasonsCS",
+      "title" : "Reason Vaccine not Administered",
+      "description" : null
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSSBTYPS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KenyanImmunizationNotDoneReasonsCSExample",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTS_CLMS_SBTYPS",
-      "title" : "KNHTS.CLMSTPS CodeSystem for claim Sub-types",
-      "description" : "CodeSystem for KNHTS Claim Sub-types"
+      "name" : null,
+      "title" : null,
+      "description" : null
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactList",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTS_CLMS",
-      "title" : "KNHTS.CLMS CodeSystem for claim status",
-      "description" : "CodeSystem for KNHTS Claim status"
+      "name" : "PATIENTCONTACTS",
+      "title" : "Patient's Contact List",
+      "description" : "Patient's family members, friends or others that can be contacted by healthcare providers onbahalf of the patient"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSTYPS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactListExample",
       "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "KNHTS_CLMS_TYPS",
-      "title" : "KNHTS.CLMSTPS CodeSystem for claim types",
-      "description" : "CodeSystem for KNHTS Claim types"
+      "status" : "active",
+      "name" : "PATIENTCONTACTS",
+      "title" : "Patient's Contact List",
+      "description" : "Patient's family members, friends or others that can be contacted by healthcare providers on behalf of the patient"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CLMSZONE",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "KNHTS_CLMS_ZONES",
-      "title" : "KNHTS.CLMSZONE CodeSystem for claim Zones",
-      "description" : "CodeSystem for KNHTS Claim Zones"
+      "name" : "IMMZ_Z1",
+      "title" : "codeSystem for Adjustment Type",
+      "description" : "CodeSystem for Adjustment Type"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CODESYSTEMS",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPEExample",
       "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PAT_CODESYSTEMS",
-      "title" : "CodeSystem for Code systems",
-      "description" : "CodeSystem for Code systems"
+      "status" : "active",
+      "name" : "IMMZ_Z1",
+      "title" : "codeSystem for Adjustment Type",
+      "description" : "CodeSystem for Adjustment Type"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CONTACTRELATIONSHIP",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "PT_CONTACTRELATIONSHIP",
-      "title" : "CodeSystem for Contact Relationship",
-      "description" : "CodeSystem for Contact Relationship"
+      "name" : "SVREQS_A",
+      "title" : "Service Requests",
+      "description" : "Service Reequests to be used within the Kenyan Contexts"
     },
     {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENCY",
+      "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequestsExample",
       "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CURRENCY",
-      "title" : "CodeSystem for currency",
-      "description" : "CodeSystem for currency"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.CURRENTRENEWALDURATION",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CURRENTRENEWALTYPE",
-      "title" : "CodeSystem for Practitioner's License Current Renewal type",
-      "description" : "CodeSystem for Practitioner's License Current Renewal type"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.EMPLOYMENTTYPE",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "EMPLOYMENTTYPE",
-      "title" : "CodeSystem for Employment Type",
-      "description" : "CodeSystem for Employment Type"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYAPPROVALSTATUS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "FACILITYAPPROVALSTATUS",
-      "title" : "CodeSystem for Facility Approval Status",
-      "description" : "CodeSystem for Facility Approval Status"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYCATEGORY",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "FACILITYCATEGORY",
-      "title" : "CodeSystem for Facility Category",
-      "description" : "CodeSystem for Facility Category/Facility Owner Type"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.FACILITYLEVEL",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "FACILITYLEVEL",
-      "title" : "CodeSystem for Facility level",
-      "description" : "CodeSystem for Facility level"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERTYPES",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PAT_IDENTIFIERTYPES",
-      "title" : "CodeSystem for patient's identifier Types",
-      "description" : "CodeSystem for patient's identifier Types"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.IDENTIFIERUSE",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "IDENTIFIERUSE",
-      "title" : "CodeSystem for identifier use",
-      "description" : "CodeSystem for  identifier use"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.MARITALSTATUS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MARITAL_STATUS",
-      "title" : "CodeSystem for Patient's Marital (Civil) Status",
-      "description" : "CodeSystem for Patient's Marital (Civil) Status"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.OPERATIONALSTATUS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "OPERATIONALSTATUS",
-      "title" : "CodeSystem for Practitioner's Operational Status",
-      "description" : "CodeSystem for Practitioner's Operational Status"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PAT.TITLE",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PT_TITLE",
-      "title" : "CodeSystem for patient's title",
-      "description" : "CodeSystem for patient's title"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.PCNS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PRIMARYCARENETWORKS",
-      "title" : "CodeSystem for Primary Care Networks",
-      "description" : "CodeSystem for Primary Care Networks"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/KNHTS.QUALIFICATIONTYPE",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "QUALIFICATIONTYPE",
-      "title" : "CodeSystem for Practitioner's qualification type",
-      "description" : "CodeSystem for Practitioner's qualification type"
-    },
-    {
-      "url" : "https://shr.tiberbuapps.com/fhir/CodeSystem/Patient.Employment",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "Patient_Employment",
-      "title" : "Patient's Employment CodeSystem",
-      "description" : "CodeSystem for Patient's Employment"
+      "status" : "active",
+      "name" : "SVREQS_A",
+      "title" : "Service Requests",
+      "description" : "Service Requests to be used within the Kenyan Contexts"
     }
   ]
 }

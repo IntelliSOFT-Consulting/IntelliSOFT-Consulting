@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "STOCKADJUSTMENTTYPE"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem STOCKADJUSTMENTTYPE</b></p><a name=\"STOCKADJUSTMENTTYPE\"> </a><a name=\"hcSTOCKADJUSTMENTTYPE\"> </a><a name=\"STOCKADJUSTMENTTYPE-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">positiveAdjustment<a name=\"STOCKADJUSTMENTTYPE-positiveAdjustment\"> </a></td><td>Positive Adjustment</td><td>Positive Adjustment Type</td></tr><tr><td style=\"white-space:nowrap\">negativeAdjustment<a name=\"STOCKADJUSTMENTTYPE-negativeAdjustment\"> </a></td><td>Negative Adjustment</td><td>Stock Adjustment Type</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/STOCKADJUSTMENTTYPE"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_Z1"] ; # 
+  fhir:title [ fhir:v "codeSystem for Adjustment Type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Adjustment Type"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "positiveAdjustment" ] ;
+     fhir:display [ fhir:v "Positive Adjustment" ] ;
+     fhir:definition [ fhir:v "Positive Adjustment Type" ]
+  ] [
+     fhir:code [ fhir:v "negativeAdjustment" ] ;
+     fhir:display [ fhir:v "Negative Adjustment" ] ;
+     fhir:definition [ fhir:v "Stock Adjustment Type" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

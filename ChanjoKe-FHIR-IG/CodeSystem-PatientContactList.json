@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PatientContactList",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PatientContactList</b></p><a name=\"PatientContactList\"> </a><a name=\"hcPatientContactList\"> </a><a name=\"PatientContactList-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactList</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"PatientContactList-DE1\"> </a></td><td>Father</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"PatientContactList-DE2\"> </a></td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"PatientContactList-DE3\"> </a></td><td>Guardian</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/PatientContactList",
+  "version" : "0.1.0",
+  "name" : "PATIENTCONTACTS",
+  "title" : "Patient's Contact List",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Patient's family members, friends or others that can be contacted by healthcare providers onbahalf of the patient",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "Father"
+  },
+  {
+    "code" : "DE2",
+    "display" : "Mother"
+  },
+  {
+    "code" : "DE3",
+    "display" : "Guardian"
+  }]
+}

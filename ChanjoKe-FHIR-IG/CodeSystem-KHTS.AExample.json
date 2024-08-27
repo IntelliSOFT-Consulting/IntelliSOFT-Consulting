@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KHTS.AExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KHTS.AExample</b></p><a name=\"KHTS.AExample\"> </a><a name=\"hcKHTS.AExample\"> </a><a name=\"KHTS.AExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.AExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">C-001<a name=\"KHTS.AExample-C-001\"> </a></td><td>Mombasa</td><td>County of Residence, Mombasa</td></tr><tr><td style=\"white-space:nowrap\">C-002<a name=\"KHTS.AExample-C-002\"> </a></td><td>Kilifi</td><td>County of Residence, Kilifi</td></tr><tr><td style=\"white-space:nowrap\">C-003<a name=\"KHTS.AExample-C-003\"> </a></td><td>Tana River Hola</td><td>County of Residence, Tana River Hola</td></tr><tr><td style=\"white-space:nowrap\">C-004<a name=\"KHTS.AExample-C-004\"> </a></td><td>Lamu</td><td>County of Residence, Lamu</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/KHTS.AExample",
+  "version" : "0.1.0",
+  "name" : "KHTS_A",
+  "title" : "KenyaCounties CodeSystem for Counties in Kenya",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "CodeSystem for Counties in Kenya",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "C-001",
+    "display" : "Mombasa",
+    "definition" : "County of Residence, Mombasa"
+  },
+  {
+    "code" : "C-002",
+    "display" : "Kilifi",
+    "definition" : "County of Residence, Kilifi"
+  },
+  {
+    "code" : "C-003",
+    "display" : "Tana River Hola",
+    "definition" : "County of Residence, Tana River Hola"
+  },
+  {
+    "code" : "C-004",
+    "display" : "Lamu",
+    "definition" : "County of Residence, Lamu"
+  }]
+}

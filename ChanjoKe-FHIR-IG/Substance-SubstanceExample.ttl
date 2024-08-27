@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Substance/SubstanceExample> a fhir:Substance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SubstanceExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Substance SubstanceExample</b></p><a name=\"SubstanceExample\"> </a><a name=\"hcSubstanceExample\"> </a><a name=\"SubstanceExample-en-US\"> </a><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 102002}\">Hemoglobin Okaloosa</span></p></div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:102002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "102002" ] ;
+       fhir:display [ fhir:v "Hemoglobin Okaloosa" ]
+     ] ) ;
+     fhir:text [ fhir:v "Hemoglobin Okaloosa" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

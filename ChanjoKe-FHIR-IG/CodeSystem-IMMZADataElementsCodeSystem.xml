@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZADataElementsCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZADataElementsCodeSystem</b></p><a name="IMMZADataElementsCodeSystem"> </a><a name="hcIMMZADataElementsCodeSystem"> </a><a name="IMMZADataElementsCodeSystem-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZADataElementsCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZADataElementsCodeSystem-DE1"> </a></td><td>Unique identifier</td><td>Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID).</td></tr><tr><td style="white-space:nowrap">DE2<a name="IMMZADataElementsCodeSystem-DE2"> </a></td><td>Name</td><td>The full name of the client.</td></tr><tr><td style="white-space:nowrap">DE3<a name="IMMZADataElementsCodeSystem-DE3"> </a></td><td>First name</td><td>Client's middle name or given name</td></tr><tr><td style="white-space:nowrap">DE4<a name="IMMZADataElementsCodeSystem-DE4"> </a></td><td>Last name</td><td>Client's family name or last name</td></tr><tr><td style="white-space:nowrap">DE5<a name="IMMZADataElementsCodeSystem-DE5"> </a></td><td>Sex</td><td>Documentation of a specific instance of sex information for the client</td></tr><tr><td style="white-space:nowrap">DE6<a name="IMMZADataElementsCodeSystem-DE6"> </a></td><td>Male</td><td>Client's biological sex is male</td></tr><tr><td style="white-space:nowrap">DE7<a name="IMMZADataElementsCodeSystem-DE7"> </a></td><td>Female</td><td>Client's biological sex is female</td></tr><tr><td style="white-space:nowrap">DE8<a name="IMMZADataElementsCodeSystem-DE8"> </a></td><td>Other</td><td/></tr><tr><td style="white-space:nowrap">DE10<a name="IMMZADataElementsCodeSystem-DE10"> </a></td><td>Date of Birth</td><td>Client's date of birth (DOB) if known. If unknown, use assigned DOB for administrative purposes.</td></tr><tr><td style="white-space:nowrap">DE11<a name="IMMZADataElementsCodeSystem-DE11"> </a></td><td>Age in Weeks</td><td>The client's calculated age (number of weeks) based on the date of birth and the visit date</td></tr><tr><td style="white-space:nowrap">DE12<a name="IMMZADataElementsCodeSystem-DE12"> </a></td><td>Age in Months</td><td>The client's calculated age (number of months) based on the date of birth and the visit date</td></tr><tr><td style="white-space:nowrap">DE13<a name="IMMZADataElementsCodeSystem-DE13"> </a></td><td>Age in Years</td><td>The client's calculated age (number of years) based on the date of birth and the visit date</td></tr><tr><td style="white-space:nowrap">DE15<a name="IMMZADataElementsCodeSystem-DE15"> </a></td><td>Caregivers (multiple)/Next of Kin</td><td>The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)</td></tr><tr><td style="white-space:nowrap">DE16<a name="IMMZADataElementsCodeSystem-DE16"> </a></td><td>Father's name</td><td>The full name of the client's caregiver</td></tr><tr><td style="white-space:nowrap">DE19<a name="IMMZADataElementsCodeSystem-DE19"> </a></td><td>Father's Contact phone number</td><td>Father's phone number. Can be a landline or a mobile phone number</td></tr><tr><td style="white-space:nowrap">DE43<a name="IMMZADataElementsCodeSystem-DE43"> </a></td><td>Father's Email Address</td><td>Father's email address</td></tr><tr><td style="white-space:nowrap">DE17<a name="IMMZADataElementsCodeSystem-DE17"> </a></td><td>Mother's name</td><td>First or given name of the client's caregiver</td></tr><tr><td style="white-space:nowrap">DE44<a name="IMMZADataElementsCodeSystem-DE44"> </a></td><td>Mother's Contact phone number</td><td>Mother's phone number. Can be a landline or a mobile phone number</td></tr><tr><td style="white-space:nowrap">DE42<a name="IMMZADataElementsCodeSystem-DE42"> </a></td><td>Mother's Email Address</td><td>Mother's email address</td></tr><tr><td style="white-space:nowrap">DE41<a name="IMMZADataElementsCodeSystem-DE41"> </a></td><td>Guardian's name(where applicable)</td><td>Guardian's name</td></tr><tr><td style="white-space:nowrap">DE40<a name="IMMZADataElementsCodeSystem-DE40"> </a></td><td>Guardian's Contact phone number</td><td/></tr><tr><td style="white-space:nowrap">DE39<a name="IMMZADataElementsCodeSystem-DE39"> </a></td><td>Guardian's Email Address</td><td/></tr><tr><td style="white-space:nowrap">DE38<a name="IMMZADataElementsCodeSystem-DE38"> </a></td><td>Administrative area</td><td>The name of the city/municipality/town/village of where the client lives</td></tr><tr><td style="white-space:nowrap">DE37<a name="IMMZADataElementsCodeSystem-DE37"> </a></td><td>County</td><td/></tr><tr><td style="white-space:nowrap">DE36<a name="IMMZADataElementsCodeSystem-DE36"> </a></td><td>Subcounty</td><td/></tr><tr><td style="white-space:nowrap">DE35<a name="IMMZADataElementsCodeSystem-DE35"> </a></td><td>Constituency</td><td/></tr><tr><td style="white-space:nowrap">DE34<a name="IMMZADataElementsCodeSystem-DE34"> </a></td><td>Ward</td><td/></tr><tr><td style="white-space:nowrap">DE33<a name="IMMZADataElementsCodeSystem-DE33"> </a></td><td>Town/Trading Centre (Landmark)</td><td/></tr><tr><td style="white-space:nowrap">DE32<a name="IMMZADataElementsCodeSystem-DE32"> </a></td><td>Estate &amp; House No./village</td><td/></tr><tr><td style="white-space:nowrap">DE21<a name="IMMZADataElementsCodeSystem-DE21"> </a></td><td>Active community health provider</td><td>Is there an active CHP in the area</td></tr><tr><td style="white-space:nowrap">DE31<a name="IMMZADataElementsCodeSystem-DE31"> </a></td><td>CHP Name</td><td/></tr><tr><td style="white-space:nowrap">DE30<a name="IMMZADataElementsCodeSystem-DE30"> </a></td><td>CHP contact number</td><td/></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZADataElementsCodeSystem"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_A"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="Unique identifier"/>
+    <definition value="Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)."/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="Name"/>
+    <definition value="The full name of the client."/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="First name"/>
+    <definition value="Client's middle name or given name"/>
+  </concept>
+  <concept>
+    <code value="DE4"/>
+    <display value="Last name"/>
+    <definition value="Client's family name or last name"/>
+  </concept>
+  <concept>
+    <code value="DE5"/>
+    <display value="Sex"/>
+    <definition value="Documentation of a specific instance of sex information for the client"/>
+  </concept>
+  <concept>
+    <code value="DE6"/>
+    <display value="Male"/>
+    <definition value="Client's biological sex is male"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="Female"/>
+    <definition value="Client's biological sex is female"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="Date of Birth"/>
+    <definition value="Client's date of birth (DOB) if known. If unknown, use assigned DOB for administrative purposes."/>
+  </concept>
+  <concept>
+    <code value="DE11"/>
+    <display value="Age in Weeks"/>
+    <definition value="The client's calculated age (number of weeks) based on the date of birth and the visit date"/>
+  </concept>
+  <concept>
+    <code value="DE12"/>
+    <display value="Age in Months"/>
+    <definition value="The client's calculated age (number of months) based on the date of birth and the visit date"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Age in Years"/>
+    <definition value="The client's calculated age (number of years) based on the date of birth and the visit date"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Caregivers (multiple)/Next of Kin"/>
+    <definition value="The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Father's name"/>
+    <definition value="The full name of the client's caregiver"/>
+  </concept>
+  <concept>
+    <code value="DE19"/>
+    <display value="Father's Contact phone number"/>
+    <definition value="Father's phone number. Can be a landline or a mobile phone number"/>
+  </concept>
+  <concept>
+    <code value="DE43"/>
+    <display value="Father's Email Address"/>
+    <definition value="Father's email address"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Mother's name"/>
+    <definition value="First or given name of the client's caregiver"/>
+  </concept>
+  <concept>
+    <code value="DE44"/>
+    <display value="Mother's Contact phone number"/>
+    <definition value="Mother's phone number. Can be a landline or a mobile phone number"/>
+  </concept>
+  <concept>
+    <code value="DE42"/>
+    <display value="Mother's Email Address"/>
+    <definition value="Mother's email address"/>
+  </concept>
+  <concept>
+    <code value="DE41"/>
+    <display value="Guardian's name(where applicable)"/>
+    <definition value="Guardian's name"/>
+  </concept>
+  <concept>
+    <code value="DE40"/>
+    <display value="Guardian's Contact phone number"/>
+  </concept>
+  <concept>
+    <code value="DE39"/>
+    <display value="Guardian's Email Address"/>
+  </concept>
+  <concept>
+    <code value="DE38"/>
+    <display value="Administrative area"/>
+    <definition value="The name of the city/municipality/town/village of where the client lives"/>
+  </concept>
+  <concept>
+    <code value="DE37"/>
+    <display value="County"/>
+  </concept>
+  <concept>
+    <code value="DE36"/>
+    <display value="Subcounty"/>
+  </concept>
+  <concept>
+    <code value="DE35"/>
+    <display value="Constituency"/>
+  </concept>
+  <concept>
+    <code value="DE34"/>
+    <display value="Ward"/>
+  </concept>
+  <concept>
+    <code value="DE33"/>
+    <display value="Town/Trading Centre (Landmark)"/>
+  </concept>
+  <concept>
+    <code value="DE32"/>
+    <display value="Estate &amp; House No./village"/>
+  </concept>
+  <concept>
+    <code value="DE21"/>
+    <display value="Active community health provider"/>
+    <definition value="Is there an active CHP in the area"/>
+  </concept>
+  <concept>
+    <code value="DE31"/>
+    <display value="CHP Name"/>
+  </concept>
+  <concept>
+    <code value="DE30"/>
+    <display value="CHP contact number"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ.A"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.A</b></p><a name=\"IMMZ.A\"> </a><a name=\"hcIMMZ.A\"> </a><a name=\"IMMZ.A-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.A-DE1\"> </a></td><td>Unique identifier</td><td>Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID).</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.A-DE2\"> </a></td><td>Name</td><td>The full name of the client.</td></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.A-DE3\"> </a></td><td>First name</td><td>Client's middle name or given name</td></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZ.A-DE4\"> </a></td><td>Last name</td><td>Client's family name or last name</td></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZ.A-DE5\"> </a></td><td>Sex</td><td>Documentation of a specific instance of sex information for the client</td></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZ.A-DE6\"> </a></td><td>Male</td><td>Client's biological sex is male</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.A-DE7\"> </a></td><td>Female</td><td>Client's biological sex is female</td></tr><tr><td style=\"white-space:nowrap\">DE8<a name=\"IMMZ.A-DE8\"> </a></td><td>Other</td><td/></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZ.A-DE10\"> </a></td><td>Date of Birth</td><td>Client's date of birth (DOB) if known. If unknown, use assigned DOB for administrative purposes.</td></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZ.A-DE11\"> </a></td><td>Age in Weeks</td><td>The client's calculated age (number of weeks) based on the date of birth and the visit date</td></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZ.A-DE12\"> </a></td><td>Age in Months</td><td>The client's calculated age (number of months) based on the date of birth and the visit date</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.A-DE13\"> </a></td><td>Age in Years</td><td>The client's calculated age (number of years) based on the date of birth and the visit date</td></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.A-DE15\"> </a></td><td>Caregivers (multiple)/Next of Kin</td><td>The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.A-DE16\"> </a></td><td>Father's name</td><td>The full name of the client's caregiver</td></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZ.A-DE19\"> </a></td><td>Father's Contact phone number</td><td>Father's phone number. Can be a landline or a mobile phone number</td></tr><tr><td style=\"white-space:nowrap\">DE43<a name=\"IMMZ.A-DE43\"> </a></td><td>Father's Email Address</td><td>Father's email address</td></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.A-DE17\"> </a></td><td>Mother's name</td><td>First or given name of the client's caregiver</td></tr><tr><td style=\"white-space:nowrap\">DE44<a name=\"IMMZ.A-DE44\"> </a></td><td>Mother's Contact phone number</td><td>Mother's phone number. Can be a landline or a mobile phone number</td></tr><tr><td style=\"white-space:nowrap\">DE42<a name=\"IMMZ.A-DE42\"> </a></td><td>Mother's Email Address</td><td>Mother's email address</td></tr><tr><td style=\"white-space:nowrap\">DE41<a name=\"IMMZ.A-DE41\"> </a></td><td>Guardian's name(where applicable)</td><td>Guardian's name</td></tr><tr><td style=\"white-space:nowrap\">DE40<a name=\"IMMZ.A-DE40\"> </a></td><td>Guardian's Contact phone number</td><td/></tr><tr><td style=\"white-space:nowrap\">DE39<a name=\"IMMZ.A-DE39\"> </a></td><td>Guardian's Email Address</td><td/></tr><tr><td style=\"white-space:nowrap\">DE38<a name=\"IMMZ.A-DE38\"> </a></td><td>Administrative area</td><td>The name of the city/municipality/town/village of where the client lives</td></tr><tr><td style=\"white-space:nowrap\">DE37<a name=\"IMMZ.A-DE37\"> </a></td><td>County</td><td/></tr><tr><td style=\"white-space:nowrap\">DE36<a name=\"IMMZ.A-DE36\"> </a></td><td>Subcounty</td><td/></tr><tr><td style=\"white-space:nowrap\">DE35<a name=\"IMMZ.A-DE35\"> </a></td><td>Constituency</td><td/></tr><tr><td style=\"white-space:nowrap\">DE34<a name=\"IMMZ.A-DE34\"> </a></td><td>Ward</td><td/></tr><tr><td style=\"white-space:nowrap\">DE33<a name=\"IMMZ.A-DE33\"> </a></td><td>Town/Trading Centre (Landmark)</td><td/></tr><tr><td style=\"white-space:nowrap\">DE32<a name=\"IMMZ.A-DE32\"> </a></td><td>Estate &amp; House No./village</td><td/></tr><tr><td style=\"white-space:nowrap\">DE21<a name=\"IMMZ.A-DE21\"> </a></td><td>Active community health provider</td><td>Is there an active CHP in the area</td></tr><tr><td style=\"white-space:nowrap\">DE31<a name=\"IMMZ.A-DE31\"> </a></td><td>CHP Name</td><td/></tr><tr><td style=\"white-space:nowrap\">DE30<a name=\"IMMZ.A-DE30\"> </a></td><td>CHP contact number</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.A"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_A"] ; # 
+  fhir:title [ fhir:v "IMMZ.A CodeSystem for Data Elements"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for IMMZ.A Data Elements"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "32"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DE1" ] ;
+     fhir:display [ fhir:v "Unique identifier" ] ;
+     fhir:definition [ fhir:v "Unique identifier for the client, according to the policies applicable to each country. There can be more than one unique identifier used to link records (e.g. national ID, health ID, immunization information system ID, medical record ID)." ]
+  ] [
+     fhir:code [ fhir:v "DE2" ] ;
+     fhir:display [ fhir:v "Name" ] ;
+     fhir:definition [ fhir:v "The full name of the client." ]
+  ] [
+     fhir:code [ fhir:v "DE3" ] ;
+     fhir:display [ fhir:v "First name" ] ;
+     fhir:definition [ fhir:v "Client's middle name or given name" ]
+  ] [
+     fhir:code [ fhir:v "DE4" ] ;
+     fhir:display [ fhir:v "Last name" ] ;
+     fhir:definition [ fhir:v "Client's family name or last name" ]
+  ] [
+     fhir:code [ fhir:v "DE5" ] ;
+     fhir:display [ fhir:v "Sex" ] ;
+     fhir:definition [ fhir:v "Documentation of a specific instance of sex information for the client" ]
+  ] [
+     fhir:code [ fhir:v "DE6" ] ;
+     fhir:display [ fhir:v "Male" ] ;
+     fhir:definition [ fhir:v "Client's biological sex is male" ]
+  ] [
+     fhir:code [ fhir:v "DE7" ] ;
+     fhir:display [ fhir:v "Female" ] ;
+     fhir:definition [ fhir:v "Client's biological sex is female" ]
+  ] [
+     fhir:code [ fhir:v "DE8" ] ;
+     fhir:display [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "DE10" ] ;
+     fhir:display [ fhir:v "Date of Birth" ] ;
+     fhir:definition [ fhir:v "Client's date of birth (DOB) if known. If unknown, use assigned DOB for administrative purposes." ]
+  ] [
+     fhir:code [ fhir:v "DE11" ] ;
+     fhir:display [ fhir:v "Age in Weeks" ] ;
+     fhir:definition [ fhir:v "The client's calculated age (number of weeks) based on the date of birth and the visit date" ]
+  ] [
+     fhir:code [ fhir:v "DE12" ] ;
+     fhir:display [ fhir:v "Age in Months" ] ;
+     fhir:definition [ fhir:v "The client's calculated age (number of months) based on the date of birth and the visit date" ]
+  ] [
+     fhir:code [ fhir:v "DE13" ] ;
+     fhir:display [ fhir:v "Age in Years" ] ;
+     fhir:definition [ fhir:v "The client's calculated age (number of years) based on the date of birth and the visit date" ]
+  ] [
+     fhir:code [ fhir:v "DE15" ] ;
+     fhir:display [ fhir:v "Caregivers (multiple)/Next of Kin" ] ;
+     fhir:definition [ fhir:v "The client's caregiver (person) which could be next of kin (e.g. partner, husband, mother, sibling, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "DE16" ] ;
+     fhir:display [ fhir:v "Father's name" ] ;
+     fhir:definition [ fhir:v "The full name of the client's caregiver" ]
+  ] [
+     fhir:code [ fhir:v "DE19" ] ;
+     fhir:display [ fhir:v "Father's Contact phone number" ] ;
+     fhir:definition [ fhir:v "Father's phone number. Can be a landline or a mobile phone number" ]
+  ] [
+     fhir:code [ fhir:v "DE43" ] ;
+     fhir:display [ fhir:v "Father's Email Address" ] ;
+     fhir:definition [ fhir:v "Father's email address" ]
+  ] [
+     fhir:code [ fhir:v "DE17" ] ;
+     fhir:display [ fhir:v "Mother's name" ] ;
+     fhir:definition [ fhir:v "First or given name of the client's caregiver" ]
+  ] [
+     fhir:code [ fhir:v "DE44" ] ;
+     fhir:display [ fhir:v "Mother's Contact phone number" ] ;
+     fhir:definition [ fhir:v "Mother's phone number. Can be a landline or a mobile phone number" ]
+  ] [
+     fhir:code [ fhir:v "DE42" ] ;
+     fhir:display [ fhir:v "Mother's Email Address" ] ;
+     fhir:definition [ fhir:v "Mother's email address" ]
+  ] [
+     fhir:code [ fhir:v "DE41" ] ;
+     fhir:display [ fhir:v "Guardian's name(where applicable)" ] ;
+     fhir:definition [ fhir:v "Guardian's name" ]
+  ] [
+     fhir:code [ fhir:v "DE40" ] ;
+     fhir:display [ fhir:v "Guardian's Contact phone number" ]
+  ] [
+     fhir:code [ fhir:v "DE39" ] ;
+     fhir:display [ fhir:v "Guardian's Email Address" ]
+  ] [
+     fhir:code [ fhir:v "DE38" ] ;
+     fhir:display [ fhir:v "Administrative area" ] ;
+     fhir:definition [ fhir:v "The name of the city/municipality/town/village of where the client lives" ]
+  ] [
+     fhir:code [ fhir:v "DE37" ] ;
+     fhir:display [ fhir:v "County" ]
+  ] [
+     fhir:code [ fhir:v "DE36" ] ;
+     fhir:display [ fhir:v "Subcounty" ]
+  ] [
+     fhir:code [ fhir:v "DE35" ] ;
+     fhir:display [ fhir:v "Constituency" ]
+  ] [
+     fhir:code [ fhir:v "DE34" ] ;
+     fhir:display [ fhir:v "Ward" ]
+  ] [
+     fhir:code [ fhir:v "DE33" ] ;
+     fhir:display [ fhir:v "Town/Trading Centre (Landmark)" ]
+  ] [
+     fhir:code [ fhir:v "DE32" ] ;
+     fhir:display [ fhir:v "Estate & House No./village" ]
+  ] [
+     fhir:code [ fhir:v "DE21" ] ;
+     fhir:display [ fhir:v "Active community health provider" ] ;
+     fhir:definition [ fhir:v "Is there an active CHP in the area" ]
+  ] [
+     fhir:code [ fhir:v "DE31" ] ;
+     fhir:display [ fhir:v "CHP Name" ]
+  ] [
+     fhir:code [ fhir:v "DE30" ] ;
+     fhir:display [ fhir:v "CHP contact number" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

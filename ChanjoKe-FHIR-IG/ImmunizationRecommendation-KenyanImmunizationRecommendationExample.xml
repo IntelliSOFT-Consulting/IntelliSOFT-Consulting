@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImmunizationRecommendation xmlns="http://hl7.org/fhir">
+  <id value="KenyanImmunizationRecommendationExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/KenyanImmunizationRecommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImmunizationRecommendation KenyanImmunizationRecommendationExample</b></p><a name="KenyanImmunizationRecommendationExample"> </a><a name="hcKenyanImmunizationRecommendationExample"> </a><a name="KenyanImmunizationRecommendationExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenyan-immunization-recommendation</code>/1234567890 (use: official, )</p><p><b>patient</b>: <a href="Patient-PatientExample.html">Grahame Grieve Male, DoB: 1969-04-13</a></p><p><b>date</b>: 2020-02-02</p><p><b>authority</b>: <a href="Organization-OrganizationExample.html">Organization Example Organization</a></p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title="Codes:{http://hl7.org/fhir/sid/cvx 143}">Adenovirus types 4 and 7</span></p><p><b>targetDisease</b>: <span title="Codes:{http://snomed.info/sct 1857005}">Gestational rubella syndrome</span></p><p><b>contraindicatedVaccineCode</b>: <span title="Codes:{http://hl7.org/fhir/sid/cvx 143}">Adenovirus types 4 and 7</span></p><p><b>forecastStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}">Due</span></p><p><b>forecastReason</b>: <span title="Codes:{http://snomed.info/sct 77176002}">Smoker</span></p><h3>DateCriterions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 30981-5}">Earliest date to give</span></td><td>2020-02-02</td></tr></table><p><b>description</b>: Adenovirus types 4 and 7</p><p><b>series</b>: 1</p><p><b>doseNumber</b>: 1</p><p><b>seriesDoses</b>: 1</p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenyan-immunization-recommendation"/>
+    <value value="1234567890"/>
+  </identifier>
+  <patient>
+    <reference value="Patient/PatientExample"/>
+  </patient>
+  <date value="2020-02-02"/>
+  <authority>
+    <reference value="Organization/OrganizationExample"/>
+  </authority>
+  <recommendation>
+    <vaccineCode>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="143"/>
+        <display value="Adenovirus types 4 and 7"/>
+      </coding>
+      <text value="Adenovirus types 4 and 7"/>
+    </vaccineCode>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1857005"/>
+        <display value="Gestational rubella syndrome"/>
+      </coding>
+      <text value="Gestational rubella syndrome"/>
+    </targetDisease>
+    <contraindicatedVaccineCode>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="143"/>
+        <display value="Adenovirus types 4 and 7"/>
+      </coding>
+      <text value="Adenovirus types 4 and 7"/>
+    </contraindicatedVaccineCode>
+    <forecastStatus>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"/>
+        <code value="due"/>
+        <display value="Due"/>
+      </coding>
+      <text value="Due"/>
+    </forecastStatus>
+    <forecastReason>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="77176002"/>
+        <display value="Smoker"/>
+      </coding>
+    </forecastReason>
+    <dateCriterion>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="30981-5"/>
+          <display value="Earliest date to give"/>
+        </coding>
+      </code>
+      <value value="2020-02-02"/>
+    </dateCriterion>
+    <description value="Adenovirus types 4 and 7"/>
+    <series value="1"/>
+    <doseNumberString value="1"/>
+    <seriesDosesString value="1"/>
+  </recommendation>
+</ImmunizationRecommendation>

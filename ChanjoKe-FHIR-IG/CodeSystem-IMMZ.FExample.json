@@ -1,0 +1,194 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IMMZ.FExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.FExample</b></p><a name=\"IMMZ.FExample\"> </a><a name=\"hcIMMZ.FExample\"> </a><a name=\"IMMZ.FExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.FExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.FExample-DE1\"> </a></td><td>Type of AEFI</td><td/></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.FExample-DE2\"> </a></td><td>High fever</td><td/></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.FExample-DE3\"> </a></td><td>Convulsion</td><td>Convulsion</td></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZ.FExample-DE4\"> </a></td><td>Anaphylaxis</td><td/></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZ.FExample-DE5\"> </a></td><td>Paralysis</td><td/></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZ.FExample-DE6\"> </a></td><td>Toxic shock</td><td/></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.FExample-DE7\"> </a></td><td>Injection site abcess</td><td/></tr><tr><td style=\"white-space:nowrap\">DE8<a name=\"IMMZ.FExample-DE8\"> </a></td><td>Severe local reaction</td><td/></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.FExample-DE9\"> </a></td><td>Generalised urticaria(hives)</td><td/></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZ.FExample-DE10\"> </a></td><td>BCG Lymphadenitis</td><td/></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZ.FExample-DE11\"> </a></td><td>Encaphalopathy, Encephalitis/menengitis</td><td/></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZ.FExample-DE12\"> </a></td><td>Other (specify)</td><td/></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.FExample-DE14\"> </a></td><td>Brief details on the event</td><td/></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.FExample-DE15\"> </a></td><td>Onset of event</td><td/></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.FExample-DE16\"> </a></td><td>Date</td><td/></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.FExample-DE17\"> </a></td><td>Time</td><td/></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZ.FExample-DE19\"> </a></td><td>Past medical history</td><td/></tr><tr><td style=\"white-space:nowrap\">DE21<a name=\"IMMZ.FExample-DE21\"> </a></td><td>Action taken</td><td/></tr><tr><td style=\"white-space:nowrap\">DE22<a name=\"IMMZ.FExample-DE22\"> </a></td><td>Treatment given</td><td/></tr><tr><td style=\"white-space:nowrap\">DE23<a name=\"IMMZ.FExample-DE23\"> </a></td><td>Specify</td><td/></tr><tr><td style=\"white-space:nowrap\">DE24<a name=\"IMMZ.FExample-DE24\"> </a></td><td>Specimen collected for investigation</td><td/></tr><tr><td style=\"white-space:nowrap\">DE26<a name=\"IMMZ.FExample-DE26\"> </a></td><td>Reaction Severity</td><td>The severity of the reaction which was observed.</td></tr><tr><td style=\"white-space:nowrap\">DE27<a name=\"IMMZ.FExample-DE27\"> </a></td><td>Life Threatening</td><td>The client had a life-threatening reaction to the administered vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE28<a name=\"IMMZ.FExample-DE28\"> </a></td><td>Mild</td><td>Local reaction at the injection site or minor systemic reaction such as fever or malaise, that occurs over a short period of time and pose little danger</td></tr><tr><td style=\"white-space:nowrap\">DE29<a name=\"IMMZ.FExample-DE29\"> </a></td><td>Moderate</td><td>Local or systemic reactions more severe than mild and of longer duration</td></tr><tr><td style=\"white-space:nowrap\">DE30<a name=\"IMMZ.FExample-DE30\"> </a></td><td>Severe</td><td>Severe and potentially (rarely) life threatening reactions including seizures and anaphylactic reactions</td></tr><tr><td style=\"white-space:nowrap\">DE31<a name=\"IMMZ.FExample-DE31\"> </a></td><td>Fatal</td><td>The client died as a result of the reaction</td></tr><tr><td style=\"white-space:nowrap\">DE33<a name=\"IMMZ.FExample-DE33\"> </a></td><td>AEFI Outcome</td><td/></tr><tr><td style=\"white-space:nowrap\">DE34<a name=\"IMMZ.FExample-DE34\"> </a></td><td>Recovered</td><td>The client fully recovered</td></tr><tr><td style=\"white-space:nowrap\">DE35<a name=\"IMMZ.FExample-DE35\"> </a></td><td>Recovering</td><td>The client is recovering</td></tr><tr><td style=\"white-space:nowrap\">DE36<a name=\"IMMZ.FExample-DE36\"> </a></td><td>Not Recovered</td><td>The client did not recover</td></tr><tr><td style=\"white-space:nowrap\">DE37<a name=\"IMMZ.FExample-DE37\"> </a></td><td>Unknown</td><td>The AEFI outcome is unknown</td></tr><tr><td style=\"white-space:nowrap\">DE38<a name=\"IMMZ.FExample-DE38\"> </a></td><td>Died</td><td>The adverse event resulted in the client's death</td></tr><tr><td style=\"white-space:nowrap\">DE40<a name=\"IMMZ.FExample-DE40\"> </a></td><td>Name of person reporting</td><td/></tr><tr><td style=\"white-space:nowrap\">DE41<a name=\"IMMZ.FExample-DE41\"> </a></td><td>Phone number</td><td/></tr><tr><td style=\"white-space:nowrap\">DE42<a name=\"IMMZ.FExample-DE42\"> </a></td><td>HCW handling AEFI</td><td/></tr><tr><td style=\"white-space:nowrap\">DE43<a name=\"IMMZ.FExample-DE43\"> </a></td><td>Date Reported</td><td/></tr><tr><td style=\"white-space:nowrap\">DE44<a name=\"IMMZ.FExample-DE44\"> </a></td><td>Facility Reported</td><td/></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.FExample",
+  "version" : "0.1.0",
+  "name" : "IMMZ_F",
+  "title" : "IMMZ.F CodeSystem for Data Elements",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "CodeSystem for IMMZ.F Data Elements",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "Type of AEFI"
+  },
+  {
+    "code" : "DE2",
+    "display" : "High fever"
+  },
+  {
+    "code" : "DE3",
+    "display" : "Convulsion",
+    "definition" : "Convulsion"
+  },
+  {
+    "code" : "DE4",
+    "display" : "Anaphylaxis"
+  },
+  {
+    "code" : "DE5",
+    "display" : "Paralysis"
+  },
+  {
+    "code" : "DE6",
+    "display" : "Toxic shock"
+  },
+  {
+    "code" : "DE7",
+    "display" : "Injection site abcess"
+  },
+  {
+    "code" : "DE8",
+    "display" : "Severe local reaction"
+  },
+  {
+    "code" : "DE9",
+    "display" : "Generalised urticaria(hives)"
+  },
+  {
+    "code" : "DE10",
+    "display" : "BCG Lymphadenitis"
+  },
+  {
+    "code" : "DE11",
+    "display" : "Encaphalopathy, Encephalitis/menengitis"
+  },
+  {
+    "code" : "DE12",
+    "display" : "Other (specify)"
+  },
+  {
+    "code" : "DE14",
+    "display" : "Brief details on the event"
+  },
+  {
+    "code" : "DE15",
+    "display" : "Onset of event"
+  },
+  {
+    "code" : "DE16",
+    "display" : "Date"
+  },
+  {
+    "code" : "DE17",
+    "display" : "Time"
+  },
+  {
+    "code" : "DE19",
+    "display" : "Past medical history"
+  },
+  {
+    "code" : "DE21",
+    "display" : "Action taken"
+  },
+  {
+    "code" : "DE22",
+    "display" : "Treatment given"
+  },
+  {
+    "code" : "DE23",
+    "display" : "Specify"
+  },
+  {
+    "code" : "DE24",
+    "display" : "Specimen collected for investigation"
+  },
+  {
+    "code" : "DE26",
+    "display" : "Reaction Severity",
+    "definition" : "The severity of the reaction which was observed."
+  },
+  {
+    "code" : "DE27",
+    "display" : "Life Threatening",
+    "definition" : "The client had a life-threatening reaction to the administered vaccine."
+  },
+  {
+    "code" : "DE28",
+    "display" : "Mild",
+    "definition" : "Local reaction at the injection site or minor systemic reaction such as fever or malaise, that occurs over a short period of time and pose little danger"
+  },
+  {
+    "code" : "DE29",
+    "display" : "Moderate",
+    "definition" : "Local or systemic reactions more severe than mild and of longer duration"
+  },
+  {
+    "code" : "DE30",
+    "display" : "Severe",
+    "definition" : "Severe and potentially (rarely) life threatening reactions including seizures and anaphylactic reactions"
+  },
+  {
+    "code" : "DE31",
+    "display" : "Fatal",
+    "definition" : "The client died as a result of the reaction"
+  },
+  {
+    "code" : "DE33",
+    "display" : "AEFI Outcome"
+  },
+  {
+    "code" : "DE34",
+    "display" : "Recovered",
+    "definition" : "The client fully recovered"
+  },
+  {
+    "code" : "DE35",
+    "display" : "Recovering",
+    "definition" : "The client is recovering"
+  },
+  {
+    "code" : "DE36",
+    "display" : "Not Recovered",
+    "definition" : "The client did not recover"
+  },
+  {
+    "code" : "DE37",
+    "display" : "Unknown",
+    "definition" : "The AEFI outcome is unknown"
+  },
+  {
+    "code" : "DE38",
+    "display" : "Died",
+    "definition" : "The adverse event resulted in the client's death"
+  },
+  {
+    "code" : "DE40",
+    "display" : "Name of person reporting"
+  },
+  {
+    "code" : "DE41",
+    "display" : "Phone number"
+  },
+  {
+    "code" : "DE42",
+    "display" : "HCW handling AEFI"
+  },
+  {
+    "code" : "DE43",
+    "display" : "Date Reported"
+  },
+  {
+    "code" : "DE44",
+    "display" : "Facility Reported"
+  }]
+}

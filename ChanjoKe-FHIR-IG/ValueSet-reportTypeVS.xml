@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="reportTypeVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet reportTypeVS</b></p><a name="reportTypeVS"> </a><a name="hcreportTypeVS"> </a><a name="reportTypeVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.E.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-IMMZ.E.html#IMMZ.E-DE7">DE7</a></td><td style="color: #cccccc">Individual</td><td>An individual report which provides information on the performance for a given measure with respect to a single subject</td></tr><tr><td><a href="CodeSystem-IMMZ.E.html#IMMZ.E-DE8">DE8</a></td><td style="color: #cccccc">Subject List</td><td>A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure</td></tr><tr><td><a href="CodeSystem-IMMZ.E.html#IMMZ.E-DE9">DE9</a></td><td style="color: #cccccc">Summary</td><td>A summary report that returns the number of members in each population criteria for the measure</td></tr><tr><td><a href="CodeSystem-IMMZ.E.html#IMMZ.E-DE10">DE10</a></td><td style="color: #cccccc">Data Exchange</td><td>A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reportTypeVS"/>
+  <version value="0.1.0"/>
+  <name value="IMMZE1DE6VS"/>
+  <title value="Report Type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Report Type"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E"/>
+      <concept>
+        <code value="DE7"/>
+      </concept>
+      <concept>
+        <code value="DE8"/>
+      </concept>
+      <concept>
+        <code value="DE9"/>
+      </concept>
+      <concept>
+        <code value="DE10"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

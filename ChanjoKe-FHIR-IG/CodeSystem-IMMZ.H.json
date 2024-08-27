@@ -1,0 +1,124 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IMMZ.H",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.H</b></p><a name=\"IMMZ.H\"> </a><a name=\"hcIMMZ.H\"> </a><a name=\"IMMZ.H-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.H-DE1\"> </a></td><td>DDIMZCCoreDataSet</td><td>Data elements for the DDIMZC Core Data Set for Vaccination Status.</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.H-DE2\"> </a></td><td>certificate</td><td/></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.H-DE3\"> </a></td><td>issuer</td><td/></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZ.H-DE4\"> </a></td><td>vaccination</td><td>A vaccination event.</td></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZ.H-DE5\"> </a></td><td>vaccine</td><td>Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZ.H-DE6\"> </a></td><td>brand</td><td>The brand or trade name used to refer to the vaccine received.</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.H-DE7\"> </a></td><td>manufacturer</td><td>Name of the manufacturer of the vaccine received. e.g. Serum institute of India, AstraZeneca. If vaccine manufacturer is unknown, market authorization holder is REQUIRED.</td></tr><tr><td style=\"white-space:nowrap\">DE8<a name=\"IMMZ.H-DE8\"> </a></td><td>maholder</td><td>Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED.</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.H-DE9\"> </a></td><td>lot</td><td>Lot number or batch number of vaccination.</td></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZ.H-DE10\"> </a></td><td>date</td><td>Date in which the vaccine was provided.</td></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZ.H-DE11\"> </a></td><td>validFrom</td><td>Date upon which provided vaccination is considered valid.</td></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZ.H-DE12\"> </a></td><td>dose</td><td>Vaccine dose number.</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.H-DE13\"> </a></td><td>totalDoses</td><td>Total expected doses as defined by Member State care plan and immunization programme policies.</td></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.H-DE14\"> </a></td><td>country</td><td>The country in which the individual has been vaccinated.</td></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.H-DE15\"> </a></td><td>centre</td><td>The name or identifier of the vaccination facility responsible for providing the vaccination.</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.H-DE16\"> </a></td><td>signature</td><td>REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician's hand-written signature.</td></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.H-DE17\"> </a></td><td>practitioner</td><td>OPTIONAL for DIGITAL and PAPER vaccination certificates. The unique identifier for the health worker as determined by the member state. There can be more than one unique identifier used. (e.g. system generated ID, health profession number, cryptographic signature, or any other form of health worker unique identifier). This can be used in lieu of a paper-based signature.</td></tr><tr><td style=\"white-space:nowrap\">DE18<a name=\"IMMZ.H-DE18\"> </a></td><td>disease</td><td>Name of disease vaccinated against (such as COVID-19).</td></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZ.H-DE19\"> </a></td><td>nextDose</td><td>Date on which the next vaccination should be administered, if a next dose is REQUIRED.</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.H",
+  "version" : "0.1.0",
+  "name" : "IMMZ_H",
+  "title" : "IMMZ.H CodeSystem for Vaccine status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 19,
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "DDIMZCCoreDataSet",
+    "definition" : "Data elements for the DDIMZC Core Data Set for Vaccination Status."
+  },
+  {
+    "code" : "DE2",
+    "display" : "certificate"
+  },
+  {
+    "code" : "DE3",
+    "display" : "issuer"
+  },
+  {
+    "code" : "DE4",
+    "display" : "vaccination",
+    "definition" : "A vaccination event."
+  },
+  {
+    "code" : "DE5",
+    "display" : "vaccine",
+    "definition" : "Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine."
+  },
+  {
+    "code" : "DE6",
+    "display" : "brand",
+    "definition" : "The brand or trade name used to refer to the vaccine received."
+  },
+  {
+    "code" : "DE7",
+    "display" : "manufacturer",
+    "definition" : "Name of the manufacturer of the vaccine received. e.g. Serum institute of India, AstraZeneca. If vaccine manufacturer is unknown, market authorization holder is REQUIRED."
+  },
+  {
+    "code" : "DE8",
+    "display" : "maholder",
+    "definition" : "Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED."
+  },
+  {
+    "code" : "DE9",
+    "display" : "lot",
+    "definition" : "Lot number or batch number of vaccination."
+  },
+  {
+    "code" : "DE10",
+    "display" : "date",
+    "definition" : "Date in which the vaccine was provided."
+  },
+  {
+    "code" : "DE11",
+    "display" : "validFrom",
+    "definition" : "Date upon which provided vaccination is considered valid."
+  },
+  {
+    "code" : "DE12",
+    "display" : "dose",
+    "definition" : "Vaccine dose number."
+  },
+  {
+    "code" : "DE13",
+    "display" : "totalDoses",
+    "definition" : "Total expected doses as defined by Member State care plan and immunization programme policies."
+  },
+  {
+    "code" : "DE14",
+    "display" : "country",
+    "definition" : "The country in which the individual has been vaccinated."
+  },
+  {
+    "code" : "DE15",
+    "display" : "centre",
+    "definition" : "The name or identifier of the vaccination facility responsible for providing the vaccination."
+  },
+  {
+    "code" : "DE16",
+    "display" : "signature",
+    "definition" : "REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician's hand-written signature."
+  },
+  {
+    "code" : "DE17",
+    "display" : "practitioner",
+    "definition" : "OPTIONAL for DIGITAL and PAPER vaccination certificates. The unique identifier for the health worker as determined by the member state. There can be more than one unique identifier used. (e.g. system generated ID, health profession number, cryptographic signature, or any other form of health worker unique identifier). This can be used in lieu of a paper-based signature."
+  },
+  {
+    "code" : "DE18",
+    "display" : "disease",
+    "definition" : "Name of disease vaccinated against (such as COVID-19)."
+  },
+  {
+    "code" : "DE19",
+    "display" : "nextDose",
+    "definition" : "Date on which the next vaccination should be administered, if a next dose is REQUIRED."
+  }]
+}

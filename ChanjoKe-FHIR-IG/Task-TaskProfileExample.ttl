@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Task/TaskProfileExample> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TaskProfileExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/TaskProfile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task TaskProfileExample</b></p><a name=\"TaskProfileExample\"> </a><a name=\"hcTaskProfileExample\"> </a><a name=\"TaskProfileExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/task</code>/123456 (use: official, )</p><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"SupplyRequest-SupplyRequestProfileExample.html\">SupplyRequest: extension = 2020-02-02,2020-02-02,100,50,50,100,50,100,100,50; identifier = https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest#123456 (use: official, ); item[x] = -&gt;Medication Codeine phosphate; quantity = 50 mm; occurrence[x] = 2020-02-02; authoredOn = 2020-02-02</a></p><p><b>authoredOn</b>: 2020-02-02</p><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location Example Hospital</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/products"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "product-code" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/task"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:focus [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/SupplyRequest/SupplyRequestProfileExample> ;
+     fhir:reference [ fhir:v "SupplyRequest/SupplyRequestProfileExample" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2020-02-02"^^xsd:date] ; # 
+  fhir:location [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Location/LocationExample> ;
+     fhir:reference [ fhir:v "Location/LocationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

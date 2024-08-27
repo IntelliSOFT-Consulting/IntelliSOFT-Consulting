@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IMMZ.G",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.G</b></p><a name=\"IMMZ.G\"> </a><a name=\"hcIMMZ.G\"> </a><a name=\"IMMZ.G-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.G</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.G-DE1\"> </a></td><td>vaccination</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.G-DE2\"> </a></td><td>centre</td></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.G-DE3\"> </a></td><td>sex</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.G",
+  "version" : "0.1.0",
+  "name" : "IMMZ_G",
+  "title" : "IMMZ.G CodeSystem for Data Elements",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "CodeSystem for IMMZ.G (Vaccination Status - Continuity of Care) Data Elements",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "vaccination"
+  },
+  {
+    "code" : "DE2",
+    "display" : "centre"
+  },
+  {
+    "code" : "DE3",
+    "display" : "sex"
+  }]
+}

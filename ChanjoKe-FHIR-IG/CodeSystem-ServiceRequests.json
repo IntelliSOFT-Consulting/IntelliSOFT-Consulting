@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ServiceRequests",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ServiceRequests</b></p><a name=\"ServiceRequests\"> </a><a name=\"hcServiceRequests\"> </a><a name=\"ServiceRequests-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">108252007<a name=\"ServiceRequests-108252007\"> </a></td><td>Laboratory procedure</td></tr><tr><td style=\"white-space:nowrap\">363679005<a name=\"ServiceRequests-363679005\"> </a></td><td>Imaging</td></tr><tr><td style=\"white-space:nowrap\">409063005<a name=\"ServiceRequests-409063005\"> </a></td><td>Counselling</td></tr><tr><td style=\"white-space:nowrap\">409073007<a name=\"ServiceRequests-409073007\"> </a></td><td>Education</td></tr><tr><td style=\"white-space:nowrap\">387713003<a name=\"ServiceRequests-387713003\"> </a></td><td>Surgical procedure</td></tr><tr><td style=\"white-space:nowrap\">KNHTS-001<a name=\"ServiceRequests-KNHTS-001\"> </a></td><td>Defaulter Tracing</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests",
+  "version" : "0.1.0",
+  "name" : "SVREQS_A",
+  "title" : "Service Requests",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Service Reequests to be used within the Kenyan Contexts",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "108252007",
+    "display" : "Laboratory procedure"
+  },
+  {
+    "code" : "363679005",
+    "display" : "Imaging"
+  },
+  {
+    "code" : "409063005",
+    "display" : "Counselling"
+  },
+  {
+    "code" : "409073007",
+    "display" : "Education"
+  },
+  {
+    "code" : "387713003",
+    "display" : "Surgical procedure"
+  },
+  {
+    "code" : "KNHTS-001",
+    "display" : "Defaulter Tracing"
+  }]
+}

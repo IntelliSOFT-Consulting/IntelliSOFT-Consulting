@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Basic",
+  "id" : "BasicProfileExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic BasicProfileExample</b></p><a name=\"BasicProfileExample\"> </a><a name=\"hcBasicProfileExample\"> </a><a name=\"BasicProfileExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/basic-profile-identifiers</code>/12345</p><p><b>code</b>: <span title=\"Codes:\">referral</span></p><p><b>subject</b>: <a href=\"Location-LocationExample.html\">Location Example Hospital</a></p></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "https://example.org/fhir/StructureDefinition/bcg-vaccine",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/vaccine-codes",
+            "code" : "bcg",
+            "display" : "Referral"
+          }]
+        }
+      },
+      {
+        "url" : "quantity",
+        "valueQuantity" : {
+          "value" : 100,
+          "unit" : "doses",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "doses"
+        }
+      }],
+      "url" : "item"
+    }],
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/inventory-items"
+  }],
+  "identifier" : [{
+    "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/basic-profile-identifiers",
+    "value" : "12345"
+  }],
+  "code" : {
+    "coding" : [{
+      "code" : "referral"
+    }]
+  },
+  "subject" : {
+    "reference" : "Location/LocationExample"
+  }
+}

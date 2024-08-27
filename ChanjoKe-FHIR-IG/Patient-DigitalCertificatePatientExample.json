@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Patient",
+  "id" : "DigitalCertificatePatientExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificatePatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient DigitalCertificatePatientExample</b></p><a name=\"DigitalCertificatePatientExample\"> </a><a name=\"hcDigitalCertificatePatientExample\"> </a><a name=\"DigitalCertificatePatientExample-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789\u00a0(use:\u00a0usual,\u00a0))</p><hr/></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers",
+    "value" : "DCP123456789"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "John Doe"
+  }],
+  "gender" : "male",
+  "birthDate" : "1990-01-01"
+}

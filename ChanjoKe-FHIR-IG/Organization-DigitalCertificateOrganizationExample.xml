@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="DigitalCertificateOrganizationExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateOrganization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization DigitalCertificateOrganizationExample</b></p><a name="DigitalCertificateOrganizationExample"> </a><a name="hcDigitalCertificateOrganizationExample"> </a><a name="DigitalCertificateOrganizationExample-en-US"> </a><p><b>name</b>: Kenya Ministry of Health</p></div>
+  </text>
+  <name value="Kenya Ministry of Health"/>
+</Organization>

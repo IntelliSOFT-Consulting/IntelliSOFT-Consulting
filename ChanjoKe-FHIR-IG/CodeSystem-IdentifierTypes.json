@@ -1,0 +1,51 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IdentifierTypes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IdentifierTypes</b></p><a name=\"IdentifierTypes\"> </a><a name=\"hcIdentifierTypes\"> </a><a name=\"IdentifierTypes-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">birthcertificate<a name=\"IdentifierTypes-birthcertificate\"> </a></td><td>Birth Certificate</td></tr><tr><td style=\"white-space:nowrap\">nationalId<a name=\"IdentifierTypes-nationalId\"> </a></td><td>National ID</td></tr><tr><td style=\"white-space:nowrap\">passport<a name=\"IdentifierTypes-passport\"> </a></td><td>Passport</td></tr><tr><td style=\"white-space:nowrap\">nemis<a name=\"IdentifierTypes-nemis\"> </a></td><td>NEMIS No</td></tr><tr><td style=\"white-space:nowrap\">bNo<a name=\"IdentifierTypes-bNo\"> </a></td><td>Birth Notification Number</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes",
+  "version" : "0.1.0",
+  "name" : "IDENTIFIERTYPES",
+  "title" : "Identifier Types",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Defined Identifier Types for KenyanRegistryPatient",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "birthcertificate",
+    "display" : "Birth Certificate"
+  },
+  {
+    "code" : "nationalId",
+    "display" : "National ID"
+  },
+  {
+    "code" : "passport",
+    "display" : "Passport"
+  },
+  {
+    "code" : "nemis",
+    "display" : "NEMIS No"
+  },
+  {
+    "code" : "bNo",
+    "display" : "Birth Notification Number"
+  }]
+}

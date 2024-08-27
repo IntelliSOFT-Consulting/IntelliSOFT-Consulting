@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ.EExample"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZ.EExample</b></p><a name="IMMZ.EExample"> </a><a name="hcIMMZ.EExample"> </a><a name="IMMZ.EExample-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZ.EExample-DE1"> </a></td><td>Report Identification</td><td>A unique identifier for the instance of the report that has been generated</td></tr><tr><td style="white-space:nowrap">DE2<a name="IMMZ.EExample-DE2"> </a></td><td>Report Status</td><td>The status of the report (for example, initial, complete, etc.)</td></tr><tr><td style="white-space:nowrap">DE3<a name="IMMZ.EExample-DE3"> </a></td><td>Complete</td><td>The report is complete and ready to use</td></tr><tr><td style="white-space:nowrap">DE4<a name="IMMZ.EExample-DE4"> </a></td><td>Pending</td><td>The report is currently being generated</td></tr><tr><td style="white-space:nowrap">DE5<a name="IMMZ.EExample-DE5"> </a></td><td>Error</td><td>An error occurred while generating the report</td></tr><tr><td style="white-space:nowrap">DE6<a name="IMMZ.EExample-DE6"> </a></td><td>Report Type</td><td>The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)</td></tr><tr><td style="white-space:nowrap">DE7<a name="IMMZ.EExample-DE7"> </a></td><td>Individual</td><td>An individual report which provides information on the performance for a given measure with respect to a single subject</td></tr><tr><td style="white-space:nowrap">DE8<a name="IMMZ.EExample-DE8"> </a></td><td>Subject List</td><td>A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure</td></tr><tr><td style="white-space:nowrap">DE9<a name="IMMZ.EExample-DE9"> </a></td><td>Summary</td><td>A summary report that returns the number of members in each population criteria for the measure</td></tr><tr><td style="white-space:nowrap">DE10<a name="IMMZ.EExample-DE10"> </a></td><td>Data Exchange</td><td>A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)</td></tr><tr><td style="white-space:nowrap">DE11<a name="IMMZ.EExample-DE11"> </a></td><td>Report Indicator Code</td><td>The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)</td></tr><tr><td style="white-space:nowrap">DE12<a name="IMMZ.EExample-DE12"> </a></td><td>Dropout rate</td><td>An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)</td></tr><tr><td style="white-space:nowrap">DE13<a name="IMMZ.EExample-DE13"> </a></td><td>Defaulters</td><td>An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason</td></tr><tr><td style="white-space:nowrap">DE14<a name="IMMZ.EExample-DE14"> </a></td><td>Coverage</td><td>An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)</td></tr><tr><td style="white-space:nowrap">DE15<a name="IMMZ.EExample-DE15"> </a></td><td>AEFI Case Rate</td><td>An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product</td></tr><tr><td style="white-space:nowrap">DE16<a name="IMMZ.EExample-DE16"> </a></td><td>Open Vial Wastage</td><td>An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization</td></tr><tr><td style="white-space:nowrap">DE17<a name="IMMZ.EExample-DE17"> </a></td><td>Closed Vial Wastage</td><td>An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc.</td></tr><tr><td style="white-space:nowrap">DE18<a name="IMMZ.EExample-DE18"> </a></td><td>Report Subject Area</td><td>Location (facility or place) for which the data in the report is being represented.</td></tr><tr><td style="white-space:nowrap">DE19<a name="IMMZ.EExample-DE19"> </a></td><td>Report Generation Date</td><td>The date and time on which the report was generated.</td></tr><tr><td style="white-space:nowrap">DE20<a name="IMMZ.EExample-DE20"> </a></td><td>Reporting Period Start</td><td>The start date of the reporting period for which data in the report has been included.</td></tr><tr><td style="white-space:nowrap">DE21<a name="IMMZ.EExample-DE21"> </a></td><td>Reporting Period End</td><td>The end date of the reporting period for which data in the report has been included.</td></tr><tr><td style="white-space:nowrap">DE22<a name="IMMZ.EExample-DE22"> </a></td><td>Improvement Indicator</td><td>Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)</td></tr><tr><td style="white-space:nowrap">DE23<a name="IMMZ.EExample-DE23"> </a></td><td>Increase is Improvement</td><td>Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)</td></tr><tr><td style="white-space:nowrap">DE24<a name="IMMZ.EExample-DE24"> </a></td><td>Decrease is Improvement</td><td>Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)</td></tr><tr><td style="white-space:nowrap">DE25<a name="IMMZ.EExample-DE25"> </a></td><td>Report Generator / Author</td><td>Indicates the organization, or location which is generating or producing the report</td></tr><tr><td style="white-space:nowrap">DE26<a name="IMMZ.EExample-DE26"> </a></td><td>Measure Identifier / Meaning</td><td>Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)</td></tr><tr><td style="white-space:nowrap">DE27<a name="IMMZ.EExample-DE27"> </a></td><td>Measured Score</td><td>The calculated score of the measure / indicator which is being reported on.</td></tr><tr><td style="white-space:nowrap">DE30<a name="IMMZ.EExample-DE30"> </a></td><td>Measure Numerator</td><td>The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score.</td></tr><tr><td style="white-space:nowrap">DE31<a name="IMMZ.EExample-DE31"> </a></td><td>Measure Denominator</td><td>The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score.</td></tr><tr><td style="white-space:nowrap">DE32<a name="IMMZ.EExample-DE32"> </a></td><td>Disaggregation Group</td><td>Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)</td></tr><tr><td style="white-space:nowrap">DE33<a name="IMMZ.EExample-DE33"> </a></td><td>By-Sex</td><td>Represents a disaggregation grouped by the indicator population's sex values</td></tr><tr><td style="white-space:nowrap">DE34<a name="IMMZ.EExample-DE34"> </a></td><td>By-Region</td><td>Represents a disaggregation grouped by the indicator population's administrative regions</td></tr><tr><td style="white-space:nowrap">DE35<a name="IMMZ.EExample-DE35"> </a></td><td>By-Age Group</td><td>Represents a disaggregation grouped by the indicator population's age groups</td></tr><tr><td style="white-space:nowrap">DE36<a name="IMMZ.EExample-DE36"> </a></td><td>By-Dose Number</td><td>Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine</td></tr><tr><td style="white-space:nowrap">DE37<a name="IMMZ.EExample-DE37"> </a></td><td>By-Vaccine Type</td><td>Represents a disaggregation grouped by the indicator population's vaccine types</td></tr><tr><td style="white-space:nowrap">DE38<a name="IMMZ.EExample-DE38"> </a></td><td>By-Vaccine Manufacturer</td><td>Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine</td></tr><tr><td style="white-space:nowrap">DE39<a name="IMMZ.EExample-DE39"> </a></td><td>By-Reaction Manifestation</td><td>Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine</td></tr><tr><td style="white-space:nowrap">DE40<a name="IMMZ.EExample-DE40"> </a></td><td>By-Occupation</td><td>Represents a disaggregation grouped by the indicator population's occupations</td></tr><tr><td style="white-space:nowrap">DE41<a name="IMMZ.EExample-DE41"> </a></td><td>Disaggregation Measure Identifier / Meaning</td><td>The type or value of this stratum</td></tr><tr><td style="white-space:nowrap">DE42<a name="IMMZ.EExample-DE42"> </a></td><td>Disaggregation Numerator</td><td>The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score.</td></tr><tr><td style="white-space:nowrap">DE43<a name="IMMZ.EExample-DE43"> </a></td><td>Disaggregation Denominator</td><td>The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score</td></tr><tr><td style="white-space:nowrap">DE44<a name="IMMZ.EExample-DE44"> </a></td><td>Disaggregated Score</td><td>The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records.</td></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.EExample"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_E"/>
+  <title value="IMMZ.E CodeSystem for Data Elements"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for IMMZ.E Data Elements"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="Report Identification"/>
+    <definition value="A unique identifier for the instance of the report that has been generated"/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="Report Status"/>
+    <definition value="The status of the report (for example, initial, complete, etc.)"/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="Complete"/>
+    <definition value="The report is complete and ready to use"/>
+  </concept>
+  <concept>
+    <code value="DE4"/>
+    <display value="Pending"/>
+    <definition value="The report is currently being generated"/>
+  </concept>
+  <concept>
+    <code value="DE5"/>
+    <display value="Error"/>
+    <definition value="An error occurred while generating the report"/>
+  </concept>
+  <concept>
+    <code value="DE6"/>
+    <display value="Report Type"/>
+    <definition value="The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="Individual"/>
+    <definition value="An individual report which provides information on the performance for a given measure with respect to a single subject"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Subject List"/>
+    <definition value="A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="Summary"/>
+    <definition value="A summary report that returns the number of members in each population criteria for the measure"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="Data Exchange"/>
+    <definition value="A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)"/>
+  </concept>
+  <concept>
+    <code value="DE11"/>
+    <display value="Report Indicator Code"/>
+    <definition value="The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)"/>
+  </concept>
+  <concept>
+    <code value="DE12"/>
+    <display value="Dropout rate"/>
+    <definition value="An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)"/>
+  </concept>
+  <concept>
+    <code value="DE13"/>
+    <display value="Defaulters"/>
+    <definition value="An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason"/>
+  </concept>
+  <concept>
+    <code value="DE14"/>
+    <display value="Coverage"/>
+    <definition value="An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="AEFI Case Rate"/>
+    <definition value="An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Open Vial Wastage"/>
+    <definition value="An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Closed Vial Wastage"/>
+    <definition value="An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc."/>
+  </concept>
+  <concept>
+    <code value="DE18"/>
+    <display value="Report Subject Area"/>
+    <definition value="Location (facility or place) for which the data in the report is being represented."/>
+  </concept>
+  <concept>
+    <code value="DE19"/>
+    <display value="Report Generation Date"/>
+    <definition value="The date and time on which the report was generated."/>
+  </concept>
+  <concept>
+    <code value="DE20"/>
+    <display value="Reporting Period Start"/>
+    <definition value="The start date of the reporting period for which data in the report has been included."/>
+  </concept>
+  <concept>
+    <code value="DE21"/>
+    <display value="Reporting Period End"/>
+    <definition value="The end date of the reporting period for which data in the report has been included."/>
+  </concept>
+  <concept>
+    <code value="DE22"/>
+    <display value="Improvement Indicator"/>
+    <definition value="Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)"/>
+  </concept>
+  <concept>
+    <code value="DE23"/>
+    <display value="Increase is Improvement"/>
+    <definition value="Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)"/>
+  </concept>
+  <concept>
+    <code value="DE24"/>
+    <display value="Decrease is Improvement"/>
+    <definition value="Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)"/>
+  </concept>
+  <concept>
+    <code value="DE25"/>
+    <display value="Report Generator / Author"/>
+    <definition value="Indicates the organization, or location which is generating or producing the report"/>
+  </concept>
+  <concept>
+    <code value="DE26"/>
+    <display value="Measure Identifier / Meaning"/>
+    <definition value="Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)"/>
+  </concept>
+  <concept>
+    <code value="DE27"/>
+    <display value="Measured Score"/>
+    <definition value="The calculated score of the measure / indicator which is being reported on."/>
+  </concept>
+  <concept>
+    <code value="DE30"/>
+    <display value="Measure Numerator"/>
+    <definition value="The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score."/>
+  </concept>
+  <concept>
+    <code value="DE31"/>
+    <display value="Measure Denominator"/>
+    <definition value="The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score."/>
+  </concept>
+  <concept>
+    <code value="DE32"/>
+    <display value="Disaggregation Group"/>
+    <definition value="Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)"/>
+  </concept>
+  <concept>
+    <code value="DE33"/>
+    <display value="By-Sex"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's sex values"/>
+  </concept>
+  <concept>
+    <code value="DE34"/>
+    <display value="By-Region"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's administrative regions"/>
+  </concept>
+  <concept>
+    <code value="DE35"/>
+    <display value="By-Age Group"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's age groups"/>
+  </concept>
+  <concept>
+    <code value="DE36"/>
+    <display value="By-Dose Number"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE37"/>
+    <display value="By-Vaccine Type"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's vaccine types"/>
+  </concept>
+  <concept>
+    <code value="DE38"/>
+    <display value="By-Vaccine Manufacturer"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE39"/>
+    <display value="By-Reaction Manifestation"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine"/>
+  </concept>
+  <concept>
+    <code value="DE40"/>
+    <display value="By-Occupation"/>
+    <definition value="Represents a disaggregation grouped by the indicator population's occupations"/>
+  </concept>
+  <concept>
+    <code value="DE41"/>
+    <display value="Disaggregation Measure Identifier / Meaning"/>
+    <definition value="The type or value of this stratum"/>
+  </concept>
+  <concept>
+    <code value="DE42"/>
+    <display value="Disaggregation Numerator"/>
+    <definition value="The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score."/>
+  </concept>
+  <concept>
+    <code value="DE43"/>
+    <display value="Disaggregation Denominator"/>
+    <definition value="The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score"/>
+  </concept>
+  <concept>
+    <code value="DE44"/>
+    <display value="Disaggregated Score"/>
+    <definition value="The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records."/>
+  </concept>
+</CodeSystem>

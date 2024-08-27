@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.HExample> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZ.HExample"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZ.HExample</b></p><a name=\"IMMZ.HExample\"> </a><a name=\"hcIMMZ.HExample\"> </a><a name=\"IMMZ.HExample-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.HExample</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZ.HExample-DE1\"> </a></td><td>DDIMZCCoreDataSet</td><td>Data elements for the DDIMZC Core Data Set for Vaccination Status.</td></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZ.HExample-DE2\"> </a></td><td>certificate</td><td/></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZ.HExample-DE3\"> </a></td><td>issuer</td><td/></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZ.HExample-DE4\"> </a></td><td>vaccination</td><td>A vaccination event.</td></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZ.HExample-DE5\"> </a></td><td>vaccine</td><td>Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZ.HExample-DE6\"> </a></td><td>brand</td><td>The brand or trade name used to refer to the vaccine received.</td></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZ.HExample-DE7\"> </a></td><td>manufacturer</td><td>Name of the manufacturer of the vaccine received. e.g. Serum institute of India, AstraZeneca. If vaccine manufacturer is unknown, market authorization holder is REQUIRED.</td></tr><tr><td style=\"white-space:nowrap\">DE8<a name=\"IMMZ.HExample-DE8\"> </a></td><td>maholder</td><td>Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED.</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZ.HExample-DE9\"> </a></td><td>lot</td><td>Lot number or batch number of vaccination.</td></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZ.HExample-DE10\"> </a></td><td>date</td><td>Date in which the vaccine was provided.</td></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZ.HExample-DE11\"> </a></td><td>validFrom</td><td>Date upon which provided vaccination is considered valid.</td></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZ.HExample-DE12\"> </a></td><td>dose</td><td>Vaccine dose number.</td></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZ.HExample-DE13\"> </a></td><td>totalDoses</td><td>Total expected doses as defined by Member State care plan and immunization programme policies.</td></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZ.HExample-DE14\"> </a></td><td>country</td><td>The country in which the individual has been vaccinated.</td></tr><tr><td style=\"white-space:nowrap\">DE15<a name=\"IMMZ.HExample-DE15\"> </a></td><td>centre</td><td>The name or identifier of the vaccination facility responsible for providing the vaccination.</td></tr><tr><td style=\"white-space:nowrap\">DE16<a name=\"IMMZ.HExample-DE16\"> </a></td><td>signature</td><td>REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician's hand-written signature.</td></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZ.HExample-DE17\"> </a></td><td>practitioner</td><td>OPTIONAL for DIGITAL and PAPER vaccination certificates. The unique identifier for the health worker as determined by the member state. There can be more than one unique identifier used. (e.g. system generated ID, health profession number, cryptographic signature, or any other form of health worker unique identifier). This can be used in lieu of a paper-based signature.</td></tr><tr><td style=\"white-space:nowrap\">DE18<a name=\"IMMZ.HExample-DE18\"> </a></td><td>disease</td><td>Name of disease vaccinated against (such as COVID-19).</td></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZ.HExample-DE19\"> </a></td><td>nextDose</td><td>Date on which the next vaccination should be administered, if a next dose is REQUIRED.</td></tr><tr><td style=\"white-space:nowrap\">DE20<a name=\"IMMZ.HExample-DE20\"> </a></td><td>vaccineType</td><td>Type of vaccine administered.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.HExample"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_H"] ; # 
+  fhir:title [ fhir:v "IMMZ.H CodeSystem for Vaccine status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for Digital documentation of Immunization certificate (DDIMZC) status Data Elements"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DE1" ] ;
+     fhir:display [ fhir:v "DDIMZCCoreDataSet" ] ;
+     fhir:definition [ fhir:v "Data elements for the DDIMZC Core Data Set for Vaccination Status." ]
+  ] [
+     fhir:code [ fhir:v "DE2" ] ;
+     fhir:display [ fhir:v "certificate" ]
+  ] [
+     fhir:code [ fhir:v "DE3" ] ;
+     fhir:display [ fhir:v "issuer" ]
+  ] [
+     fhir:code [ fhir:v "DE4" ] ;
+     fhir:display [ fhir:v "vaccination" ] ;
+     fhir:definition [ fhir:v "A vaccination event." ]
+  ] [
+     fhir:code [ fhir:v "DE5" ] ;
+     fhir:display [ fhir:v "vaccine" ] ;
+     fhir:definition [ fhir:v "Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine." ]
+  ] [
+     fhir:code [ fhir:v "DE6" ] ;
+     fhir:display [ fhir:v "brand" ] ;
+     fhir:definition [ fhir:v "The brand or trade name used to refer to the vaccine received." ]
+  ] [
+     fhir:code [ fhir:v "DE7" ] ;
+     fhir:display [ fhir:v "manufacturer" ] ;
+     fhir:definition [ fhir:v "Name of the manufacturer of the vaccine received. e.g. Serum institute of India, AstraZeneca. If vaccine manufacturer is unknown, market authorization holder is REQUIRED." ]
+  ] [
+     fhir:code [ fhir:v "DE8" ] ;
+     fhir:display [ fhir:v "maholder" ] ;
+     fhir:definition [ fhir:v "Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED." ]
+  ] [
+     fhir:code [ fhir:v "DE9" ] ;
+     fhir:display [ fhir:v "lot" ] ;
+     fhir:definition [ fhir:v "Lot number or batch number of vaccination." ]
+  ] [
+     fhir:code [ fhir:v "DE10" ] ;
+     fhir:display [ fhir:v "date" ] ;
+     fhir:definition [ fhir:v "Date in which the vaccine was provided." ]
+  ] [
+     fhir:code [ fhir:v "DE11" ] ;
+     fhir:display [ fhir:v "validFrom" ] ;
+     fhir:definition [ fhir:v "Date upon which provided vaccination is considered valid." ]
+  ] [
+     fhir:code [ fhir:v "DE12" ] ;
+     fhir:display [ fhir:v "dose" ] ;
+     fhir:definition [ fhir:v "Vaccine dose number." ]
+  ] [
+     fhir:code [ fhir:v "DE13" ] ;
+     fhir:display [ fhir:v "totalDoses" ] ;
+     fhir:definition [ fhir:v "Total expected doses as defined by Member State care plan and immunization programme policies." ]
+  ] [
+     fhir:code [ fhir:v "DE14" ] ;
+     fhir:display [ fhir:v "country" ] ;
+     fhir:definition [ fhir:v "The country in which the individual has been vaccinated." ]
+  ] [
+     fhir:code [ fhir:v "DE15" ] ;
+     fhir:display [ fhir:v "centre" ] ;
+     fhir:definition [ fhir:v "The name or identifier of the vaccination facility responsible for providing the vaccination." ]
+  ] [
+     fhir:code [ fhir:v "DE16" ] ;
+     fhir:display [ fhir:v "signature" ] ;
+     fhir:definition [ fhir:v "REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician's hand-written signature." ]
+  ] [
+     fhir:code [ fhir:v "DE17" ] ;
+     fhir:display [ fhir:v "practitioner" ] ;
+     fhir:definition [ fhir:v "OPTIONAL for DIGITAL and PAPER vaccination certificates. The unique identifier for the health worker as determined by the member state. There can be more than one unique identifier used. (e.g. system generated ID, health profession number, cryptographic signature, or any other form of health worker unique identifier). This can be used in lieu of a paper-based signature." ]
+  ] [
+     fhir:code [ fhir:v "DE18" ] ;
+     fhir:display [ fhir:v "disease" ] ;
+     fhir:definition [ fhir:v "Name of disease vaccinated against (such as COVID-19)." ]
+  ] [
+     fhir:code [ fhir:v "DE19" ] ;
+     fhir:display [ fhir:v "nextDose" ] ;
+     fhir:definition [ fhir:v "Date on which the next vaccination should be administered, if a next dose is REQUIRED." ]
+  ] [
+     fhir:code [ fhir:v "DE20" ] ;
+     fhir:display [ fhir:v "vaccineType" ] ;
+     fhir:definition [ fhir:v "Type of vaccine administered." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

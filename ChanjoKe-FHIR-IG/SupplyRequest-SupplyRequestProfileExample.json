@@ -1,0 +1,70 @@
+{
+  "resourceType" : "SupplyRequest",
+  "id" : "SupplyRequestProfileExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyRequest SupplyRequestProfileExample</b></p><a name=\"SupplyRequestProfileExample\"> </a><a name=\"hcSupplyRequestProfileExample\"> </a><a name=\"SupplyRequestProfileExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest</code>/123456\u00a0(use:\u00a0official,\u00a0)</p><p><b>item</b>: <a href=\"Medication-MedicationExample.html\">Medication Codeine phosphate</a></p><p><b>quantity</b>: 50 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p><p><b>occurrence</b>: 2020-02-02</p><p><b>authoredOn</b>: 2020-02-02</p><p><b>requester</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-of-last-order",
+    "valueDate" : "2020-02-02"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expected-date-of-next-order",
+    "valueDate" : "2020-02-02"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/total-population",
+    "valueInteger" : 100
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/children",
+    "valueInteger" : 50
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/pregnant-women",
+    "valueInteger" : 50
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/doses-in-stock",
+    "valueInteger" : 100
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/minimum",
+    "valueInteger" : 50
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/maximum",
+    "valueInteger" : 100
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/recommended-stock",
+    "valueInteger" : 100
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/ordered-amount",
+    "valueInteger" : 50
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest",
+    "value" : "123456"
+  }],
+  "itemReference" : {
+    "reference" : "Medication/MedicationExample"
+  },
+  "quantity" : {
+    "value" : 50,
+    "unit" : "mm",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mm"
+  },
+  "occurrenceDateTime" : "2020-02-02",
+  "authoredOn" : "2020-02-02",
+  "requester" : {
+    "reference" : "Patient/PatientExample"
+  }
+}

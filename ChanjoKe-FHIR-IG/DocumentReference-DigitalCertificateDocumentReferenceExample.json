@@ -1,0 +1,22 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "DigitalCertificateDocumentReferenceExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateDocumentReference"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DigitalCertificateDocumentReferenceExample</b></p><a name=\"DigitalCertificateDocumentReferenceExample\"> </a><a name=\"hcDigitalCertificateDocumentReferenceExample\"> </a><a name=\"DigitalCertificateDocumentReferenceExample-en-US\"> </a><p><b>status</b>: Current</p><p><b>subject</b>: <a href=\"Patient-DigitalCertificatePatientExample.html\">John Doe(official) Male, DoB: 1990-01-01 ( https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers#DCP123456789\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>date</b>: 2020-02-02 01:02:03+0200</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td><td><b>Hash</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://attachment.example.org/DCD123456789\">http://attachment.example.org/DCD123456789</a></td><td><code>081923b8f24c1ccf677178d924c64d89b0b6212f</code></td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "subject" : {
+    "reference" : "Patient/DigitalCertificatePatientExample"
+  },
+  "date" : "2020-02-02T01:02:03.456+02:00",
+  "content" : [{
+    "attachment" : {
+      "url" : "http://attachment.example.org/DCD123456789",
+      "hash" : "081923b8f24c1ccf677178d924c64d89b0b6212f"
+    }
+  }]
+}

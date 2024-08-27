@@ -1,0 +1,69 @@
+{
+  "resourceType" : "AdverseEvent",
+  "id" : "ExampleAdverseEvent",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/AdverseEventProfile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent ExampleAdverseEvent</b></p><a name=\"ExampleAdverseEvent\"> </a><a name=\"hcExampleAdverseEvent\"> </a><a name=\"ExampleAdverseEvent-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers</code>/AE123456789</p><p><b>actuality</b>: Adverse Event</p><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p><p><b>date</b>: 2024-05-12</p><p><b>recordedDate</b>: 2024-05-13</p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Substance-SubstanceExample.html\">Substance Hemoglobin Okaloosa</a></td></tr></table><p><b>subjectMedicalHistory</b>: <a href=\"Condition-ConditionExample.html\">Condition</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/types-of-aefi",
+    "valueCode" : "DE3"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/event-details",
+    "valueString" : "Patient developed a rash within 24 hours of vaccination."
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/action-taken",
+    "valueCode" : "DE22"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/facility-reported",
+    "valueString" : "Central Hospital"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-given",
+    "valueString" : "Anti-allergies"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/treatment-details",
+    "valueString" : "Administered antihistamine."
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-collected",
+    "valueString" : "Specimen x"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/specimen-details",
+    "valueString" : "No specimens collected."
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/reaction-severity",
+    "valueCode" : "DE27"
+  },
+  {
+    "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/aefi-outcome",
+    "valueCode" : "DE34"
+  }],
+  "identifier" : {
+    "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/identifiers",
+    "value" : "AE123456789"
+  },
+  "actuality" : "actual",
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "date" : "2024-05-12",
+  "recordedDate" : "2024-05-13",
+  "suspectEntity" : [{
+    "instance" : {
+      "reference" : "Substance/SubstanceExample"
+    }
+  }],
+  "subjectMedicalHistory" : [{
+    "reference" : "Condition/ConditionExample"
+  }]
+}

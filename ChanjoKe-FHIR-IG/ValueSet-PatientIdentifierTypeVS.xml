@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PatientIdentifierTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PatientIdentifierTypeVS</b></p><a name="PatientIdentifierTypeVS"> </a><a name="hcPatientIdentifierTypeVS"> </a><a name="PatientIdentifierTypeVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IdentifierTypes.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-IdentifierTypes.html#IdentifierTypes-birthcertificate">birthcertificate</a></td><td style="color: #cccccc">Birth Certificate</td></tr><tr><td><a href="CodeSystem-IdentifierTypes.html#IdentifierTypes-nationalId">nationalId</a></td><td style="color: #cccccc">National ID</td></tr><tr><td><a href="CodeSystem-IdentifierTypes.html#IdentifierTypes-passport">passport</a></td><td style="color: #cccccc">Passport</td></tr><tr><td><a href="CodeSystem-IdentifierTypes.html#IdentifierTypes-nemis">nemis</a></td><td style="color: #cccccc">NEMIS No</td></tr><tr><td><a href="CodeSystem-IdentifierTypes.html#IdentifierTypes-bNo">bNo</a></td><td style="color: #cccccc">Birth Notification Number</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/PatientIdentifierTypeVS"/>
+  <version value="0.1.0"/>
+  <name value="PTDIDTYPS"/>
+  <title value="Patient Identifier type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="This is a set of valuesets that have been defined for the KenyanPatient Registry"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IdentifierTypes"/>
+      <concept>
+        <code value="birthcertificate"/>
+      </concept>
+      <concept>
+        <code value="nationalId"/>
+      </concept>
+      <concept>
+        <code value="passport"/>
+      </concept>
+      <concept>
+        <code value="nemis"/>
+      </concept>
+      <concept>
+        <code value="bNo"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

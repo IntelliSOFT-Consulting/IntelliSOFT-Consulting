@@ -1,0 +1,171 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IMMZCDataElementsCodeSystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZCDataElementsCodeSystem</b></p><a name=\"IMMZCDataElementsCodeSystem\"> </a><a name=\"hcIMMZCDataElementsCodeSystem\"> </a><a name=\"IMMZCDataElementsCodeSystem-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZCDataElementsCodeSystem-DE1\"> </a></td><td>Vaccination venue</td><td/></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZCDataElementsCodeSystem-DE2\"> </a></td><td>Facility</td><td/></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZCDataElementsCodeSystem-DE3\"> </a></td><td>Outreach session</td><td/></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZCDataElementsCodeSystem-DE4\"> </a></td><td>Name of facility</td><td>List of facilities from the KMFL</td></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZCDataElementsCodeSystem-DE5\"> </a></td><td>Facility type</td><td/></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZCDataElementsCodeSystem-DE6\"> </a></td><td>Facility location</td><td/></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZCDataElementsCodeSystem-DE7\"> </a></td><td>Facility ID</td><td>Facility unique identification number based on the National Master Facility List (NMFL)</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZCDataElementsCodeSystem-DE9\"> </a></td><td>Display client’s current vaccine schedule</td><td>Vaccine type - name of antigen, Vaccine dose, Vaccination status - due/missed/requested, Vaccine stock availability</td></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZCDataElementsCodeSystem-DE10\"> </a></td><td>Body weight</td><td/></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZCDataElementsCodeSystem-DE11\"> </a></td><td>Contraindications to vaccine</td><td/></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZCDataElementsCodeSystem-DE12\"> </a></td><td>Yes</td><td/></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZCDataElementsCodeSystem-DE13\"> </a></td><td>No</td><td/></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZCDataElementsCodeSystem-DE14\"> </a></td><td>Vaccine administered</td><td/></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZCDataElementsCodeSystem-DE17\"> </a></td><td>Reason vaccine was not administered</td><td>The reason this immunization event was not performed.</td></tr><tr><td style=\"white-space:nowrap\">DE18<a name=\"IMMZCDataElementsCodeSystem-DE18\"> </a></td><td>Product out of stock</td><td>There was no supply of the product on hand to perform the service.</td></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZCDataElementsCodeSystem-DE19\"> </a></td><td>Contraindication</td><td/></tr><tr><td style=\"white-space:nowrap\">DE20<a name=\"IMMZCDataElementsCodeSystem-DE20\"> </a></td><td>Cold chain break</td><td>The vaccine experienced a cold chain break.</td></tr><tr><td style=\"white-space:nowrap\">DE21<a name=\"IMMZCDataElementsCodeSystem-DE21\"> </a></td><td>Client objection</td><td>The client or their guardian objects to receiving the vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE22<a name=\"IMMZCDataElementsCodeSystem-DE22\"> </a></td><td>Caregiver refusal</td><td>The client's caregiver refused the vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE23<a name=\"IMMZCDataElementsCodeSystem-DE23\"> </a></td><td>Expired product</td><td>The vaccine was expired at the time of administration.</td></tr><tr><td style=\"white-space:nowrap\">DE24<a name=\"IMMZCDataElementsCodeSystem-DE24\"> </a></td><td>Unspecified reason</td><td>The immunization event was not carried out for an unspecified reason</td></tr><tr><td style=\"white-space:nowrap\">DE25<a name=\"IMMZCDataElementsCodeSystem-DE25\"> </a></td><td>Client acquired the disease</td><td>The immunization event was not carried out due to the client having had the disease</td></tr><tr><td style=\"white-space:nowrap\">DE26<a name=\"IMMZCDataElementsCodeSystem-DE26\"> </a></td><td>Immunization not carried out for other reasons.</td><td>The immunization event was not carried out for other reasons</td></tr><tr><td style=\"white-space:nowrap\">DE27<a name=\"IMMZCDataElementsCodeSystem-DE27\"> </a></td><td>Vaccine name</td><td>Vaccine name/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element.</td></tr><tr><td style=\"white-space:nowrap\">DE28<a name=\"IMMZCDataElementsCodeSystem-DE28\"> </a></td><td>Vaccine brand</td><td>The brand or trade name used to refer to the vaccine received.</td></tr><tr><td style=\"white-space:nowrap\">DE29<a name=\"IMMZCDataElementsCodeSystem-DE29\"> </a></td><td>Vaccine manufacturer</td><td>The manufacturer of the vaccine product</td></tr><tr><td style=\"white-space:nowrap\">DE30<a name=\"IMMZCDataElementsCodeSystem-DE30\"> </a></td><td>Disease targeted</td><td>Vaccine preventable disease being targeted.</td></tr><tr><td style=\"white-space:nowrap\">DE31<a name=\"IMMZCDataElementsCodeSystem-DE31\"> </a></td><td>Vaccine batch number</td><td>Batch number or lot number of vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE32<a name=\"IMMZCDataElementsCodeSystem-DE32\"> </a></td><td>Expiration date</td><td>The expiration date of the vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE33<a name=\"IMMZCDataElementsCodeSystem-DE33\"> </a></td><td>Dose quantity</td><td>The quantity of vaccine product that was administered.</td></tr><tr><td style=\"white-space:nowrap\">DE34<a name=\"IMMZCDataElementsCodeSystem-DE34\"> </a></td><td>Site administered</td><td>The body site where vaccine was administered.</td></tr><tr><td style=\"white-space:nowrap\">DE35<a name=\"IMMZCDataElementsCodeSystem-DE35\"> </a></td><td>Vaccinator name</td><td/></tr><tr><td style=\"white-space:nowrap\">DE36<a name=\"IMMZCDataElementsCodeSystem-DE36\"> </a></td><td>Vaccinator ID</td><td/></tr><tr><td style=\"white-space:nowrap\">DE37<a name=\"IMMZCDataElementsCodeSystem-DE37\"> </a></td><td>Certificate issued</td><td>Indicates if a digital certificate is required</td></tr><tr><td style=\"white-space:nowrap\">DE38<a name=\"IMMZCDataElementsCodeSystem-DE38\"> </a></td><td>Date issued</td><td/></tr><tr><td style=\"white-space:nowrap\">DE39<a name=\"IMMZCDataElementsCodeSystem-DE39\"> </a></td><td>Certificate valid from</td><td>Date in which the certificate for an immunization event became valid. No health or clinical inferences should be made from this date</td></tr><tr><td style=\"white-space:nowrap\">DE40<a name=\"IMMZCDataElementsCodeSystem-DE40\"> </a></td><td>Certificate valid until</td><td>Last date in which the certificate for an immunization event is valid. No health or clinical inferences should be made from this date</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZ_C"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DE1" ] ;
+     fhir:display [ fhir:v "Vaccination venue" ]
+  ] [
+     fhir:code [ fhir:v "DE2" ] ;
+     fhir:display [ fhir:v "Facility" ]
+  ] [
+     fhir:code [ fhir:v "DE3" ] ;
+     fhir:display [ fhir:v "Outreach session" ]
+  ] [
+     fhir:code [ fhir:v "DE4" ] ;
+     fhir:display [ fhir:v "Name of facility" ] ;
+     fhir:definition [ fhir:v "List of facilities from the KMFL" ]
+  ] [
+     fhir:code [ fhir:v "DE5" ] ;
+     fhir:display [ fhir:v "Facility type" ]
+  ] [
+     fhir:code [ fhir:v "DE6" ] ;
+     fhir:display [ fhir:v "Facility location" ]
+  ] [
+     fhir:code [ fhir:v "DE7" ] ;
+     fhir:display [ fhir:v "Facility ID" ] ;
+     fhir:definition [ fhir:v "Facility unique identification number based on the National Master Facility List (NMFL)" ]
+  ] [
+     fhir:code [ fhir:v "DE9" ] ;
+     fhir:display [ fhir:v "Display client’s current vaccine schedule" ] ;
+     fhir:definition [ fhir:v "Vaccine type - name of antigen, Vaccine dose, Vaccination status - due/missed/requested, Vaccine stock availability" ]
+  ] [
+     fhir:code [ fhir:v "DE10" ] ;
+     fhir:display [ fhir:v "Body weight" ]
+  ] [
+     fhir:code [ fhir:v "DE11" ] ;
+     fhir:display [ fhir:v "Contraindications to vaccine" ]
+  ] [
+     fhir:code [ fhir:v "DE12" ] ;
+     fhir:display [ fhir:v "Yes" ]
+  ] [
+     fhir:code [ fhir:v "DE13" ] ;
+     fhir:display [ fhir:v "No" ]
+  ] [
+     fhir:code [ fhir:v "DE14" ] ;
+     fhir:display [ fhir:v "Vaccine administered" ]
+  ] [
+     fhir:code [ fhir:v "DE17" ] ;
+     fhir:display [ fhir:v "Reason vaccine was not administered" ] ;
+     fhir:definition [ fhir:v "The reason this immunization event was not performed." ]
+  ] [
+     fhir:code [ fhir:v "DE18" ] ;
+     fhir:display [ fhir:v "Product out of stock" ] ;
+     fhir:definition [ fhir:v "There was no supply of the product on hand to perform the service." ]
+  ] [
+     fhir:code [ fhir:v "DE19" ] ;
+     fhir:display [ fhir:v "Contraindication" ]
+  ] [
+     fhir:code [ fhir:v "DE20" ] ;
+     fhir:display [ fhir:v "Cold chain break" ] ;
+     fhir:definition [ fhir:v "The vaccine experienced a cold chain break." ]
+  ] [
+     fhir:code [ fhir:v "DE21" ] ;
+     fhir:display [ fhir:v "Client objection" ] ;
+     fhir:definition [ fhir:v "The client or their guardian objects to receiving the vaccine." ]
+  ] [
+     fhir:code [ fhir:v "DE22" ] ;
+     fhir:display [ fhir:v "Caregiver refusal" ] ;
+     fhir:definition [ fhir:v "The client's caregiver refused the vaccine" ]
+  ] [
+     fhir:code [ fhir:v "DE23" ] ;
+     fhir:display [ fhir:v "Expired product" ] ;
+     fhir:definition [ fhir:v "The vaccine was expired at the time of administration." ]
+  ] [
+     fhir:code [ fhir:v "DE24" ] ;
+     fhir:display [ fhir:v "Unspecified reason" ] ;
+     fhir:definition [ fhir:v "The immunization event was not carried out for an unspecified reason" ]
+  ] [
+     fhir:code [ fhir:v "DE25" ] ;
+     fhir:display [ fhir:v "Client acquired the disease" ] ;
+     fhir:definition [ fhir:v "The immunization event was not carried out due to the client having had the disease" ]
+  ] [
+     fhir:code [ fhir:v "DE26" ] ;
+     fhir:display [ fhir:v "Immunization not carried out for other reasons." ] ;
+     fhir:definition [ fhir:v "The immunization event was not carried out for other reasons" ]
+  ] [
+     fhir:code [ fhir:v "DE27" ] ;
+     fhir:display [ fhir:v "Vaccine name" ] ;
+     fhir:definition [ fhir:v "Vaccine name/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element." ]
+  ] [
+     fhir:code [ fhir:v "DE28" ] ;
+     fhir:display [ fhir:v "Vaccine brand" ] ;
+     fhir:definition [ fhir:v "The brand or trade name used to refer to the vaccine received." ]
+  ] [
+     fhir:code [ fhir:v "DE29" ] ;
+     fhir:display [ fhir:v "Vaccine manufacturer" ] ;
+     fhir:definition [ fhir:v "The manufacturer of the vaccine product" ]
+  ] [
+     fhir:code [ fhir:v "DE30" ] ;
+     fhir:display [ fhir:v "Disease targeted" ] ;
+     fhir:definition [ fhir:v "Vaccine preventable disease being targeted." ]
+  ] [
+     fhir:code [ fhir:v "DE31" ] ;
+     fhir:display [ fhir:v "Vaccine batch number" ] ;
+     fhir:definition [ fhir:v "Batch number or lot number of vaccine." ]
+  ] [
+     fhir:code [ fhir:v "DE32" ] ;
+     fhir:display [ fhir:v "Expiration date" ] ;
+     fhir:definition [ fhir:v "The expiration date of the vaccine" ]
+  ] [
+     fhir:code [ fhir:v "DE33" ] ;
+     fhir:display [ fhir:v "Dose quantity" ] ;
+     fhir:definition [ fhir:v "The quantity of vaccine product that was administered." ]
+  ] [
+     fhir:code [ fhir:v "DE34" ] ;
+     fhir:display [ fhir:v "Site administered" ] ;
+     fhir:definition [ fhir:v "The body site where vaccine was administered." ]
+  ] [
+     fhir:code [ fhir:v "DE35" ] ;
+     fhir:display [ fhir:v "Vaccinator name" ]
+  ] [
+     fhir:code [ fhir:v "DE36" ] ;
+     fhir:display [ fhir:v "Vaccinator ID" ]
+  ] [
+     fhir:code [ fhir:v "DE37" ] ;
+     fhir:display [ fhir:v "Certificate issued" ] ;
+     fhir:definition [ fhir:v "Indicates if a digital certificate is required" ]
+  ] [
+     fhir:code [ fhir:v "DE38" ] ;
+     fhir:display [ fhir:v "Date issued" ]
+  ] [
+     fhir:code [ fhir:v "DE39" ] ;
+     fhir:display [ fhir:v "Certificate valid from" ] ;
+     fhir:definition [ fhir:v "Date in which the certificate for an immunization event became valid. No health or clinical inferences should be made from this date" ]
+  ] [
+     fhir:code [ fhir:v "DE40" ] ;
+     fhir:display [ fhir:v "Certificate valid until" ] ;
+     fhir:definition [ fhir:v "Last date in which the certificate for an immunization event is valid. No health or clinical inferences should be made from this date" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

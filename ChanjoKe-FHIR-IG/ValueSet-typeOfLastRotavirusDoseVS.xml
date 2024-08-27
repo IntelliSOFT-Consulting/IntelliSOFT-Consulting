@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="typeOfLastRotavirusDoseVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet typeOfLastRotavirusDoseVS</b></p><a name="typeOfLastRotavirusDoseVS"> </a><a name="hctypeOfLastRotavirusDoseVS"> </a><a name="typeOfLastRotavirusDoseVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.B.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE45">DE45</a></td><td>Rotavirus-1</td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE46">DE46</a></td><td>Rotavirus-2</td></tr><tr><td><a href="CodeSystem-IMMZ.B.html#IMMZ.B-DE47">DE47</a></td><td>Rotavirus-3</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfLastRotavirusDoseVS"/>
+  <version value="0.1.0"/>
+  <name value="IMMZB1DE44VS"/>
+  <title value="Type of last Rotavirus dose"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Type of last Rotavirus dose"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.B"/>
+      <concept>
+        <code value="DE45"/>
+        <display value="Rotavirus-1"/>
+      </concept>
+      <concept>
+        <code value="DE46"/>
+        <display value="Rotavirus-2"/>
+      </concept>
+      <concept>
+        <code value="DE47"/>
+        <display value="Rotavirus-3"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

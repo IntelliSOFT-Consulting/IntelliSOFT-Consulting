@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "disaggregationGroupVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet disaggregationGroupVS</b></p><a name=\"disaggregationGroupVS\"> </a><a name=\"hcdisaggregationGroupVS\"> </a><a name=\"disaggregationGroupVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.E.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE33\">DE33</a></td><td style=\"color: #cccccc\">By-Sex</td><td>Represents a disaggregation grouped by the indicator population's sex values</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE34\">DE34</a></td><td style=\"color: #cccccc\">By-Region</td><td>Represents a disaggregation grouped by the indicator population's administrative regions</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE35\">DE35</a></td><td style=\"color: #cccccc\">By-Age Group</td><td>Represents a disaggregation grouped by the indicator population's age groups</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE36\">DE36</a></td><td style=\"color: #cccccc\">By-Dose Number</td><td>Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE37\">DE37</a></td><td style=\"color: #cccccc\">By-Vaccine Type</td><td>Represents a disaggregation grouped by the indicator population's vaccine types</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE38\">DE38</a></td><td style=\"color: #cccccc\">By-Vaccine Manufacturer</td><td>Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE39\">DE39</a></td><td style=\"color: #cccccc\">By-Reaction Manifestation</td><td>Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine</td></tr><tr><td><a href=\"CodeSystem-IMMZ.E.html#IMMZ.E-DE40\">DE40</a></td><td style=\"color: #cccccc\">By-Occupation</td><td>Represents a disaggregation grouped by the indicator population's occupations</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/disaggregationGroupVS",
+  "version" : "0.1.0",
+  "name" : "IMMZE1DE32VS",
+  "title" : "Disaggregation Group",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Disaggregation Group",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E",
+      "concept" : [{
+        "code" : "DE33"
+      },
+      {
+        "code" : "DE34"
+      },
+      {
+        "code" : "DE35"
+      },
+      {
+        "code" : "DE36"
+      },
+      {
+        "code" : "DE37"
+      },
+      {
+        "code" : "DE38"
+      },
+      {
+        "code" : "DE39"
+      },
+      {
+        "code" : "DE40"
+      }]
+    }]
+  }
+}

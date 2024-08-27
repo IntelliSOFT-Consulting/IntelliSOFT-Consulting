@@ -1,0 +1,199 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "IMMZCDataElementsCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IMMZCDataElementsCodeSystem</b></p><a name=\"IMMZCDataElementsCodeSystem\"> </a><a name=\"hcIMMZCDataElementsCodeSystem\"> </a><a name=\"IMMZCDataElementsCodeSystem-en-US\"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DE1<a name=\"IMMZCDataElementsCodeSystem-DE1\"> </a></td><td>Vaccination venue</td><td/></tr><tr><td style=\"white-space:nowrap\">DE2<a name=\"IMMZCDataElementsCodeSystem-DE2\"> </a></td><td>Facility</td><td/></tr><tr><td style=\"white-space:nowrap\">DE3<a name=\"IMMZCDataElementsCodeSystem-DE3\"> </a></td><td>Outreach session</td><td/></tr><tr><td style=\"white-space:nowrap\">DE4<a name=\"IMMZCDataElementsCodeSystem-DE4\"> </a></td><td>Name of facility</td><td>List of facilities from the KMFL</td></tr><tr><td style=\"white-space:nowrap\">DE5<a name=\"IMMZCDataElementsCodeSystem-DE5\"> </a></td><td>Facility type</td><td/></tr><tr><td style=\"white-space:nowrap\">DE6<a name=\"IMMZCDataElementsCodeSystem-DE6\"> </a></td><td>Facility location</td><td/></tr><tr><td style=\"white-space:nowrap\">DE7<a name=\"IMMZCDataElementsCodeSystem-DE7\"> </a></td><td>Facility ID</td><td>Facility unique identification number based on the National Master Facility List (NMFL)</td></tr><tr><td style=\"white-space:nowrap\">DE9<a name=\"IMMZCDataElementsCodeSystem-DE9\"> </a></td><td>Display client’s current vaccine schedule</td><td>Vaccine type - name of antigen, Vaccine dose, Vaccination status - due/missed/requested, Vaccine stock availability</td></tr><tr><td style=\"white-space:nowrap\">DE10<a name=\"IMMZCDataElementsCodeSystem-DE10\"> </a></td><td>Body weight</td><td/></tr><tr><td style=\"white-space:nowrap\">DE11<a name=\"IMMZCDataElementsCodeSystem-DE11\"> </a></td><td>Contraindications to vaccine</td><td/></tr><tr><td style=\"white-space:nowrap\">DE12<a name=\"IMMZCDataElementsCodeSystem-DE12\"> </a></td><td>Yes</td><td/></tr><tr><td style=\"white-space:nowrap\">DE13<a name=\"IMMZCDataElementsCodeSystem-DE13\"> </a></td><td>No</td><td/></tr><tr><td style=\"white-space:nowrap\">DE14<a name=\"IMMZCDataElementsCodeSystem-DE14\"> </a></td><td>Vaccine administered</td><td/></tr><tr><td style=\"white-space:nowrap\">DE17<a name=\"IMMZCDataElementsCodeSystem-DE17\"> </a></td><td>Reason vaccine was not administered</td><td>The reason this immunization event was not performed.</td></tr><tr><td style=\"white-space:nowrap\">DE18<a name=\"IMMZCDataElementsCodeSystem-DE18\"> </a></td><td>Product out of stock</td><td>There was no supply of the product on hand to perform the service.</td></tr><tr><td style=\"white-space:nowrap\">DE19<a name=\"IMMZCDataElementsCodeSystem-DE19\"> </a></td><td>Contraindication</td><td/></tr><tr><td style=\"white-space:nowrap\">DE20<a name=\"IMMZCDataElementsCodeSystem-DE20\"> </a></td><td>Cold chain break</td><td>The vaccine experienced a cold chain break.</td></tr><tr><td style=\"white-space:nowrap\">DE21<a name=\"IMMZCDataElementsCodeSystem-DE21\"> </a></td><td>Client objection</td><td>The client or their guardian objects to receiving the vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE22<a name=\"IMMZCDataElementsCodeSystem-DE22\"> </a></td><td>Caregiver refusal</td><td>The client's caregiver refused the vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE23<a name=\"IMMZCDataElementsCodeSystem-DE23\"> </a></td><td>Expired product</td><td>The vaccine was expired at the time of administration.</td></tr><tr><td style=\"white-space:nowrap\">DE24<a name=\"IMMZCDataElementsCodeSystem-DE24\"> </a></td><td>Unspecified reason</td><td>The immunization event was not carried out for an unspecified reason</td></tr><tr><td style=\"white-space:nowrap\">DE25<a name=\"IMMZCDataElementsCodeSystem-DE25\"> </a></td><td>Client acquired the disease</td><td>The immunization event was not carried out due to the client having had the disease</td></tr><tr><td style=\"white-space:nowrap\">DE26<a name=\"IMMZCDataElementsCodeSystem-DE26\"> </a></td><td>Immunization not carried out for other reasons.</td><td>The immunization event was not carried out for other reasons</td></tr><tr><td style=\"white-space:nowrap\">DE27<a name=\"IMMZCDataElementsCodeSystem-DE27\"> </a></td><td>Vaccine name</td><td>Vaccine name/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element.</td></tr><tr><td style=\"white-space:nowrap\">DE28<a name=\"IMMZCDataElementsCodeSystem-DE28\"> </a></td><td>Vaccine brand</td><td>The brand or trade name used to refer to the vaccine received.</td></tr><tr><td style=\"white-space:nowrap\">DE29<a name=\"IMMZCDataElementsCodeSystem-DE29\"> </a></td><td>Vaccine manufacturer</td><td>The manufacturer of the vaccine product</td></tr><tr><td style=\"white-space:nowrap\">DE30<a name=\"IMMZCDataElementsCodeSystem-DE30\"> </a></td><td>Disease targeted</td><td>Vaccine preventable disease being targeted.</td></tr><tr><td style=\"white-space:nowrap\">DE31<a name=\"IMMZCDataElementsCodeSystem-DE31\"> </a></td><td>Vaccine batch number</td><td>Batch number or lot number of vaccine.</td></tr><tr><td style=\"white-space:nowrap\">DE32<a name=\"IMMZCDataElementsCodeSystem-DE32\"> </a></td><td>Expiration date</td><td>The expiration date of the vaccine</td></tr><tr><td style=\"white-space:nowrap\">DE33<a name=\"IMMZCDataElementsCodeSystem-DE33\"> </a></td><td>Dose quantity</td><td>The quantity of vaccine product that was administered.</td></tr><tr><td style=\"white-space:nowrap\">DE34<a name=\"IMMZCDataElementsCodeSystem-DE34\"> </a></td><td>Site administered</td><td>The body site where vaccine was administered.</td></tr><tr><td style=\"white-space:nowrap\">DE35<a name=\"IMMZCDataElementsCodeSystem-DE35\"> </a></td><td>Vaccinator name</td><td/></tr><tr><td style=\"white-space:nowrap\">DE36<a name=\"IMMZCDataElementsCodeSystem-DE36\"> </a></td><td>Vaccinator ID</td><td/></tr><tr><td style=\"white-space:nowrap\">DE37<a name=\"IMMZCDataElementsCodeSystem-DE37\"> </a></td><td>Certificate issued</td><td>Indicates if a digital certificate is required</td></tr><tr><td style=\"white-space:nowrap\">DE38<a name=\"IMMZCDataElementsCodeSystem-DE38\"> </a></td><td>Date issued</td><td/></tr><tr><td style=\"white-space:nowrap\">DE39<a name=\"IMMZCDataElementsCodeSystem-DE39\"> </a></td><td>Certificate valid from</td><td>Date in which the certificate for an immunization event became valid. No health or clinical inferences should be made from this date</td></tr><tr><td style=\"white-space:nowrap\">DE40<a name=\"IMMZCDataElementsCodeSystem-DE40\"> </a></td><td>Certificate valid until</td><td>Last date in which the certificate for an immunization event is valid. No health or clinical inferences should be made from this date</td></tr></table></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZCDataElementsCodeSystem",
+  "version" : "0.1.0",
+  "name" : "IMMZ_C",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "DE1",
+    "display" : "Vaccination venue"
+  },
+  {
+    "code" : "DE2",
+    "display" : "Facility"
+  },
+  {
+    "code" : "DE3",
+    "display" : "Outreach session"
+  },
+  {
+    "code" : "DE4",
+    "display" : "Name of facility",
+    "definition" : "List of facilities from the KMFL"
+  },
+  {
+    "code" : "DE5",
+    "display" : "Facility type"
+  },
+  {
+    "code" : "DE6",
+    "display" : "Facility location"
+  },
+  {
+    "code" : "DE7",
+    "display" : "Facility ID",
+    "definition" : "Facility unique identification number based on the National Master Facility List (NMFL)"
+  },
+  {
+    "code" : "DE9",
+    "display" : "Display client’s current vaccine schedule",
+    "definition" : "Vaccine type - name of antigen, Vaccine dose, Vaccination status - due/missed/requested, Vaccine stock availability"
+  },
+  {
+    "code" : "DE10",
+    "display" : "Body weight"
+  },
+  {
+    "code" : "DE11",
+    "display" : "Contraindications to vaccine"
+  },
+  {
+    "code" : "DE12",
+    "display" : "Yes"
+  },
+  {
+    "code" : "DE13",
+    "display" : "No"
+  },
+  {
+    "code" : "DE14",
+    "display" : "Vaccine administered"
+  },
+  {
+    "code" : "DE17",
+    "display" : "Reason vaccine was not administered",
+    "definition" : "The reason this immunization event was not performed."
+  },
+  {
+    "code" : "DE18",
+    "display" : "Product out of stock",
+    "definition" : "There was no supply of the product on hand to perform the service."
+  },
+  {
+    "code" : "DE19",
+    "display" : "Contraindication"
+  },
+  {
+    "code" : "DE20",
+    "display" : "Cold chain break",
+    "definition" : "The vaccine experienced a cold chain break."
+  },
+  {
+    "code" : "DE21",
+    "display" : "Client objection",
+    "definition" : "The client or their guardian objects to receiving the vaccine."
+  },
+  {
+    "code" : "DE22",
+    "display" : "Caregiver refusal",
+    "definition" : "The client's caregiver refused the vaccine"
+  },
+  {
+    "code" : "DE23",
+    "display" : "Expired product",
+    "definition" : "The vaccine was expired at the time of administration."
+  },
+  {
+    "code" : "DE24",
+    "display" : "Unspecified reason",
+    "definition" : "The immunization event was not carried out for an unspecified reason"
+  },
+  {
+    "code" : "DE25",
+    "display" : "Client acquired the disease",
+    "definition" : "The immunization event was not carried out due to the client having had the disease"
+  },
+  {
+    "code" : "DE26",
+    "display" : "Immunization not carried out for other reasons.",
+    "definition" : "The immunization event was not carried out for other reasons"
+  },
+  {
+    "code" : "DE27",
+    "display" : "Vaccine name",
+    "definition" : "Vaccine name/category that was administered or was to be administered. Any vaccine code available in the IMMZ.Z Vaccine Library list of codes applies in this data element."
+  },
+  {
+    "code" : "DE28",
+    "display" : "Vaccine brand",
+    "definition" : "The brand or trade name used to refer to the vaccine received."
+  },
+  {
+    "code" : "DE29",
+    "display" : "Vaccine manufacturer",
+    "definition" : "The manufacturer of the vaccine product"
+  },
+  {
+    "code" : "DE30",
+    "display" : "Disease targeted",
+    "definition" : "Vaccine preventable disease being targeted."
+  },
+  {
+    "code" : "DE31",
+    "display" : "Vaccine batch number",
+    "definition" : "Batch number or lot number of vaccine."
+  },
+  {
+    "code" : "DE32",
+    "display" : "Expiration date",
+    "definition" : "The expiration date of the vaccine"
+  },
+  {
+    "code" : "DE33",
+    "display" : "Dose quantity",
+    "definition" : "The quantity of vaccine product that was administered."
+  },
+  {
+    "code" : "DE34",
+    "display" : "Site administered",
+    "definition" : "The body site where vaccine was administered."
+  },
+  {
+    "code" : "DE35",
+    "display" : "Vaccinator name"
+  },
+  {
+    "code" : "DE36",
+    "display" : "Vaccinator ID"
+  },
+  {
+    "code" : "DE37",
+    "display" : "Certificate issued",
+    "definition" : "Indicates if a digital certificate is required"
+  },
+  {
+    "code" : "DE38",
+    "display" : "Date issued"
+  },
+  {
+    "code" : "DE39",
+    "display" : "Certificate valid from",
+    "definition" : "Date in which the certificate for an immunization event became valid. No health or clinical inferences should be made from this date"
+  },
+  {
+    "code" : "DE40",
+    "display" : "Certificate valid until",
+    "definition" : "Last date in which the certificate for an immunization event is valid. No health or clinical inferences should be made from this date"
+  }]
+}

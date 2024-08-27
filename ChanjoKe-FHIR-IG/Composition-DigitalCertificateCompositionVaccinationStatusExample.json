@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Composition",
+  "id" : "DigitalCertificateCompositionVaccinationStatusExample",
+  "meta" : {
+    "profile" : ["https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DigitalCertificateCompositionVaccinationStatus"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition DigitalCertificateCompositionVaccinationStatusExample</b></p><a name=\"DigitalCertificateCompositionVaccinationStatusExample\"> </a><a name=\"hcDigitalCertificateCompositionVaccinationStatusExample\"> </a><a name=\"DigitalCertificateCompositionVaccinationStatusExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11485-0}\">Anesthesia records</span></p><p><b>date</b>: 2020-02-02</p><p><b>author</b>: <a href=\"Practitioner-PractitionerExample.html\">Practitioner</a></p><p><b>title</b>: Anesthesia records</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11485-0",
+      "display" : "Anesthesia records"
+    }],
+    "text" : "Anesthesia records"
+  },
+  "date" : "2020-02-02",
+  "author" : [{
+    "reference" : "Practitioner/PractitionerExample"
+  }],
+  "title" : "Anesthesia records",
+  "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "11369-6"
+      }]
+    },
+    "focus" : {
+      "reference" : "Immunization/KenyanImmunizationExample"
+    },
+    "entry" : [{
+      "reference" : "Immunization/KenyanImmunizationExample"
+    }]
+  }]
+}

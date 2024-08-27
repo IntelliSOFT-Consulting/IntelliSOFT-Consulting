@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="IMMZ.F"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem IMMZ.F</b></p><a name="IMMZ.F"> </a><a name="hcIMMZ.F"> </a><a name="IMMZ.F-en-US"> </a><p>This case-insensitive code system <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DE1<a name="IMMZ.F-DE1"> </a></td><td>Type of AEFI</td><td/></tr><tr><td style="white-space:nowrap">DE2<a name="IMMZ.F-DE2"> </a></td><td>High fever</td><td/></tr><tr><td style="white-space:nowrap">DE3<a name="IMMZ.F-DE3"> </a></td><td>Convulsion</td><td>Convulsion</td></tr><tr><td style="white-space:nowrap">DE4<a name="IMMZ.F-DE4"> </a></td><td>Anaphylaxis</td><td/></tr><tr><td style="white-space:nowrap">DE5<a name="IMMZ.F-DE5"> </a></td><td>Paralysis</td><td/></tr><tr><td style="white-space:nowrap">DE6<a name="IMMZ.F-DE6"> </a></td><td>Toxic shock</td><td/></tr><tr><td style="white-space:nowrap">DE7<a name="IMMZ.F-DE7"> </a></td><td>Injection site abcess</td><td/></tr><tr><td style="white-space:nowrap">DE8<a name="IMMZ.F-DE8"> </a></td><td>Severe local reaction</td><td/></tr><tr><td style="white-space:nowrap">DE9<a name="IMMZ.F-DE9"> </a></td><td>Generalised urticaria(hives)</td><td/></tr><tr><td style="white-space:nowrap">DE10<a name="IMMZ.F-DE10"> </a></td><td>BCG Lymphadenitis</td><td/></tr><tr><td style="white-space:nowrap">DE11<a name="IMMZ.F-DE11"> </a></td><td>Encaphalopathy, Encephalitis/menengitis</td><td/></tr><tr><td style="white-space:nowrap">DE12<a name="IMMZ.F-DE12"> </a></td><td>Other (specify)</td><td/></tr><tr><td style="white-space:nowrap">DE14<a name="IMMZ.F-DE14"> </a></td><td>Brief details on the event</td><td/></tr><tr><td style="white-space:nowrap">DE15<a name="IMMZ.F-DE15"> </a></td><td>Onset of event</td><td/></tr><tr><td style="white-space:nowrap">DE16<a name="IMMZ.F-DE16"> </a></td><td>Date</td><td/></tr><tr><td style="white-space:nowrap">DE17<a name="IMMZ.F-DE17"> </a></td><td>Time</td><td/></tr><tr><td style="white-space:nowrap">DE19<a name="IMMZ.F-DE19"> </a></td><td>Past medical history</td><td/></tr><tr><td style="white-space:nowrap">DE21<a name="IMMZ.F-DE21"> </a></td><td>Action taken</td><td/></tr><tr><td style="white-space:nowrap">DE22<a name="IMMZ.F-DE22"> </a></td><td>Treatment given</td><td/></tr><tr><td style="white-space:nowrap">DE23<a name="IMMZ.F-DE23"> </a></td><td>Specify</td><td/></tr><tr><td style="white-space:nowrap">DE24<a name="IMMZ.F-DE24"> </a></td><td>Specimen collected for investigation</td><td/></tr><tr><td style="white-space:nowrap">DE26<a name="IMMZ.F-DE26"> </a></td><td>Reaction Severity</td><td>The severity of the reaction which was observed.</td></tr><tr><td style="white-space:nowrap">DE27<a name="IMMZ.F-DE27"> </a></td><td>Life Threatening</td><td>The client had a life-threatening reaction to the administered vaccine.</td></tr><tr><td style="white-space:nowrap">DE28<a name="IMMZ.F-DE28"> </a></td><td>Mild</td><td>Local reaction at the injection site or minor systemic reaction such as fever or malaise, that occurs over a short period of time and pose little danger</td></tr><tr><td style="white-space:nowrap">DE29<a name="IMMZ.F-DE29"> </a></td><td>Moderate</td><td>Local or systemic reactions more severe than mild and of longer duration</td></tr><tr><td style="white-space:nowrap">DE30<a name="IMMZ.F-DE30"> </a></td><td>Severe</td><td>Severe and potentially (rarely) life threatening reactions including seizures and anaphylactic reactions</td></tr><tr><td style="white-space:nowrap">DE31<a name="IMMZ.F-DE31"> </a></td><td>Fatal</td><td>The client died as a result of the reaction</td></tr><tr><td style="white-space:nowrap">DE33<a name="IMMZ.F-DE33"> </a></td><td>AEFI Outcome</td><td/></tr><tr><td style="white-space:nowrap">DE34<a name="IMMZ.F-DE34"> </a></td><td>Recovered</td><td>The client fully recovered</td></tr><tr><td style="white-space:nowrap">DE35<a name="IMMZ.F-DE35"> </a></td><td>Recovering</td><td>The client is recovering</td></tr><tr><td style="white-space:nowrap">DE36<a name="IMMZ.F-DE36"> </a></td><td>Not Recovered</td><td>The client is did not recover</td></tr><tr><td style="white-space:nowrap">DE37<a name="IMMZ.F-DE37"> </a></td><td>Unknown</td><td>The AEFI outcome is unknown</td></tr><tr><td style="white-space:nowrap">DE38<a name="IMMZ.F-DE38"> </a></td><td>Died</td><td>The adverse event resulted in the client's death</td></tr><tr><td style="white-space:nowrap">DE40<a name="IMMZ.F-DE40"> </a></td><td>Name of person reporting</td><td/></tr><tr><td style="white-space:nowrap">DE41<a name="IMMZ.F-DE41"> </a></td><td>Phone number</td><td/></tr><tr><td style="white-space:nowrap">DE42<a name="IMMZ.F-DE42"> </a></td><td>HCW handling AEFI</td><td/></tr><tr><td style="white-space:nowrap">DE43<a name="IMMZ.F-DE43"> </a></td><td>Date Reported</td><td/></tr><tr><td style="white-space:nowrap">DE44<a name="IMMZ.F-DE44"> </a></td><td>Facility Reported</td><td/></tr></table></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"/>
+  <version value="0.1.0"/>
+  <name value="IMMZ_F"/>
+  <title value="IMMZ.F CodeSystem for Data Elements"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem for IMMZ.F Data Elements"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="38"/>
+  <concept>
+    <code value="DE1"/>
+    <display value="Type of AEFI"/>
+  </concept>
+  <concept>
+    <code value="DE2"/>
+    <display value="High fever"/>
+  </concept>
+  <concept>
+    <code value="DE3"/>
+    <display value="Convulsion"/>
+    <definition value="Convulsion"/>
+  </concept>
+  <concept>
+    <code value="DE4"/>
+    <display value="Anaphylaxis"/>
+  </concept>
+  <concept>
+    <code value="DE5"/>
+    <display value="Paralysis"/>
+  </concept>
+  <concept>
+    <code value="DE6"/>
+    <display value="Toxic shock"/>
+  </concept>
+  <concept>
+    <code value="DE7"/>
+    <display value="Injection site abcess"/>
+  </concept>
+  <concept>
+    <code value="DE8"/>
+    <display value="Severe local reaction"/>
+  </concept>
+  <concept>
+    <code value="DE9"/>
+    <display value="Generalised urticaria(hives)"/>
+  </concept>
+  <concept>
+    <code value="DE10"/>
+    <display value="BCG Lymphadenitis"/>
+  </concept>
+  <concept>
+    <code value="DE11"/>
+    <display value="Encaphalopathy, Encephalitis/menengitis"/>
+  </concept>
+  <concept>
+    <code value="DE12"/>
+    <display value="Other (specify)"/>
+  </concept>
+  <concept>
+    <code value="DE14"/>
+    <display value="Brief details on the event"/>
+  </concept>
+  <concept>
+    <code value="DE15"/>
+    <display value="Onset of event"/>
+  </concept>
+  <concept>
+    <code value="DE16"/>
+    <display value="Date"/>
+  </concept>
+  <concept>
+    <code value="DE17"/>
+    <display value="Time"/>
+  </concept>
+  <concept>
+    <code value="DE19"/>
+    <display value="Past medical history"/>
+  </concept>
+  <concept>
+    <code value="DE21"/>
+    <display value="Action taken"/>
+  </concept>
+  <concept>
+    <code value="DE22"/>
+    <display value="Treatment given"/>
+  </concept>
+  <concept>
+    <code value="DE23"/>
+    <display value="Specify"/>
+  </concept>
+  <concept>
+    <code value="DE24"/>
+    <display value="Specimen collected for investigation"/>
+  </concept>
+  <concept>
+    <code value="DE26"/>
+    <display value="Reaction Severity"/>
+    <definition value="The severity of the reaction which was observed."/>
+  </concept>
+  <concept>
+    <code value="DE27"/>
+    <display value="Life Threatening"/>
+    <definition value="The client had a life-threatening reaction to the administered vaccine."/>
+  </concept>
+  <concept>
+    <code value="DE28"/>
+    <display value="Mild"/>
+    <definition value="Local reaction at the injection site or minor systemic reaction such as fever or malaise, that occurs over a short period of time and pose little danger"/>
+  </concept>
+  <concept>
+    <code value="DE29"/>
+    <display value="Moderate"/>
+    <definition value="Local or systemic reactions more severe than mild and of longer duration"/>
+  </concept>
+  <concept>
+    <code value="DE30"/>
+    <display value="Severe"/>
+    <definition value="Severe and potentially (rarely) life threatening reactions including seizures and anaphylactic reactions"/>
+  </concept>
+  <concept>
+    <code value="DE31"/>
+    <display value="Fatal"/>
+    <definition value="The client died as a result of the reaction"/>
+  </concept>
+  <concept>
+    <code value="DE33"/>
+    <display value="AEFI Outcome"/>
+  </concept>
+  <concept>
+    <code value="DE34"/>
+    <display value="Recovered"/>
+    <definition value="The client fully recovered"/>
+  </concept>
+  <concept>
+    <code value="DE35"/>
+    <display value="Recovering"/>
+    <definition value="The client is recovering"/>
+  </concept>
+  <concept>
+    <code value="DE36"/>
+    <display value="Not Recovered"/>
+    <definition value="The client is did not recover"/>
+  </concept>
+  <concept>
+    <code value="DE37"/>
+    <display value="Unknown"/>
+    <definition value="The AEFI outcome is unknown"/>
+  </concept>
+  <concept>
+    <code value="DE38"/>
+    <display value="Died"/>
+    <definition value="The adverse event resulted in the client's death"/>
+  </concept>
+  <concept>
+    <code value="DE40"/>
+    <display value="Name of person reporting"/>
+  </concept>
+  <concept>
+    <code value="DE41"/>
+    <display value="Phone number"/>
+  </concept>
+  <concept>
+    <code value="DE42"/>
+    <display value="HCW handling AEFI"/>
+  </concept>
+  <concept>
+    <code value="DE43"/>
+    <display value="Date Reported"/>
+  </concept>
+  <concept>
+    <code value="DE44"/>
+    <display value="Facility Reported"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SupplyRequest xmlns="http://hl7.org/fhir">
+  <id value="SupplyRequestProfileExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SupplyRequest SupplyRequestProfileExample</b></p><a name="SupplyRequestProfileExample"> </a><a name="hcSupplyRequestProfileExample"> </a><a name="SupplyRequestProfileExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest</code>/123456 (use: official, )</p><p><b>item</b>: <a href="Medication-MedicationExample.html">Medication Codeine phosphate</a></p><p><b>quantity</b>: 50 mm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm = 'mm')</span></p><p><b>occurrence</b>: 2020-02-02</p><p><b>authoredOn</b>: 2020-02-02</p><p><b>requester</b>: <a href="Patient-PatientExample.html">Grahame Grieve Male, DoB: 1969-04-13</a></p></div>
+  </text>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-of-last-order">
+    <valueDate value="2020-02-02"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expected-date-of-next-order">
+    <valueDate value="2020-02-02"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/total-population">
+    <valueInteger value="100"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/children">
+    <valueInteger value="50"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/pregnant-women">
+    <valueInteger value="50"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/doses-in-stock">
+    <valueInteger value="100"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/minimum">
+    <valueInteger value="50"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/maximum">
+    <valueInteger value="100"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/recommended-stock">
+    <valueInteger value="100"/>
+  </extension>
+  <extension url="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/ordered-amount">
+    <valueInteger value="50"/>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest"/>
+    <value value="123456"/>
+  </identifier>
+  <itemReference>
+    <reference value="Medication/MedicationExample"/>
+  </itemReference>
+  <quantity>
+    <value value="50"/>
+    <unit value="mm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mm"/>
+  </quantity>
+  <occurrenceDateTime value="2020-02-02"/>
+  <authoredOn value="2020-02-02"/>
+  <requester>
+    <reference value="Patient/PatientExample"/>
+  </requester>
+</SupplyRequest>

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfAEFIVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "typeOfAEFIVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet typeOfAEFIVS</b></p><a name=\"typeOfAEFIVS\"> </a><a name=\"hctypeOfAEFIVS\"> </a><a name=\"typeOfAEFIVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.F.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE2\">DE2</a></td><td style=\"color: #cccccc\">High fever</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE3\">DE3</a></td><td style=\"color: #cccccc\">Convulsion</td><td>Convulsion</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE4\">DE4</a></td><td style=\"color: #cccccc\">Anaphylaxis</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE5\">DE5</a></td><td style=\"color: #cccccc\">Paralysis</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE6\">DE6</a></td><td style=\"color: #cccccc\">Toxic shock</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE7\">DE7</a></td><td style=\"color: #cccccc\">Injection site abcess</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE8\">DE8</a></td><td style=\"color: #cccccc\">Severe local reaction</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE9\">DE9</a></td><td style=\"color: #cccccc\">Generalised urticaria(hives)</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE10\">DE10</a></td><td style=\"color: #cccccc\">BCG Lymphadenitis</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE11\">DE11</a></td><td style=\"color: #cccccc\">Encaphalopathy, Encephalitis/menengitis</td><td/></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE12\">DE12</a></td><td style=\"color: #cccccc\">Other (specify)</td><td/></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/typeOfAEFIVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IMMZFDE1VS"] ; # 
+  fhir:title [ fhir:v "Type of AEFI"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-27T20:30:12+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Intellisoft Consulting Ltd"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Intellisoft Consulting Ltd" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.intellisoftkenya.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info[at]intellisoftkenya.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of AEFI"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DE2" ]
+       ] [
+         fhir:code [ fhir:v "DE3" ]
+       ] [
+         fhir:code [ fhir:v "DE4" ]
+       ] [
+         fhir:code [ fhir:v "DE5" ]
+       ] [
+         fhir:code [ fhir:v "DE6" ]
+       ] [
+         fhir:code [ fhir:v "DE7" ]
+       ] [
+         fhir:code [ fhir:v "DE8" ]
+       ] [
+         fhir:code [ fhir:v "DE9" ]
+       ] [
+         fhir:code [ fhir:v "DE10" ]
+       ] [
+         fhir:code [ fhir:v "DE11" ]
+       ] [
+         fhir:code [ fhir:v "DE12" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

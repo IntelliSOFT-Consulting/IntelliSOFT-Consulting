@@ -1,0 +1,509 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IMMZ.E CodeSystem for Data Elements - JSON Representation - ChanjoKE Immunization Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11.126"}
+    h3,h4,h5,h6{--heading-prefix:"11.126"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ChanjoKE Immunization Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="index.html" class="dropdown-toggle">Home<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dependancies.html">Changes</a></li>
+    </ul>
+  </li>
+
+   <li class="dropdown">
+    <a data-toggle="dropdown" href="business-requirements.html" class="dropdown-toggle">Business Requirements<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="generic-personas.html">Generic Personas</a></li>
+      <li><a href="user-scenarios.html">User Scenarios</a></li>
+      <li><a href="business-processes.html">Business Processes</a></li>
+      <li><a href="decision-support-logic.html">Decision Support Logic</a></li>
+       <li><a href="functional-requirements.html">Functional Requirements</a></li>
+       <li><a href="non-functional-requirements.html">Non-Functional Requirements</a></li>
+    </ul>
+  </li>
+
+
+   <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifacts</a></li>
+      <li><a href="artifacts.html#terminology-value-sets">Terminology</a></li>
+    </ul>
+  </li>
+</ul>  
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IMMZ.E CodeSystem for Data Elements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ChanjoKE Immunization Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-IMMZ.E.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-IMMZ.E.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-IMMZ.E.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: IMMZ.E CodeSystem for Data Elements - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-08-27
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-IMMZ.E.json" no-download="true">Raw json</a> | <a href="CodeSystem-IMMZ.E.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "IMMZ.E",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem IMMZ.E&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;IMMZ.E\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcIMMZ.E\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;IMMZ.E-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE1&lt;a name=\&quot;IMMZ.E-DE1\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Identification&lt;/td&gt;&lt;td&gt;A unique identifier for the instance of the report that has been generated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE2&lt;a name=\&quot;IMMZ.E-DE2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Status&lt;/td&gt;&lt;td&gt;The status of the report (for example, initial, complete, etc.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE3&lt;a name=\&quot;IMMZ.E-DE3\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complete&lt;/td&gt;&lt;td&gt;The report is complete and ready to use&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE4&lt;a name=\&quot;IMMZ.E-DE4\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pending&lt;/td&gt;&lt;td&gt;The report is currently being generated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE5&lt;a name=\&quot;IMMZ.E-DE5\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Error&lt;/td&gt;&lt;td&gt;An error occurred while generating the report&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE6&lt;a name=\&quot;IMMZ.E-DE6\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Type&lt;/td&gt;&lt;td&gt;The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE7&lt;a name=\&quot;IMMZ.E-DE7\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Individual&lt;/td&gt;&lt;td&gt;An individual report which provides information on the performance for a given measure with respect to a single subject&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE8&lt;a name=\&quot;IMMZ.E-DE8\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subject List&lt;/td&gt;&lt;td&gt;A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE9&lt;a name=\&quot;IMMZ.E-DE9\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Summary&lt;/td&gt;&lt;td&gt;A summary report that returns the number of members in each population criteria for the measure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE10&lt;a name=\&quot;IMMZ.E-DE10\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Data Exchange&lt;/td&gt;&lt;td&gt;A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE11&lt;a name=\&quot;IMMZ.E-DE11\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Indicator Code&lt;/td&gt;&lt;td&gt;The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE12&lt;a name=\&quot;IMMZ.E-DE12\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dropout rate&lt;/td&gt;&lt;td&gt;An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE13&lt;a name=\&quot;IMMZ.E-DE13\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Defaulters&lt;/td&gt;&lt;td&gt;An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE14&lt;a name=\&quot;IMMZ.E-DE14\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coverage&lt;/td&gt;&lt;td&gt;An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE15&lt;a name=\&quot;IMMZ.E-DE15\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;AEFI Case Rate&lt;/td&gt;&lt;td&gt;An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE16&lt;a name=\&quot;IMMZ.E-DE16\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open Vial Wastage&lt;/td&gt;&lt;td&gt;An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE17&lt;a name=\&quot;IMMZ.E-DE17\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Closed Vial Wastage&lt;/td&gt;&lt;td&gt;An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE18&lt;a name=\&quot;IMMZ.E-DE18\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Subject Area&lt;/td&gt;&lt;td&gt;Location (facility or place) for which the data in the report is being represented.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE19&lt;a name=\&quot;IMMZ.E-DE19\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Generation Date&lt;/td&gt;&lt;td&gt;The date and time on which the report was generated.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE20&lt;a name=\&quot;IMMZ.E-DE20\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reporting Period Start&lt;/td&gt;&lt;td&gt;The start date of the reporting period for which data in the report has been included.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE21&lt;a name=\&quot;IMMZ.E-DE21\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reporting Period End&lt;/td&gt;&lt;td&gt;The end date of the reporting period for which data in the report has been included.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE22&lt;a name=\&quot;IMMZ.E-DE22\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Improvement Indicator&lt;/td&gt;&lt;td&gt;Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE23&lt;a name=\&quot;IMMZ.E-DE23\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Increase is Improvement&lt;/td&gt;&lt;td&gt;Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE24&lt;a name=\&quot;IMMZ.E-DE24\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Decrease is Improvement&lt;/td&gt;&lt;td&gt;Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE25&lt;a name=\&quot;IMMZ.E-DE25\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Report Generator / Author&lt;/td&gt;&lt;td&gt;Indicates the organization, or location which is generating or producing the report&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE26&lt;a name=\&quot;IMMZ.E-DE26\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measure Identifier / Meaning&lt;/td&gt;&lt;td&gt;Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE27&lt;a name=\&quot;IMMZ.E-DE27\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measured Score&lt;/td&gt;&lt;td&gt;The calculated score of the measure / indicator which is being reported on.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE30&lt;a name=\&quot;IMMZ.E-DE30\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measure Numerator&lt;/td&gt;&lt;td&gt;The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE31&lt;a name=\&quot;IMMZ.E-DE31\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Measure Denominator&lt;/td&gt;&lt;td&gt;The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE32&lt;a name=\&quot;IMMZ.E-DE32\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disaggregation Group&lt;/td&gt;&lt;td&gt;Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE33&lt;a name=\&quot;IMMZ.E-DE33\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Sex&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's sex values&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE34&lt;a name=\&quot;IMMZ.E-DE34\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Region&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's administrative regions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE35&lt;a name=\&quot;IMMZ.E-DE35\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Age Group&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's age groups&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE36&lt;a name=\&quot;IMMZ.E-DE36\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Dose Number&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE37&lt;a name=\&quot;IMMZ.E-DE37\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Vaccine Type&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's vaccine types&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE38&lt;a name=\&quot;IMMZ.E-DE38\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Vaccine Manufacturer&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE39&lt;a name=\&quot;IMMZ.E-DE39\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Reaction Manifestation&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE40&lt;a name=\&quot;IMMZ.E-DE40\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;By-Occupation&lt;/td&gt;&lt;td&gt;Represents a disaggregation grouped by the indicator population's occupations&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE41&lt;a name=\&quot;IMMZ.E-DE41\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disaggregation Measure Identifier / Meaning&lt;/td&gt;&lt;td&gt;The type or value of this stratum represents (male , female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element (for example: if By-Sex is used as the disaggregation group, valid values would be 'Male', 'Female', 'Intersex')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE42&lt;a name=\&quot;IMMZ.E-DE42\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disaggregation Numerator&lt;/td&gt;&lt;td&gt;The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE43&lt;a name=\&quot;IMMZ.E-DE43\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disaggregation Denominator&lt;/td&gt;&lt;td&gt;The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DE44&lt;a name=\&quot;IMMZ.E-DE44\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Disaggregated Score&lt;/td&gt;&lt;td&gt;The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.E",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "IMMZ_E",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "IMMZ.E CodeSystem for Data Elements",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2024-08-27T20:30:12+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Intellisoft Consulting Ltd",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Intellisoft Consulting Ltd",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.intellisoftkenya.com/"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "info[at]intellisoftkenya.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "CodeSystem for IMMZ.E Data Elements",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 42,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE1",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Identification",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "A unique identifier for the instance of the report that has been generated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Status",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The status of the report (for example, initial, complete, etc.)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE3",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Complete",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The report is complete and ready to use"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE4",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pending",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The report is currently being generated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE5",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Error",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An error occurred while generating the report"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE6",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The type of report which has been generated (i.e. is the report a list of individuals, a summary, etc.)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE7",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Individual",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An individual report which provides information on the performance for a given measure with respect to a single subject"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE8",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Subject List",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "A subject list report that provides a listing of subjects who satisfied a specific population criteria in the measure"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE9",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Summary",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "A summary report that returns the number of members in each population criteria for the measure"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE10",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Data Exchange",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "A data exchange report that contains data of interest for the measure (i.e. data needed to calculate the measure)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE11",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Indicator Code",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The indicator or measure definition which is being reported on (for example: Dropout rate, defaulters, etc.)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE12",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dropout rate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An indicator for the assessment of a particular vaccine's dropout rate (i.e. comparing the number of clients who start a specific immunization schedule with the number of clients who complete it)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE13",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Defaulters",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An indicator for the assessment of a particular vaccine's defaulters. Defaulters are clients who miss scheduled vaccination doses for any reason"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE14",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Coverage",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An indicator for the assessment of a particular vaccine's coverage (i.e. the estimated percentage of clients who have received specific doses of a vaccine)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE15",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "AEFI Case Rate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An indicator for the assessment of a particular vaccine's Adverse Event Following Immunization (AEFI) case rate. This report is tracked as an aggregate tally of number of clients who received a vaccine dose and have reported an adverse event compared with the total number of doses administered of the vaccine product"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE16",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Open Vial Wastage",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were opened but discarded due to under-utilization"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE17",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Closed Vial Wastage",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "An indicator for the assessment of a particular vaccine's open vial wastage, which is a measure of the percentage of doses of a vaccine that were spoiled due to reasons such as expiry, freezing, breakage, etc."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE18",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Subject Area",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Location (facility or place) for which the data in the report is being represented."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE19",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Generation Date",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The date and time on which the report was generated."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE20",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Reporting Period Start",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The start date of the reporting period for which data in the report has been included."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE21",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Reporting Period End",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The end date of the reporting period for which data in the report has been included."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE22",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Improvement Indicator",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicates to the receiver how to interpret the data (i.e. what constitutes an improvement or deterioration)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE23",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Increase is Improvement",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicates that when the measure scores increase, the data can be interpreted as an improvement (used for Coverage indicator)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE24",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Decrease is Improvement",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicates that when measure scores decrease, the data can be interpreted as an improvement (used for dropout, wastage, AEFI indicators)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE25",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Report Generator / Author",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicates the organization, or location which is generating or producing the report"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE26",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measure Identifier / Meaning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents the name of the report/indicator. It codifies the meaning of the group / measure. For example, if the report indicator is Coverage each antigen / vaccine would have a measure (i.e. BCG Coverage or BCG Target)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE27",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measured Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The calculated score of the measure / indicator which is being reported on."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE30",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measure Numerator",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The count of individual objects (persons, doses, etc.) which was used as the numerator to calculate the measure score."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE31",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Measure Denominator",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The count of individual objects (persons, doses, etc.) which was used as the denominator to calculate the measure score."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE32",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Disaggregation Group",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicates the overall strata or disaggregation which is being represented in the report (for example: by gender, by region, by age group, etc.)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE33",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Sex",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's sex values"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE34",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Region",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's administrative regions"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE35",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Age Group",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's age groups"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE36",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Dose Number",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's dose numbers for a specific vaccine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE37",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Vaccine Type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's vaccine types"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE38",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Vaccine Manufacturer",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's vaccine manufacturers for a specific vaccine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE39",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Reaction Manifestation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's reaction manifestations for a specific vaccine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE40",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "By-Occupation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Represents a disaggregation grouped by the indicator population's occupations"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE41",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Disaggregation Measure Identifier / Meaning",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The type or value of this stratum represents (male , female, region 1, dose 3, etc.). This value depends on the Disaggregation Group data element (for example: if By-Sex is used as the disaggregation group, valid values would be 'Male', 'Female', 'Intersex')"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE42",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Disaggregation Numerator",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The count of individual objects (persons, doses, etc.) which were used as the numerator for the disaggregation score."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE43",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Disaggregation Denominator",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The count of individual objects (persons, doses, etc.) which were used as the denominator for disaggregation score"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DE44",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Disaggregated Score",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The computed score for this disaggregation, which is the numerator divided by the denominator for this collection (i.e. population) of records."
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.intellisoftkenya.com/">Intellisoft Consulting Ltd</a>.  Package fhir.chanjoKe#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 20:30+0000">2024-08-27</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

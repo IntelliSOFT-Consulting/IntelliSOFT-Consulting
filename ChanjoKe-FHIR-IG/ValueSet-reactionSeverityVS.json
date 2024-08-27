@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "reactionSeverityVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet reactionSeverityVS</b></p><a name=\"reactionSeverityVS\"> </a><a name=\"hcreactionSeverityVS\"> </a><a name=\"reactionSeverityVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-IMMZ.F.html\"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE27\">DE27</a></td><td style=\"color: #cccccc\">Life Threatening</td><td>The client had a life-threatening reaction to the administered vaccine.</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE28\">DE28</a></td><td style=\"color: #cccccc\">Mild</td><td>Local reaction at the injection site or minor systemic reaction such as fever or malaise, that occurs over a short period of time and pose little danger</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE29\">DE29</a></td><td style=\"color: #cccccc\">Moderate</td><td>Local or systemic reactions more severe than mild and of longer duration</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE30\">DE30</a></td><td style=\"color: #cccccc\">Severe</td><td>Severe and potentially (rarely) life threatening reactions including seizures and anaphylactic reactions</td></tr><tr><td><a href=\"CodeSystem-IMMZ.F.html#IMMZ.F-DE31\">DE31</a></td><td style=\"color: #cccccc\">Fatal</td><td>The client died as a result of the reaction</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reactionSeverityVS",
+  "version" : "0.1.0",
+  "name" : "IMMZFDE26VS",
+  "title" : "Reaction Severity",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-08-27T20:30:12+00:00",
+  "publisher" : "Intellisoft Consulting Ltd",
+  "contact" : [{
+    "name" : "Intellisoft Consulting Ltd",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.intellisoftkenya.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "info[at]intellisoftkenya.com"
+    }]
+  }],
+  "description" : "Reaction Severity",
+  "compose" : {
+    "include" : [{
+      "system" : "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.F",
+      "concept" : [{
+        "code" : "DE27"
+      },
+      {
+        "code" : "DE28"
+      },
+      {
+        "code" : "DE29"
+      },
+      {
+        "code" : "DE30"
+      },
+      {
+        "code" : "DE31"
+      }]
+    }]
+  }
+}

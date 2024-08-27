@@ -5,16 +5,16 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://shr.tiberbuapps.com/fhir/Condition/ConditionExample> a fhir:Condition ;
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Condition/ConditionExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ConditionExample"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionExample</b></p><a name=\"ConditionExample\"> </a><a name=\"hcConditionExample\"> </a><a name=\"ConditionExample-en-US\"> </a><p><b>subject</b>: <a href=\"Patient-SHAPatientExample.html\">Eliud Kipchoge Kiptun Male, DoB: 1984-11-05 ( Unique Patient Identifier: 123456 (use: official, ))</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ConditionExample</b></p><a name=\"ConditionExample\"> </a><a name=\"hcConditionExample\"> </a><a name=\"ConditionExample-en-US\"> </a><p><b>subject</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p></div>"
   ] ; # 
   fhir:subject [
-     fhir:link <https://shr.tiberbuapps.com/fhir/Patient/SHAPatientExample> ;
-     fhir:reference [ fhir:v "Patient/SHAPatientExample" ]
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

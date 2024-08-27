@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="reasonVaccineNotdministeredVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet reasonVaccineNotdministeredVS</b></p><a name="reasonVaccineNotdministeredVS"> </a><a name="hcreasonVaccineNotdministeredVS"> </a><a name="reasonVaccineNotdministeredVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-IMMZ.C.html"><code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE18">DE18</a></td><td style="color: #cccccc">Product out of stock</td><td>There was no supply of the product on hand to perform the service.</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE19">DE19</a></td><td style="color: #cccccc">Contraindication</td><td/></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE20">DE20</a></td><td style="color: #cccccc">Cold chain break</td><td>The vaccine experienced a cold chain break.</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE21">DE21</a></td><td style="color: #cccccc">Client objection</td><td>The client or their guardian objects to receiving the vaccine.</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE22">DE22</a></td><td style="color: #cccccc">Caregiver refusal</td><td>The client's caregiver refused the vaccine</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE23">DE23</a></td><td style="color: #cccccc">Expired product</td><td>The vaccine was expired at the time of administration.</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE24">DE24</a></td><td style="color: #cccccc">Unspecified reason</td><td>The immunization event was not carried out for an unspecified reason</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE25">DE25</a></td><td style="color: #cccccc">Client acquired the disease</td><td>The immunization event was not carried out due to the client having had the disease</td></tr><tr><td><a href="CodeSystem-IMMZ.C.html#IMMZ.C-DE26">DE26</a></td><td style="color: #cccccc">Immunization not carried out for other reasons.</td><td>The immunization event was not carried out for other reasons</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/ValueSet/reasonVaccineNotdministeredVS"/>
+  <version value="0.1.0"/>
+  <name value="IMMZC1DE17VS"/>
+  <title value="Reason vaccine was not administered"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-08-27T20:30:12+00:00"/>
+  <publisher value="Intellisoft Consulting Ltd"/>
+  <contact>
+    <name value="Intellisoft Consulting Ltd"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.intellisoftkenya.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info[at]intellisoftkenya.com"/>
+    </telecom>
+  </contact>
+  <description value="Reason vaccine was not administered"/>
+  <compose>
+    <include>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/IMMZ.C"/>
+      <concept>
+        <code value="DE18"/>
+      </concept>
+      <concept>
+        <code value="DE19"/>
+      </concept>
+      <concept>
+        <code value="DE20"/>
+      </concept>
+      <concept>
+        <code value="DE21"/>
+      </concept>
+      <concept>
+        <code value="DE22"/>
+      </concept>
+      <concept>
+        <code value="DE23"/>
+      </concept>
+      <concept>
+        <code value="DE24"/>
+      </concept>
+      <concept>
+        <code value="DE25"/>
+      </concept>
+      <concept>
+        <code value="DE26"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

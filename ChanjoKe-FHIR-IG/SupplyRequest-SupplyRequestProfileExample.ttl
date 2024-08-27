@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/SupplyRequest/SupplyRequestProfileExample> a fhir:SupplyRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SupplyRequestProfileExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/SupplyRequestProfile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyRequest SupplyRequestProfileExample</b></p><a name=\"SupplyRequestProfileExample\"> </a><a name=\"hcSupplyRequestProfileExample\"> </a><a name=\"SupplyRequestProfileExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest</code>/123456 (use: official, )</p><p><b>item</b>: <a href=\"Medication-MedicationExample.html\">Medication Codeine phosphate</a></p><p><b>quantity</b>: 50 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm = 'mm')</span></p><p><b>occurrence</b>: 2020-02-02</p><p><b>authoredOn</b>: 2020-02-02</p><p><b>requester</b>: <a href=\"Patient-PatientExample.html\">Grahame Grieve Male, DoB: 1969-04-13</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/date-of-last-order"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2020-02-02"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/expected-date-of-next-order"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2020-02-02"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/total-population"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/children"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "50"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/pregnant-women"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "50"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/doses-in-stock"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/minimum"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "50"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/maximum"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/recommended-stock"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "100"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/ordered-amount"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "50"^^xsd:integer ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/supplyRequest"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] ) ; # 
+  fhir:item [
+     a fhir:Reference ;
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Medication/MedicationExample> ;
+     fhir:reference [ fhir:v "Medication/MedicationExample" ]
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mm" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mm" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2020-02-02"^^xsd:date] ; # 
+  fhir:authoredOn [ fhir:v "2020-02-02"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Patient/PatientExample> ;
+     fhir:reference [ fhir:v "Patient/PatientExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

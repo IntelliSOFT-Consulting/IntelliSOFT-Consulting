@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Basic/BasicProfileExample> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BasicProfileExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile"^^xsd:anyURI ;
+       fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/basic-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic BasicProfileExample</b></p><a name=\"BasicProfileExample\"> </a><a name=\"hcBasicProfileExample\"> </a><a name=\"BasicProfileExample-en-US\"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/basic-profile-identifiers</code>/12345</p><p><b>code</b>: <span title=\"Codes:\">referral</span></p><p><b>subject</b>: <a href=\"Location-LocationExample.html\">Location Example Hospital</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://example.org/fhir/StructureDefinition/bcg-vaccine"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/vaccine-codes"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "bcg" ] ;
+             fhir:display [ fhir:v "Referral" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "quantity"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Quantity ;
+           fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "doses" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "doses" ]
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "item"^^xsd:anyURI ]
+     ] ) ;
+     fhir:url [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/inventory-items"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/basic-profile-identifiers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "referral" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/Location/LocationExample> ;
+     fhir:reference [ fhir:v "Location/LocationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

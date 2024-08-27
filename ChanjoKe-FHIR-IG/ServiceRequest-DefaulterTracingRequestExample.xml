@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="DefaulterTracingRequestExample"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/StructureDefinition/DefaulterTracingRequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest DefaulterTracingRequestExample</b></p><a name="DefaulterTracingRequestExample"> </a><a name="hcDefaulterTracingRequestExample"> </a><a name="DefaulterTracingRequestExample-en-US"> </a><p><b>identifier</b>: <code>https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/serviceRequest</code>/123456 (use: official, )</p><p><b>basedOn</b>: <a href="ServiceRequest-ServiceRequestExample.html">ServiceRequest: status = active; intent = order</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests 108252007}">Laboratory procedure</span></p><p><b>priority</b>: Routine</p><p><b>subject</b>: <a href="Patient-PatientExample.html">John Doe</a></p><p><b>authoredOn</b>: 2020-02-02</p><p><b>requester</b>: <a href="Practitioner-KenyanPractitionerExample.html">Example Practitioner</a></p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/kenya/serviceRequest"/>
+    <value value="123456"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/ServiceRequestExample"/>
+  </basedOn>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="https://intellisoft-consulting.github.io/igs/ChanjoKe-FHIR-IG/CodeSystem/ServiceRequests"/>
+      <code value="108252007"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+    <display value="John Doe"/>
+  </subject>
+  <authoredOn value="2020-02-02"/>
+  <requester>
+    <reference value="Practitioner/KenyanPractitionerExample"/>
+    <display value="Example Practitioner"/>
+  </requester>
+</ServiceRequest>
